@@ -1,0 +1,238 @@
+[2018-04-11 01:38:01.000000 - DEBUG] Usuario.php - function mostrarTopMensual()
+[2018-04-11 01:38:01.000000 - DEBUG] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-11 01:38:01.000000 - DEBUG] Usuario.php - function mostrarTopAnual()
+[2018-04-11 01:38:01.000000 - DEBUG] La consulta del TopAnual ha devuelta más de un resultado
+**************************************************************
+[2018-04-11 03:39:04.000000 - DEBUG] Usuario.php - function mostrarTopMensual()
+[2018-04-11 03:39:04.000000 - DEBUG] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-11 03:39:04.000000 - DEBUG] Usuario.php - function mostrarTopAnual()
+[2018-04-11 03:39:04.000000 - DEBUG] La consulta del TopAnual ha devuelta más de un resultado
+**************************************************************
+[2018-04-11 08:24:24.000000 - DEBUG] Usuario.php - function mostrarTopMensual()
+[2018-04-11 08:24:24.000000 - DEBUG] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-11 08:24:24.000000 - DEBUG] Usuario.php - function mostrarTopAnual()
+[2018-04-11 08:24:24.000000 - DEBUG] La consulta del TopAnual ha devuelta más de un resultado
+**************************************************************
+[2018-04-11 08:25:06.000000 - INFO] logueo_header.php
+[2018-04-11 08:25:06.000000 - INFO] Usuario Costa registrado correctamente.
+**************************************************************
+[2018-04-11 08:25:06.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-11 08:25:06.000000 - DEBUG] Encontramos el usuario con id: 1
+**************************************************************
+[2018-04-11 09:10:28.000000 - ERROR] logueo_header.php
+[2018-04-11 09:10:28.000000 - ERROR] El usuario adsfasdfasdf no se registró correctamente.
+[2018-04-11 09:10:28.000000 - ERROR] Error -201 'El usuario no está registrado.'
+**************************************************************
+[2018-04-11 09:10:38.000000 - INFO] logueo_header.php
+[2018-04-11 09:10:38.000000 - INFO] Usuario Costa registrado correctamente.
+**************************************************************
+[2018-04-11 09:10:38.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-11 09:10:38.000000 - DEBUG] Encontramos el usuario con id: 1 y devolvemos sus datos.
+**************************************************************
+[2018-04-11 09:10:38.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 09:10:38.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**************************************************************
+[2018-04-11 09:10:38.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 09:10:38.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**************************************************************
+[2018-04-11 09:10:38.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 09:10:38.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**************************************************************
+[2018-04-11 09:10:38.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 09:10:38.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**************************************************************
+[2018-04-11 09:12:39.000000 - ERROR] logueo_header.php
+[2018-04-11 09:12:39.000000 - ERROR] El usuario sdgfsdfgfds no se registró correctamente.
+[2018-04-11 09:12:39.000000 - ERROR] Error -201 'El usuario no está registrado.'
+**************************************************************
+[2018-04-11 09:14:42.000000 - ERROR] logueo_header.php
+[2018-04-11 09:14:42.000000 - ERROR] El usuario asdfasdfasdf no se registró correctamente.
+[2018-04-11 09:14:42.000000 - ERROR] Error -201 'El usuario no está registrado.'
+**************************************************************
+[2018-04-11 09:25:13.000000 - ERROR] logueo_header.php
+[2018-04-11 09:25:13.000000 - ERROR] El usuario asdfasdfdsa no se registró correctamente.
+[2018-04-11 09:25:13.000000 - ERROR] Error -201 'El usuario no está registrado.'
+**************************************************************
+[2018-04-11 09:45:27.000000 - ERROR] logueo_header.php
+[2018-04-11 09:45:27.000000 - ERROR] El usuario Pepe no se registró correctamente.
+[2018-04-11 09:45:27.000000 - ERROR] Error -201 'El usuario no está registrado.'
+**************************************************************
+[2018-04-11 10:05:08.000000 - ERROR] logueo_header.php
+[2018-04-11 10:05:08.000000 - ERROR] El usuario SDGSDGFSGFSFDGASFDASDF ASFD no se registró correctamente.
+[2018-04-11 10:05:08.000000 - ERROR] Error -201 'El usuario no está registrado.'
+[2018-04-11 10:05:08.000000 - INFO] Log.php - insertarError( $id_error,$cod_error, $desc_error, $ubicacion,$descripcion )
+[2018-04-11 10:05:08.000000 - INFO] Inserción correcta en la tabla de errores
+**************************************************************
+**************************************************************
+[2018-04-11 10:09:07.000000 - ERROR] logueo_header.php
+[2018-04-11 10:09:07.000000 - ERROR] El usuario Costa no se registró correctamente.
+[2018-04-11 10:09:07.000000 - ERROR] Error -202 'La contraseña es incorrecta'
+[2018-04-11 10:09:07.000000 - INFO] Log.php - insertarError( $id_error,$cod_error, $desc_error, $ubicacion,$descripcion )
+[2018-04-11 10:09:07.000000 - INFO] Inserción correcta en la tabla de errores
+**************************************************************
+**************************************************************
+[2018-04-11 11:46:02.000000 - ERROR] logueo_header.php
+[2018-04-11 11:46:02.000000 - ERROR] El usuario pEPE no se registró correctamente.
+[2018-04-11 11:46:02.000000 - ERROR] Error -201 'El usuario no está registrado.'
+[2018-04-11 11:46:02.000000 - INFO] Log.php - insertarError( $id_error,$cod_error, $desc_error, $ubicacion,$descripcion )
+[2018-04-11 11:46:02.000000 - INFO] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 11:54:00.000000 - ERROR] logueo_header.php
+[2018-04-11 11:54:00.000000 - ERROR] El usuario Costa no se registró correctamente.
+[2018-04-11 11:54:00.000000 - ERROR] Error -202 'La contraseña es incorrecta'
+[2018-04-11 11:54:00.000000 - DEBUG] Log.php - insertarError( $id_error,$cod_error, $desc_error, $ubicacion,$descripcion )
+[2018-04-11 11:54:00.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 11:54:16.000000 - INFO] logueo_header.php
+[2018-04-11 11:54:16.000000 - INFO] Usuario Costa registrado correctamente.
+**********************************************************************
+[2018-04-11 11:54:16.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-11 11:54:16.000000 - DEBUG] Encontramos el usuario con id: 1 y devolvemos sus datos.
+**********************************************************************
+[2018-04-11 11:54:16.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 11:54:16.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**********************************************************************
+[2018-04-11 11:54:16.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 11:54:16.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**********************************************************************
+[2018-04-11 11:54:16.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 11:54:16.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**********************************************************************
+[2018-04-11 11:54:16.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 11:54:16.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**********************************************************************
+[2018-04-11 11:54:26.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 11:54:26.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**********************************************************************
+[2018-04-11 11:54:26.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 11:54:26.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**********************************************************************
+[2018-04-11 11:54:26.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 11:54:26.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**********************************************************************
+[2018-04-11 11:54:26.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 11:54:26.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**********************************************************************
+[2018-04-11 11:54:31.000000 - DEBUG] Usuario.php - muestraUsuario($nick)
+[2018-04-11 11:54:31.000000 - DEBUG] El usuario con nick: amatesan se llama: Antonio           , su libro favorito es: 1984  , su libro odiado es: , su autor favorito es:  y su género favorito: Ciencia Ficción
+**********************************************************************
+[2018-04-11 11:54:58.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 11:54:58.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**********************************************************************
+[2018-04-11 11:54:58.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 11:54:58.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**********************************************************************
+[2018-04-11 11:54:58.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 11:54:58.000000 - DEBUG] El usuario con id: 1 tiene: 219 puntos
+**********************************************************************
+[2018-04-11 11:54:58.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 11:54:58.000000 - DEBUG] El usuario con id: 1 tiene: 10 puntos mensuales
+**********************************************************************
+[2018-04-11 13:41:26.000000 - INFO] logueo_header.php
+[2018-04-11 13:41:26.000000 - INFO] Usuario Esther registrado correctamente.
+**********************************************************************
+[2018-04-11 13:41:26.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-11 13:41:26.000000 - DEBUG] Encontramos el usuario con id: 4 y devolvemos sus datos.
+**********************************************************************
+[2018-04-11 13:41:26.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 13:41:26.000000 - DEBUG] El usuario con id: 4 tiene: 0 puntos mensuales
+**********************************************************************
+[2018-04-11 13:41:26.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 13:41:26.000000 - DEBUG] El usuario con id: 4 tiene: 77 puntos
+**********************************************************************
+[2018-04-11 13:41:26.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 13:41:26.000000 - DEBUG] El usuario con id: 4 tiene: 77 puntos
+**********************************************************************
+[2018-04-11 13:41:26.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 13:41:26.000000 - DEBUG] El usuario con id: 4 tiene: 0 puntos mensuales
+**********************************************************************
+[2018-04-11 15:25:17.000000 - INFO] logueo_header.php
+[2018-04-11 15:25:17.000000 - INFO] Usuario Aquijano      registrado correctamente.
+**********************************************************************
+[2018-04-11 15:25:17.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-11 15:25:17.000000 - DEBUG] Encontramos el usuario con id: 9 y devolvemos sus datos.
+**********************************************************************
+[2018-04-11 15:25:17.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 15:25:17.000000 - DEBUG] El usuario con id: 9 tiene: 522 puntos
+**********************************************************************
+[2018-04-11 15:25:17.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 15:25:17.000000 - DEBUG] El usuario con id: 9 tiene: 7 puntos mensuales
+**********************************************************************
+[2018-04-11 15:33:46.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 15:33:46.000000 - DEBUG] El usuario con id: 9 tiene: 522 puntos
+**********************************************************************
+[2018-04-11 15:33:46.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 15:33:46.000000 - DEBUG] El usuario con id: 9 tiene: 7 puntos mensuales
+**********************************************************************
+[2018-04-11 16:57:07.000000 - ERROR] logueo_header.php
+[2018-04-11 16:57:07.000000 - ERROR] El usuario Carlos no se registró correctamente.
+[2018-04-11 16:57:07.000000 - ERROR] Error -201 'El usuario no está registrado.'
+[2018-04-11 16:57:07.000000 - DEBUG] Log.php - insertarError( $id_error,$cod_error, $desc_error, $ubicacion,$descripcion )
+[2018-04-11 16:57:07.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 17:08:46.000000 - DEBUG] Usuario.php - function existeUsuario($nick)
+[2018-04-11 17:08:46.000000 - DEBUG] El nick: Prueba no existe, puedes registrarte con ese nick, devolvemos false.
+**********************************************************************
+[2018-04-11 17:08:46.000000 - ERROR] Usuario.php - function esmailRepetido($mail)
+[2018-04-11 17:08:46.000000 - ERROR] El mail: costa_torito@hotmail.com existe y no puedes registrate con mail, devolvemos true
+[2018-04-11 17:08:46.000000 - ERROR] Error -204 'Hay otro usuario con el mismo email.'
+[2018-04-11 17:08:46.000000 - DEBUG] Log.php - insertarError($id_error, $cod_error, $desc_error, $ubicacion, $descripcion)
+[2018-04-11 17:08:46.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 18:18:15.000000 - ERROR] logueo_header.php
+[2018-04-11 18:18:15.000000 - ERROR] El usuario Eva no se registró correctamente.
+[2018-04-11 18:18:15.000000 - ERROR] Error -201 'El usuario no está registrado.'
+[2018-04-11 18:18:15.000000 - DEBUG] Log.php - insertarError($id_error, $cod_error, $desc_error, $ubicacion, $descripcion)
+[2018-04-11 18:18:15.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 18:22:50.000000 - DEBUG] Usuario.php - function esRegistradoNick($nick)
+[2018-04-11 18:22:50.000000 - DEBUG] El usuario con nick: Paco es un usuario registrado, puede loguearse.
+**********************************************************************
+[2018-04-11 18:22:50.000000 - ERROR] logueo_header.php
+[2018-04-11 18:22:50.000000 - ERROR] El usuario Paco no se registró correctamente.
+[2018-04-11 18:22:50.000000 - ERROR] Error -202 'La contraseña es incorrecta'
+[2018-04-11 18:23:22.000000 - DEBUG] Usuario.php - function esRegistradoNick($nick)
+[2018-04-11 18:23:22.000000 - DEBUG] El usuario con nick: Paco es un usuario registrado, puede loguearse.
+**********************************************************************
+[2018-04-11 18:23:22.000000 - ERROR] logueo_header.php
+[2018-04-11 18:23:22.000000 - ERROR] El usuario Paco no se registró correctamente.
+[2018-04-11 18:23:22.000000 - ERROR] Error -202 'La contraseña es incorrecta'
+[2018-04-11 18:23:22.000000 - DEBUG] Log.php - insertarError($id_error, $cod_error, $desc_error, $ubicacion, $descripcion)
+[2018-04-11 18:23:22.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 18:24:07.000000 - DEBUG] Usuario.php - function esRegistradoNick($nick)
+[2018-04-11 18:24:07.000000 - DEBUG] El usuario con nick: Beatriz es un usuario registrado, puede loguearse.
+**********************************************************************
+[2018-04-11 18:24:07.000000 - ERROR] logueo_header.php
+[2018-04-11 18:24:07.000000 - ERROR] El usuario Beatriz no se registró correctamente.
+[2018-04-11 18:24:07.000000 - ERROR] Error -202 'La contraseña es incorrecta'
+[2018-04-11 18:24:07.000000 - DEBUG] Log.php - insertarError($id_error, $cod_error, $desc_error, $ubicacion, $descripcion)
+[2018-04-11 18:24:07.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - function esRegistradoNick($nick)
+[2018-04-11 23:35:34.000000 - DEBUG] El usuario con nick: Esther es un usuario registrado, puede loguearse.
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - function esRegistrado($nick,$pass)
+[2018-04-11 23:35:34.000000 - DEBUG] El usuario con nick: Esther y password: 1312d523d32fd374639a858e2b89237b es un usuario registrado, puede loguearse.
+**********************************************************************
+[2018-04-11 23:35:34.000000 - INFO] logueo_header.php
+[2018-04-11 23:35:34.000000 - INFO] Usuario Esther logueado correctamente.
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-11 23:35:34.000000 - DEBUG] Encontramos el usuario con id: 4 y devolvemos sus datos.
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 23:35:34.000000 - DEBUG] El usuario con id: 4 tiene: 0 puntos mensuales
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 23:35:34.000000 - DEBUG] El usuario con id: 4 tiene: 77 puntos
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - getPuntos($id)
+[2018-04-11 23:35:34.000000 - DEBUG] El usuario con id: 4 tiene: 77 puntos
+**********************************************************************
+[2018-04-11 23:35:34.000000 - DEBUG] Usuario.php - getPuntosMensual($id)
+[2018-04-11 23:35:34.000000 - DEBUG] El usuario con id: 4 tiene: 0 puntos mensuales
+**********************************************************************

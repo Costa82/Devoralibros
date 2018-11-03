@@ -1,0 +1,434 @@
+/**
+* Archivo CSS para diseñar las páginas de perfil tanto usuarios normales como administradores.
+* Las páginas de perfil usarán hojas de estilo en cascada, primero main.css y luego main_perfil.css.
+* @author   Miguel Costa.
+*
+*/
+
+/* ESTILOS NORMALES (para móviles y tablets)
+   ========================================================================= */
+
+/*Escondemos el slider para dispositivos móviles*/
+#slider {
+	display: none;
+	padding: 9% 0;
+	background: url('../img/libro_perfil.jpg');
+	display: none;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+	background-attachment: fixed;
+}
+
+#slider h1 {
+	margin-top: -100px;
+}
+
+#inicio span, #cerrar_sesion span, #darme_baja span {
+	display: none;
+}
+
+#perfil1, #inicio a {
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+li#perfil1 {
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+li#perfil1 a {
+	font-size: 45px;
+}
+
+li#perfil1 span {
+	display: none;
+}
+
+#lista_principal {
+	justify-content: space-between;
+}
+
+#lista_principal #perfil1 img {
+	height: 55px;
+	vertical-align: middle;
+	border-radius: 8px;
+}
+
+#inicio {
+	width: 30%;
+}
+
+#cerrar_sesion {
+	width: 4%;
+}
+
+#darme_baja {
+	width: 4%;
+	margin-right: 5%;
+}
+
+#perfil1 {
+	width: 60%;
+}
+
+#cerrar_sesion {
+	text-align: right;
+}
+
+li#inicio a:hover, li#perfil1:hover {
+	color: #7892c2;
+}
+
+li#inicio i:hover, li#cerrar_sesion i:hover {
+	cursor: pointer;
+}
+
+.perfil li {
+	padding: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.perfil li a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.centrar {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.grupo_nav_aux {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/*Parpadeo del botón mensajes*/
+.animated {
+	-webkit-animation-duration: 25s;
+	animation-duration: 25s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes flash {
+        0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
+            opacity: 1;
+        } 
+        2.5%, 7.5%, 12.5%, 17.5%, 22.5%, 27.5%, 32.5%, 37.5%, 42.5%, 47.5%, 52.5%, 57.5%, 62.5%, 67.5%, 72.5%, 77.5%, 82.5%, 87.5%, 92.5%, 97.5% {
+            opacity: 0;
+        }
+}
+
+@keyframes flash {
+        0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
+            opacity: 1;
+        }
+        2.5%, 7.5%, 12.5%, 17.5%, 22.5%, 27.5%, 32.5%, 37.5%, 42.5%, 47.5%, 52.5%, 57.5%, 62.5%, 67.5%, 72.5%, 77.5%, 82.5%, 87.5%, 92.5%, 97.5% {
+            opacity: 0;
+        }
+}
+
+.flash {
+	-webkit-animation-name: flash;
+	animation-name: flash;
+}
+
+/*Sección mis amigos*/
+.amistad {
+	margin: 20px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.amistad h2 {
+	margin: 10px;
+	color: #4cb164;
+}
+
+.amistad ul {
+	text-align: center;
+}
+
+.buscadorAmigos ul {
+	text-align: center;
+}
+
+.amistad li {
+	padding-top: 10px;
+}
+
+.amistad .fa {
+	font-size: 20px;
+	color: #7892c2;
+}
+
+.fa-eye {
+	cursor: pointer;
+}
+
+.amistad .fa-spinner {
+	padding: 0;
+}
+
+.amistad .fa:hover {
+	color: #171B38;
+}
+
+.amistad .fa-spinner:hover {
+	color: #7892c2;
+}
+
+.amistad a {
+	color: black;
+}
+
+.amistad a:hover {
+	color: #7892c2;
+}
+
+.solicitudes ul, .amigos ul {
+	text-align: left;
+	padding-left: 20px;
+}
+
+.solicitudes ul {
+	padding-left: 40px;
+}
+
+/*Contenedor amigo de ver_amigo.php*/
+.contenedorAmigo .boton {
+	margin-top: 25px;
+}
+
+.contenedorAmigo h2 {
+	color: #4cb164;
+}
+
+.contenedorAmigo h4 {
+	font-size: 20px;
+	color: black;
+}
+
+.contenedorAmigo textarea {
+	width: 70%;
+}
+
+/*Contenedor preguntas frecuentes y Aviso Legal.php*/
+.contenedorPreguntas, .contenedorAvisoLegal {
+	text-align: left;
+	padding: 30px;
+}
+
+.contenedorAvisoLegal p {
+	text-align: left;
+	width: 100%;
+}
+
+.contenedorPreguntas .boton, .contenedorAvisoLegal .boton {
+	margin-top: 25px;
+}
+
+.contenedorPreguntas h2, .contenedorAvisoLegal h2 {
+	color: #4cb164;
+}
+
+.contenedorAvisoLegal h3 {
+  	font-size: 16.5px;
+	margin: 35px 0 15px 0;
+	width: 100%;
+}
+
+.contenedorAvisoLegal h2 {
+  	font-size: 20px;
+}
+
+.contenedorAvisoLegal h3 {
+	text-align: center;
+}
+
+.contenedorPreguntas h4 {
+	color: #7892c2;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+div#ui-id-20 {
+	height: auto;
+}
+
+/*Sección mis listas*/
+.lista {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.crearlistas {
+	padding: 5px;
+	text-align: center;
+}
+
+.crearlistas h2, .listas h2 {
+	margin: 10px;
+	color: #4cb164;
+}
+
+.crearlistas input[type='text'] {
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.crearlistas textarea {
+	margin-top: 10px;
+}
+
+.crearlistas .botones {
+	margin-top: 25px;
+}
+
+.listas ul.listado {
+	text-align: left;
+}
+
+.listado {
+	margin-bottom: 25px;
+}
+
+ul.listado li {
+	padding-top: 10px;
+}
+
+.listado .fa {
+	font-size: 20px;
+	color: #7892c2;
+}
+
+.listado .fa:hover {
+	color: #171B38;
+}
+
+h3.noerror {
+	text-align: center;
+	color: blue;
+}
+
+h3.error {
+	text-align: center;
+	color: red;
+}
+
+.listas {
+	padding: 5px;
+}
+
+.librosLista {
+	display: none;
+	margin-top: 10px;
+}
+
+/*Sección mis mensajes*/
+h3.nickMensajes {
+	width: 70%;
+	display: inline;
+}
+
+a .fa-share-square-o, a .fa-check, a .fa-trash {
+	color: black;
+	float: right;
+	padding-top: 10px;
+	font-size: 25px;
+	color: #7892c2;
+}
+
+a .fa-share-square-o:hover, a .fa-check:hover, a .fa-trash:hover {
+	opacity: 0.6;
+}
+
+.leidos {
+	opacity: 0.5;
+}
+
+#navegacion_secundaria li.sinLeer {
+	background: red;
+}
+
+.parrafoPuntos {
+	color: white;
+	text-align: center;
+}
+
+/*RESPONSIVE
+ ========================================================================= */
+ 
+ /* Para resoluciones a partir de 450px */
+@media only screen and (min-width: 450px) {
+	#inicio {
+		width: 20%;
+	}	
+	#cerrar_sesion {
+		width: 5%;
+	}	
+	#darme_baja {
+		width: 5%;
+		margin-right: 10px;
+	}	
+	#perfil1 {
+		width: 60%;
+	}
+}
+
+/*Para resoluciones a partir de 1000px*/
+@media only screen and (min-width: 1000px) {
+	#slider {
+		display: block;
+	}
+	#slider h1 {
+		margin-top: -50px;
+	}
+	.invitacion {
+		display: none;
+	}
+	#inicio span, #cerrar_sesion span, #darme_baja span {
+		display: inline;
+	}
+	li#cerrar_sesion>span {
+		display: inline;
+	}
+	.amistad, .lista {
+		font-size: 30px;
+	}
+	.amistad input[type='text'] {
+		height: 30px;
+		font-size: 20px;
+		padding: 5px 5px 1px 5px;
+	}
+	.contenedorAmigo h4 {
+		font-size: 30px;
+	}
+	#inicio {
+		min-width: 300px;
+	}
+	#cerrar_sesion {
+		min-width: 150px;
+	}
+	#darme_baja {
+		min-width: 150px;
+	}
+	
+	li#perfil1 span {
+		display: inline;
+	}
+}
+

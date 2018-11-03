@@ -1,0 +1,114 @@
+/**
+* Proyecto fin de Ciclo DAW IES Galileo 2017
+*
+* Archivo CSS para dar estilo a los elementos de los formularios.
+*
+* @project  2ºDAW.
+* @author   Miguel Costa.
+*
+*/
+
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select,
+textarea,
+textarea.form-control {
+    height: 50px;
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    background: #f8f8f8;
+    border: 3px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #888;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+span {
+    color: red;
+    font-size: 20px;
+}
+
+textarea,
+textarea.form-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus,
+textarea.form-control:focus {
+    outline: 0;
+    background: #fff;
+    border: 3px solid #ccc;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder,input[type="url"]:-moz-placeholder,select:-moz-placeholder,input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder, input[type="date"]:-moz-placeholder,
+textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; }
+
+input[type="text"]:-ms-input-placeholder,input[type="url"]:-ms-input-placeholder,select:-ms-input-placeholder,input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; }
+
+input[type="text"]::-webkit-input-placeholder,input[type="url"]::-webkit-input-placeholder,select::-webkit-input-placeholder,input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
+
+input[type='text'],input[type='url'],input[type='date'],input[type='email'],input[type='password'],input[type='number'],textarea,
+textarea.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+input[type='file'] {
+    border: none;
+    width: 100%;
+    background: none;
+    margin-bottom: 10px;
+}
+
+button.btn {
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #7892c2;
+    border: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+button.btn:hover { opacity: 0.6; color: #fff; }
+
+button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #7892c2; color: #fff; }

@@ -1,0 +1,1394 @@
+[2018-04-22 13:52:17.000000 - INFO] logueo_header.php
+[2018-04-22 13:52:17.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 13:52:17.000000 - INFO] index_administrador.php
+[2018-04-22 13:52:17.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 13:52:17.000000 - INFO] index_administrador.php
+[2018-04-22 13:52:17.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 13:52:17.000000 - INFO] index_administrador.php
+[2018-04-22 13:52:17.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 13:52:17.000000 - INFO] index_administrador.php
+[2018-04-22 13:52:17.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 13:52:17.000000 - INFO] index_administrador.php
+[2018-04-22 13:52:17.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 14:08:01.000000 - ERROR] logueo_header.php
+[2018-04-22 14:08:01.000000 - ERROR] El usuario Pepe no se logueó correctamente.
+[2018-04-22 14:08:01.000000 - ERROR] Error -201 'El usuario no está registrado.'
+[2018-04-22 14:08:01.000000 - DEBUG] Log.php - insertarErrorUsuario($id_error, $cod_error, $desc_error, $ubicacion, $descripcion)
+[2018-04-22 14:08:01.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-22 14:08:05.000000 - ERROR] logueo_header.php
+[2018-04-22 14:08:05.000000 - ERROR] El usuario Costa no se logueó correctamente.
+[2018-04-22 14:08:05.000000 - ERROR] Error -202 'La contraseña es incorrecta'
+[2018-04-22 14:08:05.000000 - DEBUG] Log.php - insertarErrorUsuario($id_error, $cod_error, $desc_error, $ubicacion, $descripcion)
+[2018-04-22 14:08:05.000000 - DEBUG] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-22 14:08:13.000000 - INFO] logueo_header.php
+[2018-04-22 14:08:13.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 14:08:13.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:13.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 14:08:13.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:13.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 14:08:13.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:13.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 14:08:13.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:13.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 14:08:13.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:13.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 14:08:15.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:15.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 14:08:15.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:15.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 14:08:15.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:15.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 14:08:15.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:15.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 14:08:15.000000 - INFO] index_administrador.php
+[2018-04-22 14:08:15.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 18:52:29.000000 - INFO] logueo_header.php
+[2018-04-22 18:52:29.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 18:52:29.000000 - INFO] index_administrador.php
+[2018-04-22 18:52:29.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 18:52:29.000000 - INFO] index_administrador.php
+[2018-04-22 18:52:29.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 18:52:29.000000 - INFO] index_administrador.php
+[2018-04-22 18:52:29.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 18:52:29.000000 - INFO] index_administrador.php
+[2018-04-22 18:52:29.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 18:52:29.000000 - INFO] index_administrador.php
+[2018-04-22 18:52:29.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 19:05:32.000000 - INFO] index_administrador.php
+[2018-04-22 19:05:32.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 19:05:32.000000 - INFO] index_administrador.php
+[2018-04-22 19:05:32.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 19:05:32.000000 - INFO] index_administrador.php
+[2018-04-22 19:05:32.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 19:05:32.000000 - INFO] index_administrador.php
+[2018-04-22 19:05:32.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 19:05:32.000000 - INFO] index_administrador.php
+[2018-04-22 19:05:32.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 19:12:05.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:05.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 19:12:05.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:05.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 19:12:05.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:05.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 19:12:05.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:05.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 19:12:05.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:05.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 19:12:20.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:20.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 19:12:20.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:20.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 19:12:20.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:20.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 19:12:20.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:20.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 19:12:20.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:20.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 19:12:21.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:21.000000 - INFO] El nick del usuario es: 
+**********************************************************************
+[2018-04-22 19:12:21.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:21.000000 - INFO] El id del usuario es: 
+**********************************************************************
+[2018-04-22 19:12:21.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:21.000000 - INFO] Los puntos mensuales del usuario son: 
+**********************************************************************
+[2018-04-22 19:12:21.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:21.000000 - INFO] Los puntos totales del usuario son: 
+**********************************************************************
+[2018-04-22 19:12:21.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:21.000000 - INFO] La foto del usuario es: 
+**********************************************************************
+[2018-04-22 19:12:31.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:31.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 19:12:31.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:31.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 19:12:31.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:31.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 19:12:31.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:31.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 19:12:31.000000 - INFO] index_administrador.php
+[2018-04-22 19:12:31.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 19:28:07.000000 - INFO] Noticias.php
+[2018-04-22 19:28:07.000000 - INFO] Se mostró correctamente el menNavVisores
+**********************************************************************
+[2018-04-22 19:40:31.000000 - INFO] Noticias.php
+[2018-04-22 19:40:31.000000 - INFO] Se cargó correctamente el menNavVisores.php
+**********************************************************************
+[2018-04-22 19:40:31.000000 - INFO] Noticias.php
+[2018-04-22 19:40:31.000000 - INFO] Se cargó correctamente el formulario_avanzado.php
+**********************************************************************
+[2018-04-22 19:40:31.000000 - INFO] Noticias.php
+[2018-04-22 19:40:31.000000 - INFO] Se cargó correctamente el ganador_mes_index.php
+**********************************************************************
+[2018-04-22 19:40:31.000000 - INFO] Noticias.php
+[2018-04-22 19:40:31.000000 - INFO] Se mostraron correctamente las noticias. mostrarNoticias()
+**********************************************************************
+[2018-04-22 19:40:31.000000 - INFO] Noticias.php
+[2018-04-22 19:40:31.000000 - INFO] Se cargó correctamente el infografia.php
+**********************************************************************
+[2018-04-22 19:40:31.000000 - INFO] Noticias.php
+[2018-04-22 19:40:31.000000 - INFO] Se cargó correctamente el footer.php
+**********************************************************************
+[2018-04-22 20:24:33.000000 - INFO] Noticias.php
+[2018-04-22 20:24:33.000000 - INFO] Se cargó correctamente el menNavVisores.php
+**********************************************************************
+[2018-04-22 20:24:33.000000 - INFO] Noticias.php
+[2018-04-22 20:24:33.000000 - INFO] Se cargó correctamente el formulario_avanzado.php
+**********************************************************************
+[2018-04-22 20:24:33.000000 - INFO] Noticias.php
+[2018-04-22 20:24:33.000000 - INFO] Se cargó correctamente el ganador_mes_index.php
+**********************************************************************
+[2018-04-22 20:24:33.000000 - INFO] Noticias.php
+[2018-04-22 20:24:33.000000 - INFO] Se mostraron correctamente las noticias. mostrarNoticias()
+**********************************************************************
+[2018-04-22 20:24:33.000000 - INFO] Noticias.php
+[2018-04-22 20:24:33.000000 - INFO] Se cargó correctamente el infografia.php
+**********************************************************************
+[2018-04-22 20:24:33.000000 - INFO] Noticias.php
+[2018-04-22 20:24:33.000000 - INFO] Se cargó correctamente el footer.php
+**********************************************************************
+[2018-04-22 20:34:55.000000 - INFO] logueo_header.php
+[2018-04-22 20:34:55.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 20:34:55.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:55.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 20:34:55.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:55.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 20:34:55.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:55.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 20:34:55.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:55.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 20:34:55.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:55.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 20:34:59.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:59.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 20:34:59.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:59.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 20:34:59.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:59.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 20:34:59.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:59.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 20:34:59.000000 - INFO] index_administrador.php
+[2018-04-22 20:34:59.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:18:12.000000 - INFO] Noticias.php
+[2018-04-22 21:18:12.000000 - INFO] Se cargó correctamente el menNavVisores.php
+**********************************************************************
+[2018-04-22 21:18:12.000000 - INFO] Noticias.php
+[2018-04-22 21:18:12.000000 - INFO] Se cargó correctamente el formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:18:12.000000 - INFO] Noticias.php
+[2018-04-22 21:18:12.000000 - INFO] Se cargó correctamente el ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:18:12.000000 - INFO] Noticias.php
+[2018-04-22 21:18:12.000000 - INFO] Se mostraron correctamente las noticias. mostrarNoticias()
+**********************************************************************
+[2018-04-22 21:18:12.000000 - INFO] Noticias.php
+[2018-04-22 21:18:12.000000 - INFO] Se cargó correctamente el infografia.php
+**********************************************************************
+[2018-04-22 21:18:12.000000 - INFO] Noticias.php
+[2018-04-22 21:18:12.000000 - INFO] Se cargó correctamente el footer.php
+**********************************************************************
+[2018-04-22 21:18:34.000000 - INFO] logueo_header.php
+[2018-04-22 21:18:34.000000 - INFO] Usuario Juco55 logueado correctamente.
+**********************************************************************
+[2018-04-22 21:20:20.000000 - INFO] Noticias.php
+[2018-04-22 21:20:20.000000 - INFO] Se cargó correctamente el menNavVisores.php
+**********************************************************************
+[2018-04-22 21:20:20.000000 - INFO] Noticias.php
+[2018-04-22 21:20:20.000000 - INFO] Se cargó correctamente el formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:20:20.000000 - INFO] Noticias.php
+[2018-04-22 21:20:20.000000 - INFO] Se cargó correctamente el ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:20:20.000000 - INFO] Noticias.php
+[2018-04-22 21:20:20.000000 - INFO] Se mostraron correctamente las noticias. mostrarNoticias()
+**********************************************************************
+[2018-04-22 21:20:20.000000 - INFO] Noticias.php
+[2018-04-22 21:20:20.000000 - INFO] Se cargó correctamente el infografia.php
+**********************************************************************
+[2018-04-22 21:20:20.000000 - INFO] Noticias.php
+[2018-04-22 21:20:20.000000 - INFO] Se cargó correctamente el footer.php
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] logueo_header.php
+[2018-04-22 21:35:53.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:35:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:53.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:35:57.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:57.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] El nick del usuario es: 
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] El id del usuario es: 
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Los puntos mensuales del usuario son: 
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Los puntos totales del usuario son: 
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] La foto del usuario es: 
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] El usuario con id:  no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:35:58.000000 - INFO] index_administrador.php
+[2018-04-22 21:35:58.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:46:44.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:44.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:46:47.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:47.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente libros_comentados.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:46:50.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:50.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] El nick del usuario es: 
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] El id del usuario es: 
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Los puntos mensuales del usuario son: 
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Los puntos totales del usuario son: 
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] La foto del usuario es: 
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] El usuario con id:  no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente libros_comentados.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:46:52.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:52.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente mis_amigos.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:46:53.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:53.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente mis_listas.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:46:59.000000 - INFO] index_administrador.php
+[2018-04-22 21:46:59.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] El nick del usuario es: 
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] El id del usuario es: 
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Los puntos mensuales del usuario son: 
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Los puntos totales del usuario son: 
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] La foto del usuario es: 
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] El usuario con id:  no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente mis_listas.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:47:00.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:00.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente mis_mensajes.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:47:11.000000 - INFO] index_administrador.php
+[2018-04-22 21:47:11.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:57:07.000000 - INFO - 47.62.224.238] logueo_header.php
+[2018-04-22 21:57:07.000000 - INFO - 47.62.224.238] logueo_header.php
+[2018-04-22 21:57:07.000000 - INFO - 47.62.224.238] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:08.000000 - INFO - 47.62.224.238] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente mis_amigos.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:12.000000 - INFO - 47.62.224.238] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:57:15.000000 - INFO - 47.62.224.238] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente libros_comentados.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] index_administrador.php
+[2018-04-22 21:59:58.000000 - INFO - 47.62.224.238] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:12:37.000000 - ERROR] 47.62.224.238
+[2018-04-22 22:12:37.000000 - ERROR] logueo_header.php
+[2018-04-22 22:12:37.000000 - ERROR] El usuario Carlos no se logueó correctamente.
+[2018-04-22 22:12:37.000000 - ERROR] Error -201 'El usuario no está registrado.'
+[2018-04-22 22:12:37.000000 - ERROR] 47.62.224.238
+[2018-04-22 22:12:37.000000 - ERROR] Log.php - insertarErrorUsuario($id_error, $cod_error, $desc_error, $ubicacion, $descripcion, $ip)
+[2018-04-22 22:12:37.000000 - ERROR] Inserción correcta en la tabla de errores
+**********************************************************************
+[2018-04-22 22:23:46.000000 - INFO] 47.62.224.238
+[2018-04-22 22:23:46.000000 - INFO] logueo_header.php
+[2018-04-22 22:23:46.000000 - INFO] Usuario Prueba logueado correctamente.
+**********************************************************************
+[2018-04-22 22:23:46.000000 - INFO] 47.62.224.238
+[2018-04-22 22:23:46.000000 - INFO] index_administrador.php
+[2018-04-22 22:23:46.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:23:46.000000 - INFO] 47.62.224.238
+[2018-04-22 22:23:46.000000 - INFO] index_administrador.php
+[2018-04-22 22:23:46.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:23:46.000000 - INFO] 47.62.224.238
+[2018-04-22 22:23:46.000000 - INFO] index_administrador.php
+[2018-04-22 22:23:46.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:23:46.000000 - INFO] 47.62.224.238
+[2018-04-22 22:23:46.000000 - INFO] index_administrador.php
+[2018-04-22 22:23:46.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:23:46.000000 - INFO] 47.62.224.238
+[2018-04-22 22:23:46.000000 - INFO] index_administrador.php
+[2018-04-22 22:23:46.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] logueo_header.php
+[2018-04-22 22:24:04.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:24:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:04.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:24:18.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:18.000000 - INFO] logueo_header.php
+[2018-04-22 22:24:18.000000 - INFO] Usuario Prueba logueado correctamente.
+**********************************************************************
+[2018-04-22 22:24:19.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:19.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:19.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:24:19.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:19.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:19.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:24:19.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:19.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:19.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:24:19.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:19.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:19.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:24:19.000000 - INFO] 47.62.224.238
+[2018-04-22 22:24:19.000000 - INFO] index_administrador.php
+[2018-04-22 22:24:19.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] El usuario con id: 191 tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:32:54.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:54.000000 - INFO] index_usuario.php
+[2018-04-22 22:32:54.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] El usuario con id: 191 tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente mis_mensajes.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:32:57.000000 - INFO] 47.62.224.238
+[2018-04-22 22:32:57.000000 - INFO] index_administrador.php
+[2018-04-22 22:32:57.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] El usuario con id: 191 tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:33:01.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:01.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:01.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] El usuario con id: 191 tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente libros_comentados.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:33:03.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:03.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:03.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] El usuario con id: 191 tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente mis_amigos.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:33:04.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:04.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:04.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] El nick del usuario es: Prueba
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] El id del usuario es: 191
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Los puntos mensuales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Los puntos totales del usuario son: 5
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] La foto del usuario es: Prueba.png
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] El usuario con id: 191 tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente mis_listas.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:33:05.000000 - INFO] 47.62.224.238
+[2018-04-22 22:33:05.000000 - INFO] index_administrador.php
+[2018-04-22 22:33:05.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] logueo_header.php
+[2018-04-22 22:34:29.000000 - INFO] Usuario Costa logueado correctamente.
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] El nick del usuario es: Costa
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] El id del usuario es: 1
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Los puntos mensuales del usuario son: 10
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Los puntos totales del usuario son: 219
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] La foto del usuario es: costa.jpg
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente menuNav.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente mostrar_status.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] El usuario con id: 1 no tiene mensajes sin leer.
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente libros_subidos.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 22:34:29.000000 - INFO] 47.62.224.238
+[2018-04-22 22:34:29.000000 - INFO] index_administrador.php
+[2018-04-22 22:34:29.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************
+[2018-04-22 23:34:48.000000 - INFO] 78.30.28.19
+[2018-04-22 23:34:48.000000 - INFO] Noticias.php
+[2018-04-22 23:34:48.000000 - INFO] Se cargó correctamente menNavVisores.php
+**********************************************************************
+[2018-04-22 23:34:48.000000 - INFO] 78.30.28.19
+[2018-04-22 23:34:48.000000 - INFO] Noticias.php
+[2018-04-22 23:34:48.000000 - INFO] Se cargó correctamente formulario_avanzado.php
+**********************************************************************
+[2018-04-22 23:34:48.000000 - INFO] 78.30.28.19
+[2018-04-22 23:34:48.000000 - INFO] Noticias.php
+[2018-04-22 23:34:48.000000 - INFO] Se cargó correctamente ganador_mes_index.php
+**********************************************************************
+[2018-04-22 23:34:48.000000 - INFO] 78.30.28.19
+[2018-04-22 23:34:48.000000 - INFO] Noticias.php
+[2018-04-22 23:34:48.000000 - INFO] Se mostraron correctamente las noticias. mostrarNoticias()
+**********************************************************************
+[2018-04-22 23:34:48.000000 - INFO] 78.30.28.19
+[2018-04-22 23:34:48.000000 - INFO] Noticias.php
+[2018-04-22 23:34:48.000000 - INFO] Se cargó correctamente infografia.php
+**********************************************************************
+[2018-04-22 23:34:48.000000 - INFO] 78.30.28.19
+[2018-04-22 23:34:48.000000 - INFO] Noticias.php
+[2018-04-22 23:34:48.000000 - INFO] Se cargó correctamente footer.php
+**********************************************************************

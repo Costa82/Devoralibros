@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /*.css$
+Allow: /*.js$
+Sitemap: https://www.devoralibros.es/sitemap.xml
+Crawl-delay: 60

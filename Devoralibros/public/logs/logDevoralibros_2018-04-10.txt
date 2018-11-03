@@ -1,0 +1,76 @@
+[2018-04-10 20:20:56.000000 - INFO] logueo_header.php
+[2018-04-10 20:20:56.000000 - INFO] Usuario Costa registrado correctamente.
+**************************************************************
+[2018-04-10 20:22:25.000000 - ERROR] logueo_header.php
+[2018-04-10 20:22:25.000000 - ERROR] El usuario asdfasdf no se registró correctamente.
+[2018-04-10 20:22:25.000000 - ERROR] Error -201 'El usuario no está registrado.'
+**************************************************************
+[2018-04-10 20:31:44.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:31:44.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:39:01.000000 - INFO] logueo_header.php
+[2018-04-10 20:39:01.000000 - INFO] Usuario Costa registrado correctamente.
+**************************************************************
+[2018-04-10 20:44:13.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:44:13.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:44:21.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:44:21.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:49:11.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:49:11.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:50:56.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:50:56.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:52:20.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:52:20.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:55:07.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:55:07.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 20:55:07.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 20:55:07.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 21:01:26.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 21:01:26.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 21:01:26.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 21:01:26.000000 - INFO] La consulta del TopAnual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 21:09:22.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 21:09:22.000000 - INFO] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 21:09:22.000000 - INFO] Usuario.php - function mostrarTopMensual()
+[2018-04-10 21:09:22.000000 - INFO] La consulta del TopAnual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 21:10:23.000000 - INFO] logueo_header.php
+[2018-04-10 21:10:23.000000 - INFO] Usuario Costa registrado correctamente.
+**************************************************************
+[2018-04-10 21:18:57.000000 - INFO] logueo_header.php
+[2018-04-10 21:18:57.000000 - INFO] Usuario Sara87 registrado correctamente.
+**************************************************************
+[2018-04-10 21:22:42.000000 - DEBUG] Usuario.php - function normaliza()
+[2018-04-10 21:22:42.000000 - DEBUG] Normalizamos la cadena Costa.jpg a la cadenacosta.jpg
+**************************************************************
+[2018-04-10 21:24:49.000000 - DEBUG] Usuario.php - function normaliza()
+[2018-04-10 21:24:49.000000 - DEBUG] Normalizamos la cadena Costa.jpg a la cadena costa.jpg
+**************************************************************
+[2018-04-10 22:18:08.000000 - INFO] logueo_header.php
+[2018-04-10 22:18:08.000000 - INFO] Usuario Costa registrado correctamente.
+**************************************************************
+[2018-04-10 22:18:08.000000 - DEBUG] Usuario.php - function getUsuario($id_usuario)
+[2018-04-10 22:18:08.000000 - DEBUG] Encontramos el usuario: 1
+**************************************************************
+[2018-04-10 22:18:25.000000 - DEBUG] Usuario.php - function normaliza()
+[2018-04-10 22:18:25.000000 - DEBUG] Normalizamos la cadena Costa.jpg a la cadena costa.jpg
+**************************************************************
+[2018-04-10 22:18:39.000000 - DEBUG] Usuario.php - function normaliza()
+[2018-04-10 22:18:39.000000 - DEBUG] Normalizamos la cadena Costa.jpg a la cadena costa.jpg
+**************************************************************
+[2018-04-10 22:28:46.000000 - DEBUG] Usuario.php - function mostrarTopMensual()
+[2018-04-10 22:28:46.000000 - DEBUG] La consulta del TopMensual ha devuelta más de un resultado
+**************************************************************
+[2018-04-10 22:28:46.000000 - DEBUG] Usuario.php - function mostrarTopAnual()
+[2018-04-10 22:28:46.000000 - DEBUG] La consulta del TopAnual ha devuelta más de un resultado
+**************************************************************

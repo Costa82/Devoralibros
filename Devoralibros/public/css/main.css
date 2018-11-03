@@ -1,0 +1,1118 @@
+/**
+* Archivo CSS principal para diseñar nuestra aplicacion web 'DevoraLibros'
+* @author   Miguel Costa.
+*
+*/
+
+/**
+* TOC
+*      Limpieza de algunos estilos.
+*      Base.
+*      Header.
+*          . Cabecera con menu de navegacion.
+*          . Buscador y buscador avanzado
+*          . Navegacion secundaria.
+*      Body
+*          . Seccion 'Conocenos'
+*          . Seccion 'Libro del dia'
+*          . Seccion 'Libros mejor votados'
+*          . Seccion 'Ultimos libros subidos'
+*      Footer
+*          . Conocenos
+*          . Redes sociales
+*/
+
+/* Limpiamos algunos estilos */
+h1, h2, h3, h4, p, ul, body {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	padding: 5px 5px 0 5px;
+}
+
+ul {
+	list-style: none;
+}
+
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+
+/* ESTILOS NORMALES (para moviles y tablets)
+   ========================================================================= */
+
+/* BASE
+   ========================================================================= */
+html {
+	font-family: 'Pathway Gothic One', sans-serif;
+	min-width: 300px;
+	overflow-x: hidden;
+	font-size: 20px;
+	position: relative;
+}
+
+body {
+	margin-top: 80px;
+}
+
+h1, h2, h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+h4 {
+	margin: 5px 0;
+}
+
+a {
+	color: #7892c2;
+}
+
+a:hover {
+	color: blue;
+}
+
+.azul {
+	color: blue;
+}
+
+/* HEADER
+   ========================================================================= */
+
+/* CABECERA CON IMAGEN DE FONDO, BUSCADOR, BUSCADOR AVANZADO Y MENUS DE NAVEGACION */
+header {
+	display: block;
+}
+
+/* Imagen de fondo */
+#slider {
+	background: url('../img/alargada grupo.jpg');
+	width: 100%;
+	background-size: cover;
+	padding: 5% 0;
+	background-repeat: no-repeat;
+}
+
+.contenedor_titulo {
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: 0;
+}
+
+img.titulo_devoralibros {
+	height: 70px;
+}
+
+img.titulo_devoralibros:hover {
+	opacity: 1;
+}
+
+/* Hacemos flexible la lista del nav. */
+nav>ul {
+	display: flex;
+	justify-content: space-around;
+	background-color: #1A1A1A;
+}
+
+.lista_principal_scroll {
+	opacity: 0.5;
+}
+
+nav>#lista_principal_index {
+	height: 80px;
+	width: 100%;
+	margin-top: -80px;
+	z-index: 99999;
+}
+
+nav>#lista_principal_index:hover {
+	opacity: 1;
+}
+
+nav>#lista_principal {
+	height: 80px;
+	width: 100%;
+	margin-top: -80px;
+	z-index: 99999;
+}
+
+nav>#lista_principal:hover {
+	opacity: 1;
+}
+
+nav>#lista_principal_visores {
+	height: 80px;
+	width: 100%;
+	z-index: 99999;
+}
+
+nav>ul>li {
+	padding: 20px;
+}
+
+nav>ul>li#perfil1 {
+	padding: 10px;
+}
+
+#ini_sesion img, #ini_sesion2 img {
+	height: 45px;
+	width: auto;
+	vertical-align: bottom;
+	margin-right: 10px;
+	border-radius: 8px;
+}
+
+/* Ocultamos el menu para dispositivos mas grandes */
+nav>ul>li#editor, nav>ul>li#registrarte, nav>ul>li#ini_sesion, nav>ul>li#perfil,
+	nav>ul>li#facebook, nav>ul>li#twitter, nav>ul>li#instagram, nav>ul>li#youtube,
+	nav>ul>li#conocenosMenu, nav>ul>li#autores, nav>ul>li#titulos {
+	display: none;
+}
+
+/* Mostramos el menu para dispositivos moviles*/
+nav>ul>li#menu_moviles {
+	display: inline;
+}
+
+/* Lista del menu para dispositivos moviles, la ocultamos y luego la mostraremos con Jquery */
+nav>ul>li>ul#lista_movil {
+	background-color: grey;
+	right: 0;
+	top: 80px;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	display: none;
+	position: absolute;
+	background: rgba(26, 26, 26, 1);
+	background: -moz-linear-gradient(top, rgba(26, 26, 26, 1) 0%,
+		rgba(128, 128, 128, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(26, 26, 26, 1) 0%,
+		rgba(128, 128, 128, 1) 100%);
+}
+
+nav>ul>li>ul#lista_movil a {
+	color: white;
+	font-size: 20px;
+}
+
+nav>ul>li>ul#lista_movil ul#listaAutores a, nav>ul>li>ul#lista_movil ul#listaTitulos a {
+	font-size: 17px;
+}
+
+nav>ul>li>ul#lista_movil li {
+	padding: 5px;
+}
+
+nav>ul>li>a, #autores a, #titulos a {
+	color: white;
+	font-size: 20px;
+}
+
+nav>ul>li>a:hover, nav>ul>li>a:hover>.fa {
+	color: #7892c2;
+}
+
+#registrarte2>a:hover, #ini_sesion2>a:hover, #facebook2>a:hover,
+	#youtube2>a:hover, #instagram2>a:hover, #twitter2>a:hover, #conocenosMenu2>a:hover, #autores a:hover, #titulos a:hover, .fa {
+	color: #7892c2;
+}
+
+nav>ul>li#menu_moviles>i:hover {
+	cursor: pointer;
+	color: #7892c2;
+}
+
+/* Inicio ocupara todo el espacio sobrante */
+#inicio {
+	flex: 1 1 auto;
+	padding-left: 0;
+}
+
+#inicio img {
+	height: 65px;
+	margin-top: -15px;
+	padding-left: 0;
+	opacity: 0.9;
+}
+
+#inicio img:hover {
+	height: 75px;
+	transition: height 0.5s;
+	opacity: 2;
+}
+
+.fa {
+	color: white;
+	padding-right: 8px;
+	font-size: 1.8rem;
+}
+
+.fa.fa-trophy, .fa.fa-book, .fa.fa-newspaper-o {
+	font-size: 25px;
+	color: #ffffff;
+}
+
+#buscador {
+	width: 45%;
+	border-radius: 10px;
+	color: white;
+	background: rgba(0, 0, 0, .35);
+	padding: 2% 5%;
+	margin: auto;
+	text-align: center;
+	z-index: 1;
+	font-size: 20px;
+}
+
+#buscador p {
+	margin-bottom: 5px;
+}
+
+#buscador .boton {
+	margin-top: 20px;
+}
+
+.busqueda_avanzada {
+	width: 350px;
+	color: white;
+	font-size: 20px;
+	background: #7892c2;
+	opacity: 0.9;
+	position: fixed;
+	right: -290px;
+	padding: 20px;
+	border-radius: 5px 0 0 5px;
+	display: none;
+	z-index: 9999;
+}
+
+.devoralibros_mensual {
+	width: 350px;
+	color: white;
+	font-size: 20px;
+	background: #4cb164;
+	opacity: 0.9;
+	position: fixed;
+	left: -290px;
+	padding: 20px;
+	border-radius: 0 5px 5px 0;
+	display: none;
+	z-index: 9999;
+}
+
+.busqueda_avanzada .pestana {
+	width: 20%;
+	padding-right: 10px;
+	float: left;
+	margin-top: 11%;
+}
+
+.devoralibros_mensual .pestana {
+	width: 20%;
+	padding-left: 10px;
+	float: right;
+	margin-top: 10%;
+	text-align: center;
+}
+
+.fa-caret-left {
+	text-align: center;
+}
+
+.busqueda_avanzada .formulario_avanzada {
+	width: 69%;
+	float: left;
+	padding-left: 10px;
+	border-left: 1px solid white;
+}
+
+.devoralibros_mensual .ganador {
+	width: 69%;
+	float: right;
+	padding-right: 10px;
+	border-right: 1px solid white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.busqueda_avanzada .formulario_avanzada select {
+	width: 173px;
+	height: 21px;
+}
+
+.boton-avanzada {
+	margin-top: 15px;
+	font-family: 'Pathway Gothic One', Helvetica, sans-serif;
+	font-size: 17px;
+	border-radius: 5px;
+	padding: 6px;
+}
+
+.boton-avanzada:hover {
+	color: grey;
+}
+
+.boton-avanzada:active {
+	padding: 8px 4px 4px 8px;
+}
+
+label.titulo {
+	padding-right: 20px;
+}
+
+label.autor {
+	padding-right: 21px;
+}
+
+label.genero {
+	padding-right: 7px;
+}
+
+label.isbn {
+	padding-right: 27px;
+}
+
+input[type="search"] {
+	width: 20px; /* ancho por defecto */
+	background: #ededed url('../img/search-icon.png') no-repeat 11px center;
+	/* icono lupa */
+	padding: 9px 10px 9px 32px;
+	cursor: pointer;
+	border-radius: 15em;
+	-webkit-transition: all .5s;
+	/* transición de .5seg a todos los elementos para chrome */
+	-moz-transition: all .5s;
+	/* transición de .5seg a todos los elementos para mozilla */
+	-o-transition: all .5s;
+	/* transición de .5seg a todos los elementos para ophera */
+	transition: all .5s; /* transicion de .5seg a todos los elementos */
+	outline: none; /* ocultar el fucos automatico de los input */
+}
+
+input[type="search"]:focus {
+	cursor: text;
+	width: 95%; /* Tamaño del boton buscar al hacer click */
+	padding-left: 32px; /* Espacio entre el icono lupa y el placeholder */
+	color: #000;
+	background-color: #FFF;
+}
+
+#navegacion_secundaria {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+#navegacion_secundaria li {
+	flex: 1;
+	background-color: grey;
+	text-align: center;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+
+#navegacion_secundaria li:hover {
+	opacity: 0.7;
+}
+
+#navegacion_secundaria li.fondo_rojo:hover {
+	background-color: #4cb164;
+}
+
+#navegacion_secundaria li.fondo_azul:hover {
+	background-color: #7892c2;
+}
+
+#navegacion_secundaria li:last-child {
+	border-bottom: 1px solid white;
+}
+
+#navegacion_secundaria li a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+}
+
+img.apuntate {
+	right: 58%;
+	position: absolute;
+	width: 150px;
+}
+
+/* BANNER AMAZON
+   ========================================================================= */
+iframe {
+	margin: 25px auto;
+}
+
+/* CONOCENOS
+   ========================================================================= */
+.conocenos {
+	padding: 15px 5px;
+	background-color: #f5f5f5;
+	font-size: 17px;
+	width: 90%;
+	position: absolute;
+	display: none;
+	z-index: 9999999999999;
+}
+
+.conocenos>h2 {
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: #4cb164;
+}
+
+.conocenos>p {
+	font-size: 16px;
+}
+
+/* PUNTOS
+   ========================================================================= */
+
+/*Parpadeo del enlace Top Devoralibros*/
+.color_premio {
+	color: #4cb164;
+	font-size: 56px;
+}
+
+.puntos {
+	width: 80%;
+	margin: 20px auto;
+	margin-bottom: 0;
+	padding: 20px;
+	background-color: #7892c2;
+	max-width: 900px;
+	color: white;
+	border-radius: 5px;
+}
+
+.puntos img {
+	margin-top: 40px;
+}
+
+.tops {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.topAnual, .topMensual {
+	flex: 1 1 auto;
+	min-width: 350px;
+}
+
+.topAnual img, .topMensual img {
+	border-radius: 8px;
+}
+
+a.conseguirPuntos {
+	color: white;
+	font-style: italic;
+}
+
+a.conseguirPuntos:hover {
+	color: blue;
+}
+
+/* LIBRO DEL DIA
+   ========================================================================= */
+.libroDelDia {
+	background-image: url('../img/papel-arrugado.jpg');
+	-webkit-box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	color: black;
+	padding: 30px 40px 40px 40px;
+	margin: 10px;
+}
+
+/* Inserto con before la imagen de la chincheta */
+.libroDelDia:before {
+	content: url(../img/chincheta.png);
+	position: absolute;
+	margin-top: -80px;
+	left: 50%;
+}
+
+.libroDelDia h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #4cb164;
+	margin-bottom: 25px;
+	margin-top: 0;
+}
+
+.libroDelDia h2 a {
+	color: #7892c2;
+}
+
+.libroDelDia h2 a:hover {
+	color: blue;
+}
+
+.libroRand {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.imagenRand {
+	flex: 1 1 150px;
+	min-width: 200px;
+	max-width: 250px;
+	padding: 10px;
+}
+
+.imagenRand img {
+	width: 100%;
+}
+
+.descripcionRand {
+	flex: 2 1 500px;
+	min-width: 200px;
+	padding: 10px 10px 10px 20px;
+	display: none;
+}
+
+/* LIBROS MEJOR VOTADOS
+   ========================================================================= */
+.librosPopulares {
+	margin: 50px auto;
+}
+
+.librosPopulares>h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #4cb164;
+}
+
+ul.temas_flex {
+	/* Limpiamos estilos de la lista */
+	padding: 0;
+	list-style: none;
+	background-color: #1A1A1A;
+	margin: 10px 0 10px 0;
+	display: flex; /* Lo hacemos flexible */
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Hijos directos del contenedor flexible ul.flex */
+ul.temas_flex>li {
+	color: white;
+	margin: 20px;
+	min-width: 200px;
+	max-width: 250px;
+	flex: 1 1 150px;
+	flex-flow: row wrap;
+}
+
+ul.libros_pequenos>li {
+	color: white;
+	margin: 20px;
+	min-width: 100px;
+	max-width: 200px;
+	flex: 1 1 100px;
+	flex-flow: row wrap;
+}
+
+/* Añadimos una medalla de mejor votado al primer libro de la lista */
+.librosPopulares ul.temas_flex li:first-child:before {
+	content: url(../img/primero.png);
+	position: absolute;
+	padding: 5px;
+}
+
+.temas_flex img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.centrado, .botones {
+	text-align: center;
+}
+
+.boton, .botonInvitacion {
+	height: 50px;
+	cursor: pointer;
+	padding: 0 15px;
+	vertical-align: middle;
+	background: #7892c2;
+	border: 0;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 50px;
+	color: #fff;
+	border-radius: 4px;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+
+.botonInvitacion {
+	margin-top: 25px;
+}
+
+a.boton, a.botonInvitacion {
+	padding: 15px;
+	margin: 0;
+}
+
+.boton-doble {
+	margin: 0.3rem;
+	min-width: 120px;
+}
+
+.boton-desinscribir {
+	background-color: #f00000;
+}
+
+.boton-inscribir {
+	background-color: #7ac143
+}
+
+.boton:hover {
+	opacity: 0.6;
+	color: #fff;
+}
+
+.botonInvitacion:hover {
+	font-size: 25px;
+	padding: 0 25px;
+}
+
+.boton:active {
+	outline: 0;
+	opacity: 0.6;
+	color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.boton:active:focus, button.btn.active:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #7892c2;
+	color: #fff;
+}
+
+/* ULTIMOS LIBROS SUBIDOS
+   ========================================================================= */
+.ultimosSubidos {
+	padding: 10px;
+	margin: 80px auto;
+	background-color: #f5f5f5;
+	margin-bottom: 0;
+}
+
+.ultimosSubidos>h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #4cb164;
+}
+
+.ultimosSubidos ul.temas_flex {
+	background-color: transparent;
+}
+
+.ultimosSubidos ul.temas_flex>li {
+	background-color: white;
+	-webkit-box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	color: black;
+	padding: 5px;
+}
+
+h2.tituloazul {
+	color: #7892c2;
+}
+
+h4.tituloNoticia {
+	text-align: center;
+}
+
+h4.tituloNoticia a {
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+/* INFOGRAFIAS Y FOTOS PERSONALES
+   ========================================================================= */
+.foto, .infografia {
+	display: none;
+	margin-left: 20%;
+	bottom: 50px;
+	position: absolute;
+	width: 60%;
+	z-index: 99999;
+}
+
+.infografia {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.foto img, .infografia img {
+	width: 90%;
+	background-color: white;
+	-webkit-box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.75);
+	box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.75);
+	color: black;
+	padding: 5px;
+}
+
+/* PUBLICIDAD
+   ========================================================================= */
+.publicidad {
+	margin-bottom: 40px;
+}
+
+/* FOOTER
+   ========================================================================= */
+footer {
+	color: #7892c2;
+	background-image: url('../img/footer.jpg');
+	background-size: cover;
+	font-size: 20px;
+	margin-top: 75px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.footerPrincipal {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.redes {
+	text-align: center;
+}
+
+.redes i {
+	font-size: 35px;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer #conocenos {
+	margin-bottom: 25px;
+}
+
+footer #conocenos, footer .logo, footer .redes {
+	margin-top: 15px;
+}
+
+footer .logo {
+	display: none;
+}
+
+footer a:hover {
+	color: #7892c2;
+}
+
+footer a:hover>.fa {
+	color: #4cb164;
+}
+
+footer h3 {
+	padding: 10px 0 0 0;
+	font-size: 28px;
+}
+
+footer h2 {
+	color: white;
+	font-size: 30px;
+	font-family: 'Gloria Hallelujah', cursive;
+	padding-top: 50px;
+}
+
+footer .redes h3 {
+	text-align: center;
+	color: #4cb164;
+	margin-bottom: 15px;
+}
+
+footer .footer-final {
+	text-align: center;
+	margin: 15px auto 0;
+	padding-bottom: 15px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 15px;
+	flex-wrap: nowrap;
+	width: 95%;
+}
+
+footer .footer-final .copyright .fa {
+	font-size: 20px;
+}
+
+footer .footer-final .copyright, footer .footer-final .contactar, footer .footer-final .preguntas
+	{
+	padding: 20px;
+}
+
+/* COOKIES
+   ========================================================================= */
+#overbox3 {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 999999;
+	display: block;
+}
+
+#infobox3 {
+	margin: auto;
+	position: relative;
+	top: 0px;
+	height: 58px;
+	width: 100%;
+	text-align: center;
+	background-color: #1A1A1A;
+	color: white;
+}
+
+#infobox3 p {
+	padding: 5px;
+	line-height: 17px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#infobox3 p a {
+	margin-right: 5px;
+	margin-left: 5px;
+	text-decoration: none;
+}
+
+#infobox3 p a:hover, #infobox3 p a:focus {
+	color: #4cb164;
+}
+
+/*RESPONSIVE
+========================================================================= */
+
+/* Para resoluciones a partir de 600px */
+@media only screen and (min-width: 600px) {
+	
+	.fa {
+		font-size: 2rem;
+	}
+	#slider>h1 {
+		font-size: 65px;
+		margin-top: -50px;
+	}
+	.contenedor_titulo {
+		text-align: center;
+		margin-top: -40px;
+		margin-bottom: 0;
+	}
+	img.titulo_devoralibros {
+		height: 120px;
+	}
+	#slider {
+		padding: 7% 0;
+		background-size: cover;
+		width: 100%;
+	}
+	input[type="search"] {
+		padding: 9px 10px 9px 32px;
+	}
+	nav>#lista_principal {
+		width: 100%;
+	}
+	#navegacion_secundaria li {
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+	}
+	#navegacion_secundaria li:last-child {
+		border-bottom: 1px solid white;
+		border-right: none;
+	}
+	#navegacion_secundaria {
+		flex-flow: row;
+	}
+	img.apuntate {
+		right: 20%;
+		position: absolute;
+		width: 150px;
+	}
+	.conocenos {
+		margin-bottom: 100px;
+		padding: 20px 15px 50px 15px;
+		width: 75%;
+	}
+	.conocenos>h2, .libroDelDia>h2, footer>h2, .ultimosSubidos>h2,
+		.librosPopulares>h2 {
+		font-size: 40px;
+	}
+	.conocenos>p {
+		font-size: 17px;
+	}
+	.libroDelDia {
+		margin: 50px;
+	}
+	footer .footer-final {
+		font-size: 20px;
+		width: 87%;
+	}
+	#infobox3 p {
+		line-height: 20px;
+		font-size: 15px;
+	}
+}
+
+/* Para resoluciones a partir de 915px */
+@media only screen and (min-width: 915px) {
+	nav>#lista_principal_index {
+	position: fixed;
+	}
+	
+	nav>#lista_principal {
+		position: fixed;
+	}
+	
+	nav>#lista_principal_visores {
+		position: fixed;
+	}	
+	#slider>h1 {
+		font-size: 80px;
+		margin-top: -100px;
+	}
+	.contenedor_titulo {
+		text-align: center;
+		margin-top: -80px;
+		margin-bottom: 0;
+	}
+	img.titulo_devoralibros {
+		height: 170px;
+	}
+	#slider {
+		/*padding: 10% 0;*/
+		padding: 13.5% 0;
+	}
+
+	/*Mostramos el menu para dispositivos grandes*/
+	nav>ul>li#editor, nav>ul>li#registrarte, nav>ul>li#ini_sesion, nav>ul>li#perfil,
+		nav>ul>li#facebook, nav>ul>li#instagram, nav>ul>li#twitter, nav>ul>li#youtube,
+		nav>ul>li#conocenosMenu, nav>ul>li#autores, nav>ul>li#titulos {
+		display: inline;
+	}
+	
+	ul#listaAutores, ul#listaTitulos {
+		background-color: grey;
+		top: 80px;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		display: none;
+		position: absolute;
+		background: rgba(26, 26, 26, 1);
+		background: -moz-linear-gradient(top, rgba(26, 26, 26, 1) 0%,
+			rgba(128, 128, 128, 1) 100%);
+		background: -webkit-linear-gradient(top, rgba(26, 26, 26, 1) 0%,
+			rgba(128, 128, 128, 1) 100%);
+	}
+
+	/*Ocultamos el manu para dispositivos moviles*/
+	nav>ul>li#menu_moviles {
+		display: none;
+	}
+	#buscador {
+		width: 32%;
+	}
+	.busqueda_avanzada, .devoralibros_mensual {
+		display: block;
+	}
+	img.apuntate {
+		right: 18.5%;
+		width: 200px;
+	}
+	.conocenos {
+		padding: 30px 30px;
+	}
+	.conocenos>p {
+		font-size: 18.5px;
+	}
+	.libroDelDia {
+		margin: 40px 150px;
+	}
+	.descripcionRand {
+		display: inline;
+	}
+	h4.tituloNoticia a {
+		font-size: 25px;
+	}
+	footer .redes i {
+		font-size: 40px;
+	}
+	footer .logo {
+		display: inline;
+	}
+	footer .footer-final {
+		font-size: 20px;
+		width: 64%;
+	}
+	#infobox3 p {
+		line-height: 23px;
+		font-size: 18px;
+	}
+}
+
+/* Para resoluciones a partir de 1300px */
+@media only screen and (min-width: 1300px) {
+	#slider>h1 {
+		font-size: 130px;
+		margin-top: -240px;
+	}
+	.contenedor_titulo {
+		text-align: center;
+		margin-top: -240px;
+		margin-bottom: 0;
+	}
+	img.titulo_devoralibros {
+		height: 240px;
+	}
+	#slider {
+		/*padding: 17% 0;*/
+		padding: 18.5% 0;
+	}
+	.conocenos>p {
+		font-size: 20px;
+	}
+	img.apuntate {
+		right: 18%;
+		width: 100px;
+	}
+	.libroDelDia {
+		margin: 40px 250px;
+	}
+	footer h2 {
+		font-size: 50px;
+	}
+	#infobox3 p {
+		line-height: 25px;
+		font-size: 20px;
+	}
+}
