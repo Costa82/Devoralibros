@@ -172,7 +172,7 @@ nav>ul>li>ul#lista_movil {
 
 nav>ul>li>ul#lista_movil a {
 	color: black;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 nav>ul>li>ul#lista_movil ul#listaAutores a, nav>ul>li>ul#lista_movil ul#listaTitulos a {
@@ -644,6 +644,14 @@ img.queso {
 	height: 300px;
 }
 
+/* MENÚS NAVIDAD */
+
+.img_navidad img {
+	width: auto;
+	height: 550px;
+	padding: 15px;
+}
+
 /* CONTACTO
    ========================================================================= */
 .contenedor_contacto h3 {
@@ -828,6 +836,10 @@ footer h3 {
 
 /* Para resoluciones a partir de 600px */
 @media only screen and (min-width: 600px) {
+	nav>ul>li>ul#lista_movil a {
+		color: black;
+		font-size: 19px;
+	}
 	nav>#lista_principal_index {
 		padding-top: 25px;
 	}
@@ -1185,6 +1197,9 @@ footer h3 {
 	}
 	.condiciones, .whatsapp {
 		margin-left: 0px;
+	}
+	.img_navidad img {
+		height: 750px;
 	}
 }
 

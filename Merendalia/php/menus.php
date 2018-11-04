@@ -58,6 +58,41 @@
 			horas.</p>
 	</div>
 
+	<div class="contenedor_menus menu_navidad">
+
+		<h3>MENÚS DE NAVIDAD</h3>
+
+		<div class="menu">
+
+			<div class="texto_menu">
+
+				<p>Ven a disfrutar en Merendalia de tus cenas y comidas privadas de
+					Navidad, estos son los tres menús que os hemos preparado para que
+					disfrutéis como nunca de vuestros encuentros en estas fechas tan
+					señaladas con vuestros compañeros, amigos, familiares, ¡esperamos
+					que os gusten!.</p>
+
+			</div>
+
+			<div class="img_menu img_navidad">
+				<img src="../img/Menú_Cena_Navida_Opción_1.png" alt="Menú Navidad"
+					title="Menú Navidad" />
+			</div>
+			
+			<div class="img_menu img_navidad">
+				<img src="../img/Menú_Cena_Navida_Opción_2.png" alt="Menú Navidad"
+					title="Menú Navidad" />
+			</div>
+			
+			<div class="img_menu img_navidad">
+				<img src="../img/Menú_Cena_Navida_Opción_3.png" alt="Menú Navidad"
+					title="Menú Navidad" />
+			</div>
+
+		</div>
+
+	</div>
+
 	<div class="contenedor_menus">
 
 		<h3>MENÚ TIEMPO DE VENDIMIA</h3>

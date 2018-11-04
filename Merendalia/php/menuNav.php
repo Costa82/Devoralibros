@@ -26,9 +26,9 @@ echo "<ul id='lista_principal_index'>
             
             if (strpos($_SERVER['REQUEST_URI'], "menus") !== false) {
                 // menus.php found
-                echo "<li id='menus'><a href='menus.php' title='Menús' class='seleccionado'>Menús</a></li>";
+                echo "<li id='menus'><a href='menus.php' title='Menús' class='seleccionado'>Menús privados</a></li>";
             } else {
-                echo "<li id='menus'><a href='menus.php' title='Menús'>Menús</a></li>";
+                echo "<li id='menus'><a href='menus.php' title='Menús'>Menús privados</a></li>";
             }
             
             if (strpos($_SERVER['REQUEST_URI'], "productos") !== false) {
