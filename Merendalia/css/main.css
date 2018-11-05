@@ -644,7 +644,7 @@ img.queso {
 	height: 300px;
 }
 
-/* MENÚS NAVIDAD */
+/* MENÃšS NAVIDAD */
 
 .img_navidad img {
 	width: auto;
@@ -1050,7 +1050,7 @@ footer h3 {
 		margin-top: -20px;
 	}
 	#galeria, #eventos, #reservas, #menus, #productos, #contacto {
-		display: inline-block;
+		display: block;
 	}
 	nav>ul>li#menu_moviles {
 		display: none;
