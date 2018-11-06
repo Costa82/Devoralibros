@@ -62,17 +62,17 @@
 <body>
 	<header>
 
-<!-- 		<div class="titulo_movil"> -->
-<!-- 			<a href='../index.php' title='Inicio'><img -->
-<!-- 				src='../img/merendalia_logotipo_RGB-01.png' alt='Merendalia' /></a> -->
-<!-- 		</div> -->
+		<!-- 		<div class="titulo_movil"> -->
+		<!-- 			<a href='../index.php' title='Inicio'><img -->
+		<!-- 				src='../img/merendalia_logotipo_RGB-01.png' alt='Merendalia' /></a> -->
+		<!-- 		</div> -->
 
 		<nav>
           <?php include_once("menuNav.php");?>		
       	</nav>
 	</header>
 
-	<div class="explicacion_galeria">
+	<div class="explicacion">
 		<p>En Merendalia nos esforzamos por organizar eventos que realmente
 			merezcan la pena, ¡solo aptos para personas disfrutonas! ¡mira los
 			que te hemos preparado!</p>
@@ -83,16 +83,18 @@
 
 		<div class="evento_principal">
 
-			<!-- <h3>NOMBRE EVENTO</h3>
-    
-    			<div class="explicacion_evento">
-    				<p></p>
-    			</div>
-    
-    			<img src='../img/Imagen_alargada'
-    				title='' class="img_movil" /> <img
-    				src='../img/Imagen_apaisada' title=''
-    				class="img_ordenador" /> -->
+			<h3>JORNADAS DE LA FABADA</h3>
+
+			<div class="explicacion_evento">
+				<p>Esta vez en Merendalia vamos a disfrutar de los placeres de la
+					comida de otoño, no os perdáis nuestra riquísima fabada, todos los
+					fines de semana de noviembre a la hora de comer.</br></br> Llámanos al
+					983.85.73.69 y reserva para todos los que seáis, ¡os chuparéis los
+					dedos!</br></br> (Recuerda también que hay menús para niños)</p>
+			</div>
+
+			<img src='../img/Alargada_Cartel_Jornadas_Fabada.png' title='Jornadas Fabada' class="img_movil" /> <img
+				src='../img/Apaisaada_Cartel_Jornadas_Fabada.png' title='Jornadas Fabada' class="img_ordenador" />
 
 		</div>
 

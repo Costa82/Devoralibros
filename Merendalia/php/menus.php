@@ -29,6 +29,7 @@
 
 <script src="../jquery/jquery-3.1.1.min.js"></script>
 <script src="../jquery/jquery_menuMoviles_desplegable.js"></script>
+<script src="../jquery/mostrar_menus_infantiles.js"></script>
 
 </head>
 <body>
@@ -43,19 +44,24 @@
           <?php include_once("menuNav.php");?>		
       	</nav>
 	</header>
+	
+	
+	<?php include_once("menusInfantiles.php");?>
 
-	<div class="explicacion_galeria">
-		<p>En esta sección podrás ir viendo los menús que en Merendalia hemos
-			diseñado para ti y los tuyos. Cualquiera de estos menús se pueden
-			solicitar para tener un encuentro privado en Merendalia, por grupos
-			de mínimo, 12 personas.</p>
-		<p>El importe del evento será, el precio del menú por las personas que
-			seáis, más un incremento por la privacidad, de 50€ por grupo.</p>
-		<p>Os aseguráis con esto las ventajas de tener un local privado solo
-			para vosotros y las de un restaurante, ser atendidos de manera
-			privada y no preocuparos de nada más.</p>
-		<p>La duración del evento privado con uno de estos menús será de 3
-			horas.</p>
+	<div class="explicacion">
+		<p>
+			En esta sección podréis ir viendo los menús que hemos diseñado para
+			vosotros. Cualquiera de ellos se pueden solicitar para tener un
+			encuentro privado en <strong>merendalia.</strong> Se establece un
+			mínimo de 12 personas (menús) para poder organizar un menú privado.</br>
+			</br>Os aseguráis con esto las ventajas de disponer de un local
+			privado y las de un restaurante, ser atendidos en exclusiva y no
+			preocuparos de nada más. Los niños* podrán disfrutar del parque de
+			bolas mientras los mayores comen o disfrutan de la sobremesa.</br> </br>La
+			duración del evento con uno de estos menús es de 3 horas.</br> </br>*
+			Existe la posibilidad de pedir menú infantil. Puedes verlos <a
+				href='' class='mostrar_menus'><strong><i>aquí</i></strong></a>.
+		</p>
 	</div>
 
 	<div class="contenedor_menus menu_navidad">
@@ -78,12 +84,12 @@
 				<img src="../img/Menú_Cena_Navida_Opción_1.png" alt="Menú Navidad"
 					title="Menú Navidad" />
 			</div>
-			
+
 			<div class="img_menu img_navidad">
 				<img src="../img/Menú_Cena_Navida_Opción_2.png" alt="Menú Navidad"
 					title="Menú Navidad" />
 			</div>
-			
+
 			<div class="img_menu img_navidad">
 				<img src="../img/Menú_Cena_Navida_Opción_3.png" alt="Menú Navidad"
 					title="Menú Navidad" />

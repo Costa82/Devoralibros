@@ -72,7 +72,7 @@
       	</nav>
 	</header>
 
-	<div class="explicacion_galeria">
+	<div class="explicacion">
 		<p>
 			En esta sección queremos presentarte nuestro local Mami Carcla. </br>Situado
 			en un lugar céntrico, al lado de la Iglesia de la Antigua, nacemos

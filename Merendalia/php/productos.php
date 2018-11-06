@@ -46,7 +46,7 @@
 
 	</header>
 	
-	<div class="contenedor_productos">
+	<div class="explicacion">
 
 		<p>
 			En esta sección podrás ver todos los productos que tenemos preparados
@@ -58,6 +58,10 @@
 			sección, ¡no dudes en llamarnos para ver si podemos incluirla!
 			Queremos que disfrutes y estés a gusto.
 		</p>
+		
+	</div>
+		
+	<div class="contenedor_productos">
 		
 		<div class="select_productos">
 	
