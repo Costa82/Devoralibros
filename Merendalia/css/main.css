@@ -532,7 +532,7 @@ select:focus {
 .contenedor_productos h3 {
 	text-align: center;
 	font-size: 25px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 
 .contenedor_productos {
@@ -1235,9 +1235,6 @@ footer h3 {
 	.contenedor_texto h3 {
 		font-size: 25px;
 	}
-	img.queso {
-		heigth: 100px;
-	}
 	.contenedor_productos {
 		width: 60%;
 	}
@@ -1248,16 +1245,14 @@ footer h3 {
 		height: 750px;
 	}
 	.menu_infantil {
-		width: 800px;
+		width: 900px;
 	}
-	
 	.menu_infantil>h2 {
 		font-size: 25px;
 	}
-	
 	.imagenes_menu_infantil img {
-		height: 700px;	
-		width: 400px;
+		height: 800px;	
+		max-width: 500px;
 		padding: 20px;
 	}
 }
@@ -1307,11 +1302,9 @@ footer h3 {
 	.contenedor_texto {
 		width: 70%;
 	}
-	
 	.condiciones, .whatsapp {
 		margin-left: 50px;
 	}
-	
 }
 
 /* Para resoluciones a partir de 1400px */
@@ -1329,8 +1322,15 @@ footer h3 {
 	.contenedor_productos {
 		width: 50%;
 	}
-	
 	.condiciones, .whatsapp {
 		margin-left: 60px;
+	}
+	
+}
+
+/* Para resoluciones a partir de 1600px */
+@media only screen and (min-width: 1600px) {
+	.img_producto_comida img {
+		height: 200px;
 	}
 }
