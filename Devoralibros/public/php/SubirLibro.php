@@ -146,8 +146,9 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         } else {
                             if ( strtoupper($_REQUEST['serie']) == "NO") {
                                 $serie = "NULL";
+                            } else {
+                                $serie = $_REQUEST['serie'];
                             }
-                            $serie = $_REQUEST['serie'];
                         }
                         
                         // Tiene pelicula
@@ -156,8 +157,9 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         } else {
                             if ( strtoupper($_REQUEST['pelicula']) == "NO") {
                                 $pelicula = "NULL";
+                            } else {
+                                $pelicula = $_REQUEST['pelicula'];
                             }
-                            $pelicula = $_REQUEST['pelicula'];
                         }
                         
                         // Fecha subida
