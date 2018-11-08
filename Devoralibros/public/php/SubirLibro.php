@@ -144,7 +144,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         if (empty($_REQUEST['serie'])) {
                             $serie = "NULL";
                         } else {
-                            if ($_REQUEST['serie'] == "no" || $_REQUEST['serie'] == "No" || $_REQUEST['serie'] == "NO") {
+                            if ( strtoupper($_REQUEST['serie']) == "NO") {
                                 $serie = "NULL";
                             }
                             $serie = $_REQUEST['serie'];
@@ -154,8 +154,8 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         if (empty($_REQUEST['pelicula'])) {
                             $pelicula = "NULL";
                         } else {
-                            if ($_REQUEST['pelicula'] == "no" || $_REQUEST['pelicula'] == "No" || $_REQUEST['pelicula'] == "NO") {
-                                $serie = "NULL";
+                            if ( strtoupper($_REQUEST['pelicula']) == "NO") {
+                                $pelicula = "NULL";
                             }
                             $pelicula = $_REQUEST['pelicula'];
                         }
