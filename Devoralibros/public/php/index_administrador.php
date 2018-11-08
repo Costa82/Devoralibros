@@ -227,7 +227,7 @@ $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
 				<li><a href="../FormularioSubirRelato/" title="Subir relatos">Subir
 						relatos</a></li>
 				<!--li><a href="../FormularioSubirConcurso/" title="Crear concurso">Crear concurso</a></li-->
-				<li><a href="../EditarUsuarios/" title="Subir Librerías">Usuarios</a></li>
+				<li><a href="../EditarUsuarios/" title="Usuarios">Usuarios</a></li>
 				<li><a href="../FormularioEditarUsuario/" title="Editar usuario">Editar
 						usuario</a></li>
 				<li class="invitacion"><a href="../FormularioEnviarInvitacion/"
