@@ -219,7 +219,7 @@ $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
         $separacion = "*";
         $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
         
-        echo '<li class="animated flash"><a href="../Administrador/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
+        echo '<li class="animated flash"><a href="../Usuario/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
     } else {
         
         $cadena = "El usuario con id: " . $id_usuario . " no tiene mensajes sin leer.";
@@ -228,7 +228,7 @@ $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
         $separacion = "*";
         $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
         
-        echo '<li><a href="../Administrador/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
+        echo '<li><a href="../Usuario/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
     }
     ?>	
 					<li><a href="../FormularioEditarUsuario/" title="Editar usuario">Editar
