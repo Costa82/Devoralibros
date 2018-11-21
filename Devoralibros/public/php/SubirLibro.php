@@ -83,13 +83,13 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         $img = $_FILES['img'];
                         
                         // Titulo
-                        $titulo = $_REQUEST['titulo'];
+                        $titulo = trim($_REQUEST['titulo']);
                         
                         // Isbn. Ya no guardamos el numero Isbn, guardamos por defecto el 123. Futura mejora??
                         $isbn = 123;
                         
                         // Autor
-                        $autor = $_REQUEST['autor'];
+                        $autor = trim($_REQUEST['autor']);
                         
                         // Es el autor del libro
                         if (isset($_REQUEST['autorLibro'])) {

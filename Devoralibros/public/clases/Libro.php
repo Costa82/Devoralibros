@@ -158,8 +158,8 @@ class Libro
 
     /**
      * addLibro($id_usuario,$titulo,$isbn,$autor,$sinopsis,$genero,$genero2,$resumen,$serie,$pelicula,$fecha_subida,$img)
-     * Función que se utilizará en el fichero SubirCurso.php para añadir un libro.
-     * Dentro de esta función, utilizaremos las funciones existeIsbn($isbn) y guardarImgLibro($titulo,$img).
+     * Función que se utilizará en el fichero SubirLibro.php para añadir un libro.
+     * Dentro de esta función, utilizaremos la funcion  guardarImgLibro($titulo,$img).
      *
      * @param
      *            $id_usuario
