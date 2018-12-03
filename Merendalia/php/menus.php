@@ -81,17 +81,22 @@
 			</div>
 
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Cena_Navida_Opción_1.png" alt="Menú Navidad"
+				<img src="../img/Menú_Navidad_Opción_1.jpg" alt="Menú Navidad 1"
 					title="Menú Navidad" />
 			</div>
 
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Cena_Navida_Opción_2.png" alt="Menú Navidad"
+				<img src="../img/Menú_Navida_Opción_2.jpg" alt="Menú Navidad 2"
 					title="Menú Navidad" />
 			</div>
 
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Cena_Navida_Opción_3.png" alt="Menú Navidad"
+				<img src="../img/Menú_Navida_Opción_3.jpg" alt="Menú Navidad 3"
+					title="Menú Navidad" />
+			</div>
+			
+			<div class="img_menu img_navidad">
+				<img src="../img/Menú_Navida_Opción_4.jpg" alt="Menú Navidad 4"
 					title="Menú Navidad" />
 			</div>
 
@@ -100,6 +105,26 @@
 	</div>
 
 	<div class="contenedor_menus">
+
+		<h3>MENÚ FABADA</h3>
+
+		<div class="menu">
+
+			<div class="texto_menu">
+
+				<p>Preparado para cuando el frío aprieta y el hambre
+					también...tenemos ¡el Menú Fabada!, ¡listo para haceros entrar en
+					calor y comer bien!</p>
+				</br>
+
+			</div>
+
+			<div class="img_menu">
+				<img src="../img/Menú_Jornadas_Fabada.jpg" alt="Menú Fabada"
+					title="Menú Fabada" />
+			</div>
+
+		</div>
 
 		<h3>MENÚ TIEMPO DE VENDIMIA</h3>
 

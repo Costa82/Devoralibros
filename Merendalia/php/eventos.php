@@ -79,6 +79,8 @@
 		</br>
 	</div>
 
+	<!-- EVENTO PRINCIPAL COMENTADO HASTA QUE HAYA OTRO
+	
 	<div class="contenedor_eventos">
 
 		<div class="evento_principal">
@@ -98,11 +100,37 @@
 
 		</div>
 
-	</div>
+	</div> 
+	
+	-->
 
 	<h3 class="eventos_pasados">EVENTOS PASADOS</h3>
 
 	<div class="contenedor_eventos_secundarios">
+	
+		<div class="evento_secundario">
+
+			<h3>JORNADAS DE LA FABADA</h3>
+
+			<div class="explicacion_evento">
+				<p>Esta vez en Merendalia vamos a disfrutar de los placeres de la
+					comida de otoño, no os perdáis nuestra riquísima fabada, todos los
+					fines de semana de noviembre a la hora de comer.</br></br> Llámanos al
+					983.85.73.69 y reserva para todos los que seáis, ¡os chuparéis los
+					dedos!</br></br> (Recuerda también que hay menús para niños)</p>
+				</br>
+			</div>
+
+			<!-- img para móviles -->
+			<img src='../img/Alargada_Cartel_Jornadas_Fabada.png' title='Jornadas Fabada'
+				class="img_movil" />
+			<!-- img con zoom para el resto de dispositivos -->
+			<a class="fancybox" rel="group"
+				href="../img/Apaisaada_Cartel_Jornadas_Fabada.png"><img
+				src="../img/Apaisaada_Cartel_Jornadas_Fabada.png" class="img_ordenador"
+				title='Jornadas Fabada' alt="Jornadas Fabada" /></a>
+
+		</div>
 
 		<div class="evento_secundario">
 
