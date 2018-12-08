@@ -79,30 +79,26 @@
 		</br>
 	</div>
 
-	<!-- EVENTO PRINCIPAL COMENTADO HASTA QUE HAYA OTRO
 	
 	<div class="contenedor_eventos">
 
 		<div class="evento_principal">
 
-			<h3>JORNADAS DE LA FABADA</h3>
+			<h3>TALLERES INFANTILES </br> EN MERENDALIA</h3>
 
 			<div class="explicacion_evento">
-				<p>Esta vez en Merendalia vamos a disfrutar de los placeres de la
-					comida de otoño, no os perdáis nuestra riquísima fabada, todos los
-					fines de semana de noviembre a la hora de comer.</br></br> Llámanos al
-					983.85.73.69 y reserva para todos los que seáis, ¡os chuparéis los
-					dedos!</br></br> (Recuerda también que hay menús para niños)</p>
+				<p>Para dar la bienvenida al año nuevo ¡¡en Merendalia nos hemos acordado de los más peques de la casa!!
+				Estad atentos de nuestros Talleres infantiles, porque iremos poniendo más información.
+				¡A diario desde las 17:00 horas!</p>
 			</div>
 
-			<img src='../img/Alargada_Cartel_Jornadas_Fabada.png' title='Jornadas Fabada' class="img_movil" /> <img
-				src='../img/Apaisaada_Cartel_Jornadas_Fabada.png' title='Jornadas Fabada' class="img_ordenador" />
+			<img src='../img/Talleres_Infantiles_alargado.jpg' title='Talleres Infantiles' class="img_movil" /> <img
+				src='../img/Talleres_Infantiles_ancho.jpg' title='Talleres Infantiles' class="img_ordenador" />
 
 		</div>
 
 	</div> 
 	
-	-->
 
 	<h3 class="eventos_pasados">EVENTOS PASADOS</h3>
 
