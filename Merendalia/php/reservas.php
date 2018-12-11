@@ -265,6 +265,7 @@
 			<p>
 				<strong>Nos encargamos NOSOTROS:</strong>
 			</p>
+			</br>
 			<p>Si lo que te pasa es que no tienes tiempo ni ganas de andar
 				preparando tú nada, esta es la mejor opción:</p>
 			</br>
