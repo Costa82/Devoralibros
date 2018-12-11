@@ -27,14 +27,14 @@
                     <li id="eventos"><a href="php/eventos.php" title="Eventos">Eventos</a></li>
                     <li id="reservas"><a href="php/reservas.php" title="Reservas">Reservas/Tarifas</a></li>
                     <li id="menus"><a href="php/menus.php" title="Menús">Menús</a></li>
-                    <li id="productos"><a href="php/productos.php" title="Productos">Productos</a></li>
+                    <!-- <li id="productos"><a href="php/productos.php" title="Productos">Productos</a></li> -->
                     <li id="contacto"><a href="php/contacto.php" title="Contacto">Contacto</a></li>';
             } else {
                 echo '<li id="galeria"><a href="galeria.php" title="Galería">Galería</a></li>
                     <li id="eventos"><a href="eventos.php" title="Eventos">Eventos</a></li>
                     <li id="reservas"><a href="reservas.php" title="Reservas">Reservas/Tarifas</a></li>
                     <li id="menus"><a href="menus.php" title="Menús">Menús</a></li>
-                    <li id="productos"><a href="productos.php" title="Productos">Productos</a></li>
+                    <!-- <li id="productos"><a href="productos.php" title="Productos">Productos</a></li> -->
                     <li id="contacto"><a href="contacto.php" title="Contacto">Contacto</a></li>';
             }
             ?>
