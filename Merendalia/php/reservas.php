@@ -210,7 +210,7 @@
 
 			</div>
 
-			<a href="#formularioReserva" class="mostrar_menus"><strong>Reservar</strong></a>
+			<a href="#formularioReserva" class="mostrar_reserva"><strong>Reservar</strong></a>
 
 		</div>
 
@@ -276,7 +276,7 @@
 				<li>- <u>Picoteo:</u> Te preparamos el típico picoteo para comer de
 					pie. Empanadas, tortillas, ensaladas, embutidos, quesos, postres…
 				</li>
-				<li>- <u>Menús¡Calentar y Listo!</u>: Te preparamos un menú
+				<li>- <u>Menús ¡Calentar y Listo!</u>: Te preparamos un menú
 					completo. Te lo dejamos todo dispuesto para que solo tengas que,
 					como mucho servir el segundo plato. Entrantes, ensaladas, postres,
 					cafés, chupitos… No te preocupes por nada, ¡todo listo!
@@ -346,18 +346,14 @@
 
 		<h3 class="titulo_bebida">BEBIDA</h3>
 
-		<ul class="lista_productos">
+		<ul class="lista_productos_comida">
 
 			<li class="cervezas">
 
-				<div class="img_producto">
-					<img src='../img/Cerveza mahou cinco estrellas.jpg'
-						title='Cerveza mahou cinco estrellas' />
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Cinco Estrellas (Pack de 6)</p>
 				</div>
-				<div class="texto_producto">
-					<p>CERVEZA MAHOU CINCO ESTRELLAS, Pack de 6</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>6,5 €</strong>
 					</p>
@@ -365,14 +361,10 @@
 			</li>
 
 			<li class="cervezas">
-				<div class="img_producto">
-					<img src='../img/Cerveza mahou clásica.jpg'
-						title='Cerveza mahou clásica' />
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Clásica (Pack de 6)</p>
 				</div>
-				<div class="texto_producto">
-					<p>CERVEZA MAHOU CLÁSICA, Pack de 6</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>5,9 €</strong>
 					</p>
@@ -380,14 +372,10 @@
 			</li>
 
 			<li class="refrescos">
-
-				<div class="img_producto">
-					<img src='../img/COCA COLA.jpg' title='COCA COLA' />
+				<div class="texto_producto_comida">
+					<p>Coca-cola normal</p>
 				</div>
-				<div class="texto_producto">
-					<p>COCA-COLA NORMAL</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,2 €</strong>
 					</p>
@@ -395,13 +383,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/COCA COLAS ZERO.jpg' title='COCA-COLA ZERO' />
+				<div class="texto_producto_comida">
+					<p>Coca-cola Zero</p>
 				</div>
-				<div class="texto_producto">
-					<p>COCA-COLA ZERO</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,2 €</strong>
 					</p>
@@ -409,13 +394,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/COCA COLAS LIGHT.jpg' title='COCA COLAS LIGHT' />
+				<div class="texto_producto_comida">
+					<p>Coca-cola Light</p>
 				</div>
-				<div class="texto_producto">
-					<p>COCA COLAS LIGHT</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,2 €</strong>
 					</p>
@@ -423,13 +405,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/FANTA NARANJA.jpg' title='FANTA NARANJA' />
+				<div class="texto_producto_comida">
+					<p>Fanta naranja</p>
 				</div>
-				<div class="texto_producto">
-					<p>FANTA NARANJA</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,2 €</strong>
 					</p>
@@ -437,13 +416,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/FANTA LIMÓN.jpg' title='FANTA LIMÓN' />
+				<div class="texto_producto_comida">
+					<p>Fanta limón</p>
 				</div>
-				<div class="texto_producto">
-					<p>FANTA LIMÓN</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,2 €</strong>
 					</p>
@@ -451,13 +427,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/SEVEN UP.jpg' title='SEVEN`UP' />
+				<div class="texto_producto_comida">
+					<p>Seven'Up</p>
 				</div>
-				<div class="texto_producto">
-					<p>SEVEN`UP</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,4 €</strong>
 					</p>
@@ -465,14 +438,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/AGUA SOLAN DE CABRAS PEQUEÑA.png'
-						title='AGUA SOLAN DE CABRAS PEQUEÑA' />
+				<div class="texto_producto_comida">
+					<p>Agua Solán de Cabras pequeña</p>
 				</div>
-				<div class="texto_producto">
-					<p>AGUA SOLAN DE CABRAS PEQUEÑA</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,2 €</strong>
 					</p>
@@ -480,14 +449,10 @@
 			</li>
 
 			<li class="refrescos">
-				<div class="img_producto">
-					<img src='../img/AGUA SOLAN DE CABRAS GRANDE.jpg'
-						title='AGUA SOLAN DE CABRAS GRANDE' />
+				<div class="texto_producto_comida">
+					<p>Agua Solán de Cabras grande</p>
 				</div>
-				<div class="texto_producto">
-					<p>AGUA SOLAN DE CABRAS GRANDE</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>1,8 €</strong>
 					</p>
@@ -495,15 +460,10 @@
 			</li>
 
 			<li class="vinos">
-
-				<div class="img_producto">
-					<img src='../img/CARRAMIMBRE VINO.png'
-						title='VINO TINTO D.O. RIBERA CARRAMIMBRE' />
+				<div class="texto_producto_comida">
+					<p>Vino tinto D.O. Ribera Carramimbre</p>
 				</div>
-				<div class="texto_producto">
-					<p>VINO TINTO D.O. RIBERA CARRAMIMBRE</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>9,5 €</strong>
 					</p>
@@ -511,14 +471,10 @@
 			</li>
 
 			<li class="vinos">
-				<div class="img_producto">
-					<img src='../img/PINNA FIDELIS VINO.jpg'
-						title='VINO TINTO D.O. RIBERA PINNA FIDELIS' />
+				<div class="texto_producto_comida">
+					<p>Vino tinto D.O. Ribera Pinna Fidelis</p>
 				</div>
-				<div class="texto_producto">
-					<p>VINO TINTO D.O. RIBERA PINNA FIDELIS</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>10 €</strong>
 					</p>
@@ -526,14 +482,10 @@
 			</li>
 
 			<li class="vinos">
-				<div class="img_producto">
-					<img src='../img/monasterio-de-palazuelos-verdejo.jpg'
-						title='VINO BLANCO D.O. RUEDA MONASTERIO DE PALAZUELOS' />
+				<div class="texto_producto_comida">
+					<p>Vino blanco D.O. Ruedo Monasterio de Palazuelos</p>
 				</div>
-				<div class="texto_producto">
-					<p>VINO BLANCO D.O. RUEDA MONASTERIO DE PALAZUELOS</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>8 €</strong>
 					</p>
@@ -541,14 +493,10 @@
 			</li>
 
 			<li class="vinos">
-				<div class="img_producto">
-					<img src='../img/FINCA VALDEMOYA FRIZZANTE VERDEJO.jpg'
-						title='FINCA VALDEMOYA FRIZZANTE VERDEJO' />
+				<div class="texto_producto_comida">
+					<p>Finca Valdemoya Frizzante Verdejo</p>
 				</div>
-				<div class="texto_producto">
-					<p>FINCA VALDEMOYA FRIZZANTE VERDEJO</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>9 €</strong>
 					</p>
@@ -556,14 +504,10 @@
 			</li>
 
 			<li class="vinos">
-				<div class="img_producto">
-					<img src='../img/VIÑA PICOTA VINO ROSADO D.O. CIGALES.jpg'
-						title='VIÑA PICOTA ROSADO D.O. CIGALES' />
+				<div class="texto_producto_comida">
+					<p>Viña Picota rosado D.O. Cigales</p>
 				</div>
-				<div class="texto_producto">
-					<p>VIÑA PICOTA ROSADO D.O. CIGALES</p>
-				</div>
-				<div class="precio_producto">
+				<div class="precio_producto_comida">
 					<p>
 						<strong>8 €</strong>
 					</p>

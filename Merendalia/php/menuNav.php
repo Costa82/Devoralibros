@@ -52,7 +52,7 @@ echo "<ul id='lista_principal_index'>
                     <li id='eventos2'><a href='eventos.php' title='Eventos'>Eventos</a></li>
                     <li id='reservas2'><a href='reservas.php' title='Reservas'>Reservas/Tarifas</a></li>
                     <li id='menus2'><a href='menus.php' title='Menús'>Menús privados</a></li>
-                    <li id='productos2'><a href='productos.php' title='Productos'>Productos</a></li>
+                    <!-- <li id='productos2'><a href='productos.php' title='Productos'>Productos</a></li> -->
                     <li id='contacto2'><a href='contacto.php' title='Contacto'>Contacto</a></li>
                 </ul>
             </li>

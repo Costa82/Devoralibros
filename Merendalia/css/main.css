@@ -55,7 +55,7 @@ p {
 	font-size: 15px;
 }
 
-a.mostrar_menus {
+a.mostrar_reserva {
 	text-decoration:none;
 	font-weight: 600;
 	font-size: 20px;
@@ -64,16 +64,24 @@ a.mostrar_menus {
 	padding-bottom:15px;
 	padding-left:40px;
 	padding-right:40px;
-	background-color:#9bd155;;
+	background-color:#9bd155;
 	border-color: #d8d8d8;
 	border-width: 3px;
 	border-style: solid;
 	border-radius:35px;
 }
 
-a.mostrar_menus:hover {
+a.mostrar_reserva:hover {
 	opacity: 0.9;
 	color:black;
+}
+
+a.mostrar_menus {
+	color: #9bd155;
+}
+
+a.mostrar_menus:hover {
+	color:#d8c12d;
 }
 
 /* HEADER
@@ -359,12 +367,12 @@ h3.titulo_reservas {
 }
 
 .contenedor_formulario {
-	margin: 50px 25px;
+	margin: 50px 10px;
 	text-align: center;
 }
 
 .formulario {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 15px;
 }
@@ -376,17 +384,17 @@ h3.titulo_reservas {
 }
 
 .formulario input {
-	width: 40%;
+	width: 50%;
 	margin-bottom: 5px;
 }
 
 .formulario textarea.comentario {
-	width: 40%;
+	width: 50%;
 	margin-left: 21px;
 }
 
 .formulario textarea.consulta {
-	width: 40%;
+	width: 50%;
 	margin-left: 49px;
 }
 
