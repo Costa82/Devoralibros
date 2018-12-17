@@ -79,8 +79,27 @@
 		</br>
 	</div>
 
-	<!-- EVENTO PRINCIPAL -->
+	<!-- EVENTOS PRINCIPALES -->
 
+	<div class="contenedor_eventos">
+
+		<div class="evento_principal">
+
+			<h3>MERENDALIA Y MANAI</h3>
+
+			<div class="explicacion_evento">
+				<p></p>
+			</div>
+
+			<img src='../img/MerendaliaYManai_Alargada.jpeg'
+				title='Merendalia y Manai' class="img_movil" /> <img
+				src='../img/MerendaliaYManai_Apaisada.jpeg'
+				title='Merendalia y Manai' class="img_ordenador" />
+
+		</div>
+
+	</div>
+	
 	<div class="contenedor_eventos">
 
 		<div class="evento_principal">

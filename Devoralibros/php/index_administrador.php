@@ -51,6 +51,7 @@ $foto = $_SESSION['datos']['foto'];
 <script src="../jquery/jquery_acordeon.js"></script>
 <script src="../jquery/parallax.js"></script>
 <script src="../jquery/jquery_scroll_menuNavegacion.js"></script>
+<!-- <script src="../jquery/jquery_anclas.js"></script> -->
 <script>
        function confirmarBaja() {
            if(confirm('¿Estás seguro de darte de baja de Devoralibros?Te echaremos de menos...'))

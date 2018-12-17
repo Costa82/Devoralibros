@@ -511,6 +511,10 @@ h3.eventos_pasados {
 	align-items: flex-start;
 }
 
+.contenedor_eventos {
+		margin-top: 25px;
+}
+
 .evento_secundario {
 	margin: 20px;
 	min-width: 280px;
