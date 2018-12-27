@@ -1,7 +1,7 @@
 <?php
 require_once 'Connection.php';
 
-// include ("../php/phpmailer.php");
+include ("../php/phpmailer.php");
 
 class Usuario
 {

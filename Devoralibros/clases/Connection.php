@@ -1,14 +1,14 @@
 <?php
 class Connection {
-// 	private $host = "bbdd.devoralibros.es";
-// 	private $username = "ddb95409";
-// 	private $password = "MiguelCosta82";
-//  private $base = "ddb95409";
+	private $host = "bbdd.devoralibros.es";
+	private $username = "ddb95409";
+	private $password = "MiguelCosta82";
+    private $base = "ddb95409";
     
-    private $host = "localhost";
-    private $username = "root";
-    private $password = "";
-    private $base="bd_devoralibros";
+//     private $host = "localhost";
+//     private $username = "root";
+//     private $password = "";
+//     private $base="bd_devoralibros";
 
 	private $conex;
 	private static $instancia;
