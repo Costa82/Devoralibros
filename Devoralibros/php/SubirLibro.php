@@ -77,7 +77,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                 if (isset($_REQUEST['addLib'])) {
                     $libro = new Libro();
                     
-                    if (isset($_REQUEST['titulo']) and isset($_REQUEST['autor']) and isset($_REQUEST['sinopsis']) and isset($_REQUEST['genero']) and isset($_REQUEST['resumen']) and isset($_REQUEST['serie']) and isset($_REQUEST['pelicula'])) {
+                    if (isset($_REQUEST['titulo']) and isset($_REQUEST['autor']) and isset($_REQUEST['sinopsis']) and isset($_REQUEST['genero']) and isset($_REQUEST['resumen'])) {
                         
                         // Imagen
                         $img = $_FILES['img'];
@@ -134,7 +134,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                             if ($_REQUEST['banner'] == "" || $_REQUEST['banner'] == "Banner de Amazon...") {
                                 $banner = NULL;
                             } else {
-                                $banner = $_REQUEST['banner'];
+                                $banner = str_replace("style", "stile", $_REQUEST['banner']);
                             }
                         } else {
                             $banner = NULL;

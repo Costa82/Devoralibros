@@ -49,8 +49,10 @@ $libro = new Libro();
 					</div>
                 <?php
                 if (isset($_REQUEST['modificar'])) {
+                    
                     $libro = new Libro();
-                    if (isset($_REQUEST['titulo']) and isset($_REQUEST['autor']) and isset($_REQUEST['sinopsis']) and isset($_REQUEST['genero']) and isset($_REQUEST['resumen']) and isset($_REQUEST['serie']) and isset($_REQUEST['pelicula'])) {
+                    if (isset($_REQUEST['titulo']) and isset($_REQUEST['autor']) and isset($_REQUEST['sinopsis']) and isset($_REQUEST['genero']) and isset($_REQUEST['resumen'])) {
+                        
                         $titulo = $_REQUEST['titulo'];
                         $isbn = 123;
                         $autor = $_REQUEST['autor'];
@@ -61,7 +63,7 @@ $libro = new Libro();
                             if ($_REQUEST['banner'] == "" || $_REQUEST['banner'] == "Banner de Amazon...") {
                                 $banner = NULL;
                             } else {
-                                $banner = $_REQUEST['banner'];
+                                $banner = str_replace("style", "stile", $_REQUEST['banner']);
                             }
                         } else {
                             $banner = NULL;
@@ -124,7 +126,7 @@ $libro = new Libro();
             }
             $sinopsis = $libro->get_sinopsis($id_libro);
             $resumen = $libro->get_resumen($id_libro);
-            $banner = $libro->get_banner($id_libro);
+            $banner = str_replace("style", "stile", $libro->get_banner($id_libro));
             $serie = $libro->get_serie($id_libro);
             if ($serie == "NULL") {
                 $serie = "";
@@ -244,6 +246,7 @@ $libro = new Libro();
 						<button type="submit" name="modificar" class='btn'>Modificar datos</button>
             <?php
             
+            $titulo = str_replace(" ", "-", $titulo);
             switch ($tipo_usuario) {
                 case 1:
                     $destino = "../Libro/" . $titulo;
