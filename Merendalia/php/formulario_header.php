@@ -6,7 +6,7 @@ $strMensaje="";
 
 if(isset($_REQUEST['enviar'])){
     
-    if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail']) AND isset($_REQUEST['dia']) AND isset($_REQUEST['hora_entrada']) AND isset($_REQUEST['hora_salida'])){
+    if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail']) AND isset($_REQUEST['dia']) AND isset($_REQUEST['hora_entrada']) AND isset($_REQUEST['hora_salida'])) {
         
         // Campos obligatorios
         $nombre = $_REQUEST['nombre'];
@@ -38,18 +38,27 @@ if(isset($_REQUEST['enviar'])){
         }
         
         // Enviamos el correo de reserva
-        $envio = $correo->enviarMailsReserva($mail, $nombre, $dia, $hora_entrada, $hora_salida, $telefono, $comentario, $whatsapp);
+        // Comprobamos que no sea ninguno de estos correos (info@basededatos-info.com, yourmail@gmail.com)
+        if ( $mail === "info@basededatos-info.com" || $mail === "yourmail@gmail.com" ) {
+            $envio = "KO";
+        } else {
+            $envio = $correo->enviarMailsReserva($mail, $nombre, $dia, $hora_entrada, $hora_salida, $telefono, $comentario, $whatsapp);
+        }
         
         if ( $envio == "OK" ) {
-            $destino="envioCorrecto.php";            
+            $destino="envioCorrecto.php";
         } else {
             $destino="envioFallido.php";
         }
         
-        if (!headers_sent()) {
-            header('Location:'.$destino);
-            exit;
-        }
+        // El nombre, mail, dia, hora_entrada y hora_salida tienen que ser obligatorios
+    } else {
+        $destino="envioFallido.php";
+    }
+    
+    if (!headers_sent()) {
+        header('Location:'.$destino);
+        exit;
     }
 }
 ?>

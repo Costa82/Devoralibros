@@ -6,7 +6,7 @@ $strMensaje="";
 
 if(isset($_REQUEST['enviar'])){
     
-    if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail'])){
+    if( isset($_REQUEST['nombre']) AND isset($_REQUEST['mail']) ){
         
         // Campos obligatorios
         $nombre = $_REQUEST['nombre'];
@@ -25,28 +25,35 @@ if(isset($_REQUEST['enviar'])){
             $consulta = null;
         }
         
-        if (isset($_POST['whatsapp']) && $_POST['whatsapp'] == '1')
-        {
+        if (isset($_POST['whatsapp']) && $_POST['whatsapp'] == '1') {
             $whatsapp = "OK";
-        }
-        else
-        {
+        } else {
             $whatsapp = "KO";
         }
         
         // Enviamos el correo de reserva
-        $envio = $correo->enviarMailsConsulta($mail, $nombre, $telefono, $consulta, $whatsapp);
+        // Comprobamos que no sea ninguno de estos correos (info@basededatos-info.com, yourmail@gmail.com)
+        if ( $mail === "info@basededatos-info.com" || $mail === "yourmail@gmail.com" ) {
+            $envio = "KO";
+        } else {
+            $envio = $correo->enviarMailsConsulta($mail, $nombre, $telefono, $consulta, $whatsapp);
+        }
         
+        // Comprobamos cómo ha ido el envío
         if ( $envio == "OK" ) {
             $destino="envioCorrecto.php";
         } else {
             $destino="envioFallido.php";
         }
         
-        if (!headers_sent()) {
-            header('Location:'.$destino);
-            exit;
-        }
+        // El nombre y el mail tienen que ser obligatorios
+    } else {
+        $destino="envioFallido.php";
+    }
+    
+    if (!headers_sent()) {
+        header('Location:'.$destino);
+        exit;
     }
 }
 ?>
