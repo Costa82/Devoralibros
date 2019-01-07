@@ -14,10 +14,16 @@ if(isset($_REQUEST['enviar'])){
         $dia = $_REQUEST['dia'];
         $hora_entrada = $_REQUEST['hora_entrada'];
         $hora_salida = $_REQUEST['hora_salida'];
+        $telefonoValido = true;
         
         // Campos opcionales
         if ( isset($_REQUEST['telefono']) ) {
             $telefono = $_REQUEST['telefono'];
+            
+            if ( substr($telefono,0,1) === '8' ) {
+                $telefonoValido = false;
+            }
+            
         } else {
             $telefono = null;
         }
@@ -39,7 +45,7 @@ if(isset($_REQUEST['enviar'])){
         
         // Enviamos el correo de reserva
         // Comprobamos que no sea ninguno de estos correos (info@basededatos-info.com, yourmail@gmail.com)
-        if ( $mail === "info@basededatos-info.com" || $mail === "yourmail@gmail.com" ) {
+        if ( $mail === "info@basededatos-info.com" || $mail === "yourmail@gmail.com" || $mail === "artyea@msn.com" || !$telefonoValido ) {
             $envio = "KO";
         } else {
             $envio = $correo->enviarMailsReserva($mail, $nombre, $dia, $hora_entrada, $hora_salida, $telefono, $comentario, $whatsapp);

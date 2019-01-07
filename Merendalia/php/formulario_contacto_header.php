@@ -11,10 +11,16 @@ if(isset($_REQUEST['enviar'])){
         // Campos obligatorios
         $nombre = $_REQUEST['nombre'];
         $mail = $_REQUEST['mail'];
+        $telefonoValido = true;
         
         // Campos opcionales
         if ( isset($_REQUEST['telefono']) ) {
             $telefono = $_REQUEST['telefono'];
+            
+            if ( substr($telefono,0,1) === '8' ) {
+                $telefonoValido = false;
+            }
+            
         } else {
             $telefono = null;
         }
@@ -33,7 +39,7 @@ if(isset($_REQUEST['enviar'])){
         
         // Enviamos el correo de reserva
         // Comprobamos que no sea ninguno de estos correos (info@basededatos-info.com, yourmail@gmail.com)
-        if ( $mail === "info@basededatos-info.com" || $mail === "yourmail@gmail.com" ) {
+        if ( $mail === "info@basededatos-info.com" || $mail === "yourmail@gmail.com" || $mail === "artyea@msn.com" || !$telefonoValido ) {
             $envio = "KO";
         } else {
             $envio = $correo->enviarMailsConsulta($mail, $nombre, $telefono, $consulta, $whatsapp);
