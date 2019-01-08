@@ -49,14 +49,10 @@
 <body>
 	<header>
 
-		<!-- 		<div class="titulo_movil"> -->
-		<!-- 			<a href='../index.php' title='Inicio'><img -->
-		<!-- 				src='../img/merendalia_logotipo_RGB-01.png' alt='Merendalia' /></a> -->
-		<!-- 		</div> -->
-
-		<nav>
-          <?php include_once("menuNav.php");?>		
+		<nav>		
+          <?php include_once("menuNav.php");?>	          	
       	</nav>
+      	
 	</header>
 
 	<div class="contenedor_reservas">
@@ -64,7 +60,7 @@
 		<!-- TARIFAS -->
 
 		<div class="tarifas">
-			<!-- <img src='../img/tarifas.png' alt='Tarifa' /> -->
+		
 			<h3>Tarifas</h3>
 
 			<table border="1">
@@ -75,23 +71,27 @@
 							<strong>Día </strong> <sup>(1)</sup>
 						</p>
 					</td>
+					
 					<td class="titulo_verde">
 						<p>
 							<strong>Horario </strong> <sup>(2)</sup>
 						</p>
 					</td>
+					
 					<td class="titulo_verde">
 						<p>
 							<strong>Precio por hora</strong>
 						</p>
 						<p class="subtitulo">(3 primeras horas)</p>
 					</td>
+					
 					<td class="titulo_verde">
 						<p>
 							<strong>Precio por hora</strong>
 						</p>
 						<p class="subtitulo">(Cuarta hora y sucesivas)</p>
 					</td>
+					
 				</tr>
 
 				<tr>
@@ -214,29 +214,29 @@
 
 		</div>
 
-		<!-- CALENDARIO -->
+		<!-- CALENDARIO GOOGLE -->
 
-		<!-- 		<div class="calendario ordenador"> -->
+		<!-- <div class="calendario ordenador">
 
-		<!-- 			<h3>Calendario</h3> -->
+		 		<h3>Calendario</h3>
 
-		<!-- 			<iframe -->
-		<!-- 				src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=merenderosurbanos%40gmail.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid" -->
-		<!-- 		style="border-width: 0" frameborder="0" scrolling="no"> -->
-		<!-- 		</iframe> -->
+		 		<iframe
+		 				src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=merenderosurbanos%40gmail.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid"
+		 		style="border-width: 0" frameborder="0" scrolling="no">
+		 		</iframe>
 
-		<!-- 		</div> -->
+		 		</div>
 
-		<!-- 		<div class="calendario movil"> -->
+		 		<div class="calendario movil">
 
-		<!-- 			<h3>Calendario</h3> -->
+		 			<h3>Calendario</h3>
 
-		<!-- 			<iframe -->
-		<!-- 				src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=merenderosurbanos%40gmail.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid" -->
-		<!-- 		style="border-width: 0" frameborder="0" scrolling="no"> -->
-		<!-- 		</iframe> -->
+		 			<iframe
+		 				src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=merenderosurbanos%40gmail.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid"
+		 		style="border-width: 0" frameborder="0" scrolling="no">
+				</iframe>
 
-		<!-- 		</div> -->
+		 </div> -->
 
 		<div class="texto_descriptivo">
 
@@ -327,195 +327,26 @@
 
 		<div class="select_productos">
 
-			<strong>Selecciona el tipo de producto </strong> <select id="select"
-				name="select">
+			<strong>Selecciona el tipo de producto </strong> 
+			
+			<select id="select" name="select">
+			
 				<option value="todo" select>Ver todo</option>
-				<option value="bebidas">Bebidas</option>
-				<option value="refrescos">&nbsp;&nbsp;&nbsp;Refrescos</option>
-				<option value="cervezas">&nbsp;&nbsp;&nbsp;Cervezas</option>
-				<option value="vinos">&nbsp;&nbsp;&nbsp;Vinos</option>
 				<option value="entrantes">Entrantes</option>
 				<option value="ensaladas">Ensaladas</option>
 				<option value="guisos">Guisos</option>
 				<option value="postres">Postres</option>
 				<option value="menusCalentarListo">Menús calentar y listo</option>
 				<option value="merienda">Merienda infantil</option>
+				<option value="bebidas">Bebidas</option>
+				<option value="refrescos">&nbsp;&nbsp;&nbsp;Refrescos</option>
+				<option value="cervezas">&nbsp;&nbsp;&nbsp;Cervezas</option>
+				<option value="vinos">&nbsp;&nbsp;&nbsp;Vinos</option>
+				
 			</select>
 
 		</div>
-
-		<h3 class="titulo_bebida">BEBIDA</h3>
-
-		<ul class="lista_productos_comida">
-
-			<li class="cervezas">
-
-				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Cinco Estrellas (Pack de 6)</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>6,5 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="cervezas">
-				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Clásica (Pack de 6)</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>5,9 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Coca-cola normal</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,2 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Coca-cola Zero</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,2 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Coca-cola Light</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,2 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Fanta naranja</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,2 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Fanta limón</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,2 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Seven'Up</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,4 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Agua Solán de Cabras pequeña</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,2 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Agua Solán de Cabras grande</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,8 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="vinos">
-				<div class="texto_producto_comida">
-					<p>Vino tinto D.O. Ribera Carramimbre</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>9,5 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="vinos">
-				<div class="texto_producto_comida">
-					<p>Vino tinto D.O. Ribera Pinna Fidelis</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>10 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="vinos">
-				<div class="texto_producto_comida">
-					<p>Vino blanco D.O. Ruedo Monasterio de Palazuelos</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>8 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="vinos">
-				<div class="texto_producto_comida">
-					<p>Finca Valdemoya Frizzante Verdejo</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>9 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="vinos">
-				<div class="texto_producto_comida">
-					<p>Viña Picota rosado D.O. Cigales</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>8 €</strong>
-					</p>
-				</div>
-			</li>
-
-		</ul>
-
+		
 		<div class="entrantes">
 
 			<h3>ENTRANTES</h3>
@@ -1025,6 +856,178 @@
 			</div>
 
 		</div>
+
+		<h3 class="titulo_bebida">BEBIDA</h3>
+
+		<ul class="lista_productos_comida">
+
+			<li class="cervezas">
+
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Cinco Estrellas (Pack de 6)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>6,5 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="cervezas">
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Clásica (Pack de 6)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>5,9 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Coca-cola normal</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,2 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Coca-cola Zero</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,2 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Coca-cola Light</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,2 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Fanta naranja</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,2 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Fanta limón</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,2 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Seven'Up</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,4 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Agua Solán de Cabras pequeña</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,2 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Agua Solán de Cabras grande</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,8 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Vino tinto D.O. Ribera Carramimbre</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9,5 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Vino tinto D.O. Ribera Pinna Fidelis</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>10 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Vino blanco D.O. Ruedo Monasterio de Palazuelos</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>8 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Finca Valdemoya Frizzante Verdejo</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Viña Picota rosado D.O. Cigales</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>8 €</strong>
+					</p>
+				</div>
+			</li>
+
+		</ul>
 
 	</div>
 

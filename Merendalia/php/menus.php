@@ -64,7 +64,9 @@
 		</p>
 	</div>
 
-	<div class="contenedor_menus menu_navidad">
+	<!-- CONTENEDOR PARA MENÚS DE NAVIDAD -->
+	
+	<!-- <div class="contenedor_menus menu_navidad">
 
 		<h3>MENÚS DE NAVIDAD</h3>
 
@@ -102,7 +104,9 @@
 
 		</div>
 
-	</div>
+	</div> -->
+
+    <!-- CONTENEDOR PARA MENÚS -->
 
 	<div class="contenedor_menus">
 
