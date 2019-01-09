@@ -3,12 +3,7 @@
         <div class="logo_footer">
             <ul>
             <?php
-            if (strpos($_SERVER['REQUEST_URI'], "index") !== false) {
-                // index.php found
                 echo '<li><img class="logo_hamburguesa" src="img/sandwich con bolas blancas.png" alt="Merendalia"/></li>';
-            } else {
-                echo '<li><img class="logo_hamburguesa" src="../img/sandwich con bolas blancas.png" alt="Merendalia"/></li>';
-            }
             ?>
                 <li class="espacio oculto_movil_footer">Merendalia, el ocio a tu manera. Organiza tu evento, o ven a uno preparado por nosotros.</li>
                 <li class="espacio oculto_movil">Calle Paraiso, 2 bajo. Pasaje del Alarcón.</li>
@@ -22,7 +17,7 @@
             <?php
             if ( strpos($_SERVER['REQUEST_URI'], "galeria") !== false || strpos($_SERVER['REQUEST_URI'], "eventos") !== false || strpos($_SERVER['REQUEST_URI'], "reservas") !== false || strpos($_SERVER['REQUEST_URI'], "menus") !== false || strpos($_SERVER['REQUEST_URI'], "contacto") !== false ) {
                 
-                // Estamos en alguna pagina que no sea la principal
+                // Estamos en alguna pagina que no sea la principal (Galeria, eventos, reservas, etc...)
                 echo '<li id="galeria"><a href="galeria.php" title="Galería">Galería</a></li>
                     <li id="eventos"><a href="eventos.php" title="Eventos">Eventos</a></li>
                     <li id="reservas"><a href="reservas.php" title="Reservas">Reservas/Tarifas</a></li>
@@ -32,7 +27,7 @@
 
             } else {
 
-                // Estamos en la pagina principal
+                // Estamos en la pagina principal (index)
                 echo '<li id="galeria"><a href="php/galeria.php" title="Galería">Galería</a></li>
                     <li id="eventos"><a href="php/eventos.php" title="Eventos">Eventos</a></li>
                     <li id="reservas"><a href="php/reservas.php" title="Reservas">Reservas/Tarifas</a></li>
