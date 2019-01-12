@@ -73,11 +73,10 @@ $autor = str_replace("-", " ", $_GET['autor']);
     <h1>Relatos y poesías</h1>
     
     <?php 
+    $relato->console_log('Relatos a buscar: '.$autor);
     if ( isset($id_usuario) ) {
-        $relato->console_log($autor);
         $relato->mostrarRelatos($id_usuario, $autor);
     } else {
-        $relato->console_log($autor);
         $relato->mostrarRelatos(null, $autor);
     }
     ?>        

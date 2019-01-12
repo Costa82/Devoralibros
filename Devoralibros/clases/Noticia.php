@@ -168,7 +168,7 @@ class Noticia
                     // Examino la pagina a mostrar y el inicio del registro a mostrar
                     if (isset($_GET["pag"]))
                         $pag = $_GET["pag"];
-                    
+                        $this->console_log("Pagina: ". $pag);
                     if (! $pag) {
                         $inicio = 0;
                         $pag = 1;
@@ -484,6 +484,20 @@ class Noticia
         } else {
             echo $this->c->errno . " -> " . $this->c->error;
         }
+    }
+    
+    /**
+     * console_log
+     * Sacamos por consola lo que le pasemos
+     *
+     * @param
+     *            $data
+     */
+    function console_log($data)
+    {
+        echo '<script>';
+        echo 'console.log(' . json_encode($data) . ')';
+        echo '</script>';
     }
 }
 ?>

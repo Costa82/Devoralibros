@@ -105,11 +105,13 @@ class Relato
      */
     public function mostrarRelatos($id_usuario, $autor)
     {
-        if ($autor == "Todos") {            
+        if (strpos($_SERVER['REQUEST_URI'], "Todos") !== false) {            
             $sql_relatoss = "SELECT * FROM " . $this->tabla;
         }else {
             $sql_relatoss = "SELECT * FROM " . $this->tabla. " WHERE escritor = '".$autor."' OR titulo = '".$autor."'";
         }
+        
+        $this->console_log("Query1: ". $sql_relatoss);
         
         if ($this->c->real_query($sql_relatoss)) {
             
@@ -119,12 +121,17 @@ class Relato
                 // Si hay registros
                 if ($num_total_registros > 0) {
                     // Limito la busqueda
-                    $TAMANO_PAGINA = 5;
+                    $TAMANO_PAGINA = 2;
                     $pag = false;
-                    // Examino la pagina a mostrar y el inicio del registro a mostrar
-                    if (isset($_GET["pag"]))
-                        $pag = $_GET["pag"];
                     
+                    // Examino la pagina a mostrar y el inicio del registro a mostrar
+                    if (strpos($_SERVER['REQUEST_URI'], "Todos") !== false) {
+                        
+                        if ($autor != "Todos") {
+                            $pag = substr($autor, 5);
+                            $this->console_log("Pagina: ". $pag);
+                        }
+                    }
                     if (! $pag) {
                         $inicio = 0;
                         $pag = 1;
@@ -135,11 +142,13 @@ class Relato
                     // Calculo el total de paginas
                     $total_paginas = ceil($num_total_registros / $TAMANO_PAGINA);
                     
-                    if ($autor == "Todos") {
+                    if (strpos($_SERVER['REQUEST_URI'], "Todos") !== false) {
                         $sql = "SELECT * FROM " . $this->tabla . " ORDER BY fecha_subida DESC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
                     }else {
                         $sql = "SELECT * FROM " . $this->tabla . " WHERE escritor = '".$autor."' OR titulo = '".$autor."' ORDER BY fecha_subida DESC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
                     }
+                    
+                    $this->console_log("Query2: ". $sql);
                     
                     if ($this->c->real_query($sql)) {
                         
@@ -190,7 +199,7 @@ class Relato
                     if ($total_paginas > 1) {
                         
                         if ($pag != 1)
-                            echo '<a href="../Relatos/?pag=' . ($pag - 1) . '"><img src="../img/izq.gif" border="0"></a>';
+                            echo '<a href="../Relatos/Todos' . ($pag - 1) . '"><img src="../img/izq.gif" border="0"></a>';
                         
                         for ($i = 1; $i <= $total_paginas; $i ++) {
                             if ($pag == $i)
@@ -199,11 +208,11 @@ class Relato
                             else
                                 // Si el índice no corresponde con la página mostrada actualmente,
                                 // coloco el enlace para ir a esa página
-                                echo '  <a href="../Relatos/?pag=' . $i . '">' . $i . '</a>  ';
+                                echo '  <a href="../Relatos/Todos' . $i . '">' . $i . '</a>  ';
                         }
                         
                         if ($pag != $total_paginas)
-                            echo '<a href="../Relatos/?pag=' . ($pag + 1) . '"><img src="../img/der.gif" border="0"></a>';
+                            echo '<a href="../Relatos/Todos' . ($pag + 1) . '"><img src="../img/der.gif" border="0"></a>';
                     }
                     echo '</div>';
                 } else {
