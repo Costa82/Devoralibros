@@ -64,50 +64,53 @@
 		</p>
 	</div>
 
-	<!-- CONTENEDOR PARA MENÚS DE NAVIDAD -->
 	
-	<!-- <div class="contenedor_menus menu_navidad">
+	
+	<div class="contenedor_menus menu_navidad">
 
-		<h3>MENÚS DE NAVIDAD</h3>
+		<h3>NUESTROS MENÚS</h3>
 
 		<div class="menu">
 
 			<div class="texto_menu">
 
-				<p>Ven a disfrutar en Merendalia de tus cenas y comidas privadas de
-					Navidad, estos son los tres menús que os hemos preparado para que
-					disfrutéis como nunca de vuestros encuentros en estas fechas tan
-					señaladas con vuestros compañeros, amigos, familiares, ¡esperamos
-					que os gusten!.</p>
+				<p>Ven a disfrutar en Merendalia de tus cenas y comidas privadas en cualquier momento del año y cuando mejor os venga,
+				 Estos son los menús que os hemos preparado para que
+					disfrutéis como nunca de vuestros encuentros con vuestros amigos, familiares... ¡esperamos
+					que os gusten! y estad atentos, ya que iremos subiendo menús nuevos ¡para que sigáis disfrutando!.</p>
+					<p>En merendalia, ¡no nos gusta la rutina!.</p>
 
 			</div>
 
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Navidad_Opción_1.jpg" alt="Menú Navidad 1"
+				<img src="../img/Menú_del_senderista.jpg" alt="Menú Navidad 1"
 					title="Menú Navidad" />
 			</div>
 
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Navida_Opción_2.jpg" alt="Menú Navidad 2"
+				<img src="../img/Menú_Fabada.jpg" alt="Menú Navidad 2"
 					title="Menú Navidad" />
 			</div>
 
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Navida_Opción_3.jpg" alt="Menú Navidad 3"
+				<img src="../img/Menú_Oktoberfest.jpg" alt="Menú Navidad 3"
 					title="Menú Navidad" />
 			</div>
 			
 			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Navida_Opción_4.jpg" alt="Menú Navidad 4"
+				<img src="../img/Menú_Sidrería.jpg" alt="Menú Navidad 4"
 					title="Menú Navidad" />
 			</div>
 
 		</div>
 
-	</div> -->
+	</div> 
+    
 
-    <!-- CONTENEDOR PARA MENÚS -->
-
+	<!-- CONTENEDOR PARA MENÚS-->
+	
+	<!-- <div class="contenedor_menus">
+	
 	<div class="contenedor_menus">
 
 		<h3>MENÚ FABADA</h3>
@@ -124,7 +127,7 @@
 			</div>
 
 			<div class="img_menu">
-				<img src="../img/Menú_Jornadas_Fabada.jpg" alt="Menú Fabada"
+				<img src="../img/Menú_Fabada.jpg" alt="Menú Fabada"
 					title="Menú Fabada" />
 			</div>
 
@@ -210,7 +213,8 @@
 		</div>
 
 	</div>
-
+ <!-- CONTENEDOR PARA MENÚS -->
+ 
 	<footer>
         <?php include_once("footer.php");?>        
     </footer>
