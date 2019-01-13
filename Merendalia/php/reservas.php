@@ -193,7 +193,7 @@
 				</br>
 				<p>
 					<sup>(2)</sup> La reserva del espacio deberá realizarse por un
-					mínimo de 3 horas.
+					mínimo de 3 horas. Los sábados el mínimo será de 4 horas.
 				</p>
 
 				</br>
@@ -359,7 +359,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>9.5 €</strong>
+							<strong>12 €</strong>
 						</p>
 					</div>
 				</li>
