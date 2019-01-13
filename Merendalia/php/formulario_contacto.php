@@ -2,7 +2,7 @@
 
 	<h2>Realiza tu consulta</h2>
 
-	<form action="formulario_contacto_header.php" method="post"
+	<form action="../php/formulario_contacto_header.php" method="post"
 		class="formularioRegistro" onSubmit="return validar();">
 		<div class="form">
 			<label>Nombre</label> <input type="text" name="nombre" class="nombre"
@@ -22,7 +22,7 @@
 		</div>
 		<div class="form condiciones">
 			<input type="checkbox" name="condiciones" id="condiciones"><label>Acepta
-				el <a href="avisoLegal.php" title="Aviso Legal"><i>Aviso Legal y la
+				el <a href="../aviso-legal-y-politica-de-privacidad/" title="Aviso Legal"><i>Aviso Legal y la
 						Política de Privacidad</i></a>
 			</label>
 		</div>

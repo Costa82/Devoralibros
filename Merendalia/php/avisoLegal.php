@@ -34,17 +34,12 @@
 <body>
 	<header>
 
-<!-- 		<div class="titulo_movil"> -->
-<!-- 			<a href='../index.php' title='Inicio'><img -->
-<!-- 				src='../img/merendalia_logotipo_RGB-01.png' alt='Merendalia' /></a> -->
-<!-- 		</div> -->
-
 		<nav>
           <?php include_once("menuNav.php");?>		
       	</nav>
 	</header>
 
-	<div class="contenedor_texto">
+	<div class="contenedor_texto avisoLegal">
 
 		<h3>POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
 

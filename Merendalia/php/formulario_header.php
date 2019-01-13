@@ -52,14 +52,14 @@ if(isset($_REQUEST['enviar'])){
         }
         
         if ( $envio == "OK" ) {
-            $destino="envioCorrecto.php";
+            $destino="../envio-correcto/";
         } else {
-            $destino="envioFallido.php";
+            $destino="../envio-fallido/";
         }
         
         // El nombre, mail, dia, hora_entrada y hora_salida tienen que ser obligatorios
     } else {
-        $destino="envioFallido.php";
+        $destino="../envio-fallido/";
     }
     
     if (!headers_sent()) {

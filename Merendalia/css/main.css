@@ -776,6 +776,10 @@ img.queso {
 	text-align: left;
 }
 
+.avisoLegal {
+	padding-top: 100px;
+}
+
 .contenedor_texto h3 {
 	margin: 0 35px 35px 35px;
 	text-align: center;

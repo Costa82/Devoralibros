@@ -10,6 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Alquila el local para celebraciones, cumpleaños, fiestas sorpresa, reuniones con amigos y familia Valladolid. Reserva los menús privados solo para tu grupo." />
 <title>Merendalia</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
 
@@ -52,11 +53,6 @@
 <body>
 	<header>
 
-<!-- 		<div class="titulo_movil"> -->
-<!-- 			<a href='' title='Inicio'><img -->
-<!-- 				src='img/merendalia_logotipo_RGB-01.png' alt='Merendalia' /></a> -->
-<!-- 		</div> -->
-
 		<nav>
           <?php include_once("php/menuNavIndex.php");?>		
       	</nav>
@@ -72,13 +68,13 @@
 	</div>
 
 	<div class="contenedor_circulos">
-		<a class="circulo amarillo" href="php/eventos.php"
+		<a class="circulo amarillo" href="eventos/"
 			title="Nuestros Eventos">
 			<h2>Nuestros Eventos</h2>
-		</a> <a class="circulo rojo" href="php/reservas.php"
+		</a> <a class="circulo rojo" href="reservas-tarifas/"
 			title="Reserva de espacio">
 			<h2>Reserva de espacio</h2>
-		</a> <a class="circulo verde" href="php/menus.php"
+		</a> <a class="circulo verde" href="menus-privados/"
 			title="Menús privados">
 			<h2>Menús privados</h2>
 		</a>
