@@ -66,7 +66,7 @@
 
 	
 	
-	<div class="contenedor_menus menu_navidad">
+	<div class="contenedor_menus lista_menus">
 
 		<h3>NUESTROS MENÚS</h3>
 
@@ -82,24 +82,24 @@
 
 			</div>
 
-			<div class="img_menu img_navidad">
-				<img src="../img/Menú_del_senderista.jpg" alt="Menú Navidad 1"
-					title="Menú Navidad" />
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_del_senderista.jpg" alt="Menú del senderista"
+					title="Menú del senderista" />
 			</div>
 
-			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Fabada.jpg" alt="Menú Navidad 2"
-					title="Menú Navidad" />
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Fabada.jpg" alt="Menú Fabada"
+					title="Menú Fabada" />
 			</div>
 
-			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Oktoberfest.jpg" alt="Menú Navidad 3"
-					title="Menú Navidad" />
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Oktoberfest.jpg" alt="Menú Oktoberfest"
+					title="Menú Oktoberfest" />
 			</div>
 			
-			<div class="img_menu img_navidad">
-				<img src="../img/Menú_Sidrería.jpg" alt="Menú Navidad 4"
-					title="Menú Navidad" />
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Sidrería.jpg" alt="Menú Sidrería"
+					title="Menú Sidrería" />
 			</div>
 
 		</div>
@@ -107,11 +107,9 @@
 	</div> 
     
 
-	<!-- CONTENEDOR PARA MENÚS-->
+	<!-- INICIO CONTENEDOR PARA MENÚS-->
 	
 	<!-- <div class="contenedor_menus">
-	
-	<div class="contenedor_menus">
 
 		<h3>MENÚ FABADA</h3>
 
@@ -212,8 +210,10 @@
 
 		</div>
 
-	</div>
- <!-- CONTENEDOR PARA MENÚS -->
+	</div> -->
+	
+    <!-- FIN CONTENEDOR PARA MENÚS -->
+    
  
 	<footer>
         <?php include_once("footer.php");?>        

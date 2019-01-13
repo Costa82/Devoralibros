@@ -710,7 +710,7 @@ img.queso {
 
 /* MENÚS NAVIDAD */
 
-.img_navidad img {
+.img_lista_menus img {
 	width: auto;
 	height: 550px;
 	padding: 15px;
@@ -1311,7 +1311,7 @@ footer h3 {
 	.condiciones, .whatsapp {
 		margin-left: 0px;
 	}
-	.img_navidad img {
+	.img_lista_menus img {
 		height: 700px;
 	}
 	.menu_infantil {
