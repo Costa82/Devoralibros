@@ -65,6 +65,7 @@
 	</div>
 
 	
+	<!-- CONTENEDOR PARA MENÚS NUEVO SIN DESCRIPCION -->
 	
 	<div class="contenedor_menus lista_menus">
 
@@ -105,9 +106,12 @@
 		</div>
 
 	</div> 
+	
+	<!-- FIN CONTENEDOR PARA MENÚS NUEVO SIN DESCRIPCION -->
+	
     
 
-	<!-- INICIO CONTENEDOR PARA MENÚS-->
+	<!-- CONTENEDOR PARA MENÚS CON DESCRIPCION -->
 	
 	<!-- <div class="contenedor_menus">
 
@@ -212,7 +216,7 @@
 
 	</div> -->
 	
-    <!-- FIN CONTENEDOR PARA MENÚS -->
+    <!-- FIN CONTENEDOR PARA MENÚS CON DESCRIPCION -->
     
  
 	<footer>
