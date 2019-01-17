@@ -80,7 +80,13 @@
 					disfrutéis como nunca de vuestros encuentros con vuestros amigos, familiares... ¡esperamos
 					que os gusten! y estad atentos, ya que iremos subiendo menús nuevos ¡para que sigáis disfrutando!.</p>
 					<p>En merendalia, ¡no nos gusta la rutina!.</p>
+					<p>No os podéis perder este NUEVO MENÚ que os traemos para disfrutar de la sana y rica gastronomía JAPONESA, ¡aquí os lo dejamos!</p>
 
+			</div>
+			
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Japonés.jpg" alt="Menú Japonés"
+					title="Menú Japonés" />
 			</div>
 
 			<div class="img_menu img_lista_menus">
