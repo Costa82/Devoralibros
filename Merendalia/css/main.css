@@ -126,11 +126,11 @@ nav>#lista_principal_index {
 	font-size: 11px;
 }
 
-#galeria, #eventos, #reservas, #menus, #productos, #contacto {
+#galeria, #eventos, #reservas, #menus, #productos, #contacto, #blogMerendalia {
 	display: none;
 }
 
-#galeria2 a:hover, #eventos2 a:hover, #reservas2 a:hover, #menus2 a:hover, #productos2 a:hover, #contacto2 a:hover {
+#galeria2 a:hover, #eventos2 a:hover, #reservas2 a:hover, #menus2 a:hover, #productos2 a:hover, #contacto2 a:hover, #blogMerendalia2 a:hover {
 	color: #9bd155;
 }
 
@@ -217,10 +217,9 @@ nav>ul>li>ul#lista_movil li {
 .presentacion {
 	text-align: center;
 	font-size: 20px;
-}
-
-.presentacion {
 	padding-top: 100px;
+	width: 90%;
+	margin: 0 auto;
 }
 
 /* CIRCULOS
@@ -1219,7 +1218,7 @@ footer h3 {
 	#inicio img {
 		margin-top: -20px;
 	}
-	#galeria, #eventos, #reservas, #menus, #productos, #contacto {
+	#galeria, #eventos, #reservas, #menus, #productos, #contacto, #blogMerendalia {
 		display: block;
 	}
 	nav>ul>li#menu_moviles {
