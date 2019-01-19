@@ -51,7 +51,7 @@ h4 {
 	margin: 5px 0;
 }
 
-p {
+p, span {
 	font-size: 15px;
 }
 
@@ -461,61 +461,61 @@ form a:hover {
 	padding: 8px 4px 4px 8px;
 }
 
-/* EVENTOS
+/* EVENTOS Y BLOG
    ========================================================================= */
-.evento_principal {
+.evento_principal, .articulo_principal {
 	text-align: center;
 }
-
-.evento_principal h3 {
+.evento_principal h3, .explicacion_blog h3 {
 	font-size: 20px;
 	margin: 0 10px;
 }
-
+.contenedor_articulo_secundario {
+	width: 90%;
+	margin: 0 auto;
+}
 img.img_ordenador {
 	display: none;
 }
-
 .evento_principal img {
 	height: 450px;
 }
-
-.explicacion_evento {
+.explicacion_evento, .explicacion_articulo {
 	width: 80%;
 	margin: 20px auto;
 	text-align: left;
 }
 
-/*CONTENEDOR EVENTOS SECUNDARIOS*/
+/*CONTENEDOR EVENTOS Y ARTICULOS SECUNDARIOS*/
 h3.eventos_pasados {
 	margin: 35px 0 25px;
 	font-size: 20px;
 	text-align: center;
 }
 
-.evento_secundario h3 {
+.evento_secundario h3, .articulo_secundario h3 {
 	font-size: 18px;
 	margin: 15px;
 	text-align: center;
 }
 
-.evento_secundario>.explicacion_evento {
+.evento_secundario > .explicacion_evento, .articulo_secundario > .explicacion_articulo {
 	width: 100%;
 	margin: 20px 0;
 }
 
-.contenedor_eventos_secundarios {
+.contenedor_eventos_secundarios, .contenedor_articulo_secundario {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: flex-start;
 }
 
-.contenedor_eventos {
-		margin-top: 25px;
+.contenedor_eventos, .articulo_cabecera {
+	margin-top: 25px;
 }
 
-.evento_secundario {
+.evento_secundario, .articulo_secundario {
 	margin: 20px;
 	min-width: 280px;
 	max-width: 350px;
@@ -524,7 +524,7 @@ h3.eventos_pasados {
 	text-align: center;
 }
 
-.evento_secundario img {
+.evento_secundario img, .articulo_secundario img {
 	width: 80%;
 }
 
@@ -746,6 +746,49 @@ img.queso {
 	max-width: 300px;
 }
 
+/* BLOG
+   ========================================================================= */
+.explicacion_blog {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	padding-top: 80px;
+}
+.explicacion_articulo {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	padding-top: 30px;
+}
+.ultimo {
+	padding-top: 0;
+}
+.explicacion_blog h3 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+h3.titulo_articulo {
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+.texto_leerMas {
+	display:none;
+}
+.leerMenos {
+	display:none;
+}
+.leerMas, .leerMenos {
+	color: #ff3123;
+	cursor: pointer;
+}
+.img_articulo {
+	width: 80%;
+	margin-top: 25px;
+}
+.img_articulo_secundaria {
+	width: 90%;
+}
 
 /* CONTACTO
    ========================================================================= */
@@ -967,13 +1010,13 @@ footer h3 {
 		width: 50%;
 		margin: 0 auto;
 	}
-	.contenedor_eventos {
+	.contenedor_eventos, .articulo_cabecera {
 		margin-top: 25px;
 	}
-	.contenedor_eventos_secundarios p {
+	.contenedor_eventos_secundarios p, .contenedor_articulo_secundario p {
 		font-size: 16px;
 	}
-	.evento_secundario {
+	.evento_secundario, .articulo_secundario {
 		text-align: center;
 		max-width: 600px;
 	}
@@ -1018,15 +1061,19 @@ footer h3 {
 	.condiciones, .whatsapp {
 		margin-left: 40px;
 	}
-	
 	.menu_infantil>h2 {
 		font-size: 22px;
 	}
-	
 	.imagenes_menu_infantil img {
 		height: 600px;	
 		width: auto;
 		padding: 20px;
+	}
+	.explicacion_articulo {
+		padding-top: 40px;
+	}
+	.ultimo {
+		padding-top: 0;
 	}
 }
 
@@ -1064,7 +1111,7 @@ footer h3 {
 	.circulo h2 {
 		font-size: 23px;
 	}
-	p {
+	p, span {
 		font-size: 20px;
 	}
 	.presentacion h3 {
@@ -1074,8 +1121,11 @@ footer h3 {
 		padding-top: 15px;
 		font-size: 15px;
 	}
-	.explicacion p {
+	.explicacion p, span {
 		padding-top: 25px;
+	}
+	.explicacion_articulo p {
+		padding-top: 0;
 	}
 	.evento_principal img {
 		height: 400px;
@@ -1148,7 +1198,7 @@ footer h3 {
 	.condiciones, .whatsapp {
 		margin-left: 150px;
 	}
-	.evento_secundario {
+	.evento_secundario, .articulo_secundario {
 		min-width: 350px;
 	}
 }
@@ -1189,24 +1239,33 @@ footer h3 {
 		opacity: 1;
 		transition: opacity 1s;
 	}
-	.evento_principal h3 {
+	.evento_principal h3, .explicacion_blog h3 {
 		font-size: 30px;
 	}
-	.contenedor_eventos_secundarios p {
+	.contenedor_eventos_secundarios p, .contenedor_articulo_secundario p {
 		font-size: 19px;
 	}
 	h3.eventos_pasados {
 		margin-top: 55px;
 		font-size: 30px;
 	}
-	.evento_secundario h3 {
+	.evento_secundario h3, .articulo_secundario h3 {
 		font-size: 26px;
 	}
-	.explicacion p {
+	h3.titulo_articulo {
+		font-size: 25px;
+	}
+	.explicacion p, span {
 		padding-top: 35px;
+	}
+	.explicacion_blog {
+		padding-top: 100px;
 	}
 	.explicacion_evento {
 		margin: 40px auto;
+	}
+	.explicacion_articulo {
+		margin: 20px auto;
 	}
 	.tarifas {
 		margin: 35px 10px 25px;
@@ -1256,10 +1315,10 @@ footer h3 {
 	.evento_principal img {
 		height: 500px;
 	}
-	.contenedor_eventos {
+	.contenedor_eventos, .articulo_cabecera {
 		margin-top: 40px;
 	}
-	.evento_secundario {
+	.evento_secundario, .articulo_secundario {
 		max-width: 600px;
 	}
 	.contenedor_contacto h3 {
@@ -1331,6 +1390,12 @@ footer h3 {
 	}
 	.contenedor_formulario {
 		margin: 80px 25px;
+	}
+	.explicacion_articulo h3 {
+		font-size:35px;
+	}
+	.ultimo {
+		padding-top: 0;
 	}
 }
 
@@ -1410,6 +1475,9 @@ footer h3 {
 	}
 	.contenedor_formulario {
 		margin: 100px 25px;
+	}
+	.explicacion_blog {
+		padding-top: 130px;
 	}
 }
 
