@@ -8,6 +8,7 @@ RewriteRule ^galeria/ php/galeria.php [L]
 RewriteRule ^eventos/ php/eventos.php [L]
 RewriteRule ^reservas-tarifas/ php/reservas.php [L]
 RewriteRule ^contacto/ php/contacto.php [L]
+RewriteRule ^blog-merendalia/ php/blogMerendalia.php [L]
 
 RewriteRule ^envio-correcto php/envioCorrecto.php [L]
 RewriteRule ^envio-fallido php/envioFallido.php [L]

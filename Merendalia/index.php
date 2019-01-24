@@ -11,6 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Alquila el local para celebraciones, cumpleaños, fiestas sorpresa, reuniones con amigos y familia Valladolid. Reserva los menús privados solo para tu grupo." />
+<meta name="robots" content="NOODP">
 <title>Merendalia</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
 
