@@ -219,7 +219,7 @@ nav>ul>li>ul#lista_movil li {
 	font-size: 20px;
 	padding-top: 100px;
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto; 	
 }
 
 /* CIRCULOS
@@ -789,6 +789,11 @@ h3.titulo_articulo {
 	width: 90%;
 }
 
+p.pieFoto {
+	color: grey;
+	font-size: 12px;
+}
+
 /* CONTACTO
    ========================================================================= */
 .contenedor_contacto h3 {
@@ -977,6 +982,7 @@ footer h3 {
 	.menu_infantil {
 		width: 400px;
 	}
+	
 }
 
 /* Para resoluciones a partir de 600px */
@@ -1073,6 +1079,9 @@ footer h3 {
 	}
 	.ultimo {
 		padding-top: 0;
+	}
+	p.pieFoto {
+		font-size: 12px;
 	}
 }
 
@@ -1185,6 +1194,9 @@ footer h3 {
 	}
 	.oculto_movil_footer {
 		display: inline-block;
+	}
+	p.pieFoto {
+		font-size: 15px;
 	}
 }
 
@@ -1396,6 +1408,9 @@ footer h3 {
 	.ultimo {
 		padding-top: 0;
 	}
+	p.pieFoto {
+		font-size: 15px;
+	}
 }
 
 /* Para resoluciones a partir de 1250px */
@@ -1486,4 +1501,5 @@ footer h3 {
 	.img_producto_comida img {
 		height: 200px;
 	}
+	
 }
