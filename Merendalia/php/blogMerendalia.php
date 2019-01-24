@@ -310,14 +310,16 @@
 				<p>
 					<i>¿Por qué reservar? ¿Cuáles son las ventajas?</i>
 				</p>
-				</br> Las casas son cada vez más pequeñas y cuesta juntarse.
-				Organizar algo en casa implica comprar, cocinar, preparar la mesa y
-				luego recoger y limpiar. En merendalia nos podemos encargar de todo,
-				si así lo deseas. No necesitas coger el coche. Sabemos que quien más
-				quien menos tiene casa en el pueblo o un amigo con bodega. Estamos
-				en el centro para que no tengas que desplazarte. Disponemos de
-				parque de bolas, tronas, cambiador de bebés, y el local está
-				adaptado a personas de movilidad reducida. </br> </br>
+				</br>
+				<p>Las casas son cada vez más pequeñas y cuesta juntarse. Organizar
+					algo en casa implica comprar, cocinar, preparar la mesa y luego
+					recoger y limpiar. En merendalia nos podemos encargar de todo, si
+					así lo deseas. No necesitas coger el coche. Sabemos que quien más
+					quien menos tiene casa en el pueblo o un amigo con bodega. Estamos
+					en el centro para que no tengas que desplazarte. Disponemos de
+					parque de bolas, tronas, cambiador de bebés, y el local está
+					adaptado a personas de movilidad reducida.</p>
+				</br> </br>
 
 				<p>
 					<u>Menús Privados 
