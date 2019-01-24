@@ -74,11 +74,11 @@
 
 	<div class="explicacion">
 		<p>
-			En esta sección queremos presentarte nuestro local Mami Carcla. </br>Situado
+			En esta sección queremos presentarte nuestro local Merendalia. </br>Situado
 			en un lugar céntrico, al lado de la Iglesia de la Antigua, nacemos
 			para crear un espacio de reunión y encuentro, de celebración y
 			banquete, de risas y diversión. </br> </br> <strong>¿Qué te ofrece
-				Mami Carcla?</strong> </br>
+				Merendalia?</strong> </br>
 			</br>Una sala-comedor para hasta 30 personas (dependiendo de la
 			disposición que le demos o que queráis); una zona infantil para hasta
 			6 niños, en la cual los pequeños de la casa podrán disfrutar a la vez
@@ -86,9 +86,12 @@
 			utensilios necesarios, para que puedas cocinar para tu gente (horno
 			grande, inducción, campana extractora, microondas, neveras,
 			lavavajillas cafetera, menaje, etc.); baño adaptado para personas de
-			movilidad reducida y con cambiador de bebés. </br>Ahora solo queda
+			movilidad reducida y con cambiador de bebés. Te dejamos el link de
+			nuestra entrada de blog donde explicamos un poco mejor cómo puedes 
+			disfrutar en merendalia</br>Ahora solo queda
 			que veas nuestras fotos, cuadres un día con los tuyos, y ¡vengas a
 			conocernos!
+		
 		</p>
 	</div>
 
@@ -127,19 +130,19 @@
 				title='foto galeria' alt="foto galeria" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_5995_opt.jpg"><img
-				src="../img/_MG_5995.jpg" class="foto img_ordenador"
+				href="../img/merendalia-reuniones-amigos-celebración.jpg"><img
+				src="../img/merendalia-reuniones-amigos-celebración.jpg" class="foto img_ordenador"
 				title='foto galeria' alt="foto galeria" /></a>
 				<img
-				src="../img/_MG_5995.jpg" class="foto img_movil"
+				src="../img/merendalia-reuniones-amigos-celebración.jpg" class="foto img_movil"
 				title='foto galeria' alt="foto galeria" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_6006_opt.jpg"><img
-				src="../img/_MG_6006.jpg" class="foto img_ordenador"
+				href="../img/merendalia-reuniones-amigos-celebración-presentación.jpg"><img
+				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_ordenador"
 				title='foto galeria' alt="foto galeria" /></a>
 				<img
-				src="../img/_MG_6006.jpg" class="foto img_movil"
+				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_movil"
 				title='foto galeria' alt="foto galeria" />
 				
 		<a class="fancybox" rel="group"
@@ -207,11 +210,11 @@
 				title='foto galeria' alt="foto galeria" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_6051_opt.jpg"><img
-				src="../img/_MG_6051.jpg" class="foto img_ordenador"
+				href="../img/merendalia-reuniones-amigos-celebración-ropa.jpg"><img
+				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_ordenador"
 				title='foto galeria' alt="foto galeria" /></a>
 				<img
-				src="../img/_MG_6051.jpg" class="foto img_movil"
+				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_movil"
 				title='foto galeria' alt="foto galeria" />
 				
 		<a class="fancybox" rel="group"
