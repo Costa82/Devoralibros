@@ -1,15 +1,15 @@
 $(document).ready(function() { 
 
-	$('.leerMas').on('click',function(){
-	    $('.texto_leerMas').toggle("slow");
-	    $('.leerMas').hide();
-	    $('.leerMenos').show();
+	$('.leerMas').on('click',function() {
+		$(this).siblings( ".texto_leerMas" ).toggle("slow");
+	    $(this).hide();
+	    $(this).siblings('.leerMenos').show();
 	});
 	
-	$('.leerMenos').on('click',function(){
-	    $('.texto_leerMas').toggle("slow");
-	    $('.leerMas').show();
-	    $('.leerMenos').hide();
+	$('.leerMenos').on('click',function() {
+		$(this).siblings( ".texto_leerMas" ).toggle("slow");
+		$(this).siblings('.leerMas').show();
+	    $(this).hide();
 	});
 
 });

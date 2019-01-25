@@ -462,7 +462,7 @@ form a:hover {
 
 /* EVENTOS Y BLOG
    ========================================================================= */
-.evento_principal, .articulo_principal {
+.evento_principal {
 	text-align: center;
 }
 .evento_principal h3, .explicacion_blog h3 {
@@ -470,8 +470,7 @@ form a:hover {
 	margin: 0 10px;
 }
 .contenedor_articulo_secundario {
-	width: 90%;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 img.img_ordenador {
 	display: none;
@@ -510,7 +509,7 @@ h3.eventos_pasados {
 	align-items: flex-start;
 }
 
-.contenedor_eventos, .articulo_cabecera {
+.contenedor_eventos {
 	margin-top: 25px;
 }
 
@@ -759,6 +758,9 @@ img.queso {
 	margin-bottom: 15px;
 	padding-top: 30px;
 }
+.fechaArticulo p {
+	text-align: center;
+}
 .ultimo {
 	padding-top: 0;
 }
@@ -768,6 +770,7 @@ img.queso {
 	font-size: 25px;
 }
 h3.titulo_articulo {
+	text-align: center;
 	font-size: 18px;
 	margin-bottom: 25px;
 }
@@ -788,10 +791,13 @@ h3.titulo_articulo {
 .img_articulo_secundaria {
 	width: 90%;
 }
-
 p.pieFoto {
 	color: grey;
 	font-size: 12px;
+}
+.articulo {
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 /* CONTACTO
@@ -1015,7 +1021,7 @@ footer h3 {
 		width: 50%;
 		margin: 0 auto;
 	}
-	.contenedor_eventos, .articulo_cabecera {
+	.contenedor_eventos {
 		margin-top: 25px;
 	}
 	.contenedor_eventos_secundarios p, .contenedor_articulo_secundario p {
@@ -1326,7 +1332,7 @@ footer h3 {
 	.evento_principal img {
 		height: 500px;
 	}
-	.contenedor_eventos, .articulo_cabecera {
+	.contenedor_eventos {
 		margin-top: 40px;
 	}
 	.evento_secundario, .articulo_secundario {
