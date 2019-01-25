@@ -83,6 +83,7 @@
 			<h3>TALLERES INFANTILES EN MERENDALIA</h3>
 
 			<div class="explicacion_evento">
+			
 			<p>Aquí os dejamos las <strong>MERIENDAS - TALLER</strong> del mes de <strong>febrero</strong> para que elijáis las que más os gusten.</p>
 					<br>
 					<p>¡Los jueves de 17:15, para que os de tiempo a venir del cole, hasta las 18:45, ¡¡una hora y media de diversión, aprendizaje y
@@ -94,7 +95,6 @@
 					<strong>info@merendalia.es)</strong></p>
 					<br>
 					<p>¡No dejes que tus hijos se lo pierdan!</p>
-					</p>
 			</div>
 
 			<img src='../img/Talleres_infantiles_Febrero_alargado.jpg'
@@ -102,10 +102,7 @@
 				src='../img/Talleres_infantiles_Febrero_apaisado.jpg'
 				title='Talleres Infantiles' class="img_ordenador" />
 				</br>
-				<br>
-				<br>
-				<br>
-				
+				</br>
 
 			<img src='../img/Talleres_infantiles_Enero_Alargada.jpg'
 				title='Talleres Infantiles' class="img_movil" /> <img
