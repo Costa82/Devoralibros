@@ -573,7 +573,8 @@
 				<p>Aquí os dejamos algunas fotos del taller y ¡os animamos a que
 					traigáis a vuestros peques a los siguientes talleres! Estad atentos
 					porque pronto sacaremos el programa de febrero.</p>
-
+					</br>
+				<p><i>Fotos realizadas por Rocío Lozares.</i></p>
 
 				<!-- enlace de 'leer menos...' para ocultar el texto y las imágenes -->
 
