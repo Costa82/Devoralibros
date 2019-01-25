@@ -440,6 +440,17 @@
 						</p>
 					</div>
 				</li>
+				
+				<li>
+					<div class="texto_producto_comida">
+						<p>Ración grande de ibericos (jamón, lomo, chorizo y salchichón) y cecina. </p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>25 €</strong>
+						</p>
+					</div>
+				</li>
 
 				<li>
 					<div class="texto_producto_comida">
@@ -465,11 +476,11 @@
 
 				<li>
 					<div class="texto_producto_comida">
-						<p>Huevos rellenos (10 medios huevos)</p>
+						<p>Tartaletas de cabrales con nueces (12 uds.)</p>
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>8,5 €</strong>
+							<strong>9,5 €</strong>
 						</p>
 					</div>
 				</li>
