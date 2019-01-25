@@ -189,8 +189,7 @@
 						class="img_articulo_secundaria"
 						title="Píldora de Womenalia womencyl Navidad 2018 y presentación de Marca de ropa 'Manai'"
 						alt="Píldora de Womenalia womencyl Navidad 2018 y presentación de Marca de ropa 'Manai'" /></a>
-					<p class="pieFoto">Píldora de Womenalia womencyl Navidad 2018 y
-						presentación de Marca de ropa 'Manai'</p>
+					<p class="pieFoto">Reserva de espacio y presentación de productos</p>
 
 				</div>
 
@@ -203,7 +202,7 @@
 						class="img_articulo_secundaria"
 						title="Menú 'calentar y listo' comida casera merendalia"
 						alt="Menú 'calentar y listo' comida casera merendalia" /></a>
-					<p class="pieFoto">Menú 'calentar y listo' comida casera merendalia</p>
+					<p class="pieFoto">Preparación de menú 'calentar y listo'</p>
 
 				</div>
 
@@ -230,7 +229,7 @@
 						class="img_articulo_secundaria"
 						title="Menú calentar y listo, Goulash"
 						alt="Menú calentar y listo, Goulash" /></a>
-					<p class="pieFoto">Menú calentar y listo, Goulash</p>
+					<p class="pieFoto">Menú 'calentar y listo', Goulash</p>
 
 				</div>
 
