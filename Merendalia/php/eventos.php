@@ -83,17 +83,29 @@
 			<h3>TALLERES INFANTILES EN MERENDALIA</h3>
 
 			<div class="explicacion_evento">
-				<p>Para dar la bienvenida al año nuevo ¡¡en Merendalia nos hemos
-					acordado de los más peques de la casa!! A partir del jueves día 17 de Enero comenzaremos nuestras MERIENDAS - TALLER.</p>
+			<p>Aquí os dejamos las <strong>MERIENDAS - TALLER</strong> del mes de <strong>febrero</strong> para que elijáis las que más os gusten.</p>
+					<br>
 					<p>¡Los jueves de 17:15, para que os de tiempo a venir del cole, hasta las 18:45, ¡¡una hora y media de diversión, aprendizaje y
 					merienda para los reyes de la casa!!</p>
-					<p>Por 15€ todo incluido (merienda, taller y materiales).</p>
-					<p>Aquí os dejamos los talleres del mes de Enero, 
-					(Para niños de entre 4 y 10 años, ambos incluidos. Para apuntarles, llamad a nuestro teléfono 680.21.97.94 o enviadnos un email a
-					info@merendalia.es)</p>
+					<br>
+					<p><strong>Por 15€ todo incluido (merienda saludable, taller y materiales).</strong></p>
+					<br>
+					<p>(Para niños de entre 3,5 y 10 años, ambos incluidos. Para apuntarles, llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
+					<strong>info@merendalia.es)</strong></p>
+					<br>
 					<p>¡No dejes que tus hijos se lo pierdan!</p>
 					</p>
 			</div>
+
+			<img src='../img/Talleres_infantiles_Febrero_alargado.jpg'
+				title='Talleres Infantiles' class="img_movil" /> <img
+				src='../img/Talleres_infantiles_Febrero_apaisado.jpg'
+				title='Talleres Infantiles' class="img_ordenador" />
+				</br>
+				<br>
+				<br>
+				<br>
+				
 
 			<img src='../img/Talleres_infantiles_Enero_Alargada.jpg'
 				title='Talleres Infantiles' class="img_movil" /> <img
