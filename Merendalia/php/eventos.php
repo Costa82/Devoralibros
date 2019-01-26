@@ -7,11 +7,6 @@
 <title>Eventos</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
-<script>
-    var rutacss1 = "../css/main.css?" + Math.random();
-    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-</script>
-
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
 	rel='stylesheet' type='text/css' />
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
@@ -56,7 +51,18 @@
 	type="text/css" media="screen" />
 <script type="text/javascript"
 	src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-<script src="../jquery/jquery_menuMoviles_desplegable.js"></script>
+
+<!-- Metemos un aleatorio para la recarga automática del css y el js -->
+<script>
+
+    var rutacss1 = "../css/main.css?" + Math.random();
+    var rutacss2 = "../jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />');
+    document.write('<script src="' + rutacss2 + '"></' + script + '>');
+	
+</script>
 
 </head>
 <body>

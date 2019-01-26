@@ -7,11 +7,6 @@
 <title>Blog Merendalia</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
-<script>
-    var rutacss1 = "../css/main.css?" + Math.random();
-    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-</script>
-
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
 	rel='stylesheet' type='text/css' />
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
@@ -31,7 +26,6 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="../jquery/zoom_fancybox.js"></script>
-<script src="../jquery/jquery_leerMas.js"></script>
 
 <!-- Add jQuery library -->
 <script type="text/javascript"
@@ -42,6 +36,7 @@
     var rutacss2 = "../fancybox/source/jquery.fancybox.css?v=2.1.7?" + Math.random();
     document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
 </script>
+
 <script type="text/javascript"
 	src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
 
@@ -59,7 +54,20 @@
 	type="text/css" media="screen" />
 <script type="text/javascript"
 	src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-<script src="../jquery/jquery_menuMoviles_desplegable.js"></script>
+	
+<!-- Metemos un aleatorio para la recarga automática del css y el js -->
+<script>
+
+    var rutacss1 = "../css/main.css?" + Math.random();
+    var rutacss2 = "../jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
+    var rutacss3 = "../jquery/jquery_leerMas.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />');
+    document.write('<script src="' + rutacss2 + '"></' + script + '>');
+    document.write('<script src="' + rutacss3 + '"></' + script + '>');
+	
+</script>
 
 </head>
 <body>

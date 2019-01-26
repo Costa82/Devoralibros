@@ -7,11 +7,6 @@
 <title>Menús</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
-<script>
-    var rutacss1 = "../css/main.css?" + Math.random();
-    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-</script>
-
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
 	rel='stylesheet' type='text/css' />
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
@@ -28,8 +23,20 @@
 <link href="../icon-normal.png" rel="icon" sizes="128x128" />
 
 <script src="../jquery/jquery-3.1.1.min.js"></script>
-<script src="../jquery/jquery_menuMoviles_desplegable.js"></script>
-<script src="../jquery/mostrar_menus_infantiles.js"></script>
+
+<!-- Metemos un aleatorio para la recarga automática del css y el js -->
+<script>
+
+    var rutacss1 = "../css/main.css?" + Math.random();
+    var rutacss2 = "../jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
+    var rutacss3 = "../jquery/mostrar_menus_infantiles.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />');
+    document.write('<script src="' + rutacss2 + '"></' + script + '>');
+    document.write('<script src="' + rutacss3 + '"></' + script + '>');
+	
+</script>
 
 </head>
 <body>
