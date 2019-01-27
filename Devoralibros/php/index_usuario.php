@@ -1,5 +1,4 @@
 <!--
--
 - Archivo index_usuario con toda la estructura de la página perfil de los usuarios normales.
 - @author Miguel Costa.
 -
@@ -46,12 +45,7 @@ $foto = $_SESSION['datos']['foto'];
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
 	rel='stylesheet' type='text/css' />
 <script src="../jquery/jquery-3.1.1.min.js"></script>
-<script src="../jquery/jquery_listaDeslizante.js"></script>
-<script src="../jquery/jquery_acordeon.js"></script>
-<script src="../jquery/jquery_busqueda_avanzada.js"></script>
-<script src="../jquery/parallax.js"></script>
-<script src="../jquery/jquery_scroll_menuNavegacion.js"></script>
-<!-- <script src="../jquery/jquery_anclas.js"></script> -->
+
 <script>
     function confirmarBaja() {
         if(confirm('¿Estás seguro de darte de baja de Devoralibros?'))
@@ -60,18 +54,40 @@ $foto = $_SESSION['datos']['foto'];
             return false;
     }
 </script>
+
+<!-- Metemos un aleatorio para el css y el jss -->
+<script>
+    var rutacss1 = "../css/main.css?" + Math.random();
+    var rutacss2 = "../css/main_libros.css?" + Math.random();
+    var rutacss3 = "../css/main_perfil.css?" + Math.random();
+    var rutajs1 = "../jquery/jquery_listaDeslizante.js?" + Math.random();
+    var rutajs2 = "../jquery/jquery_busqueda_avanzada.js?" + Math.random();
+    var rutajs3 = "../jquery/jquery_scroll_menuNavegacion.js?" + Math.random();
+    var rutajs4 = "../jquery/jquery_acordeon.js?" + Math.random();
+    var rutajs5 = "../jquery/parallax.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />');
+    document.write('<script src="' + rutajs1 + '"></' + script + '>');
+    document.write('<script src="' + rutajs2 + '"></' + script + '>');
+    document.write('<script src="' + rutajs3 + '"></' + script + '>');
+    document.write('<script src="' + rutajs4 + '"></' + script + '>');
+    document.write('<script src="' + rutajs5 + '"></' + script + '>');
+</script>
 </head>
 <body>
 	<header>
-	
+
 		<nav>
 			<?php include_once ("menuNav.php"); ?>		
 		</nav>
-		
+
 		<div id='slider'>
-		
+
 			<div class="busqueda_avanzada">
-			
+
 				<div class="pestana">
 					<p>Búsqueda avanzada</p>
 				</div>
@@ -79,7 +95,7 @@ $foto = $_SESSION['datos']['foto'];
 				<?php  include_once ("formulario_avanzado.php"); ?>
 				
 			</div>
-			
+
 			<div class="devoralibros_mensual">                
 				<?php include_once ("ganador_mes_index.php"); ?>
 			</div>
@@ -87,26 +103,26 @@ $foto = $_SESSION['datos']['foto'];
 			<?php include_once ("mostrar_status.php"); ?>
 			
 			<div id='buscador'>
-			
+
 				<form action="../Buscador/" method="POST">
 					<label><p>Busca tu libro</p> <input type="search" name="nombre"
 						placeholder="Buscar"></label>
 				</form>
-				
+
 			</div>
-			
+
 			<center>
 				<input class="botonInvitacion" type="button"
 					onclick="location.href='../FormularioEnviarInvitacion/';"
 					value="Enviar Invitación" />
 			</center>
-			
+
 		</div>
-		
+
 		<a name="mi-ancla"></a>
-		
+
 		<div class="navegacion">
-		
+
 			<ul id='navegacion_secundaria'>
 				<li><a href="../Usuario/?pagina=1#mi-ancla" title="Reseñas subidas">Reseñas
 						subidas</a></li>
@@ -117,94 +133,94 @@ $foto = $_SESSION['datos']['foto'];
 				<li class="invitacion"><a href="../FormularioEnviarInvitacion/"
 					title="Enviar Invitacion">Enviar Invitación</a></li>
 			</ul>
-			
+
 			<ul id='navegacion_secundaria'>
 				<li><a href="../Usuario/?pagina=2#mi-ancla" title="Mis amigos">Mis
 						amigos</a></li>
 				<li><a href="../Usuario/?pagina=3#mi-ancla" title="Mis listas">Mis
 						listas</a></li>
 				<?php
-                    if ($usuario->mensajesSinLeer($id_usuario) === true) {
-                        
-                         echo '<li class="animated flash"><a href="../Usuario/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
-                    } else {
-                        
-                         echo '<li><a href="../Usuario/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
-                    }
-                ?>	
-				<li><a href="../FormularioEditarUsuario/" title="Editar usuario">Editar usuario</a></li>
+    if ($usuario->mensajesSinLeer($id_usuario) === true) {
+        
+        echo '<li class="animated flash"><a href="../Usuario/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
+    } else {
+        
+        echo '<li><a href="../Usuario/?pagina=4#mi-ancla" title="Mis mensajes">Mis mensajes</a></li>';
+    }
+    ?>	
+				<li><a href="../FormularioEditarUsuario/" title="Editar usuario">Editar
+						usuario</a></li>
 			</ul>
-			
+
 		</div>
-		
+
 	</header>
 		
 	<?php
-    if (isset($_GET['pagina'])) {
-        
-        $recibe_pagina = $_GET['pagina'];
-        
-        switch ($recibe_pagina) {
-            
-            case 1:
-                
-                 include ("libros_subidos.php");
-                 break;
-            
-            case 2:
-                
-                include ("mis_amigos.php");
-                break;
-            
-            case 3:
-                
-                include ("mis_listas.php");
-                break;
-            
-            case 4:
-                
-                include ("mis_mensajes.php");
-                break;
-            
-            case 5:
-                
-                include ("libros_comentados.php");
-                break;
-            
-            default:
-                // incluimos la pagina que por defecto aparecera si no se seleccionan alguna de las otras
-                include ("libros_subidos.php");
-                
-        }
-    } else {
-        
-        include ("libros_subidos.php");
-    }
+if (isset($_GET['pagina'])) {
     
-    if (isset($_REQUEST['num'])) {
-        echo "<p style='color:red'>" . validacionExisteUsuario($_REQUEST['num']) . "</p>";
-    }
+    $recibe_pagina = $_GET['pagina'];
     
-    include_once ("infografia.php");
+    switch ($recibe_pagina) {
         
-    ?>
+        case 1:
+            
+            include ("libros_subidos.php");
+            break;
+        
+        case 2:
+            
+            include ("mis_amigos.php");
+            break;
+        
+        case 3:
+            
+            include ("mis_listas.php");
+            break;
+        
+        case 4:
+            
+            include ("mis_mensajes.php");
+            break;
+        
+        case 5:
+            
+            include ("libros_comentados.php");
+            break;
+        
+        default:
+            // incluimos la pagina que por defecto aparecera si no se seleccionan alguna de las otras
+            include ("libros_subidos.php");
+    }
+} else {
+    
+    include ("libros_subidos.php");
+}
+
+if (isset($_REQUEST['num'])) {
+    echo "<p style='color:red'>" . validacionExisteUsuario($_REQUEST['num']) . "</p>";
+}
+
+include_once ("infografia.php");
+
+?>
 		
     <center>
-       	<script async
-       		src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-       	<!-- Adaptable -->
-       	<ins class="adsbygoogle" style="display: block"
-       		data-ad-client="ca-pub-6841941891904085" data-ad-slot="5370628212"
-       		data-ad-format="auto"></ins>
-       	<script>
+		<script async
+			src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Adaptable -->
+		<ins class="adsbygoogle" style="display: block"
+			data-ad-client="ca-pub-6841941891904085" data-ad-slot="5370628212"
+			data-ad-format="auto"></ins>
+		<script>
        			(adsbygoogle = window.adsbygoogle || []).push({});
     	</script>
-    </center>
+	</center>
 
 	<footer>
 		<?php include_once ("footer.php"); ?>        
 	</footer>
-	
+
 </body>
 </html>
 

@@ -1,6 +1,6 @@
 <!--
 - Formulario de edición de libro.
-- @author   Miguel Costa.
+- @author Miguel Costa.
 -
 -->
 <?php
@@ -14,23 +14,31 @@ $libro = new Libro();
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Type"
-    	content="application/xhtml+xml; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Modifica tu libro</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
-    	rel='stylesheet' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
-    	rel="stylesheet">
-    <link rel="stylesheet" href="../css/form-elements.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type"
+	content="application/xhtml+xml; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Modifica tu libro</title>
+<!-- CSS -->
+<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
+	rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+	rel="stylesheet">
 
+<!-- Metemos un aleatorio para el css y el jss -->
+<script>
+    var rutacss1 = "../css/font-awesome.css?" + Math.random();
+    var rutacss2 = "../css/main.css?" + Math.random();
+    var rutacss3 = "../css/form-elements.css?" + Math.random();
+    var rutacss4 = "../css/style.css?" + Math.random();
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss4 + '" type="text/css" media="screen" />'); 
+</script>
+
+</head>
 
 <body>
 	<div class="container">
@@ -154,61 +162,61 @@ $libro = new Libro();
 						<select name="genero">
 							<option value="<?php echo $genero; ?>" selected><?php echo $genero; ?></option>
 							<option value="Autoayuda">Autoayuda</option>
-                            <option value="Aventuras">Aventuras</option>
-                            <option value="Bélico">Bélico</option>
-                            <option value="Biográfico">Biográfico</option>
-                            <option value="Ciencia Ficción">Ciencia Ficción</option>
-                            <option value="Comedia">Comedia</option>
-                            <option value="Cómic">Cómic</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Ensayo">Ensayo</option>
-                            <option value="Erótico">Erótico</option>
-                            <option value="Espionaje">Espionaje</option>
-                            <option value="Fantástico">Fantástico</option>
-                            <option value="Filosófico">Filosófico</option>
-                            <option value="Histórico">Histórico</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Juvenil">Juvenil</option>
-                            <option value="Misterio">Misterio</option>
-                            <option value="Narrativa">Narrativa</option>
-                            <option value="Novela">Novela</option>
-                            <option value="Poesía">Poesía</option>
-                            <option value="Policíaco">Policíaco</option>
-                            <option value="Romántico">Romántico</option>
-                            <option value="Satírico">Satírico</option>
-                            <option value="Suspense">Suspense</option>
-                            <option value="Teatro">Teatro</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Utópico">Utópico</option>
+							<option value="Aventuras">Aventuras</option>
+							<option value="Bélico">Bélico</option>
+							<option value="Biográfico">Biográfico</option>
+							<option value="Ciencia Ficción">Ciencia Ficción</option>
+							<option value="Comedia">Comedia</option>
+							<option value="Cómic">Cómic</option>
+							<option value="Drama">Drama</option>
+							<option value="Ensayo">Ensayo</option>
+							<option value="Erótico">Erótico</option>
+							<option value="Espionaje">Espionaje</option>
+							<option value="Fantástico">Fantástico</option>
+							<option value="Filosófico">Filosófico</option>
+							<option value="Histórico">Histórico</option>
+							<option value="Infantil">Infantil</option>
+							<option value="Juvenil">Juvenil</option>
+							<option value="Misterio">Misterio</option>
+							<option value="Narrativa">Narrativa</option>
+							<option value="Novela">Novela</option>
+							<option value="Poesía">Poesía</option>
+							<option value="Policíaco">Policíaco</option>
+							<option value="Romántico">Romántico</option>
+							<option value="Satírico">Satírico</option>
+							<option value="Suspense">Suspense</option>
+							<option value="Teatro">Teatro</option>
+							<option value="Terror">Terror</option>
+							<option value="Utópico">Utópico</option>
 						</select> <select name="genero2">
 							<option value="<?php echo $genero2; ?>" selected><?php echo $genero2; ?></option>
 							<option value="Autoayuda">Autoayuda</option>
-                            <option value="Aventuras">Aventuras</option>
-                            <option value="Bélico">Bélico</option>
-                            <option value="Biográfico">Biográfico</option>
-                            <option value="Ciencia Ficción">Ciencia Ficción</option>
-                            <option value="Comedia">Comedia</option>
-                            <option value="Cómic">Cómic</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Ensayo">Ensayo</option>
-                            <option value="Erótico">Erótico</option>
-                            <option value="Espionaje">Espionaje</option>
-                            <option value="Fantástico">Fantástico</option>
-                            <option value="Filosófico">Filosófico</option>
-                            <option value="Histórico">Histórico</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Juvenil">Juvenil</option>
-                            <option value="Misterio">Misterio</option>
-                            <option value="Narrativa">Narrativa</option>
-                            <option value="Novela">Novela</option>
-                            <option value="Poesía">Poesía</option>
-                            <option value="Policíaco">Policíaco</option>
-                            <option value="Romántico">Romántico</option>
-                            <option value="Satírico">Satírico</option>
-                            <option value="Suspense">Suspense</option>
-                            <option value="Teatro">Teatro</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Utópico">Utópico</option>
+							<option value="Aventuras">Aventuras</option>
+							<option value="Bélico">Bélico</option>
+							<option value="Biográfico">Biográfico</option>
+							<option value="Ciencia Ficción">Ciencia Ficción</option>
+							<option value="Comedia">Comedia</option>
+							<option value="Cómic">Cómic</option>
+							<option value="Drama">Drama</option>
+							<option value="Ensayo">Ensayo</option>
+							<option value="Erótico">Erótico</option>
+							<option value="Espionaje">Espionaje</option>
+							<option value="Fantástico">Fantástico</option>
+							<option value="Filosófico">Filosófico</option>
+							<option value="Histórico">Histórico</option>
+							<option value="Infantil">Infantil</option>
+							<option value="Juvenil">Juvenil</option>
+							<option value="Misterio">Misterio</option>
+							<option value="Narrativa">Narrativa</option>
+							<option value="Novela">Novela</option>
+							<option value="Poesía">Poesía</option>
+							<option value="Policíaco">Policíaco</option>
+							<option value="Romántico">Romántico</option>
+							<option value="Satírico">Satírico</option>
+							<option value="Suspense">Suspense</option>
+							<option value="Teatro">Teatro</option>
+							<option value="Terror">Terror</option>
+							<option value="Utópico">Utópico</option>
 						</select>
 					</div>
 					<div class="form-group">

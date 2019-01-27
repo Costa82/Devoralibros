@@ -25,20 +25,23 @@ $codigoPatrocinio = $usuario->getCodigoPatrocinio($id_usuario);
 <title>Formulario de Invitacion</title>
 
 <!-- CSS -->
-<script>
-        var rutacss1 = "../css/font-awesome.css?" + Math.random();
-        var rutacss2 = "../css/main.css?" + Math.random();
-        var rutacss3 = "../css/form-elements.css?" + Math.random();
-        var rutacss4 = "../css/style.css?" + Math.random();
-        document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-        document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
-        document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />'); 
-        document.write('<link rel="stylesheet" href="' + rutacss4 + '" type="text/css" media="screen" />'); 
-    </script>
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
 	rel='stylesheet' type='text/css' />
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
 	rel="stylesheet">
+	
+<!-- Metemos un aleatorio para el css y el jss -->
+<script>
+    var rutacss1 = "../css/font-awesome.css?" + Math.random();
+    var rutacss2 = "../css/main.css?" + Math.random();
+    var rutacss3 = "../css/form-elements.css?" + Math.random();
+    var rutacss4 = "../css/style.css?" + Math.random();
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />');
+    document.write('<link rel="stylesheet" href="' + rutacss4 + '" type="text/css" media="screen" />');
+</script>
 
 </head>
 <body>

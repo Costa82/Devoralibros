@@ -44,6 +44,7 @@
 	type="text/javascript"></script>
 <script src="jquery/cookies.js" type="text/javascript"></script>
 
+<!-- Metemos un aleatorio para la recarga automática del css y el js -->
 <script>
 
 	var rutacss1 = "css/main.css?" + Math.random();
