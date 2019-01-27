@@ -1,6 +1,6 @@
 <!--
 - Archivo index principal Merendalia.
-- @author   Miguel Costa.
+- @author Miguel Costa.
 -->
 
 
@@ -14,11 +14,6 @@
 <meta name="robots" content="NOODP">
 <title>Merendalia</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
-
-<script>
-     var rutacss1 = "css/main.css?" + Math.random();
-     document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async
@@ -48,7 +43,17 @@
 <script src="https://code.jquery.com/jquery-latest.min.js"
 	type="text/javascript"></script>
 <script src="jquery/cookies.js" type="text/javascript"></script>
-<script src="jquery/jquery_menuMoviles_desplegable.js"></script>
+
+<script>
+
+	var rutacss1 = "css/main.css?" + Math.random();
+    var rutacss2 = "jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />');
+    document.write('<script src="' + rutacss2 + '"></' + script + '>');
+	
+</script>
 
 </head>
 <body>
