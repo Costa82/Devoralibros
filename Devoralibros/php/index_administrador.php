@@ -1,8 +1,6 @@
 <!--
--
-- Archivo index principal con toda la estructura de la página.
--
-- @author   Miguel Costa.
+- Archivo index_administrador con toda la estructura de la página.
+- @author Miguel Costa.
 -
 -->
 <?php
@@ -32,26 +30,12 @@ $foto = $_SESSION['datos']['foto'];
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Página perfil</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
-<script>
-			var rutacss1 = "../css/main.css?" + Math.random();
-			var rutacss2 = "../css/main_perfil.css?" + Math.random();
-			var rutacss3 = "../css/main_libros.css?" + Math.random();
-			document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-			document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
-			document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />'); 
-		</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
 	rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
 	rel='stylesheet' type='text/css' />
 <script src="../jquery/jquery-3.1.1.min.js"></script>
-<script src="../jquery/jquery_listaDeslizante.js"></script>
-<script src="../jquery/jquery_busqueda_avanzada.js"></script>
-<script src="../jquery/jquery_acordeon.js"></script>
-<script src="../jquery/parallax.js"></script>
-<script src="../jquery/jquery_scroll_menuNavegacion.js"></script>
-<!-- <script src="../jquery/jquery_anclas.js"></script> -->
 <script>
        function confirmarBaja() {
            if(confirm('¿Estás seguro de darte de baja de Devoralibros?Te echaremos de menos...'))
@@ -60,6 +44,29 @@ $foto = $_SESSION['datos']['foto'];
                return false;
        }
 </script>
+
+<!-- Metemos un aleatorio para el css y el jss -->
+<script>
+    var rutacss1 = "../css/main.css?" + Math.random();
+    var rutacss2 = "../css/main_libros.css?" + Math.random();
+    var rutacss3 = "../css/main_perfil.css?" + Math.random();
+    var rutajs1 = "../jquery/jquery_listaDeslizante.js?" + Math.random();
+    var rutajs2 = "../jquery/jquery_busqueda_avanzada.js?" + Math.random();
+    var rutajs3 = "../jquery/jquery_scroll_menuNavegacion.js?" + Math.random();
+    var rutajs4 = "../jquery/jquery_acordeon.js?" + Math.random();
+    var rutajs5 = "../jquery/parallax.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />');
+    document.write('<script src="' + rutajs1 + '"></' + script + '>');
+    document.write('<script src="' + rutajs2 + '"></' + script + '>');
+    document.write('<script src="' + rutajs3 + '"></' + script + '>');
+    document.write('<script src="' + rutajs4 + '"></' + script + '>');
+    document.write('<script src="' + rutajs5 + '"></' + script + '>');
+</script>
+
 </head>
 <body>
 	<header>

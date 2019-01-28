@@ -24,29 +24,43 @@ if (isset($_SESSION['datos'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Top Devoralibros</title>
-    <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
-    
-    <script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Top Devoralibros</title>
+<link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
+
+<script>
           var rutacss1 = "../css/main.css?" + Math.random();
           var rutacss2 = "../css/main_libros.css?" + Math.random();
           document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
           document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
     </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+	rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
+	rel='stylesheet' type='text/css' />
+<script src="../jquery/jquery-3.1.1.min.js"></script>
+
+<!-- Metemos un aleatorio para el css y el jss -->
+<script>
+    var rutacss1 = "../css/main.css?" + Math.random();
+    var rutacss2 = "../css/main_libros.css?" + Math.random();
+    var rutajs1 = "../jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
+    var rutajs2 = "../jquery/jquery_scroll_menuNavegacion.js?" + Math.random();
+    var rutajs3 = "../jquery/jquery_listaDeslizante.js?" + Math.random();
+    var rutajs4 = "../jquery/jquery_busqueda_avanzada.js?" + Math.random();
+    var script = "script";
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
-    	rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
-    	rel='stylesheet' type='text/css' />
-    <script src="../jquery/jquery-3.1.1.min.js"></script>
-    <script src="../jquery/jquery-3.1.1.min.js"></script>
-    <script src="../jquery/jquery_menuMoviles_desplegable.js"></script>
-    <script src="../jquery/jquery_listaDeslizante.js"></script>
-    <script src="../jquery/jquery_busqueda_avanzada.js"></script>
-    <script src="../jquery/jquery_scroll_menuNavegacion.js"></script>
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+    document.write('<script src="' + rutajs1 + '"></' + script + '>');
+    document.write('<script src="' + rutajs2 + '"></' + script + '>');
+    document.write('<script src="' + rutajs3 + '"></' + script + '>');
+    document.write('<script src="' + rutajs4 + '"></' + script + '>');
+</script>
+
 </head>
 
 <body>
@@ -179,8 +193,8 @@ try {
 	<section class="puntos">
 		<p>¡Mejora tu Status de Devorador! Sumarás puntos por registrarte,
 			subir libros, realizar comentarios, votar libros...etc. Conseguirás
-			regalos al subir de Status y lo más importante...¡serás la
-			envidia de los demás devoradores!</p>
+			regalos al subir de Status y lo más importante...¡serás la envidia de
+			los demás devoradores!</p>
 		<p>Hasta 100 pts. Devorador Novel</p>
 		<p>Hasta 500 pts. Devorador Medio</p>
 		<p>Hasta 1000 pts. Devorador Experto</p>

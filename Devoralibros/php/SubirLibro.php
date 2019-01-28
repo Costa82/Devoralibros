@@ -22,30 +22,37 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Type"
-    	content="application/xhtml+xml; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Formulario de Subida de Libros</title>
-    <!-- CSS -->
-    <script>
-             var rutacss1 = "../css/font-awesome.css?" + Math.random();
-             var rutacss2 = "../css/main.css?" + Math.random();
-             var rutacss3 = "../css/form-elements.css?" + Math.random();
-             var rutacss4 = "../css/style.css?" + Math.random();
-             document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-             document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
-             document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />'); 
-             document.write('<link rel="stylesheet" href="' + rutacss4 + '" type="text/css" media="screen" />'); 
-        </script>
-    <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
-    	rel='stylesheet' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
-    	rel="stylesheet">
-    <script src="../jquery/jquery-3.1.1.min.js"></script>
-    <script src="../jquery/jquery_vaciarTextArea.js"></script>
-    <script src="../jquery/jquery_acordeon.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type"
+	content="application/xhtml+xml; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Formulario de Subida de Libros</title>
+<!-- CSS -->
+<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
+	rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+	rel="stylesheet">
+<script src="../jquery/jquery-3.1.1.min.js"></script>
+
+<!-- Metemos un aleatorio para el css y el jss -->
+<script>
+    var rutacss1 = "../css/font-awesome.css?" + Math.random();
+    var rutacss2 = "../css/main.css?" + Math.random();
+    var rutacss3 = "../css/form-elements.css?" + Math.random();
+    var rutacss4 = "../css/style.css?" + Math.random();
+    var rutajs1 = "../jquery/jquery_vaciarTextArea.js?" + Math.random();
+    var rutajs2 = "../jquery/jquery_acordeon.js?" + Math.random();
+    var script = "script";
+    
+    document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss3 + '" type="text/css" media="screen" />'); 
+    document.write('<link rel="stylesheet" href="' + rutacss4 + '" type="text/css" media="screen" />'); 
+    document.write('<script src="' + rutajs1 + '"></' + script + '>');
+    document.write('<script src="' + rutajs2 + '"></' + script + '>');
+</script>
+
 </head>
 <body>
         <?php
@@ -144,7 +151,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         if (empty($_REQUEST['serie'])) {
                             $serie = "NULL";
                         } else {
-                            if ( strtoupper($_REQUEST['serie']) == "NO") {
+                            if (strtoupper($_REQUEST['serie']) == "NO") {
                                 $serie = "NULL";
                             } else {
                                 $serie = $_REQUEST['serie'];
@@ -155,7 +162,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         if (empty($_REQUEST['pelicula'])) {
                             $pelicula = "NULL";
                         } else {
-                            if ( strtoupper($_REQUEST['pelicula']) == "NO") {
+                            if (strtoupper($_REQUEST['pelicula']) == "NO") {
                                 $pelicula = "NULL";
                             } else {
                                 $pelicula = $_REQUEST['pelicula'];
@@ -214,63 +221,63 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
 						</p>
 						<select name="genero">
 							<option value="cualquiera" selected></option>
-                            <option value="Autoayuda">Autoayuda</option>
-                            <option value="Aventuras">Aventuras</option>
-                            <option value="Bélico">Bélico</option>
-                            <option value="Biográfico">Biográfico</option>
-                            <option value="Ciencia Ficción">Ciencia Ficción</option>
-                            <option value="Comedia">Comedia</option>
-                            <option value="Cómic">Cómic</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Ensayo">Ensayo</option>
-                            <option value="Erótico">Erótico</option>
-                            <option value="Espionaje">Espionaje</option>
-                            <option value="Fantástico">Fantástico</option>
-                            <option value="Filosófico">Filosófico</option>
-                            <option value="Histórico">Histórico</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Juvenil">Juvenil</option>
-                            <option value="Misterio">Misterio</option>
-                            <option value="Narrativa">Narrativa</option>
-                            <option value="Novela">Novela</option>
-                            <option value="Poesía">Poesía</option>
-                            <option value="Policíaco">Policíaco</option>
-                            <option value="Romántico">Romántico</option>
-                            <option value="Satírico">Satírico</option>
-                            <option value="Suspense">Suspense</option>
-                            <option value="Teatro">Teatro</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Utópico">Utópico</option>
+							<option value="Autoayuda">Autoayuda</option>
+							<option value="Aventuras">Aventuras</option>
+							<option value="Bélico">Bélico</option>
+							<option value="Biográfico">Biográfico</option>
+							<option value="Ciencia Ficción">Ciencia Ficción</option>
+							<option value="Comedia">Comedia</option>
+							<option value="Cómic">Cómic</option>
+							<option value="Drama">Drama</option>
+							<option value="Ensayo">Ensayo</option>
+							<option value="Erótico">Erótico</option>
+							<option value="Espionaje">Espionaje</option>
+							<option value="Fantástico">Fantástico</option>
+							<option value="Filosófico">Filosófico</option>
+							<option value="Histórico">Histórico</option>
+							<option value="Infantil">Infantil</option>
+							<option value="Juvenil">Juvenil</option>
+							<option value="Misterio">Misterio</option>
+							<option value="Narrativa">Narrativa</option>
+							<option value="Novela">Novela</option>
+							<option value="Poesía">Poesía</option>
+							<option value="Policíaco">Policíaco</option>
+							<option value="Romántico">Romántico</option>
+							<option value="Satírico">Satírico</option>
+							<option value="Suspense">Suspense</option>
+							<option value="Teatro">Teatro</option>
+							<option value="Terror">Terror</option>
+							<option value="Utópico">Utópico</option>
 
 						</select> <select name="genero2">
 							<option value="cualquiera" selected></option>
-                            <option value="Autoayuda">Autoayuda</option>
-                            <option value="Aventuras">Aventuras</option>
-                            <option value="Bélico">Bélico</option>
-                            <option value="Biográfico">Biográfico</option>
-                            <option value="Ciencia Ficción">Ciencia Ficción</option>
-                            <option value="Comedia">Comedia</option>
-                            <option value="Cómic">Cómic</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Ensayo">Ensayo</option>
-                            <option value="Erótico">Erótico</option>
-                            <option value="Espionaje">Espionaje</option>
-                            <option value="Fantástico">Fantástico</option>
-                            <option value="Filosófico">Filosófico</option>
-                            <option value="Histórico">Histórico</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Juvenil">Juvenil</option>
-                            <option value="Misterio">Misterio</option>
-                            <option value="Narrativa">Narrativa</option>
-                            <option value="Novela">Novela</option>
-                            <option value="Poesía">Poesía</option>
-                            <option value="Policíaco">Policíaco</option>
-                            <option value="Romántico">Romántico</option>
-                            <option value="Satírico">Satírico</option>
-                            <option value="Suspense">Suspense</option>
-                            <option value="Teatro">Teatro</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Utópico">Utópico</option>
+							<option value="Autoayuda">Autoayuda</option>
+							<option value="Aventuras">Aventuras</option>
+							<option value="Bélico">Bélico</option>
+							<option value="Biográfico">Biográfico</option>
+							<option value="Ciencia Ficción">Ciencia Ficción</option>
+							<option value="Comedia">Comedia</option>
+							<option value="Cómic">Cómic</option>
+							<option value="Drama">Drama</option>
+							<option value="Ensayo">Ensayo</option>
+							<option value="Erótico">Erótico</option>
+							<option value="Espionaje">Espionaje</option>
+							<option value="Fantástico">Fantástico</option>
+							<option value="Filosófico">Filosófico</option>
+							<option value="Histórico">Histórico</option>
+							<option value="Infantil">Infantil</option>
+							<option value="Juvenil">Juvenil</option>
+							<option value="Misterio">Misterio</option>
+							<option value="Narrativa">Narrativa</option>
+							<option value="Novela">Novela</option>
+							<option value="Poesía">Poesía</option>
+							<option value="Policíaco">Policíaco</option>
+							<option value="Romántico">Romántico</option>
+							<option value="Satírico">Satírico</option>
+							<option value="Suspense">Suspense</option>
+							<option value="Teatro">Teatro</option>
+							<option value="Terror">Terror</option>
+							<option value="Utópico">Utópico</option>
 						</select>
 					</div>
 
