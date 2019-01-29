@@ -97,7 +97,7 @@
 					<br>
 					<p><strong>Por 15€ todo incluido (merienda saludable, taller y materiales).</strong></p>
 					<br>
-					<p>(Para niños de entre 3,5 y 10 años, ambos incluidos. Para apuntarles, llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
+					<p>(Para niños de entre 3 y 10 años, ambos incluidos, para niños de otras edades, preguntadnos. Para apuntarles, llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
 					<strong>info@merendalia.es)</strong></p>
 					<br>
 					<p>¡No dejes que tus hijos se lo pierdan!</p>
