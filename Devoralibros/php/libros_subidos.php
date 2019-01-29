@@ -1,4 +1,5 @@
 <?php
+
 require_once '../inc/funciones.php';
 require_once '../inc/validaciones.inc.php';
 require_once '../clases/Connection.php';
