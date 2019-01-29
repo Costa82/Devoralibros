@@ -92,7 +92,7 @@ if ($c->real_query($sql_comentarios)) {
                 } else {
                    
                     if ($pag != 1)
-                        echo '<a href="../Usuario/?pagina=5&pag=' . ($pag - 1) . '#mi-ancla"><img src="../img/izq.gif" border="0"></a>';
+                        echo '<a href="../Usuario/?pagina=1&pag=' . ($pag - 1) . '#mi-ancla"><img src="../img/izq.gif" border="0"></a>';
                     
                     for ($i = 1; $i <= $total_paginas; $i ++) {
                         if ($pag == $i)
@@ -101,11 +101,11 @@ if ($c->real_query($sql_comentarios)) {
                         else
                             // si el índice no corresponde con la página mostrada actualmente,
                             // coloco el enlace para ir a esa página
-                            echo '  <a href="../Usuario/?pagina=5&pag=' . $i . '#mi-ancla">' . $i . '</a>  ';
+                            echo '  <a href="../Usuario/?pagina=1&pag=' . $i . '#mi-ancla">' . $i . '</a>  ';
                     }
                     
                     if ($pag != $total_paginas)
-                        echo '<a href="../Usuario/?pagina=5&pag=' . ($pag + 1) . '#mi-ancla"><img src="../img/der.gif" border="0"></a>';
+                        echo '<a href="../Usuario/?pagina=1&pag=' . ($pag + 1) . '#mi-ancla"><img src="../img/der.gif" border="0"></a>';
                 }
             }
             echo '</div>';
