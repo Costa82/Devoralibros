@@ -87,8 +87,16 @@
 					disfrutéis como nunca de vuestros encuentros con vuestros amigos, familiares... ¡esperamos
 					que os gusten! y estad atentos, ya que iremos subiendo menús nuevos ¡para que sigáis disfrutando!.</p>
 					<p>En merendalia, ¡no nos gusta la rutina!.</p>
-					<p>No os podéis perder este NUEVO MENÚ que os traemos para disfrutar de la sana y rica gastronomía JAPONESA, ¡aquí os lo dejamos!</p>
+					<p>No os podéis perder los dos NUEVOS MENÚS que os traemos. Con el <strong>Menú Japonés</strong> disfrutaréis de la sana y rica gastronomía JAPONESA, y con
+					el <strong>Menú Cocido</strong> podréis calentar estos fríos días de invierno que tanto nos gustan en Valladolid.
+					</br>
+					 ¡Aquí os los dejamos!</p>
 
+			</div>
+			
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Cocido.jpg" alt="Menú Cocido"
+					title="Menú Cocido" />
 			</div>
 			
 			<div class="img_menu img_lista_menus">
@@ -102,7 +110,7 @@
 			</div>
 
 			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_Fabada.jpg" alt="Menú Fabada"
+				<img src="../img/Menú_Fabada_asturiana_alubias.jpg" alt="Menú Fabada"
 					title="Menú Fabada" />
 			</div>
 

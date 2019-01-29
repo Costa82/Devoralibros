@@ -85,7 +85,39 @@
 	<div class="contenedor_eventos">
 
 		<div class="evento_principal">
+		
+		<h3>EVENTO SAN VALENTÍN</h3>
 
+			<div class="explicacion_evento">
+			
+			<p>Os traemos el evento <strong>MENÚ SAN VALENTÍN</strong> para que celebréis con vuestra pareja, amigos, o con quien más rabia
+				os de, el día de San Valentín, ¡porque de lo que se trata es de juntarse y celebrar :-P!</p>
+					<br>
+					<p>El evento está se celebrará los días 14, 15, 16 y 17 de febrero, tanto a la comida, a partir de las 14:00 horas, como a la cena, 
+					a partir de las 21:00.</p>
+					<br>
+					<p><strong>Por 20€ por persona</strong> disfrutaréis de un menú pensado para que disfrutéis comiendo en pareja (o no), compartiendo los 
+					ricos platos que nuestro Chef os preparará con el cariño y mimo que caracteriza a todas las comidas de <strong>merendalia</strong></p>
+					<br>
+					<p>No os quedéis sin vuestra plaza, para reservar llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
+					<strong>info@merendalia.es</strong></p>
+					<br>
+					<p>¡Os esperamos, "corazones" :-)!</p>
+			</div>
+
+			<img src='../img/Menú_San_Valentín_alargado.jpg'
+				title='Menú San Valentín enamorados' class="img_movil" /> <img
+				src='../img/Menú_San_Valentín_apaisado.jpg'
+				title='Menú San Valentín enamorados' class="img_ordenador" />
+				</br>
+				</br>
+				</br>
+
+		</div>
+
+<div class="contenedor_eventos">
+
+		<div class="evento_principal">
 			<h3>TALLERES INFANTILES EN MERENDALIA</h3>
 
 			<div class="explicacion_evento">
@@ -97,7 +129,7 @@
 					<br>
 					<p><strong>Por 15€ todo incluido (merienda saludable, taller y materiales).</strong></p>
 					<br>
-					<p>(Para niños de entre 3,5 y 10 años, ambos incluidos. Para apuntarles, llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
+					<p>(Para niños de entre 3 y 10 años, ambos incluidos, para niños de otras edades, preguntadnos. Para apuntarles, llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
 					<strong>info@merendalia.es)</strong></p>
 					<br>
 					<p>¡No dejes que tus hijos se lo pierdan!</p>
