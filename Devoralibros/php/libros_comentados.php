@@ -1,4 +1,5 @@
 <?php
+
 require_once '../inc/funciones.php';
 require_once '../inc/validaciones.inc.php';
 require_once '../clases/Connection.php';
@@ -59,7 +60,7 @@ $sql_comentarios="SELECT * FROM libros A, usuarios_comentan_libros C WHERE A.id_
                     if ($total_paginas > 1) {
                         if($tipo_usuario==1){
                             if ($pag != 1)
-                                    echo '<a href="../Usuario/?pagina=1&pag='.($pag-1).'#mi-ancla"><img src="../img/izq.gif" border="0"></a>';
+                                    echo '<a href="../Usuario/?pagina=5&pag='.($pag-1).'#mi-ancla"><img src="../img/izq.gif" border="0"></a>';
                             for ($i=1;$i<=$total_paginas;$i++) {
                                     if ($pag == $i)
                                             //si muestro el índice de la página actual, no coloco enlace
@@ -67,10 +68,10 @@ $sql_comentarios="SELECT * FROM libros A, usuarios_comentan_libros C WHERE A.id_
                                     else
                                             //si el índice no corresponde con la página mostrada actualmente,
                                             //coloco el enlace para ir a esa página
-                                            echo '  <a href="../Usuario/?pagina=1&pag='.$i.'#mi-ancla">'.$i.'</a>  ';
+                                            echo '  <a href="../Usuario/?pagina=5&pag='.$i.'#mi-ancla">'.$i.'</a>  ';
                             }
                             if ($pag != $total_paginas)
-                                    echo '<a href="../Usuario/?pagina=1&pag='.($pag+1).'#mi-ancla"><img src="../img/der.gif" border="0"></a>';
+                                    echo '<a href="../Usuario/?pagina=5&pag='.($pag+1).'#mi-ancla"><img src="../img/der.gif" border="0"></a>';
                         }else{
                             if ($pag != 1)
                                     echo '<a href="../Administrador/?pagina=5&pag='.($pag-1).'#mi-ancla"><img src="../img/izq.gif" border="0"></a>';
