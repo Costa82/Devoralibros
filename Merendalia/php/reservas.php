@@ -847,7 +847,7 @@
 			<div class="menus_opciones">
 
 				<p>
-					<strong>MENÚ MERIENDA CUMPLEAÑOS INFANTIL</strong>
+					<strong>MENÚ CUMPLEAÑOS INFANTIL</strong>
 				</p>
 				<p>
 					<strong>5,5 €</strong>
@@ -871,6 +871,27 @@
 				</br>
 				<p>
 					<i>Postre: Brocheta de frutas con chocolate.</i>
+				</p>
+			</div>
+			
+			<div class="menus_opciones">
+				<p>
+					<strong>MERIENDA CUMPLEAÑOS INFANTIL</strong>
+				</p>
+				<p>
+					<strong>2 €</strong>
+				</p>
+				</br>
+				<p>
+					<i>Snacks variados</i>
+				</p>
+				</br>
+				<p>
+					<i>Sandwich jamón y queso</i>
+				</p>
+				</br>
+				<p>
+					<i>Zumo y agua</i>
 				</p>
 			</div>
 
