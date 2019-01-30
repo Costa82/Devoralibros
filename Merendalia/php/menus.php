@@ -105,7 +105,7 @@
 			</div>
 
 			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_del_senderista.jpg" alt="Menú del senderista"
+				<img src="../img/Menú_senderista.jpg" alt="Menú del senderista"
 					title="Menú del senderista" />
 			</div>
 
@@ -115,7 +115,7 @@
 			</div>
 
 			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_Oktoberfest.jpg" alt="Menú Oktoberfest"
+				<img src="../img/Menú_Oktoberfest_salchichas.jpg" alt="Menú Oktoberfest"
 					title="Menú Oktoberfest" />
 			</div>
 			
