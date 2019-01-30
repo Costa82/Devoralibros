@@ -168,6 +168,78 @@ echo "<h1>" . $titulo . "</h1>";
     $genero2 = $libro->get_genero2($idlibro);
     $autor = $libro->get_autor($idlibro);
     $libro->mostrarLibrosRelacionados($genero, $genero2, $autor, $idlibro);
+    
+    // Botón 'Volver' para volver a la página anterior
+    $ruta = "../Inicio";
+    
+    if ( isset($_SESSION['pagina']) ) {
+        
+        $pagina = $_SESSION['pagina'];
+        
+        switch ($pagina) {
+            
+            case "index_administrador":
+                
+                $ruta = "../Administrador/";
+                break;
+                
+            case "index_administrador_libros_subidos":
+                
+                $ruta = "../Administrador/?pagina=1";
+                break;
+                
+            case "index_administrador_libros_comentados":
+                
+                $ruta = "../Administrador/?pagina=5";
+                break;
+                
+            case "index_usuario":
+                
+                $ruta = "../Usuario/";
+                break;
+                
+            case "index_usuario_libros_subidos":
+                
+                $ruta = "../Usuario/?pagina=1";
+                break;
+                
+            case "index_usuario_libros_comentados":
+                
+                $ruta = "../Usuario/?pagina=5";
+                break;
+                
+            case "buscador":
+                
+                $ruta = "../Buscador/";
+                break;
+                
+            case "buscador_avanzado":
+                
+                $ruta = "../BuscadorAvanzado/";
+                break;
+                
+            case "visorNovedades":
+                
+                $ruta = "../Novedades/";
+                break;
+                
+            case "visorMejorVotados":
+                
+                $ruta = "../MejorVotados/";
+                break;
+                
+            case "visorUltimosSubidos":
+                
+                $ruta = "../UltimosSubidos/";
+                break;
+                
+            default:
+                $ruta = "../Inicio";
+        }
+    }
+    
+    echo "<center><a href='". $ruta ."' class='boton' title='Volver'>Volver</a></center>";
+    
     ?>
       
   </div>

@@ -16,6 +16,10 @@ if (isset($_SESSION['datos'])) {
     $id_usuario = $_SESSION['datos']['id_usuario'];
     $foto = $usuario->getFoto($id_usuario);
 }
+
+// Variable de sesion para saber en qué página estamos y podamos volver a ella
+$_SESSION['pagina'] = "buscador_avanzado";
+
 ?>
 
 <!DOCTYPE html>
@@ -80,6 +84,7 @@ if (isset($_SESSION['datos'])) {
 	</header>
     <?php
     if (isset($_REQUEST['mostrarTodos'])) {
+        
         $resultados = libro::buscarTitulo("%");
         if ($resultados == 0) {
             echo "Se ha producido un error en la busqueda.";
@@ -103,26 +108,57 @@ if (isset($_SESSION['datos'])) {
             }
             echo "</ul></div>";
         }
-    } elseif (isset($_POST['titulo']) and isset($_POST['autor']) and isset($_POST['genero'])) {
-        if (empty($_POST['titulo'])) {
+    } elseif ( (isset($_POST['titulo']) and isset($_POST['autor']) and isset($_POST['genero'])) ||
+        (isset($_SESSION['titulo']) || isset($_SESSION['autor']) || isset($_SESSION['genero'])) ) {
+        
+        if (empty($_POST['titulo']) && !isset($_SESSION['titulo'])) {
             $titulo = "";
+            $_SESSION['titulo'] = $titulo;
         } else {
-            // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
-            $titulo = filter_var($_POST['titulo'], FILTER_SANITIZE_STRING);
+            
+            if ( isset($_POST['titulo'] )) {
+                $_SESSION['titulo'] = $_POST['titulo'];
+                // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
+                $titulo = filter_var($_POST['titulo'], FILTER_SANITIZE_STRING);
+            } else {
+                $titulo = filter_var($_SESSION['titulo'], FILTER_SANITIZE_STRING);
+            }
         }
-        if (empty($_POST['autor'])) {
+        
+        if (empty($_POST['autor']) && !isset($_SESSION['autor'])) {
             $autor = "";
+            $_SESSION['autor'] = $autor;
         } else {
-            // filtramos el input name=autor para evitar ataques como los XSS Cross-Site Scripting
-            $autor = filter_var($_POST['autor'], FILTER_SANITIZE_STRING);
+            
+            if ( isset($_POST['autor'] )) {
+                $_SESSION['autor'] = $_POST['autor'];
+                // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
+                $autor = filter_var($_POST['autor'], FILTER_SANITIZE_STRING);
+            } else {
+                $autor = filter_var($_SESSION['autor'], FILTER_SANITIZE_STRING);
+            }
         }
-        if (empty($_POST['isbn'])) {
+        if (empty($_POST['isbn']) && !isset($_SESSION['isbn'])) {
             $isbn = "";
+            $_SESSION['isbn'] = $isbn;
         } else {
-            // filtramos el input name=isbn para evitar ataques como los XSS Cross-Site Scripting
-            $isbn = filter_var($_POST['isbn'], FILTER_SANITIZE_STRING);
+            
+            if ( isset($_POST['isbn'] )) {
+                $_SESSION['isbn'] = $_POST['isbn'];
+                // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
+                $isbn = filter_var($_POST['isbn'], FILTER_SANITIZE_STRING);
+            } else {
+                $isbn = filter_var($_SESSION['isbn'], FILTER_SANITIZE_STRING);
+            }
         }
-        $genero = $_POST['genero'];
+        
+        if ( isset($_POST['genero'] )) {
+            $genero = $_POST['genero'];
+            $_SESSION['genero'] = $_POST['genero'];
+        } else {
+            $genero = $_SESSION['genero'];
+        }
+        
         $resultados = libro::buscarLibro($titulo, $autor, $isbn, $genero);
         if ($resultados == 0) {
             echo "Se ha producido un error en la búsqueda.";

@@ -19,6 +19,10 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
     $id = $_SESSION['datos']['id_usuario'];
     $foto = $_SESSION['datos']['foto'];
 }
+
+// Variable de sesion para saber en qué página estamos y podamos volver a ella
+$_SESSION['pagina'] = "index";
+
 ?>
 <!DOCTYPE html>
 <html>

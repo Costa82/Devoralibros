@@ -20,6 +20,10 @@ if (isset($_SESSION['datos'])) {
     $id_usuario = $_SESSION['datos']['id_usuario'];
     $foto = $_SESSION['datos']['foto'];
 }
+
+// Variable de sesion para saber en qué página estamos y podamos volver a ella
+$_SESSION['pagina'] = "buscador";
+
 ?>
 
 <!DOCTYPE html>
@@ -90,9 +94,18 @@ if (isset($_SESSION['datos'])) {
 	</header>
 	
     <?php
-    if (isset($_POST['nombre'])) {
+    if (isset($_POST['nombre']) || isset($_SESSION['nombre'])) {
+        
+        if ( isset($_POST['nombre']) ) {
+            $_SESSION['nombre'] = $_POST['nombre'];
+        }
+        
         // filtramos el input name=nombre para evitar ataques como los XSS Cross-Site Scripting y eliminamos espacios en blanco al inicio y al final
-        $nombre = trim(filter_var($_POST['nombre'], FILTER_SANITIZE_STRING));
+        if ( isset($_POST['nombre']) ) {
+            $nombre = trim(filter_var($_POST['nombre'], FILTER_SANITIZE_STRING));
+        } else {
+            $nombre = trim(filter_var($_SESSION['nombre'], FILTER_SANITIZE_STRING));
+        }
         $resultados = libro::buscarTitulo($nombre);
         if ($resultados == 0) {
             echo "Se ha producido un error en la búsqueda.";

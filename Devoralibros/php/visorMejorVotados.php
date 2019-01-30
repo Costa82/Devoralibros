@@ -18,6 +18,10 @@ if (isset($_SESSION['datos'])) {
 }
 
 $libro = new Libro();
+
+// Variable de sesion para saber en qué página estamos y podamos volver a ella
+$_SESSION['pagina'] = "visorMejorVotados";
+
 ?>
 <!DOCTYPE html>
 <html>

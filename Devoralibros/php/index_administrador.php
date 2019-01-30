@@ -20,6 +20,9 @@ $puntosMes = $usuario->getPuntosMensual($id_usuario);
 $puntos = $usuario->getPuntos($id_usuario);
 $foto = $_SESSION['datos']['foto'];
 
+// Variable de sesion para saber en qué página estamos y podamos volver a ella
+$_SESSION['pagina'] = "index_administrador";
+
 ?>
 
 <!DOCTYPE html>
@@ -155,6 +158,10 @@ $foto = $_SESSION['datos']['foto'];
                 case 1:
                     
                     include ("libros_subidos.php");
+                    
+                    // Variable de sesion para saber en qué página estamos y podamos volver a ella
+                    $_SESSION['pagina'] = "index_administrador_libros_subidos";
+                    
                     break;
                 
                 case 2:
@@ -175,6 +182,10 @@ $foto = $_SESSION['datos']['foto'];
                 case 5:
                     
                     include ("libros_comentados.php");
+                    
+                    // Variable de sesion para saber en qué página estamos y podamos volver a ella
+                    $_SESSION['pagina'] = "index_administrador_libros_comentados";
+                    
                     break;
                 
                 default:
