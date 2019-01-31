@@ -1176,11 +1176,46 @@ class Libro
      *            $cadena
      * @return $datos
      */
-    public static function buscarTitulo($cadena)
+    public static function buscarTitulo( $cadena )
     {
         $c = Connection::dameInstancia();
         $conexion = $c->dameConexion();
         $consulta = "Select * from libros where titulo like '%" . $cadena . "%' OR autor like '%" . $cadena . "%' OR genero like '%" . $cadena . "%' ORDER BY titulo ASC";
+        $resultado = $conexion->query($consulta);
+        if ($resultado->num_rows != 0) {
+            while ($row = $resultado->fetch_assoc()) {
+                $rows[] = $row;
+            }
+            $datos = array(
+                'numero' => $resultado->num_rows,
+                'filas_consulta' => $rows
+            );
+            return $datos;
+        } else {
+            return $datos = array(
+                'numero' => 0
+            );
+        }
+    }
+    
+    /**
+     * buscarTituloLimit( $cadena, $inicio,$TAMANO_PAGINA ):
+     * Función utilizada en buscador.php y que devuelve un array con el numero de resultados de la consulta como primer parametro
+     * y los resultados de la misma como segundo como $clave => $valor. Con LIMIT
+     *
+     * @param
+     *            $cadena
+     * @param
+     *            $inicio
+     *  @param
+     *            $TAMANO_PAGINA
+     * @return $datos
+     */
+    public static function buscarTituloLimit( $cadena, $inicio,$TAMANO_PAGINA )
+    {
+        $c = Connection::dameInstancia();
+        $conexion = $c->dameConexion();
+        $consulta = "Select * from libros where titulo like '%" . $cadena . "%' OR autor like '%" . $cadena . "%' OR genero like '%" . $cadena . "%' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
         $resultado = $conexion->query($consulta);
         if ($resultado->num_rows != 0) {
             while ($row = $resultado->fetch_assoc()) {
@@ -1275,6 +1310,108 @@ class Libro
                         $consulta = "Select * from libros where genero='" . $genero . "' OR genero2='" . $genero . "' ORDER BY titulo ASC";
                     } else {
                         $consulta = "Select * from libros ORDER BY titulo ASC";
+                    }
+                }
+            }
+        }
+        $resultado = $conexion->query($consulta);
+        if ($resultado->num_rows != 0) {
+            while ($row = $resultado->fetch_assoc()) {
+                $rows[] = $row;
+            }
+            $datos = array(
+                'numero' => $resultado->num_rows,
+                'filas_consulta' => $rows
+            );
+            return $datos;
+        } else {
+            return $datos = array(
+                'numero' => 0
+            );
+        }
+    }
+    
+    /**
+     * buscarLibroLimit($titulo,$autor,$isbn,$genero,$inicio,$TAMANO_PAGINA):
+     * Función utilizada en buscadorAvanzado.php y que devuelve un array con el numero de resultados de las consultas como primer parametro
+     * y los resultados de la misma como segundo como $clave => $valor.
+     * Podremos buscar por un parámetro, dos, tres o los cuatro. Con LIMIT
+     *
+     * @param
+     *            $titulo
+     * @param
+     *            $autor
+     * @param
+     *            $isbn
+     * @param
+     *            $genero
+     * @param
+     *            $inicio
+     * @param
+     *            $TAMANO_PAGINA
+     * @return $datos
+     */
+    public static function buscarLibroLimit($titulo, $autor, $isbn, $genero, $inicio, $TAMANO_PAGINA) 
+    {
+        $c = Connection::dameInstancia();
+        $conexion = $c->dameConexion();
+        if (! empty($titulo)) {
+            if (! empty($autor)) {
+                if (! empty($isbn)) {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND autor like '%" . $autor . "%' AND isbn='" . $isbn . "' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND autor like '%" . $autor . "%' AND isbn='" . $isbn . "' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                } else {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND autor like '%" . $autor . "%' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND autor like '%" . $autor . "%' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                }
+            } else {
+                if (! empty($isbn)) {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND isbn='" . $isbn . "' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND isbn='" . $isbn . "' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                } else {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where titulo like '%" . $titulo . "%' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                }
+            }
+        } else {
+            if (! empty($autor)) {
+                if (! empty($isbn)) {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where autor like '%" . $autor . "%' AND isbn='" . $isbn . "' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where autor like '%" . $autor . "%' AND isbn='" . $isbn . "' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                } else {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where autor like '%" . $autor . "%' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where autor like '%" . $autor . "%' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                }
+            } else {
+                if (! empty($isbn)) {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where isbn='" . $isbn . "' AND (genero='" . $genero . "' OR genero2='" . $genero . "') ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros where isbn='" . $isbn . "' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    }
+                } else {
+                    if ($genero != "cualquiera") {
+                        $consulta = "Select * from libros where genero='" . $genero . "' OR genero2='" . $genero . "' ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
+                    } else {
+                        $consulta = "Select * from libros ORDER BY titulo ASC LIMIT " . $inicio . "," . $TAMANO_PAGINA;
                     }
                 }
             }
