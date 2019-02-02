@@ -1,6 +1,6 @@
 /**
 * Archivo CSS principal para diseñar nuestra aplicacion web 'DevoraLibros'
-* @author   Miguel Costa.
+* @author Miguel Costa.
 *
 */
 
@@ -312,7 +312,7 @@ nav>ul>li#menu_moviles>i:hover {
 	width: 20%;
 	padding-left: 10px;
 	float: right;
-	margin-top: 6%;
+	margin-top: 10%;
 	text-align: center;
 }
 

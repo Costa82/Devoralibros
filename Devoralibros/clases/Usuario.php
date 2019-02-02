@@ -138,13 +138,13 @@ class Usuario
     {
         $bd = Connection::dameInstancia();
         $c = $bd->dameConexion();
-        $sql = "SELECT nick, id_usuario, mail, puntos, puntosmes foto FROM usuarios WHERE NOT id_usuario=1 AND NOT id_usuario=2 AND NOT id_usuario=4 AND NOT id_usuario=5 AND NOT id_usuario=100 ORDER BY nick ASC";
+        $sql = "SELECT nick, id_usuario, mail, puntos, puntosmes foto FROM usuarios WHERE NOT id_usuario=1 AND NOT id_usuario=2 AND NOT id_usuario=4 AND NOT id_usuario=5 AND NOT id_usuario=100 AND Estado = 'ALTA' ORDER BY nick ASC";
         if ($c->real_query($sql)) {
             if ($resul = $c->store_result()) {
                 if ($resul->num_rows > 0) {
                     
                     while ($mostrar = $resul->fetch_assoc()) {
-                        echo '<h3 class="nombreListadoUsuarios"><a href="../Amigo/?nickAmigo=' . md5($mostrar["nick"]) . '&tipo_usuario=' . $tipo_usuario . '&id1=' . $id_usuario . '">' . $mostrar["nick"] . ' </a></h3><p class="listadoUsuarios">' . $mostrar["mail"] . ' - ' . $mostrar["puntos"] . ' pts <a href="../php/eliminar_usuario_header.php?id=' . $mostrar["id_usuario"] . '" onclick="return confirmar()"> <i class="fa fa-trash-o" aria-hidden="true" title="borrar amigo"></i></a></p>';
+                        echo '<h3 class="nombreListadoUsuarios"><a href="../Amigo/?nickAmigo=' . md5($mostrar["nick"]) . '&tipo_usuario=' . $tipo_usuario . '&id1=' . $id_usuario . '">' . $mostrar["nick"] . ' </a></h3><p class="listadoUsuarios">' . $mostrar["mail"] . ' - ' . $mostrar["puntos"] . ' pts <a href="../php/eliminar_usuario_header.php?id=' . $mostrar["id_usuario"] . '&pagina=editarUsuarios" onclick="return confirmar()"> <i class="fa fa-trash-o" aria-hidden="true" title="borrar amigo"></i></a></p>';
                         // echo '<h3 class="nombreListadoUsuarios">'.$mostrar["nick"].'</h3><p class="listadoUsuarios">'.$mostrar["mail"].' - '.$mostrar["puntos"].' pts </p>';
                     }
                     $resul->free_result();
@@ -242,7 +242,7 @@ class Usuario
     {
         $bd = Connection::dameInstancia();
         $c = $bd->dameConexion();
-        $sql = "SELECT * FROM usuarios WHERE nick='$nick'";
+        $sql = "SELECT * FROM usuarios WHERE nick='$nick' AND Estado='ALTA'";
         if ($c->real_query($sql)) {
             if ($resul = $c->store_result()) {
                 if ($resul->num_rows > 0) {
@@ -444,7 +444,7 @@ class Usuario
     public function esRegistrado($nick, $pass)
     {
         $passMD5 = md5($pass);
-        $sql = "SELECT * FROM $this->tabla WHERE UPPER(nick)=UPPER('$nick') AND pass ='$passMD5'";
+        $sql = "SELECT * FROM $this->tabla WHERE UPPER(nick) = UPPER('$nick') AND pass = '$passMD5' AND Estado = 'ALTA'";
         if ($this->c->real_query($sql)) {
             if ($result = @$this->c->store_result()) {
                 if ($result->num_rows == 1) {
@@ -462,6 +462,36 @@ class Usuario
             return $this->c->errno . "->" . $this->c->error;
         }
     }
+    
+    /**
+     * estaDeBAJA
+     * Método que se utiliza para comprobar si un usuario está de BAJA.
+     *
+     * @param
+     *            $nick
+     * @param
+     *            $pass
+     * @return $registro['id_usuario'], si no está registrado devuelve -1
+     */
+    public function estaDeBAJA($mail)
+    {
+        $sql = "SELECT * FROM $this->tabla WHERE mail = '$mail' AND Estado = 'BAJA'";
+        if ($this->c->real_query($sql)) {
+            if ($result = @$this->c->store_result()) {
+                if ($result->num_rows == 1) {
+                    
+                    return true;
+                }
+                $result->free_result();
+            } else {
+                
+                return false; // no hay usuario registrado
+            }
+        } else {
+            
+            return $this->c->errno . "->" . $this->c->error;
+        }
+    }
 
     /**
      * esRegistradoNick
@@ -473,7 +503,7 @@ class Usuario
      */
     public function esRegistradoNick($nick)
     {
-        $sql = "SELECT * FROM $this->tabla WHERE UPPER(nick)=UPPER('$nick')";
+        $sql = "SELECT * FROM $this->tabla WHERE UPPER(nick) = UPPER('$nick') AND Estado = 'ALTA'";
         if ($this->c->real_query($sql)) {
             if ($result = @$this->c->store_result()) {
                 if ($result->num_rows == 1) {
@@ -502,7 +532,7 @@ class Usuario
      */
     public function esRegistradoMail($mail)
     {
-        $sql = "SELECT * FROM $this->tabla WHERE mail ='$mail'";
+        $sql = "SELECT * FROM $this->tabla WHERE mail ='$mail' AND Estado = 'ALTA'";
         if ($this->c->real_query($sql)) {
             if ($result = @$this->c->store_result()) {
                 if ($result->num_rows == 1) {
@@ -532,7 +562,7 @@ class Usuario
      */
     public function existeUsuario($nick)
     {
-        $sql = "SELECT nick FROM $this->tabla WHERE UPPER(nick)=UPPER('$nick')";
+        $sql = "SELECT nick FROM $this->tabla WHERE UPPER(nick) = UPPER('$nick') AND Estado = 'ALTA'";
         if ($this->c->real_query($sql)) {
             if ($result = $this->c->store_result()) {
                 if ($result->num_rows == 1) {
@@ -597,7 +627,7 @@ class Usuario
      */
     public function esmailRepetido($mail)
     {
-        $sql = "SELECT * FROM $this->tabla WHERE mail='$mail'";
+        $sql = "SELECT * FROM $this->tabla WHERE mail='$mail' AND Estado = 'ALTA'";
         if ($this->c->real_query($sql)) {
             if ($result = $this->c->store_result()) {
                 if ($result->num_rows == 1) {
@@ -685,103 +715,6 @@ class Usuario
     }
 
     /**
-     * enviarMailSolicitud
-     * Envía un email informando al usuario con id2 que ha recibido una solicitud de amistad.
-     *
-     * @param
-     *            $id1
-     * @param
-     *            $id2
-     */
-    public function enviarMailSolicitud($id1, $id2)
-    {
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        $mail = $this->getMail($id2);
-        $nombre2 = $this->getNombre($id2);
-        $nick1 = $this->getNick($id1);
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "administrador@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            $mail => ""
-            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
-            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>Hola " . $nombre2 . "</h1> ";
-        $contenidoHTML .= '<p>Has recibido una solicitud de amistad de ' . $nick1 . ', si quieres aceptarla ve a tu p&aacute;gina de perfil, secci&oacute;n "Mis amigos".
-						<br/><a href="https://www.devoralibros.es">¡Entra a Devoralibros!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            $smtp->Send(); // Envía el correo.
-        }
-    }
-
-    /**
      * generarCodigo
      * Creamos un código numérico aleatorio con la longitud que deseemos
      *
@@ -799,682 +732,7 @@ class Usuario
         return $key;
     }
 
-    /**
-     * enviarConfirmacionRegistro
-     * Envía un email para confirmar el registro
-     *
-     * @param
-     *            $id1
-     * @param
-     *            $pass
-     */
-    public function enviarConfirmacionRegistro($nick, $pass)
-    {
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        $id = $this->getIdusuario($nick);
-        $mail = $this->getMail($id);
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "administrador@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            $mail => ""
-            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
-            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>Confirma tu registro " . $nick . "</h1>";
-        $contenidoHTML .= '<p>¡Estás a sólo un paso de convertirte en un auténtico DevoraLibros!Aquí tienes tus datos para registrarte, más adelante podrás cambiar tu contraseña en tu página de perfil haciendo click en "editar perfil".
-						<br/><br/><strong>Contraseña:</strong>' . $pass . '
-						<br/><strong>Nick:</strong>' . $nick . '
-						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Confirma tu registro!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            if ($smtp->Send()) {
-                // Envía el correo.
-                $this->enviarMailsAltaUsuario($nick, $mail);
-            }
-        }
-    }
 
-    /**
-     * enviarMail
-     * Envía un email informando al usuario con id2 que ha recibido un mensaje.
-     *
-     * @param
-     *            $id1
-     * @param
-     *            $id2
-     * @param
-     *            $mensaje
-     */
-    public function enviarMail($id1, $id2, $mensaje)
-    {
-        $men = htmlentities($mensaje, ENT_QUOTES, "UTF-8");
-        $mail = $this->getMail($id2);
-        $nombre2 = $this->getNombre($id2);
-        $nick1 = $this->getNick($id1);
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "administrador@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            $mail => ""
-            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
-            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>Hola " . $nombre2 . "</h1>
-						<p>Has recibido un mensaje de " . $nick1 . "</p>";
-        $contenidoHTML .= '<p>' . $men . '
-						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            $smtp->Send(); // Envía el correo.
-        }
-    }
-
-    /**
-     * enviarMailBienvenida
-     * Envía un email dando al usuario la bienvenida.
-     *
-     * @param
-     *            $nick
-     * @param
-     *            $mail
-     */
-    // public function enviarMailBienvenida($nick, $mail)
-    // {
-    // $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-    
-    // $smtp = new PHPMailer();
-    
-    // // Indicamos que vamos a utilizar un servidor SMTP
-    // $smtp->IsSMTP();
-    
-    // // Definimos el formato del correo con UTF-8
-    // $smtp->CharSet = "UTF-8";
-    
-    // // autenticación contra nuestro servidor smtp
-    // $smtp->SMTPAuth = true;
-    // // $smtp->SMTPSecure = "tls";
-    // $smtp->Host = "smtp.devoralibros.es";
-    // $smtp->Username = $this->correoAdministrador;
-    // $smtp->Password = $this->contrasena;
-    // $smtp->Port = 587;
-    
-    // // datos de quien realiza el envio
-    // $smtp->From = "administrador@devoralibros.es"; // from mail
-    // $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-    
-    // // Indicamos las direcciones donde enviar el mensaje con el formato
-    // // "correo"=>"nombre usuario"
-    // // Se pueden poner tantos correos como se deseen
-    // $mailTo = array(
-    // $mail => ""
-    // // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
-    // // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
-    // );
-    
-    // // establecemos un limite de caracteres de anchura
-    // $smtp->WordWrap = 50; // set word wrap
-    
-    // // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-    // // cualquier programa de correo pueda leerlo.
-    
-    // // Definimos el contenido HTML del correo
-    // $contenidoHTML = "<head>";
-    // $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-    // $contenidoHTML .= "</head><body>";
-    // $contenidoHTML .= "<h1 style='color:blue;'>Bienvenido a DevoraLibros " . $nick . "</h1>";
-    // $contenidoHTML .= '<p>¿Por qué no te animas a comentar algún libro de los ya subidos o, mejor aún, a subir alguno que quieras hacer un resumen personal? En esta comunidad podrás dar rienda suelta a tus pensamientos sobre libros.
-    // <br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
-    // <br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-    // <br/><br/>
-    // <a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-    // <p>Beatriz, Belén, Esther y Miguel
-    // <br/><strong>Administradores de DevoraLibros</strong>
-    // <br/><br/>
-    // Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-    // <br/><br/>
-    // <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-    // $contenidoHTML .= "</body>\n";
-    
-    // // Definimos el contenido en formato Texto del correo
-    // // $contenidoTexto="Contenido en formato Texto";
-    // // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-    
-    // // Definimos el subject
-    // $smtp->Subject = "Devoralibros";
-    
-    // // Adjuntamos el archivo "leameLWP.txt" al correo.
-    // // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-    // // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-    // // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-    // // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-    // // /home/xve/test/leameLWP.txt
-    // $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-    // // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-    
-    // // Indicamos el contenido
-    // $smtp->AltBody = $contenidoTexto; // Text Body
-    // $smtp->MsgHTML($contenidoHTML); // Text body HTML
-    
-    // foreach ($mailTo as $mail => $name) {
-    // $smtp->ClearAllRecipients();
-    // $smtp->AddAddress($mail, $name);
-    
-    // $smtp->Send(); // Envía el correo.
-    // }
-    
-    // $this->enviarMailsAltaUsuario($nick, $mail);
-    // }
-    
-    /**
-     * enviarEmailInvitacion
-     * Envia un email al usuario al que has enviado la invitacion.
-     *
-     * @param
-     *            $nick
-     * @param
-     *            $mail
-     * @param
-     *            $codigoPatrocinio
-     */
-    public function enviarEmailInvitacion($mail, $nick, $codigoPatrocinio)
-    {
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "miguel@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            $mail => ""
-            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
-            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>Bienvenido a Devoralibros</h1>";
-        $contenidoHTML .= '<p>¡Hola futuro devorador de libros! Un amigo tuyo, <i>' . $nick . '</i>, te ha enviado una invitación para que te registres en DevoraLibros.
-						<br/>Tu código de registro es: <strong>' . $codigoPatrocinio . '</strong>, introdúcelo al registrarte y tanto tu amigo como tu recibiréis 10 puntos extras.
-						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            $smtp->Send(); // Envía el correo.
-        }
-    }
-
-    /**
-     * enviarMailComentario
-     * Envía un email informando al usuario que ha recibido un comentario sobre su libro.
-     *
-     * @param
-     *            $id
-     * @param
-     *            $titulo
-     */
-    public function enviarMailComentario($id, $titulo)
-    {
-        $nick = $this->getNick($id);
-        $mail = $this->getMail($id);
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "administrador@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            $mail => ""
-            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
-            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>Hola " . $nick . "</h1>";
-        $contenidoHTML .= '<p>Tu libro, ' . $titulo . ', ha recibido un comentario de un usuario, ¿te gustaría leerlo? .
-						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            $smtp->Send(); // Envía el correo.
-        }
-    }
-
-    /**
-     * enviarMailsSubidaLibro
-     * Envía un email informandonos que se ha subido un libro.
-     *
-     * @param
-     *            $titulo
-     */
-    public function enviarMailsSubidaLibro($titulo)
-    {
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "administrador@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            "costa_torito@hotmail.com" => "Miguel",
-            "esther_can85@hotmail.com" => "Esther",
-            "blozares@gmail.com" => "Beatriz",
-            "neleb_kas@hotmail.com" => "Belén"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>¡Hola Administrador!</h1>";
-        $contenidoHTML .= '<p>Se ha subido un libro nuevo, <strong>' . $titulo . '</strong>, ¿podrías revisar si está todo correcto y poner el enlace de Amazon? .
-						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            $smtp->Send(); // Envía el correo.
-        }
-    }
-
-    /**
-     * enviarMailsSubidaLibro
-     * Envía un email informandonos que se ha subido un libro.
-     *
-     * @param
-     *            $titulo
-     */
-    public function enviarMailsAltaUsuario($nick, $mail)
-    {
-        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
-        
-        $smtp = new PHPMailer();
-        
-        // Indicamos que vamos a utilizar un servidor SMTP
-        $smtp->IsSMTP();
-        
-        // Definimos el formato del correo con UTF-8
-        $smtp->CharSet = "UTF-8";
-        
-        // autenticación contra nuestro servidor smtp
-        $smtp->SMTPAuth = true;
-        // $smtp->SMTPSecure = "tls";
-        $smtp->Host = "smtp.devoralibros.es";
-        $smtp->Username = $this->correoAdministrador;
-        $smtp->Password = $this->contrasena;
-        $smtp->Port = 587;
-        
-        // datos de quien realiza el envio
-        $smtp->From = "administrador@devoralibros.es"; // from mail
-        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
-                                                           
-        // Indicamos las direcciones donde enviar el mensaje con el formato
-                                                           // "correo"=>"nombre usuario"
-                                                           // Se pueden poner tantos correos como se deseen
-        $mailTo = array(
-            "costa_torito@hotmail.com" => "Miguel",
-            "esther_can85@hotmail.com" => "Esther",
-            "blozares@gmail.com" => "Beatriz",
-            "neleb_kas@hotmail.com" => "Belén"
-        );
-        
-        // establecemos un limite de caracteres de anchura
-        $smtp->WordWrap = 50; // set word wrap
-                              
-        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
-                              // cualquier programa de correo pueda leerlo.
-                              
-        // Definimos el contenido HTML del correo
-        $contenidoHTML = "<head>";
-        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
-        $contenidoHTML .= "</head><body>";
-        $contenidoHTML .= "<h1 style='color:blue;'>¡Hola Administrador!</h1>";
-        $contenidoHTML .= '<p>Se ha registrado un nuevo usuario con nick <strong>' . $nick . '</strong>, y mail <strong>' . $mail . '</strong>
-						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
-						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
-						<br/><br/>
-						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
-						<p>Beatriz, Belén, Esther y Miguel
-						<br/><strong>Administradores de DevoraLibros</strong>
-                        <br/><br/>
-                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
-                        <br/><br/>
-                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
-        $contenidoHTML .= "</body>\n";
-        
-        // Definimos el contenido en formato Texto del correo
-        // $contenidoTexto="Contenido en formato Texto";
-        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
-        
-        // Definimos el subject
-        $smtp->Subject = "Devoralibros";
-        
-        // Adjuntamos el archivo "leameLWP.txt" al correo.
-        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
-        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
-        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
-        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
-        // /home/xve/test/leameLWP.txt
-        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
-        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
-        
-        // Indicamos el contenido
-        $smtp->AltBody = $contenidoTexto; // Text Body
-        $smtp->MsgHTML($contenidoHTML); // Text body HTML
-        
-        foreach ($mailTo as $mail => $name) {
-            $smtp->ClearAllRecipients();
-            $smtp->AddAddress($mail, $name);
-            
-            $smtp->Send(); // Envía el correo.
-        }
-    }
 
     /**
      * enviarMensaje
@@ -1642,29 +900,63 @@ class Usuario
      */
     public function insertarUsuario($nombre, $apellidos, $mail, $nick, $pass, $libro_favorito, $libro_odiado, $autor_favorito, $genero_favorito, $archivo_foto, $codigo, $codigoPatrocinio)
     {
-        $foto = $this->guardarFoto($nick, $archivo_foto);
-        $exito = "";
-        $tipo_usuario = 1;
-        $passMD5 = md5($pass);
-        $sql = "INSERT INTO $this->tabla (`tipo_usuario`, `nombre`, `apellidos`, `mail`, `nick`, `pass`, `libro_favorito`, `libro_odiado`, `autor_favorito`, `genero_favorito`, `foto`, `codigo`, `codigoPatrocinio`)" . " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
-        $sentencia = $this->c->prepare($sql);
-        $sentencia->bind_param("issssssssssss", $tipo_usuario, $nombre, $apellidos, $mail, $nick, $passMD5, $libro_favorito, $libro_odiado, $autor_favorito, $genero_favorito, $foto, $codigo, $codigoPatrocinio);
-        if ($sentencia->execute()) {
-            $exito = - 306;
+        
+        if ($this->estaDeBAJA($mail)) {
             
-            $this->enviarMensajeBienvenida($nick);
-            $this->enviarConfirmacionRegistro($nick, $pass);
-            // $this->enviarMailBienvenida($nick,$mail);
-            $puntos = 5;
-            $this->sumarPuntosRegistro($nick, $puntos);
-            if ($codigo != NULL) {
-                $puntos = 10;
-                $this->sumarPuntosRegistro($nick, $puntos);
+            $foto = $this->guardarFoto($nick, $archivo_foto);
+            $exito = "";
+            $sql = " UPDATE $this->tabla SET nombre = ?, apellidos = ?, nick = ?, pass = ?, libro_favorito = ?, libro_odiado = ?, autor_favorito = ?, genero_favorito = ?, foto = ?, codigo = ?, codigoPatrocinio = ?, estado = 'ALTA' WHERE mail = ? ";
+            $sentencia = $this->c->prepare($sql);
+            $sentencia->bind_param("ssssssssssss", $nombre, $apellidos, $nick, $passMD5, $libro_favorito, $libro_odiado, $autor_favorito, $genero_favorito, $foto, $codigo, $codigoPatrocinio, $mail);
+            
+            if ($sentencia->execute()) {
+                $exito = - 306;
+                
+                $this->enviarMensajeBienvenida($nick);
+                $this->enviarConfirmacionRegistro($nick, $pass);
+          
+                if ($codigo != NULL) {
+                    $puntos = 10;
+                    $this->sumarPuntosRegistro($nick, $puntos);
+                }
+                
+            } else {
+                $exito = - 303;
             }
+            
+            return $exito;
+            
         } else {
-            $exito = - 303;
+            
+            $foto = $this->guardarFoto($nick, $archivo_foto);
+            $exito = "";
+            $tipo_usuario = 1;
+            $passMD5 = md5($pass);
+            $sql = "INSERT INTO $this->tabla (`tipo_usuario`, `nombre`, `apellidos`, `mail`, `nick`, `pass`, `libro_favorito`, `libro_odiado`, `autor_favorito`, `genero_favorito`, `foto`, `codigo`, `codigoPatrocinio`)" . " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $sentencia = $this->c->prepare($sql);
+            $sentencia->bind_param("issssssssssss", $tipo_usuario, $nombre, $apellidos, $mail, $nick, $passMD5, $libro_favorito, $libro_odiado, $autor_favorito, $genero_favorito, $foto, $codigo, $codigoPatrocinio);
+            
+            if ($sentencia->execute()) {
+                $exito = - 306;
+                
+                $this->enviarMensajeBienvenida($nick);
+                $this->enviarConfirmacionRegistro($nick, $pass);
+                // $this->enviarMailBienvenida($nick,$mail);
+                $puntos = 5;
+                $this->sumarPuntosRegistro($nick, $puntos);
+               
+                if ($codigo != NULL) {
+                    $puntos = 10;
+                    $this->sumarPuntosRegistro($nick, $puntos);
+                }
+                
+            } else {
+                $exito = - 303;
+            }
+            
+            return $exito;
         }
-        return $exito;
+        
     }
 
     /**
@@ -1921,6 +1213,35 @@ class Usuario
             return $this->c->errno . "->" . $this->c->error;
         }
     }
+    
+    /**
+     * getEstado
+     * Método que se emplea para obtener el estado de un usuario a partir de su id.
+     *
+     * @param
+     *            $id
+     * @return $registro['Estado'], si no existe devuelve -1
+     */
+    public function getEstado($id)
+    {
+        $sql = "SELECT Estado FROM $this->tabla WHERE id_usuario=" . $id;
+        if ($this->c->real_query($sql)) {
+            if ($result = @$this->c->store_result()) {
+                if ($result->num_rows == 1) {
+                    $registro = $result->fetch_assoc();
+                    
+                    return $registro['Estado'];
+                }
+                $result->free_result();
+            } else {
+                
+                return - 1;
+            }
+        } else {
+            
+            return $this->c->errno . "->" . $this->c->error;
+        }
+    }
 
     /**
      * cambiarPass
@@ -1945,20 +1266,6 @@ class Usuario
         }
         $stmt->bind_param('si', $passmd5, $id_usuario);
         $stmt->execute();
-    }
-
-    /**
-     * console_log
-     * Sacamos por consola lo que le pasemos
-     *
-     * @param
-     *            $data
-     */
-    function console_log($data)
-    {
-        echo '<script>';
-        echo 'console.log(' . json_encode($data) . ')';
-        echo '</script>';
     }
 
     /**
@@ -1987,6 +1294,796 @@ class Usuario
             
             return $this->c->errno . " -> " . $this->c->error;
         }
+    }
+    
+    /* EMAILS */
+    
+    /**
+     * enviarMailSolicitud
+     * Envía un email informando al usuario con id2 que ha recibido una solicitud de amistad.
+     *
+     * @param
+     *            $id1
+     * @param
+     *            $id2
+     */
+    public function enviarMailSolicitud($id1, $id2)
+    {
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        $mail = $this->getMail($id2);
+        $nombre2 = $this->getNombre($id2);
+        $nick1 = $this->getNick($id1);
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "administrador@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            $mail => ""
+            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
+            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>Hola " . $nombre2 . "</h1> ";
+        $contenidoHTML .= '<p>Has recibido una solicitud de amistad de ' . $nick1 . ', si quieres aceptarla ve a tu p&aacute;gina de perfil, secci&oacute;n "Mis amigos".
+						<br/><a href="https://www.devoralibros.es">¡Entra a Devoralibros!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            $smtp->Send(); // Envía el correo.
+        }
+    }
+    
+    /**
+     * enviarConfirmacionRegistro
+     * Envía un email para confirmar el registro
+     *
+     * @param
+     *            $id1
+     * @param
+     *            $pass
+     */
+    public function enviarConfirmacionRegistro($nick, $pass)
+    {
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        $id = $this->getIdusuario($nick);
+        $mail = $this->getMail($id);
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "administrador@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            $mail => ""
+            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
+            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>Confirma tu registro " . $nick . "</h1>";
+        $contenidoHTML .= '<p>¡Estás a sólo un paso de convertirte en un auténtico DevoraLibros!Aquí tienes tus datos para registrarte, más adelante podrás cambiar tu contraseña en tu página de perfil haciendo click en "editar perfil".
+						<br/><br/><strong>Contraseña:</strong>' . $pass . '
+						<br/><strong>Nick:</strong>' . $nick . '
+						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Confirma tu registro!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            if ($smtp->Send()) {
+                // Envía el correo.
+                $this->enviarMailsAltaUsuario($nick, $mail);
+            }
+        }
+    }
+    
+    /**
+     * enviarMail
+     * Envía un email informando al usuario con id2 que ha recibido un mensaje.
+     *
+     * @param
+     *            $id1
+     * @param
+     *            $id2
+     * @param
+     *            $mensaje
+     */
+    public function enviarMail($id1, $id2, $mensaje)
+    {
+        $men = htmlentities($mensaje, ENT_QUOTES, "UTF-8");
+        $mail = $this->getMail($id2);
+        $nombre2 = $this->getNombre($id2);
+        $nick1 = $this->getNick($id1);
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "administrador@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            $mail => ""
+            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
+            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>Hola " . $nombre2 . "</h1>
+						<p>Has recibido un mensaje de " . $nick1 . "</p>";
+        $contenidoHTML .= '<p>' . $men . '
+						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            $smtp->Send(); // Envía el correo.
+        }
+    }
+    
+    /**
+     * enviarMailBienvenida
+     * Envía un email dando al usuario la bienvenida.
+     *
+     * @param
+     *            $nick
+     * @param
+     *            $mail
+     */
+    // public function enviarMailBienvenida($nick, $mail)
+    // {
+    // $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+    
+    // $smtp = new PHPMailer();
+    
+    // // Indicamos que vamos a utilizar un servidor SMTP
+    // $smtp->IsSMTP();
+    
+    // // Definimos el formato del correo con UTF-8
+    // $smtp->CharSet = "UTF-8";
+    
+    // // autenticación contra nuestro servidor smtp
+    // $smtp->SMTPAuth = true;
+    // // $smtp->SMTPSecure = "tls";
+    // $smtp->Host = "smtp.devoralibros.es";
+    // $smtp->Username = $this->correoAdministrador;
+    // $smtp->Password = $this->contrasena;
+    // $smtp->Port = 587;
+    
+    // // datos de quien realiza el envio
+    // $smtp->From = "administrador@devoralibros.es"; // from mail
+    // $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+    
+    // // Indicamos las direcciones donde enviar el mensaje con el formato
+    // // "correo"=>"nombre usuario"
+    // // Se pueden poner tantos correos como se deseen
+    // $mailTo = array(
+    // $mail => ""
+    // // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
+    // // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
+    // );
+    
+    // // establecemos un limite de caracteres de anchura
+    // $smtp->WordWrap = 50; // set word wrap
+    
+    // // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+    // // cualquier programa de correo pueda leerlo.
+    
+    // // Definimos el contenido HTML del correo
+    // $contenidoHTML = "<head>";
+    // $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+    // $contenidoHTML .= "</head><body>";
+    // $contenidoHTML .= "<h1 style='color:blue;'>Bienvenido a DevoraLibros " . $nick . "</h1>";
+    // $contenidoHTML .= '<p>¿Por qué no te animas a comentar algún libro de los ya subidos o, mejor aún, a subir alguno que quieras hacer un resumen personal? En esta comunidad podrás dar rienda suelta a tus pensamientos sobre libros.
+    // <br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
+    // <br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+    // <br/><br/>
+    // <a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+    // <p>Beatriz, Belén, Esther y Miguel
+    // <br/><strong>Administradores de DevoraLibros</strong>
+    // <br/><br/>
+    // Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+    // <br/><br/>
+    // <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+    // $contenidoHTML .= "</body>\n";
+    
+    // // Definimos el contenido en formato Texto del correo
+    // // $contenidoTexto="Contenido en formato Texto";
+    // // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+    
+    // // Definimos el subject
+    // $smtp->Subject = "Devoralibros";
+    
+    // // Adjuntamos el archivo "leameLWP.txt" al correo.
+    // // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+    // // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+    // // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+    // // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+    // // /home/xve/test/leameLWP.txt
+    // $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+    // // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+    
+    // // Indicamos el contenido
+    // $smtp->AltBody = $contenidoTexto; // Text Body
+    // $smtp->MsgHTML($contenidoHTML); // Text body HTML
+    
+    // foreach ($mailTo as $mail => $name) {
+    // $smtp->ClearAllRecipients();
+    // $smtp->AddAddress($mail, $name);
+    
+    // $smtp->Send(); // Envía el correo.
+    // }
+    
+    // $this->enviarMailsAltaUsuario($nick, $mail);
+    // }
+    
+    /**
+     * enviarEmailInvitacion
+     * Envia un email al usuario al que has enviado la invitacion.
+     *
+     * @param
+     *            $nick
+     * @param
+     *            $mail
+     * @param
+     *            $codigoPatrocinio
+     */
+    public function enviarEmailInvitacion($mail, $nick, $codigoPatrocinio)
+    {
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "miguel@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            $mail => ""
+            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
+            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>Bienvenido a Devoralibros</h1>";
+        $contenidoHTML .= '<p>¡Hola futuro devorador de libros! Un amigo tuyo, <i>' . $nick . '</i>, te ha enviado una invitación para que te registres en DevoraLibros.
+						<br/>Tu código de registro es: <strong>' . $codigoPatrocinio . '</strong>, introdúcelo al registrarte y tanto tu amigo como tu recibiréis 10 puntos extras.
+						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            $smtp->Send(); // Envía el correo.
+        }
+    }
+    
+    /**
+     * enviarMailComentario
+     * Envía un email informando al usuario que ha recibido un comentario sobre su libro.
+     *
+     * @param
+     *            $id
+     * @param
+     *            $titulo
+     */
+    public function enviarMailComentario($id, $titulo)
+    {
+        $nick = $this->getNick($id);
+        $mail = $this->getMail($id);
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "administrador@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            $mail => ""
+            // "correo_2_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_2 persona que recibe el correo",
+            // "correo_3_DondeSeEnviaElMensaje@servidor.info"=>"Nombre_3 persona que recibe el correo"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>Hola " . $nick . "</h1>";
+        $contenidoHTML .= '<p>Tu libro, ' . $titulo . ', ha recibido un comentario de un usuario, ¿te gustaría leerlo? .
+						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            $smtp->Send(); // Envía el correo.
+        }
+    }
+    
+    /**
+     * enviarMailsSubidaLibro
+     * Envía un email informandonos que se ha subido un libro.
+     *
+     * @param
+     *            $titulo
+     */
+    public function enviarMailsSubidaLibro($titulo)
+    {
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "administrador@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            "costa_torito@hotmail.com" => "Miguel",
+            "esther_can85@hotmail.com" => "Esther",
+            "blozares@gmail.com" => "Beatriz",
+            "neleb_kas@hotmail.com" => "Belén"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>¡Hola Administrador!</h1>";
+        $contenidoHTML .= '<p>Se ha subido un libro nuevo, <strong>' . $titulo . '</strong>, ¿podrías revisar si está todo correcto y poner el enlace de Amazon? .
+						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            $smtp->Send(); // Envía el correo.
+        }
+    }
+    
+    /**
+     * enviarMailsSubidaLibro
+     * Envía un email informandonos que se ha subido un libro.
+     *
+     * @param
+     *            $titulo
+     */
+    public function enviarMailsAltaUsuario($nick, $mail)
+    {
+        $imagen = '../img/DEVORALIBROS_8_72ppi.png';
+        
+        $smtp = new PHPMailer();
+        
+        // Indicamos que vamos a utilizar un servidor SMTP
+        $smtp->IsSMTP();
+        
+        // Definimos el formato del correo con UTF-8
+        $smtp->CharSet = "UTF-8";
+        
+        // autenticación contra nuestro servidor smtp
+        $smtp->SMTPAuth = true;
+        // $smtp->SMTPSecure = "tls";
+        $smtp->Host = "smtp.devoralibros.es";
+        $smtp->Username = $this->correoAdministrador;
+        $smtp->Password = $this->contrasena;
+        $smtp->Port = 587;
+        
+        // datos de quien realiza el envio
+        $smtp->From = "administrador@devoralibros.es"; // from mail
+        $smtp->FromName = "Administrador de Devoralibros"; // from mail name
+        
+        // Indicamos las direcciones donde enviar el mensaje con el formato
+        // "correo"=>"nombre usuario"
+        // Se pueden poner tantos correos como se deseen
+        $mailTo = array(
+            "costa_torito@hotmail.com" => "Miguel",
+            "esther_can85@hotmail.com" => "Esther",
+            "blozares@gmail.com" => "Beatriz",
+            "neleb_kas@hotmail.com" => "Belén"
+        );
+        
+        // establecemos un limite de caracteres de anchura
+        $smtp->WordWrap = 50; // set word wrap
+        
+        // NOTA: Los correos es conveniente enviarlos en formato HTML y Texto para que
+        // cualquier programa de correo pueda leerlo.
+        
+        // Definimos el contenido HTML del correo
+        $contenidoHTML = "<head>";
+        $contenidoHTML .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
+        $contenidoHTML .= "</head><body>";
+        $contenidoHTML .= "<h1 style='color:blue;'>¡Hola Administrador!</h1>";
+        $contenidoHTML .= '<p>Se ha registrado un nuevo usuario con nick <strong>' . $nick . '</strong>, y mail <strong>' . $mail . '</strong>
+						<br/><a href="https://www.devoralibros.es/FormularioInicioSesion/">¡Entra a Devoralibros!</a>
+						<br/><br/>Saludos y recuerda...NUNCA DEJES DE LEER!</p>
+						<br/><br/>
+						<a href="https://www.devoralibros.es"><img src="' . $imagen . '" width="150"/></a>
+						<p>Beatriz, Belén, Esther y Miguel
+						<br/><strong>Administradores de DevoraLibros</strong>
+                        <br/><br/>
+                        Si en cualquier momento quieres dejar de recibir estos correos puedes <a href="https://www.devoralibros.es/FormularioInicioSesion/">darte de baja</a> desde tu perfil.
+                        <br/><br/>
+                        <i>Estimado usuario, para nosotros es muy importante la privacidad, por ello, en cumplimento del nuevo RGPD te recordamos que recibes este email porque te has suscrito de manera voluntaria a nuestra lista de correo electrónico. Tus datos se almacenarán en nuestra Base de Datos, con la finalidad de enviarte correos electrónicos. Asimismo, te informamos de que tus datos serán tratados con la mayor confidencialidad posible y que con tu aceptación estarías mostrando tu consentimiento a recibir correos electrónicos comerciales propios o sobre productos de terceros. En cada comunicación que recibas de esta web tendrás la opción de darte de baja de esta lista y revocar tu consentimiento.</i></p>';
+        $contenidoHTML .= "</body>\n";
+        
+        // Definimos el contenido en formato Texto del correo
+        // $contenidoTexto="Contenido en formato Texto";
+        // $contenidoTexto.="\n\nhttps://www.lawebdelprogramador.com";
+        
+        // Definimos el subject
+        $smtp->Subject = "Devoralibros";
+        
+        // Adjuntamos el archivo "leameLWP.txt" al correo.
+        // Obtenemos la ruta absoluta de donde se ejecuta este script para encontrar el
+        // archivo leameLWP.txt para adjuntar. Por ejemplo, si estamos ejecutando nuestro
+        // script en: /home/xve/test/sendMail.php, nos interesa obtener unicamente:
+        // /home/xve/test para posteriormente adjuntar el archivo leameLWP.txt, quedando
+        // /home/xve/test/leameLWP.txt
+        $rutaAbsoluta = substr($_SERVER["SCRIPT_FILENAME"], 0, strrpos($_SERVER["SCRIPT_FILENAME"], "/"));
+        // $smtp->AddAttachment($rutaAbsoluta."/leameLWP.txt", "LeameLWP.txt");
+        
+        // Indicamos el contenido
+        $smtp->AltBody = $contenidoTexto; // Text Body
+        $smtp->MsgHTML($contenidoHTML); // Text body HTML
+        
+        foreach ($mailTo as $mail => $name) {
+            $smtp->ClearAllRecipients();
+            $smtp->AddAddress($mail, $name);
+            
+            $smtp->Send(); // Envía el correo.
+        }
+    }
+    
+    /**
+     * console_log
+     * Sacamos por consola lo que le pasemos
+     *
+     * @param
+     *            $data
+     */
+    function console_log($data)
+    {
+        echo '<script>';
+        echo 'console.log(' . json_encode($data) . ')';
+        echo '</script>';
     }
 }
 ?>

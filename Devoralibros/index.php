@@ -102,7 +102,7 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
 	<header>
 		<nav>
           <?php include_once("php/menuNavIndex.php");?>		
-      </nav>
+        </nav>
 
 		<div id='slider'>
 
@@ -133,7 +133,7 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
 
 		<div class="navegacion">
            <?php include_once("php/navegacionSecundariaIndex.php");?>
-      </div>
+        </div>
 
 	</header>
 
