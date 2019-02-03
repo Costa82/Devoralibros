@@ -106,7 +106,9 @@ $_SESSION['pagina'] = "buscador";
         } else {
             $nombre = trim(filter_var($_SESSION['nombre'], FILTER_SANITIZE_STRING));
         }
+        
         $resultados = libro::buscarTitulo($nombre);
+        
         if ($resultados == 0) {
             echo "Se ha producido un error en la búsqueda.";
         } else if ($resultados['numero'] == 0) {
@@ -134,7 +136,7 @@ $_SESSION['pagina'] = "buscador";
             $total_paginas = ceil($resultados['numero'] / $TAMANO_PAGINA);
             
             // Muestro todos los libros
-            $resultados = libro::buscarTituloLimit( "%", $inicio,$TAMANO_PAGINA );
+            $resultados = libro::buscarTituloLimit( $nombre, $inicio,$TAMANO_PAGINA );
             
             echo "<h2 class='resultados'>Se encontraron " . $numeroResultados . " resultado/s</h2>";
             echo "<div class='ultimosSubidos'><ul class='temas_flex'>";
