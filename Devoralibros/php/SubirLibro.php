@@ -123,7 +123,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         // Resumen
                         $resumenTrim = trim($_REQUEST['resumen']);
                         
-                        if ($resumenTrim == "Novedad" || $resumenTrim == "NOVEDAD" || $resumenTrim == "novedad") {
+                        if ( isset($_REQUEST['novedad']) ) {
                             $resumen = "¡Sé el primero en leerte el libro y subir tu resumen personal!";
                         } else {
                             $resumen = $_REQUEST['resumen'];
@@ -214,6 +214,18 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
 						<label>¿Eres el escritor del libro?</label> <input type="checkbox"
 							name="autorLibro" value="No" />
 					</div>
+					
+					<?php
+                
+                        // Si es un administrador tb se mostrará el check de Novedad
+                        if ($tipo_usuario == 2) {
+                            
+                            echo "<div class='form-group'>
+                                    <label>¿Es una Novedad?</label>
+                                    <input type='checkbox' name='novedad' value='No' />
+                                  </div>";
+                        }
+                    ?>
 
 					<div class="form-group">
 						<p>
@@ -287,8 +299,8 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
 					</div>
 
 					<div class="form-group">
-						<label><span>* </span>Resumen personal</label>
-						<textarea name="resumen" rows="10" cols="40" required="required"></textarea>
+						<label><?php if ($tipo_usuario == 1){echo "<span>* </span>";}?>Resumen personal</label>
+						<textarea name="resumen" rows="10" cols="40" <?php if ($tipo_usuario == 1){echo "required='required'";}?> ></textarea>
 					</div>
 
 					<div class="form-group">
@@ -330,13 +342,15 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
 					</div>
                   <?php
                 
-                if ($tipo_usuario == 2) {
-                    echo "<div class='form-group'>
-                        <label>Banner Amazon</label>
-                          <textarea name='banner' rows='10' cols='40'>Banner de Amazon...</textarea>
-                      </div>";
-                }
-                ?>
+                    // Si es un administrador tb se mostrará el banner de Amazon y el check de Novedad
+                    if ($tipo_usuario == 2) {
+                        
+                        echo "<div class='form-group'>
+                                <label>Banner Amazon</label>
+                                <textarea name='banner' rows='10' cols='40'>Banner de Amazon...</textarea>
+                              </div>";
+                    }
+                  ?>
                 
                 <div class="botones">
 						<button type="submit" name="addLib" class="btn">Aceptar</button>
