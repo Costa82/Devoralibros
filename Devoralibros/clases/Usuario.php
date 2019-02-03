@@ -905,6 +905,7 @@ class Usuario
             
             $foto = $this->guardarFoto($nick, $archivo_foto);
             $exito = "";
+            $passMD5 = md5($pass);
             $sql = " UPDATE $this->tabla SET nombre = ?, apellidos = ?, nick = ?, pass = ?, libro_favorito = ?, libro_odiado = ?, autor_favorito = ?, genero_favorito = ?, foto = ?, codigo = ?, codigoPatrocinio = ?, estado = 'ALTA' WHERE mail = ? ";
             $sentencia = $this->c->prepare($sql);
             $sentencia->bind_param("ssssssssssss", $nombre, $apellidos, $nick, $passMD5, $libro_favorito, $libro_odiado, $autor_favorito, $genero_favorito, $foto, $codigo, $codigoPatrocinio, $mail);
