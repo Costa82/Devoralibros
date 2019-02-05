@@ -90,7 +90,8 @@
 
 			<div class="explicacion_evento">
 			
-			<p>Os traemos el evento <strong>WITH LOVE</strong> con un riquísimo <strong>Menú San Valentín</strong>, para que celebréis con vuestra pareja, amigos, o con quien más rabia
+			<p>Os traemos el evento <strong>WITH LOVE</strong> con un riquísimo <strong>Menú San Valentín</
+			strong>, para que celebréis con vuestra pareja, amigos, o con quien más rabia
 				os de, el día de San Valentín, ¡porque de lo que se trata es de juntarse y celebrar :-P!</p>
 					<br>
 					<p>El evento se celebrará los días 14, 15, 16 y 17 de febrero, tanto a la comida, a partir de las 14:00 horas, como a la cena, 
@@ -135,9 +136,9 @@
 					<p>¡No dejes que tus hijos se lo pierdan!</p>
 			</div>
 
-			<img src='../img/Talleres_infantiles_Febrero_alargado.jpg'
+			<img src='../img/Talleres_infantiles_Febrero_alargado_nuevoPrecio.jpg'
 				title='Talleres Infantiles' class="img_movil" /> <img
-				src='../img/Talleres_infantiles_Febrero_apaisado.jpg'
+				src='../img/Talleres_infantiles_Febrero_apaisado_nuevoPrecio.jpg'
 				title='Talleres Infantiles' class="img_ordenador" />
 				</br>
 				</br>
