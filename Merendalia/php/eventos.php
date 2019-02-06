@@ -90,8 +90,8 @@
 
 			<div class="explicacion_evento">
 			
-			<p>Os traemos el evento <strong>WITH LOVE</strong> con un riquísimo <strong>Menú San Valentín</
-			strong>, para que celebréis con vuestra pareja, amigos, o con quien más rabia
+			<p>Os traemos el evento <strong>WITH LOVE</strong> con un riquísimo <strong>Menú San Valentín</strong>, 
+				para que celebréis con vuestra pareja, amigos, o con quien más rabia
 				os de, el día de San Valentín, ¡porque de lo que se trata es de juntarse y celebrar :-P!</p>
 					<br>
 					<p>El evento se celebrará los días 14, 15, 16 y 17 de febrero, tanto a la comida, a partir de las 14:00 horas, como a la cena, 
@@ -128,7 +128,7 @@
 					<p>¡Los jueves de 17:15, para que os de tiempo a venir del cole, hasta las 18:45, ¡¡una hora y media de diversión, aprendizaje y
 					merienda para los reyes de la casa!!</p>
 					<br>
-					<p><strong>Por 15€ todo incluido (merienda saludable, taller y materiales).</strong></p>
+					<p><strong>Por 10€ todo incluido </strong>(merienda saludable, taller y materiales).</p>
 					<br>
 					<p>(Para niños de entre 3 y 10 años, ambos incluidos, para niños de otras edades, preguntadnos. Para apuntarles, llamad a nuestro teléfono <strong> 680.21.97.94</strong> o enviadnos un email a
 					<strong>info@merendalia.es)</strong></p>
@@ -306,7 +306,7 @@
 		</div>
 
 	</div>
-
+-->
 	<footer>
         <?php include_once("footer.php");?>        
     </footer>
