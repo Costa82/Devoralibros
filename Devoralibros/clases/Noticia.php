@@ -263,7 +263,11 @@ class Noticia
                                             <a href='Noticias/'><img src='img_noticias/" . $mostrar["img_noticia"] . "' alt='" . $mostrar["titulo"] . "' title='" . $mostrar["titulo"] . "'></a>
                                     </div>
                                   <div class='descripcionRand'>
-                                                " . $mostrar["descripcion"] . "</br></br>";
+                                                " . $mostrar["descripcion"] . "";
+								 
+								    if ( $mostrar["urlExtra"] != null ) {
+                                        echo "<a href='".$mostrar['urlExtra']."' target='_blank'>".$mostrar['urlExtra']."</a><br/><br/>";
+                                    }
                         
                         echo "<h4> " . $mostrar["fecha_subida"] . "</h4>";
                         echo "</div></div>";
