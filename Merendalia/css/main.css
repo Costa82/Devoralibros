@@ -265,6 +265,29 @@ nav>ul>li>ul#lista_movil li {
 	opacity: 1;
 }
 
+/* RESEÑAS GOOGLE
+   ========================================================================= */
+.google {
+	margin-top: 25px;
+	text-align: center;
+	width: 100%;
+}
+
+.google h3 {
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+
+.resenas_google img {
+	width: 80%;
+	max-width: 700px;
+	min-width: 300px;
+}
+
+.google a {
+	color: #ff3123;
+}
+
 /* RESERVAS Y TARIFAS
    ========================================================================= */
 h3.titulo_reservas {
@@ -1089,6 +1112,14 @@ footer h3 {
 	p.pieFoto {
 		font-size: 12px;
 	}
+	.google {
+		margin-top: 40px;
+	}
+	.google h3 {
+		margin-top: 25px;
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
 }
 
 
@@ -1438,13 +1469,13 @@ footer h3 {
 	nav>ul>li {
 		padding: 20px;
 	}
-	.circulo { 0
+	.circulo { 
 		border-radius: 300px;
 		text-align: center;
 		height: 300px;
 		width: 300px;
 		display: inline-block;
-		margin: 100px 100px;
+		margin: 50px 50px;
 		font-size: 25px;
 	}
 	.evento_principal img {
@@ -1506,6 +1537,9 @@ footer h3 {
 	
 	.img_producto_comida img {
 		height: 200px;
+	}
+	.circulo { 
+		margin: 100px 100px;
 	}
 	
 }

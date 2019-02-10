@@ -86,6 +86,20 @@
 			<h2>Menús privados</h2>
 		</a>
 	</div>
+	
+	<div class="google">
+	
+    	<h3>Reseñas de Google</h3>
+    	
+    		<div class="resenas_google">
+    			<a href="https://www.google.com/search?q=Merendalia+Valladolid,+Castilla+y+León,+47003&ludocid=9747021183011716791&#lrd=0xd4713de24395b49:0x8744601fbf9efeb7,1" target="_blank"">
+    				<img src="img/Reseñas_google.PNG" alt="Reseñas de Google">
+    			</a>
+    		</div>
+    	
+    	<p>Deja tu reseña en <a href="http://search.google.com/local/writereview?placeid=ChIJSVs5JN4TRw0Rt_6evx9gRIc" target="_blank">Google</a></p>
+	
+	</div>
 
 	<!--//BLOQUE COOKIES-->
 	<div id="overbox3">
