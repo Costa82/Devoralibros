@@ -458,6 +458,11 @@ iframe {
 	position: absolute;
 	display: none;
 	z-index: 9999999999999;
+	border-radius: 5px;
+	border: black 2px solid;
+	-webkit-box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	color: black;
 }
 
 .conocenos>h2 {
