@@ -1,5 +1,5 @@
 <!--
-- Archivo para los errores 404.
+- Archivo para los errores 403.
 - @author Miguel Costa.
 -
 -->
@@ -18,7 +18,7 @@
 <meta name="msapplication-TileImage" content="tile.png" />
 <meta name="msapplication-TileColor" content="#d83434" />
 
-<title>Error 404</title>
+<title>Error 403</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -87,7 +87,7 @@ var rutacss2 = "../css/main_libros.css?" + Math.random();
     	
             <h2>Ups!!</h2>
             <p>Tenemos algún problemilla, aprovecha a leer un poco o...juega una partidita de '7 y media' en lo que lo arreglamos.</p>
-            <form id='pedirCarta' action="/errores/404.php" method="POST">
+            <form id='pedirCarta' action="/errores/403.php" method="POST">
                 <button class="boton juego pedir" type="submit" name="pedir">Pedir Carta</button>
                 <button class="boton juego plantarse" style="display:none;" type="submit" name="plantarse">Plantarse</button>
                 <button class="boton juego otraPartida" style="display:none;" type="submit" name="otraPartida">Otra Partida</button>
