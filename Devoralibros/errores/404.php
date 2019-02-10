@@ -86,8 +86,8 @@ var rutacss2 = "../css/main_libros.css?" + Math.random();
     	<div class="error404">
     	
             <h2>Ups!!</h2>
-            <p>Algo ha ocurrido, aprovecha a leer un poco o...juega una 7 y media en lo que lo arreglamos</p>
-            <form id='pedirCarta' action="" method="POST">
+            <p>Tenemos algún problemilla, aprovecha a leer un poco o...juega una partidita de '7 y media' en lo que lo arreglamos.</p>
+            <form id='pedirCarta' action="/errores/404.php" method="POST">
                 <button class="boton juego pedir" type="submit" name="pedir">Pedir Carta</button>
                 <button class="boton juego plantarse" style="display:none;" type="submit" name="plantarse">Plantarse</button>
                 <button class="boton juego otraPartida" style="display:none;" type="submit" name="otraPartida">Otra Partida</button>

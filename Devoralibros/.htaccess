@@ -37,6 +37,7 @@ RewriteRule ^FormularioSubirConcurso/ php/SubirConcurso.php [L]
 RewriteRule ^FormularioSubirRelato/ php/SubirRelato.php [L]
 RewriteRule ^FormularioComentarLibro/ php/realizaComentario.php [L]
 RewriteRule ^FormularioVotarLibro/ php/realizaVotacion.php [L]
+RewriteRule ^Error404/ /errores/404.php [L]
 
 RewriteBase /
 RewriteCond %{SERVER_PORT} 80
