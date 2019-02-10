@@ -911,6 +911,28 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 	color: #4cb164;
 }
 
+/*ERROR 404
+========================================================================= */
+.error404 {
+	padding-top: 30px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.error404 p {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.juego {
+	margin: 12px;
+}
+
+.plantarse {
+	background-color: #4cb164;
+}
+
 /*RESPONSIVE
 ========================================================================= */
 
@@ -981,6 +1003,20 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 	#infobox3 p {
 		line-height: 20px;
 		font-size: 15px;
+	}
+	
+	.error404 {
+		padding-top: 100px;
+		text-align: center;
+	}
+	
+	.error404 p {
+		font-size: 30px;
+		margin-top: 15px;
+	}
+	
+	.juego {
+		margin: 50px;
 	}
 }
 

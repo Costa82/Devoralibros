@@ -41,3 +41,6 @@ RewriteRule ^FormularioVotarLibro/ php/realizaVotacion.php [L]
 RewriteBase /
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.devoralibros.es/$1 [R,L]
+
+#Errores
+ErrorDocument 404 /errores/404.php

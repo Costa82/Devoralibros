@@ -38,13 +38,6 @@ $_SESSION['pagina'] = "index";
 <title>Devoralibros</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
 
-<script>
-          var rutacss1 = "css/main.css?" + Math.random();
-          var rutacss2 = "css/main_libros.css?" + Math.random();
-          document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />'); 
-          document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
-    </script>
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async
 	src="https://www.googletagmanager.com/gtag/js?id=UA-103067390-1"></script>
