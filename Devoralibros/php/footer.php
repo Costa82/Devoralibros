@@ -65,9 +65,9 @@ if (strpos($_SERVER['REQUEST_URI'], "Inicio") !== false) {
           </div>';
 }
 
-echo '	    <div class="copyright">
-                <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Miguel Costa Jiménez</p>
-            </div>
+echo '<div class="copyright">
+                <p><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Miguel Costa Jiménez</p>
+      </div>
     
       </div>';
 

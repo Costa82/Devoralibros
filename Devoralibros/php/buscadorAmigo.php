@@ -14,14 +14,20 @@ $caracteres_buenos = array("&lt;", "&gt;", "&quot;", "&#x27;", "&#x2F;", "&#060;
 $consultaBusqueda = str_replace($caracteres_malos, $caracteres_buenos, $consultaBusqueda);
 // Variable vacía (para evitar los E_NOTICE)
 $mensaje = "";
+
 // Comprueba si $consultaBusqueda está seteado
+
 if (isset($consultaBusqueda)) {
     // Busca todos los usuarios que coincidan con la cadena y no sea él mismo, no sean amigos y no se haya enviado ya la solicitud
-    $sql= "SELECT nick FROM usuarios WHERE nick LIKE '%$consultaBusqueda%'";
+    $sql= "SELECT nick FROM usuarios WHERE nick LIKE '%$consultaBusqueda%' AND Estado = 'ALTA'";
+        
         if($c->real_query($sql)){
+            
             if($resul=$c->store_result()){
+                
                 if($resul->num_rows>0){
                     echo '<ul>';
+                    
                     while($mostrar=$resul->fetch_assoc()){
                         $nick=$mostrar["nick"];
                         $id2=Usuario::getIdusuario($nick);

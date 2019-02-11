@@ -7,12 +7,14 @@
 require_once '../inc/funciones.php';
 include_once ("../clases/Usuario.php");
 sesion();
+
 // nos aseguramos que pertenece al tipo 2 de administradores
 if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']) == 2)) {
     $nick = $_SESSION['datos']['nick'];
     $id_usuario = $_SESSION['datos']['id_usuario'];
     $tipo_usuario = $_SESSION['datos']['tipo_usuario'];
 }
+
 ?>
 <!DOCTYPE html>
 <html>

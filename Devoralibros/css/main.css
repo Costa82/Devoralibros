@@ -1,6 +1,6 @@
 /**
 * Archivo CSS principal para diseñar nuestra aplicacion web 'DevoraLibros'
-* @author   Miguel Costa.
+* @author Miguel Costa.
 *
 */
 
@@ -312,7 +312,7 @@ nav>ul>li#menu_moviles>i:hover {
 	width: 20%;
 	padding-left: 10px;
 	float: right;
-	margin-top: 6%;
+	margin-top: 10%;
 	text-align: center;
 }
 
@@ -458,6 +458,11 @@ iframe {
 	position: absolute;
 	display: none;
 	z-index: 9999999999999;
+	border-radius: 5px;
+	border: black 2px solid;
+	-webkit-box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	color: black;
 }
 
 .conocenos>h2 {
@@ -911,6 +916,28 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 	color: #4cb164;
 }
 
+/*ERROR 404
+========================================================================= */
+.error404 {
+	padding-top: 30px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.error404 p {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.juego {
+	margin: 12px;
+}
+
+.plantarse {
+	background-color: #4cb164;
+}
+
 /*RESPONSIVE
 ========================================================================= */
 
@@ -981,6 +1008,20 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 	#infobox3 p {
 		line-height: 20px;
 		font-size: 15px;
+	}
+	
+	.error404 {
+		padding-top: 100px;
+		text-align: center;
+	}
+	
+	.error404 p {
+		font-size: 30px;
+		margin-top: 15px;
+	}
+	
+	.juego {
+		margin: 50px;
 	}
 }
 

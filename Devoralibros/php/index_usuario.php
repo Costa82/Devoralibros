@@ -52,7 +52,7 @@ $_SESSION['pagina'] = "index_usuario";
 
 <script>
     function confirmarBaja() {
-        if(confirm('¿Estás seguro de darte de baja de Devoralibros?'))
+        if(confirm('¿Estás seguro de darte de baja de Devoralibros?Te echaremos de menos...'))
             return true;
         else
             return false;

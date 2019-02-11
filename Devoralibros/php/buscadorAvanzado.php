@@ -83,16 +83,42 @@ $_SESSION['pagina'] = "buscador_avanzado";
         </div>
 	</header>
     <?php
-    if (isset($_REQUEST['mostrarTodos'])) {
+    
+    // Click en botón 'mostrar todos'
+    if (isset($_REQUEST['mostrarTodos']) || ( isset($_GET["pag"]) && isset($_GET["mostrarTodos"]) )) {
         
         $resultados = libro::buscarTitulo("%");
+        
         if ($resultados == 0) {
             echo "Se ha producido un error en la busqueda.";
         } else if ($resultados['numero'] == 0) {
             echo "<h2 class='resultados'>No se encontraron resultados.</h2>";
         } else {
-            echo "<h2 class='resultados'>Se encontraron " . $resultados['numero'] . " resultados (Todos los libros) </h2>";
+            
+            // Limito la busqueda
+            $TAMANO_PAGINA = 20;
+            $pag = false;
+            
+            // examino la pagina a mostrar y el inicio del registro a mostrar
+            if (isset($_GET["pag"]))
+                $pag = $_GET["pag"];
+                
+            if (! $pag) {
+                $inicio = 0;
+                $pag = 1;
+            } else {
+                $inicio = ($pag - 1) * $TAMANO_PAGINA;
+            }
+            
+            // calculo el total de paginas
+            $total_paginas = ceil($resultados['numero'] / $TAMANO_PAGINA);
+            
+            // Muestro todos los libros
+            $resultados = libro::buscarTituloLimit( "%", $inicio,$TAMANO_PAGINA );
+            
+            echo "<h2 class='resultados'>Todos los libros</h2>";
             echo "<div class='ultimosSubidos'><ul class='temas_flex'>";
+            
             for ($i = 0; $i < count($resultados['filas_consulta']); $i ++) {
                 foreach ($resultados['filas_consulta'][$i] as $key => $value) {
                     if ($key == "id_libro") {
@@ -107,106 +133,233 @@ $_SESSION['pagina'] = "buscador_avanzado";
                 echo "<li><a href='../Libro/" . $myvar . "'><img src='../img_libros/" . $img_portada . "' alt='" . $titulo . "' title='" . $titulo . "'/></a></li>";
             }
             echo "</ul></div>";
-        }
-    } elseif ( (isset($_POST['titulo']) and isset($_POST['autor']) and isset($_POST['genero'])) ||
-        (isset($_SESSION['titulo']) || isset($_SESSION['autor']) || isset($_SESSION['genero'])) ) {
-        
-        if (empty($_POST['titulo']) && !isset($_SESSION['titulo'])) {
-            $titulo = "";
-            $_SESSION['titulo'] = $titulo;
-        } else {
             
-            if ( isset($_POST['titulo'] )) {
-                $_SESSION['titulo'] = $_POST['titulo'];
-                // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
-                $titulo = filter_var($_POST['titulo'], FILTER_SANITIZE_STRING);
-            } else {
-                $titulo = filter_var($_SESSION['titulo'], FILTER_SANITIZE_STRING);
-            }
-        }
-        
-        if (empty($_POST['autor']) && !isset($_SESSION['autor'])) {
-            $autor = "";
-            $_SESSION['autor'] = $autor;
-        } else {
+            echo '<div class="numeracion">';
             
-            if ( isset($_POST['autor'] )) {
-                $_SESSION['autor'] = $_POST['autor'];
-                // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
-                $autor = filter_var($_POST['autor'], FILTER_SANITIZE_STRING);
-            } else {
-                $autor = filter_var($_SESSION['autor'], FILTER_SANITIZE_STRING);
-            }
-        }
-        if (empty($_POST['isbn']) && !isset($_SESSION['isbn'])) {
-            $isbn = "";
-            $_SESSION['isbn'] = $isbn;
-        } else {
-            
-            if ( isset($_POST['isbn'] )) {
-                $_SESSION['isbn'] = $_POST['isbn'];
-                // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
-                $isbn = filter_var($_POST['isbn'], FILTER_SANITIZE_STRING);
-            } else {
-                $isbn = filter_var($_SESSION['isbn'], FILTER_SANITIZE_STRING);
-            }
-        }
-        
-        if ( isset($_POST['genero'] )) {
-            $genero = $_POST['genero'];
-            $_SESSION['genero'] = $_POST['genero'];
-        } else {
-            $genero = $_SESSION['genero'];
-        }
-        
-        $resultados = libro::buscarLibro($titulo, $autor, $isbn, $genero);
-        if ($resultados == 0) {
-            echo "Se ha producido un error en la búsqueda.";
-        } else if ($resultados['numero'] == 0) {
-            echo "<h2 class='resultados'>No se encontraron resultados.</h2>";
-        } else {
-            echo "<h2 class='resultados'>Se encontraron " . $resultados['numero'] . " resultado/s.</h2>";
-            echo "<div class='ultimosSubidos'><ul class='temas_flex'>";
-            for ($i = 0; $i < count($resultados['filas_consulta']); $i ++) {
-                foreach ($resultados['filas_consulta'][$i] as $key => $value) {
-                    if ($key == "id_libro") {
-                        $id_libro_actual = $value;
-                    } elseif ($key == "img_portada") {
-                        $img_portada = $value;
-                    } elseif ($key == "titulo") {
-                        $titulo = $value;
-                        $myvar = str_replace(" ", "-", $titulo);
-                    }
+            if ($total_paginas > 1) {
+                
+                if ($pag != 1)
+                        echo '<a href="../BuscadorAvanzado/?pagina=1&pag=' . ($pag - 1) . '&mostrarTodos"><img src="../img/izq.gif" border="0"></a>';
+                        
+                        for ($i = 1; $i <= $total_paginas; $i ++) {
+                            if ($pag == $i)
+                                // si muestro el índice de la página actual, no coloco enlace
+                                echo $pag;
+                                else
+                                    // si el índice no corresponde con la página mostrada actualmente,
+                                    // coloco el enlace para ir a esa página
+                                    echo '  <a href="../BuscadorAvanzado/?pagina=1&pag=' . $i . '&mostrarTodos">' . $i . '</a>  ';
+                        }
+                        
+                        if ($pag != $total_paginas)
+                            echo '<a href="../BuscadorAvanzado/?pagina=1&pag=' . ($pag + 1) . '&mostrarTodos"><img src="../img/der.gif" border="0"></a>';
                 }
-                echo "<li><a href='../Libro/" . $myvar . "'><img src='../img_libros/" . $img_portada . "' alt='" . $titulo . "' title='" . $titulo . "' /></a></li>";
-            }
-            echo "</ul></div>";
+            
+            echo '</div>';
         }
-    } else {
-        $resultados = libro::buscarTitulo("%");
-        if ($resultados == 0) {
-            echo "Se ha producido un error en la busqueda.";
-        } else if ($resultados['numero'] == 0) {
-            echo "<h2 class='resultados'>No se encontraron resultados.</h2>";
-        } else {
-            echo "<h2 class='resultados'>Se encontraron " . $resultados['numero'] . " resultados (Todos los libros) </h2>";
-            echo "<div class='ultimosSubidos'><ul class='temas_flex'>";
-            for ($i = 0; $i < count($resultados['filas_consulta']); $i ++) {
-                foreach ($resultados['filas_consulta'][$i] as $key => $value) {
-                    if ($key == "id_libro") {
-                        $id_libro_actual = $value;
-                    } elseif ($key == "img_portada") {
-                        $img_portada = $value;
-                    } elseif ($key == "titulo") {
-                        $titulo = $value;
-                        $myvar = str_replace(" ", "-", $titulo);
-                    }
+    } 
+
+    // Se ha introducido algún parámetro de búsqueda
+    elseif ( (isset($_POST['titulo']) and isset($_POST['autor']) and isset($_POST['genero'])) ||
+             (isset($_SESSION['titulo']) || isset($_SESSION['autor']) || isset($_SESSION['genero'])) ) {
+            
+            if (empty($_POST['titulo']) && !isset($_SESSION['titulo'])) {
+                $titulo = "";
+                $_SESSION['titulo'] = $titulo;
+            } else {
+                
+                if ( isset($_POST['titulo'] )) {
+                    $_SESSION['titulo'] = $_POST['titulo'];
+                    // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
+                    $titulo = filter_var($_POST['titulo'], FILTER_SANITIZE_STRING);
+                } else {
+                    $titulo = filter_var($_SESSION['titulo'], FILTER_SANITIZE_STRING);
                 }
-                echo "<li><a href='../Libro/" . $myvar . "'><img src='../img_libros/" . $img_portada . "' alt='" . $titulo . "' title='" . $titulo . "'/></a></li>";
             }
-            echo "</ul></div>";
-        }
+            
+            if (empty($_POST['autor']) && !isset($_SESSION['autor'])) {
+                $autor = "";
+                $_SESSION['autor'] = $autor;
+            } else {
+                
+                if ( isset($_POST['autor'] )) {
+                    $_SESSION['autor'] = $_POST['autor'];
+                    // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
+                    $autor = filter_var($_POST['autor'], FILTER_SANITIZE_STRING);
+                } else {
+                    $autor = filter_var($_SESSION['autor'], FILTER_SANITIZE_STRING);
+                }
+            }
+            if (empty($_POST['isbn']) && !isset($_SESSION['isbn'])) {
+                $isbn = "";
+                $_SESSION['isbn'] = $isbn;
+            } else {
+                
+                if ( isset($_POST['isbn'] )) {
+                    $_SESSION['isbn'] = $_POST['isbn'];
+                    // filtramos el input name=titulo para evitar ataques como los XSS Cross-Site Scripting
+                    $isbn = filter_var($_POST['isbn'], FILTER_SANITIZE_STRING);
+                } else {
+                    $isbn = filter_var($_SESSION['isbn'], FILTER_SANITIZE_STRING);
+                }
+            }
+            
+            if ( isset($_POST['genero'] )) {
+                $genero = $_POST['genero'];
+                $_SESSION['genero'] = $_POST['genero'];
+            } else {
+                $genero = $_SESSION['genero'];
+            }
+            
+            $resultados = libro::buscarLibro($titulo, $autor, $isbn, $genero);
+            if ($resultados == 0) {
+                echo "Se ha producido un error en la búsqueda.";
+            } else if ($resultados['numero'] == 0) {
+                echo "<h2 class='resultados'>No se encontraron resultados.</h2>";
+            } else {
+                
+                $numeroResultados = $resultados['numero'];
+                
+                // Limito la busqueda
+                $TAMANO_PAGINA = 20;
+                $pag = false;
+                
+                // examino la pagina a mostrar y el inicio del registro a mostrar
+                if (isset($_GET["pag"]))
+                    $pag = $_GET["pag"];
+                    
+                if (! $pag) {
+                    $inicio = 0;
+                    $pag = 1;
+                } else {
+                    $inicio = ($pag - 1) * $TAMANO_PAGINA;
+                }
+                
+                // calculo el total de paginas
+                $total_paginas = ceil($resultados['numero'] / $TAMANO_PAGINA);
+                
+                // Muestro todos los libros
+                $resultados = libro::buscarLibroLimit($titulo, $autor, $isbn, $genero, $inicio, $TAMANO_PAGINA);
+                
+                echo "<h2 class='resultados'>Se encontraron " . $numeroResultados . " resultado/s.</h2>";
+                echo "<div class='ultimosSubidos'><ul class='temas_flex'>";
+                
+                for ($i = 0; $i < count($resultados['filas_consulta']); $i ++) {
+                    foreach ($resultados['filas_consulta'][$i] as $key => $value) {
+                        if ($key == "id_libro") {
+                            $id_libro_actual = $value;
+                        } elseif ($key == "img_portada") {
+                            $img_portada = $value;
+                        } elseif ($key == "titulo") {
+                            $titulo = $value;
+                            $myvar = str_replace(" ", "-", $titulo);
+                        }
+                    }
+                    echo "<li><a href='../Libro/" . $myvar . "'><img src='../img_libros/" . $img_portada . "' alt='" . $titulo . "' title='" . $titulo . "' /></a></li>";
+                }
+                echo "</ul></div>";
+                
+                echo '<div class="numeracion">';
+                
+                if ($total_paginas > 1) {
+                    
+                    if ($pag != 1)
+                        echo '<a href="../BuscadorAvanzado/?pagina=1&pag=' . ($pag - 1) . '"><img src="../img/izq.gif" border="0"></a>';
+                        
+                        for ($i = 1; $i <= $total_paginas; $i ++) {
+                            if ($pag == $i)
+                                // si muestro el índice de la página actual, no coloco enlace
+                                echo $pag;
+                                else
+                                    // si el índice no corresponde con la página mostrada actualmente,
+                                    // coloco el enlace para ir a esa página
+                                    echo '  <a href="../BuscadorAvanzado/?pagina=1&pag=' . $i . '">' . $i . '</a>  ';
+                        }
+                        
+                        if ($pag != $total_paginas)
+                            echo '<a href="../BuscadorAvanzado/?pagina=1&pag=' . ($pag + 1) . '"><img src="../img/der.gif" border="0"></a>';
+                }
+                
+                echo '</div>';
+            }
     }
+    
+    // No se ha metido ningún valor
+    else {
+        
+        $resultados = libro::buscarTitulo("%");
+        
+        if ($resultados == 0) {
+            echo "Se ha producido un error en la busqueda.";
+        } else if ($resultados['numero'] == 0) {
+            echo "<h2 class='resultados'>No se encontraron resultados.</h2>";
+        } else {
+            
+            // Limito la busqueda
+            $TAMANO_PAGINA = 20;
+            $pag = false;
+            
+            // examino la pagina a mostrar y el inicio del registro a mostrar
+            if (isset($_GET["pag"]))
+                $pag = $_GET["pag"];
+                
+                if (! $pag) {
+                    $inicio = 0;
+                    $pag = 1;
+                } else {
+                    $inicio = ($pag - 1) * $TAMANO_PAGINA;
+                }
+                
+                // calculo el total de paginas
+                $total_paginas = ceil($resultados['numero'] / $TAMANO_PAGINA);
+                
+                // Muestro todos los libros
+                $resultados = libro::buscarTituloLimit( "%", $inicio,$TAMANO_PAGINA );
+                
+                echo "<h2 class='resultados'>Todos los libros</h2>";
+                echo "<div class='ultimosSubidos'><ul class='temas_flex'>";
+                
+                for ($i = 0; $i < count($resultados['filas_consulta']); $i ++) {
+                    foreach ($resultados['filas_consulta'][$i] as $key => $value) {
+                        if ($key == "id_libro") {
+                            $id_libro_actual = $value;
+                        } elseif ($key == "img_portada") {
+                            $img_portada = $value;
+                        } elseif ($key == "titulo") {
+                            $titulo = $value;
+                            $myvar = str_replace(" ", "-", $titulo);
+                        }
+                    }
+                    echo "<li><a href='../Libro/" . $myvar . "'><img src='../img_libros/" . $img_portada . "' alt='" . $titulo . "' title='" . $titulo . "'/></a></li>";
+                }
+                echo "</ul></div>";
+                
+                echo '<div class="numeracion">';
+                
+                if ($total_paginas > 1) {
+                    
+                    if ($pag != 1)
+                        echo '<a href="../BuscadorAvanzado/?pagina=1&pag=' . ($pag - 1) . '&mostrarTodos"><img src="../img/izq.gif" border="0"></a>';
+                        
+                        for ($i = 1; $i <= $total_paginas; $i ++) {
+                            if ($pag == $i)
+                                // si muestro el índice de la página actual, no coloco enlace
+                                echo $pag;
+                                else
+                                    // si el índice no corresponde con la página mostrada actualmente,
+                                    // coloco el enlace para ir a esa página
+                                    echo '  <a href="../BuscadorAvanzado/?pagina=1&pag=' . $i . '&mostrarTodos">' . $i . '</a>  ';
+                        }
+                        
+                        if ($pag != $total_paginas)
+                            echo '<a href="../BuscadorAvanzado/?pagina=1&pag=' . ($pag + 1) . '&mostrarTodos"><img src="../img/der.gif" border="0"></a>';
+                }
+                
+                echo '</div>';
+        }
+        
+    }
+    
     ?>
     <?php include_once("infografia.php");?>
     <footer>
