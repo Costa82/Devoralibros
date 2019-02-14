@@ -21,10 +21,16 @@
     */
     function pedirCarta($jugador) {
         if ($jugador === 'humano') {
-            if(isset($_SESSION['puntosMaquina'])){
+            if($_SESSION['puntosMaquina'] != 0){
                 echo '<p>No puedes pedir más cartas, la partida terminó. Vuelve a jugar</p>';
                 mostrarBotonOtraPartida();
             }else{
+                if (!isset($_SESSION['puntosGeneralesHumano'])) {
+                    $_SESSION['puntosGeneralesHumano'] = 0;
+                }
+                if (!isset($_SESSION['puntosGeneralesMaquina'])) {
+                    $_SESSION['puntosGeneralesMaquina'] = 0;
+                }
                 if (!isset($_SESSION['puntos'])) {
                     $puntos = 0;
                     mostrarBotonPlantarse();
@@ -73,8 +79,10 @@
             default:
                 break;
         }
+
         $numCarta = rand(0, count($_SESSION['cartas'][$palo])-1);
         $carta = $_SESSION['cartas'][$palo][$numCarta];
+
         switch ($_SESSION['cartas'][$palo][$numCarta]) {
             case '12.jpg':
                 $puntos = 0.5;
@@ -163,7 +171,10 @@
         if ($jugador === 'humano') {
             echo '<p><strong>¡ENHORABUENA HAS CONSEGUIDO 7 Y MEDIO!</strong></p>';
         } else {
-            echo '<p><strong>¡LA MÁQUINA HA CONSEGUIDO 7 Y MEDIO!Pierdes...</strong></p>';
+            
+            $_SESSION['puntosGeneralesMaquina']++;            
+            ob_flush();flush();sleep(2.7);eliminarCarta();
+            echo '<p><strong>¡LA MÁQUINA HA CONSEGUIDO 7 Y MEDIO! Mala suerte...</strong></p>';
         }
         mostrarBotonOtraPartida();
     }
@@ -173,9 +184,12 @@
     *
     */
     function campeonSuperando() {
-        echo '<p><strong>¡LA MÁQUINA TE HA SUPERADO!Pierdes...</strong></p>';
+        ob_flush();flush();sleep(2.7);
+        echo '<p><strong>¡LA MÁQUINA TE HA SUPERADO! Pierdes...</strong></p>';
+        $_SESSION['puntosGeneralesMaquina']++;
         mostrarBotonOtraPartida();
         ocultarBotonPlantarse();
+        eliminarCarta();
     }
 
     /**
@@ -186,12 +200,16 @@
     */
     function pierde($jugador) {
         if ($jugador === 'humano') {
-            echo '<p><strong>¡TE HAS PASADO! Pierdes...</strong></p>';
+            echo '<p><strong>¡TE HAS PASADO! Más suerte para la próxima...</strong></p>';
+            $_SESSION['puntosGeneralesMaquina']++;
             ocultarBotonPlantarse();
             ocultarBotonPedir();
         } else {
+            ob_flush();flush();sleep(2.7);
             echo '<p><strong>¡ENHORABUENA LA MÁQUINA SE PASA!</strong></p>';
+            $_SESSION['puntosGeneralesHumano']++;
             ocultarBotonPlantarse();
+            eliminarCarta();
         }
         mostrarBotonOtraPartida();
     }
@@ -202,7 +220,7 @@
     *
     */
     function plantarse() {
-        if(isset($_SESSION['puntosMaquina'])){
+        if($_SESSION['puntosMaquina'] != 0){
             echo '<p>No puedes plantarte, la partida terminó. Vuelve a jugar</p>';
             mostrarBotonOtraPartida();
         }else{

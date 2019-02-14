@@ -1,5 +1,5 @@
 <!--
-- Archivo para los errores 403.
+- Archivo para los errores.
 - @author Miguel Costa.
 -
 -->
@@ -18,12 +18,12 @@
 <meta name="msapplication-TileImage" content="tile.png" />
 <meta name="msapplication-TileColor" content="#d83434" />
 
-<title>Error 403</title>
+<title>Error</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async
-	src="https://www.googletagmanager.com/gtag/js?id=UA-103067390-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103067390-1"></script>
+
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -87,15 +87,26 @@ var rutacss2 = "../css/main_libros.css?" + Math.random();
     	
             <h2>Ups!!</h2>
             <p>Tenemos algún problemilla, aprovecha a leer un poco o...juega una partidita de '7 y media' en lo que lo arreglamos.</p>
-            <form id='pedirCarta' action="/errores/403.php" method="POST">
+            <?php 
+                if(isset($_SESSION['puntosGeneralesHumano']) && isset($_SESSION['puntosGeneralesMaquina']) &&
+                   ($_SESSION['puntosGeneralesHumano'] > 0 || $_SESSION['puntosGeneralesMaquina'] > 0)) {
+
+                    echo "<p><strong>Puntos Jugador:</strong> ".$_SESSION['puntosGeneralesHumano']."</p>";
+                    echo "<p><strong>Puntos Máquina:</strong> ".$_SESSION['puntosGeneralesMaquina']."</p>";
+                    
+                }
+            ?>
+            <form id='pedirCarta' action="/errores/error.php" method="POST">
                 <button class="boton juego pedir" type="submit" name="pedir">Pedir Carta</button>
                 <button class="boton juego plantarse" style="display:none;" type="submit" name="plantarse">Plantarse</button>
                 <button class="boton juego otraPartida" style="display:none;" type="submit" name="otraPartida">Otra Partida</button>
+                <button class="boton juego Reiniciar" type="submit" name="reiniciar">Reiniciar</button>
             </form>
             <?php
                 // Comportamiento de cada botón.
                 if(isset($_POST['otraPartida'])) {
-                    session_destroy();
+                    $_SESSION['puntosMaquina'] = 0;
+                    $_SESSION['puntos'] = 0;
                 }
     
                 if(isset($_POST['pedir'])) {
@@ -105,6 +116,12 @@ var rutacss2 = "../css/main_libros.css?" + Math.random();
     
                 if(isset($_POST['plantarse'])) {
                     plantarse();
+                }
+
+                // Comportamiento de cada botón.
+                if(isset($_POST['reiniciar'])) {
+                    session_destroy();
+                    header("location:/errores/error.php"); 
                 }
             ?>
     	
