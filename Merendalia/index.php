@@ -10,7 +10,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Alquila el local para celebraciones, cumpleaños, fiestas sorpresa, reuniones con amigos y familia Valladolid. Reserva los menús privados solo para tu grupo." />
+<meta name="description"
+	content="Alquila el local para celebraciones, cumpleaños, fiestas sorpresa, reuniones con amigos y familia Valladolid. Reserva los menús privados solo para tu grupo." />
 <meta name="robots" content="NOODP">
 <title>Merendalia</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
@@ -75,8 +76,7 @@
 	</div>
 
 	<div class="contenedor_circulos">
-		<a class="circulo amarillo" href="eventos/"
-			title="Nuestros Eventos">
+		<a class="circulo amarillo" href="eventos/" title="Nuestros Eventos">
 			<h2>Nuestros Eventos</h2>
 		</a> <a class="circulo rojo" href="reservas-tarifas/"
 			title="Reserva de espacio">
@@ -86,19 +86,49 @@
 			<h2>Menús privados</h2>
 		</a>
 	</div>
-	
+
 	<div class="google">
-	
-    	<h3>Reseñas de Google</h3>
-    	
-    		<div class="resenas_google">
-    			<a href="https://www.google.com/search?q=Merendalia+Valladolid,+Castilla+y+León,+47003&ludocid=9747021183011716791&#lrd=0xd4713de24395b49:0x8744601fbf9efeb7,1" target="_blank"">
-    				<img src="img/Reseñas_google.PNG" alt="Reseñas de Google">
-    			</a>
-    		</div>
-    	
-    	<p>Deja tu reseña en <a href="http://search.google.com/local/writereview?placeid=ChIJSVs5JN4TRw0Rt_6evx9gRIc" target="_blank">Google</a></p>
-	
+
+		<h3>Reseñas de Google</h3>
+
+		<div class="resenas_google">
+			<p class="nombre">
+				<img alt="foto google" src="img/ireneCarnero.jpg"><strong> Irene Carnero</strong>
+			</p>
+			<p>Fui con la familia y probamos un menú alemán, todo casero, muy
+				bueno y bastante cantidad. Está muy bien pensado para ir con niños
+				ya que tiene una piscina de bolas, mi sobrino lo pasó en grande.
+				También puedes alquilar el espacio entero para eventos, aunque en
+				esta ocasión estábamos dos grupos y resultó todo muy bien, el
+				personal un encanto. Repetiremos!</p>
+		</div>
+
+		<div class="resenas_google">
+			<p class="nombre">
+				<img alt="foto google" src="img/adeliaMerelo.jpg"><strong> Adelia Merelo</strong>
+			</p>
+			<p>Hemos celebrado un cumpleaños y nos hemos sentido como si
+				estuviéramos en nuestra casa. Muy buena comida y excelente atención.
+				El lugar muy agradable, un acierto reservar un espacio para que los
+				pequeños puedan jugar " a su aire". Sin duda repetiremos.</p>
+		</div>
+
+		<div class="resenas_google">
+			<p class="nombre">
+				<img alt="foto google" src="img/cristinaYRaul.jpg"><strong> Cristina y Raul</strong>
+			</p>
+			<p>Una tarde estupenda. Los talleres para niños son una idea genial,
+				salieron encantados. Mi hijo ya me está pidiendo volver: la
+				actividad, el personal, el lugar, la merienda ...a todo un 10.
+				Muchas gracias y volveremos pronto.</p>
+		</div>
+
+		<p>
+			Deja tu reseña en <strong><a
+				href="http://search.google.com/local/writereview?placeid=ChIJSVs5JN4TRw0Rt_6evx9gRIc"
+				target="_blank">Google</a></strong>
+		</p>
+
 	</div>
 
 	<!--//BLOQUE COOKIES-->
