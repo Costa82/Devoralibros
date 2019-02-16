@@ -4,6 +4,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^inicio index.php [L]
 
 RewriteRule ^menus-privados/ php/menus.php [L]
+RewriteRule ^menus-bocaditos/ php/menusBocaditos.php [L]
 RewriteRule ^galeria/ php/galeria.php [L]
 RewriteRule ^eventos/ php/eventos.php [L]
 RewriteRule ^reservas-tarifas/ php/reservas.php [L]

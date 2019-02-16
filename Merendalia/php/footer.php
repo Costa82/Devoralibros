@@ -37,6 +37,7 @@
                     <li id="eventos"><a href="../eventos/" title="Eventos">Eventos</a></li>
                     <li id="reservas"><a href="../reservas-tarifas/" title="Reservas">Reservas/Tarifas</a></li>
                     <li id="menus"><a href="../menus-privados/" title="Menús">Menús</a></li>
+                    <li id="menusBocaditos"><a href="../menus-bocaditos/" title="Menús bocaditos">Bocaditos</a></li>
                     <li id="blogMerendalia"><a href="../blog-merendalia/" title="Blog Merendalia">Blog</a></li>
                     <li id="contacto"><a href="../contacto/" title="Contacto">Contacto</a></li>';
 
@@ -47,6 +48,7 @@
                     <li id="eventos"><a href="eventos/" title="Eventos">Eventos</a></li>
                     <li id="reservas"><a href="reservas-tarifas/" title="Reservas">Reservas/Tarifas</a></li>
                     <li id="menus"><a href="menus-privados/" title="Menús">Menús</a></li>
+                    <li id="menusBocaditos"><a href="menus-bocaditos/" title="Menús bocaditos">Bocaditos</a></li>
                     <li id="blogMerendalia"><a href="blog-merendalia/" title="Blog Merendalia">Blog</a></li>
                     <li id="contacto"><a href="contacto/" title="Contacto">Contacto</a></li>';
             }

@@ -6,6 +6,7 @@ echo "<ul id='lista_principal_index'>
         <li id='eventos'><a href='eventos/' title='Eventos'>Eventos</a></li>
         <li id='reservas'><a href='reservas-tarifas/' title='Reservas'>Reservas/Tarifas</a></li>
         <li id='menus'><a href='menus-privados/' title='Menús'>Menús privados</a></li>
+        <li id='bocaditos'><a href='menus-bocaditos/' title='Bocaditos'>Bocaditos</a></li>
         <li id='blogMerendalia'><a href='blog-merendalia/' title='Blog Merendalia'>Blog</a></li>
         <li id='contacto'><a href='contacto/' title='Contacto'>Contacto</a></li>
     
@@ -15,6 +16,7 @@ echo "<ul id='lista_principal_index'>
                 <li id='eventos2'><a href='eventos/' title='Eventos'>Eventos</a></li>
                 <li id='reservas2'><a href='reservas-tarifas/' title='Reservas'>Reservas/Tarifas</a></li>
                 <li id='menus2'><a href='menus-privados/' title='Menús'>Menús privados</a></li>
+                <li id='bocaditos2'><a href='menus-bocaditos/' title='Bocaditos'>Bocaditos</a></li>
                 <li id='blogMerendalia2'><a href='blog-merendalia/' title='Blog Merendalia'>Blog</a></li>
                 <li id='contacto2'><a href='contacto/' title='Contacto'>Contacto</a></li>
             </ul>

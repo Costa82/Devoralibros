@@ -126,11 +126,11 @@ nav>#lista_principal_index {
 	font-size: 11px;
 }
 
-#galeria, #eventos, #reservas, #menus, #productos, #contacto, #blogMerendalia {
+#galeria, #eventos, #reservas, #menus, #bocaditos, #productos, #contacto, #blogMerendalia {
 	display: none;
 }
 
-#galeria2 a:hover, #eventos2 a:hover, #reservas2 a:hover, #menus2 a:hover, #productos2 a:hover, #contacto2 a:hover, #blogMerendalia2 a:hover {
+#galeria2 a:hover, #eventos2 a:hover, #reservas2 a:hover, #menus2 a:hover, #bocaditos2 a:hover, #productos2 a:hover, #contacto2 a:hover, #blogMerendalia2 a:hover {
 	color: #9bd155;
 }
 
@@ -252,6 +252,14 @@ nav>ul>li>ul#lista_movil li {
 
 .amarillo {
 	background-color: #d8c12d;
+}
+
+.negro {
+	background-color: #3c3c3b;
+}
+
+.contenedor_circulos h2.bocaditos {
+	color: white;
 }
 
 .circulo h2 {
@@ -1037,6 +1045,9 @@ footer h3 {
 		text-align: center;
 		font-size: 30px;
 	}
+	.contenedor_circulos {
+		max-width: 700px;
+	}
 	.foto {
 		min-height: 300px;
 		width: 400px;
@@ -1271,12 +1282,6 @@ footer h3 {
 	#inicio img {
 		margin-top: -20px;
 	}
-	#galeria, #eventos, #reservas, #menus, #productos, #contacto, #blogMerendalia {
-		display: block;
-	}
-	nav>ul>li#menu_moviles {
-		display: none;
-	}
 	.circulo {
 		border-radius: 250px;
 		text-align: center;
@@ -1454,6 +1459,30 @@ footer h3 {
 	}
 }
 
+/* Para resoluciones a partir de 1100px */
+@media only screen and (min-width: 1100px) {
+	
+	#galeria, #eventos, #reservas, #menus, #bocaditos, #productos, #contacto, #blogMerendalia {
+		display: block;
+	}
+	nav>ul>li#menu_moviles {
+		display: none;
+	}
+	.contenedor_circulos {
+		max-width: 1000px;
+	}
+	.circulo { 
+		border-radius: 300px;
+		text-align: center;
+		height: 300px;
+		width: 300px;
+		display: inline-block;
+		margin: 60px;
+		font-size: 25px;
+	}
+	
+}
+
 /* Para resoluciones a partir de 1250px */
 @media only screen and (min-width: 1250px) {
 	
@@ -1474,13 +1503,7 @@ footer h3 {
 		padding: 20px;
 	}
 	.circulo { 
-		border-radius: 300px;
-		text-align: center;
-		height: 300px;
-		width: 300px;
-		display: inline-block;
-		margin: 50px 50px;
-		font-size: 25px;
+		margin: 70px;
 	}
 	.evento_principal img {
 		height: 650px;
@@ -1534,6 +1557,12 @@ footer h3 {
 	.explicacion_blog {
 		padding-top: 130px;
 	}
+	.contenedor_circulos {
+		max-width: 1600px;
+	}
+	.circulo {
+		margin: 20px;
+	}
 }
 
 /* Para resoluciones a partir de 1600px */
@@ -1542,8 +1571,14 @@ footer h3 {
 	.img_producto_comida img {
 		height: 200px;
 	}
-	.circulo { 
-		margin: 100px 100px;
+	.contenedor_circulos {
+		max-width: 2000px;
+	}
+	.circulo {
+		margin: 30px;
+		border-radius: 330px;
+		height: 330px;
+		width: 330px;
 	}
 	
 }
