@@ -19,17 +19,14 @@ if (isset($_REQUEST['loguear'])) {
             
             if ($id_usuario = $usuario->esRegistrado($nick, $pass)) { // para loguearse, se comprueba que sea ususario registrado
                 
-                $cadena = "Usuario " . $nick . " logueado correctamente.";
-                $error = null;
-                $tipo = "INFO";
-                $separacion = "*";
-                $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
+                $log->write_log($desdeDonde, "Usuario " . $nick . " logueado correctamente.", null, "INFO", "*");
                 
                 require_once '../inc/funciones.php';
                 sesion();
                 $_SESSION['id_usuario'] = $id_usuario;
                 $_SESSION['datos'] = $usuario->getUsuario($id_usuario);
                 $tipo_usuario = $_SESSION['datos']['tipo_usuario'];
+                
                 switch ($tipo_usuario) {
                     case 1:
                         $destino = "../Usuario/";
@@ -44,22 +41,12 @@ if (isset($_REQUEST['loguear'])) {
                 }
             } else {
                 
-                $num = - 202;
-                $cadena = "El usuario " . $nick . " no se logueó correctamente.";
-                $tipo = "ERROR";
-                $separacion = "*";
-                $log->write_log($desdeDonde, $cadena, $num, $tipo, $separacion);
-                
+                $log->write_log($desdeDonde, "El usuario " . $nick . " no se logueó correctamente.", - 202, "ERROR", "*");
                 $destino = "../FormularioInicioSesion/?num=$num";
             }
         } else {
             
-            $num = - 201;
-            $cadena = "El usuario " . $nick . " no se logueó correctamente.";
-            $tipo = "ERROR";
-            $separacion = "*";
-            $log->write_log($desdeDonde, $cadena, $num, $tipo, $separacion);
-            
+            $log->write_log($desdeDonde, "El usuario " . $nick . " no se logueó correctamente.", - 201, "ERROR", "*");
             $destino = "../FormularioInicioSesion/?num=$num";
         }
     }

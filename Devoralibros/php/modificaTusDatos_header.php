@@ -5,9 +5,16 @@ include_once ('../clases/Usuario.php');
 $usuario=new Usuario();
 require_once '../inc/validaciones.inc.php';
 require_once '../inc/defines.inc.php';
+include_once ('../clases/Log.php');
+
+$log = new Log();
+$desdeDonde = "modificaTusDatos_header.php";
+
 //Seguridad: existe el usuario
  if(isset($_SESSION['datos']['id_usuario'])){
+     
      if(isset($_REQUEST['modificar'])){
+         
         $errores=array();
         $num=-304; //"El usuario se ha modificado correctamente."-> '../inc/defines.inc.php'
         /*
@@ -15,6 +22,7 @@ require_once '../inc/defines.inc.php';
          */
         $id_usuario=$_SESSION['datos']['id_usuario'];
         $nick=$_SESSION['datos']['nick'];
+        
         /**
          * Si el usuario cambia el nombre ó el apellido, se comprueba si es válido,
          * y de ser así, se devuelve con la primera letra en mayúsculas.
@@ -130,41 +138,49 @@ require_once '../inc/defines.inc.php';
        if(!empty($_REQUEST['passNueva']) && !empty($_REQUEST['passRep'])){
            //4 y 8 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula
           if(esContraseña($_REQUEST['passNueva'])){//-> '../inc/validaciones.inc.php'
-            if(($_REQUEST['passNueva']) ==($_REQUEST['passRep'])){
-                 $passNueva=$_REQUEST['passNueva'];
-                 $pass=MD5($passNueva);
-            }else{
-                $num=-210;
-                $errores[]=$num;
-            }
-           }else{
+                if(($_REQUEST['passNueva']) ==($_REQUEST['passRep'])){
+                     $passNueva=$_REQUEST['passNueva'];
+                     $pass=MD5($passNueva);
+                }else{
+                    $num=-210;
+                    $errores[]=$num;
+                }
+           } else {
                $num=-305;
                $errores[]=$num;
            }
-       }else{
+       } else {
             $pass=$_SESSION['datos']['pass'];
        }       
         // echo $num;
-       if($num==-304){//Los datos de modificación son correctos
-            $usuario->modificardatos($nombre,$apellidos,$mail,$pass,$libro_favorito,$libro_odiado,$autor_favorito,$genero_favorito,$id_usuario);
-         	if($_FILES['foto']['size']!=0){
+       if($num == - 304) { 
+           
+           $log->write_log($desdeDonde, "Usuario " . $nick . " ha modificado correctamente los datos.", null, "INFO", "*");
+           
+           // Los datos de modificación son correctos
+           $usuario->modificardatos($nombre,$apellidos,$mail,$pass,$libro_favorito,$libro_odiado,$autor_favorito,$genero_favorito,$id_usuario);
+           
+           if($_FILES['foto']['size']!=0){
                  $usuario->modificarFoto($nick,$archivo_foto,$id_usuario);
-            }
-       //Actualizamos los datos, las sesiones
-             $usuario=new Usuario();
-             $_SESSION['datos']['nombre']= $nombre;
-             $_SESSION['datos']['apellidos']=  $apellidos;
-             $passNuevo=$usuario->getPassUsuario($id_usuario);
-             $_SESSION['datos']['pass']=$passNuevo;
-             $_SESSION['datos']['mail']=$mail;
-         	 $_SESSION['datos']['foto']=$usuario->getFoto($id_usuario);
-             $_SESSION['datos']['libro_favorito']=$libro_favorito;
-             $_SESSION['datos']['libro_odiado']=$libro_odiado;
-             $_SESSION['datos']['autor_favorito']=$autor_favorito;
-             $_SESSION['datos']['genero_favorito']=$genero_favorito;
-             //$mensaje=  validacionExisteUsuario($num);//'../inc/validaciones.inc.php';
-             //print_r($mensaje);
-            $tipo_usuario=$_SESSION['datos']['tipo_usuario'];
+           }
+           
+           // Actualizamos los datos, las sesiones
+           $usuario=new Usuario();
+           $_SESSION['datos']['nombre']= $nombre;
+           $_SESSION['datos']['apellidos']=  $apellidos;
+           $passNuevo=$usuario->getPassUsuario($id_usuario);
+           $_SESSION['datos']['pass']=$passNuevo;
+           $_SESSION['datos']['mail']=$mail;
+           $_SESSION['datos']['foto']=$usuario->getFoto($id_usuario);
+           $_SESSION['datos']['libro_favorito']=$libro_favorito;
+           $_SESSION['datos']['libro_odiado']=$libro_odiado;
+           $_SESSION['datos']['autor_favorito']=$autor_favorito;
+           $_SESSION['datos']['genero_favorito']=$genero_favorito;
+           //$mensaje=  validacionExisteUsuario($num);//'../inc/validaciones.inc.php';
+           //print_r($mensaje);
+           
+           $tipo_usuario=$_SESSION['datos']['tipo_usuario'];
+           
            switch ($tipo_usuario){
                 case 1:
                     $destino="../Usuario/";
@@ -178,15 +194,19 @@ require_once '../inc/defines.inc.php';
                     $destino="../FormularioEditarUsuario/?num=$num";
                 break;
             }
-        }else{
+        } else {
+            
+            $log->write_log($desdeDonde, "El usuario " . $nick . " no pudo modificar los datos.", $num, "ERROR", "*");
+            
             $strError=  serialize($errores);
             $error=  urlencode($strError);
             $destino="../FormularioEditarUsuario/?error=$error";
         }
-     }
-if (!headers_sent()) {
-  header('Location:'.$destino);
-exit;
-}
+    }
+     
+    if (!headers_sent()) {
+        header('Location:'.$destino);
+        exit;
+    }
 }
 ?>
