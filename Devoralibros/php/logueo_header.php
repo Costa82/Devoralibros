@@ -41,12 +41,14 @@ if (isset($_REQUEST['loguear'])) {
                 }
             } else {
                 
-                $log->write_log($desdeDonde, "El usuario " . $nick . " no se logueó correctamente.", - 202, "ERROR", "*");
+                $num = - 202;
+                $log->write_log($desdeDonde, "El usuario " . $nick . " no se logueó correctamente.", $num, "ERROR", "*");
                 $destino = "../FormularioInicioSesion/?num=$num";
             }
         } else {
             
-            $log->write_log($desdeDonde, "El usuario " . $nick . " no se logueó correctamente.", - 201, "ERROR", "*");
+            $num = -201;
+            $log->write_log($desdeDonde, "El usuario " . $nick . " no se logueó correctamente.", $num, "ERROR", "*");
             $destino = "../FormularioInicioSesion/?num=$num";
         }
     }

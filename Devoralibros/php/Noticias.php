@@ -9,11 +9,8 @@ require_once '../inc/funciones.php';
 require_once '../inc/validaciones.inc.php';
 include_once ("../clases/Noticia.php");
 include_once ('../clases/Usuario.php');
-include_once ('../clases/Log.php');
 sesion();
 
-$log = new Log();
-$desdeDonde = "Noticias.php";
 $usuario = new Usuario();
 
 if (isset($_SESSION['datos'])) {
@@ -62,136 +59,33 @@ if (isset($_SESSION['datos'])) {
 	<header>
 
 		<nav>
-				<?php
-    try {
-        include_once ("menuNavVisores.php");
-        
-        $cadena = "Se cargo correctamente menNavVisores.php";
-        $error = null;
-        $tipo = "INFO";
-        $separacion = "*";
-        $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-    } catch (Exception $e) {
-        
-        $cadena = "No se pudo cargar menNavVisores.php." . $e;
-        $error = - 1000;
-        $tipo = "ERROR";
-        $separacion = "*";
-        $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-    }
-    ?>	
-			</nav>
+			<?php include_once ("menuNavVisores.php"); ?>	
+		</nav>
+
 		<div class="busqueda_avanzada">
 			<div class="pestana">
 				<p>Búsqueda avanzada</p>
+			</div>				
+				<?php include_once ("formulario_avanzado.php"); ?>			
 			</div>
-				
-				<?php
-    try {
-        include_once ("formulario_avanzado.php");
-        
-        $cadena = "Se cargo correctamente formulario_avanzado.php";
-        $error = null;
-        $tipo = "INFO";
-        $separacion = "*";
-        $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-    } catch (Exception $e) {
-        
-        $cadena = "No se pudo cargar formulario_avanzado.php." . $e;
-        $error = - 1000;
-        $tipo = "ERROR";
-        $separacion = "*";
-        $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-    }
-    ?>
-			
-			</div>
+
 		<div class="devoralibros_mensual">                
-				<?php
-    try {
-        include_once ("ganador_mes_index.php");
-        
-        $cadena = "Se cargo correctamente ganador_mes_index.php";
-        $error = null;
-        $tipo = "INFO";
-        $separacion = "*";
-        $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-    } catch (Exception $e) {
-        
-        $cadena = "No se pudo cargar ganador_mes_index.php." . $e;
-        $error = - 1000;
-        $tipo = "ERROR";
-        $separacion = "*";
-        $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-    }
-    ?>
-			</div>
+			<?php include_once ("ganador_mes_index.php"); ?>
+		</div>
 
 	</header>
 		
-		<?php
-$noticia = new Noticia();
-?>
+		<?php $noticia = new Noticia(); ?>
 		
 		<h1>Noticias</h1>
 		
-		<?php
-try {
-    $noticia->mostrarNoticias();
-    
-    $cadena = "Se mostraron correctamente las noticias. mostrarNoticias()";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se mostraron las noticias. Error al llamar a mostrarNoticias()." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-
-try {
-    include_once ("infografia.php");
-    
-    $cadena = "Se cargo correctamente infografia.php";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se pudo cargar infografia.php." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>
+		<?php 
+            $noticia->mostrarNoticias(); 
+            include_once ("infografia.php");
+        ?>
 		
-		<footer>
-		
-			<?php
-try {
-    include_once ("footer.php");
-    
-    $cadena = "Se cargo correctamente footer.php";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se pudo cargar footer.php." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>  
-			
+		<footer>		
+			<?php include_once ("footer.php"); ?> 			
 		</footer>
 
 </body>

@@ -7,11 +7,8 @@
 require_once '../inc/funciones.php';
 require_once '../inc/validaciones.inc.php';
 include_once ('../clases/Usuario.php');
-include_once ('../clases/Log.php');
 sesion();
 
-$log = new Log();
-$desdeDonde = "TopDevoralibros.php";
 $usuario = new Usuario();
 
 if (isset($_SESSION['datos'])) {
@@ -67,32 +64,23 @@ if (isset($_SESSION['datos'])) {
 	<header>
 		<nav>
 		
-			<?php
-                include_once ("menuNavVisores.php");
-            ?>
+			<?php include_once ("menuNavVisores.php"); ?>
 			
 		</nav>
+
 		<div class="busqueda_avanzada">
 			<div class="pestana">
 				<p>Búsqueda avanzada</p>
 			</div>
-				
-				<?php
-                    include_once ("formulario_avanzado.php");
-                ?>
-				
-			</div>
+				<?php include_once ("formulario_avanzado.php"); ?>				
+		</div>
+
 		<div class="devoralibros_mensual">  
-			
-				<?php
-                    include_once ("ganador_mes_index.php");
-                ?>
-				
-			</div>
+			<?php include_once ("ganador_mes_index.php"); ?>
+		</div>
+
 	</header>
-		<?php
-            $top = new Usuario();
-        ?>
+		<?php $top = new Usuario(); ?>
 		<!--section class="puntos">
 			<img src="../img/promoDevoralibros.jpg" width="100%" height="100%" alt="Promo Top Devoralibros">
 		</section>-->
@@ -101,18 +89,14 @@ if (isset($_SESSION['datos'])) {
 		<section class="topMensual">
 			<h1>Top Mensual</h1>
 			
-			<?php
-                $top->mostrarTopMensual();
-            ?>
+			<?php $top->mostrarTopMensual(); ?>
 			
 		</section>
+
 		<section class="topAnual">
 			<h1>Top General</h1>
 			
-			<?php
-                $top->mostrarTopAnual();
-            ?>
-			
+			<?php $top->mostrarTopAnual(); ?>			
 		</section>
 	</div>
 	<section class="puntos">
@@ -132,14 +116,10 @@ if (isset($_SESSION['datos'])) {
 		</p>
 	</section>
 		
-		<?php
-            include_once ("infografia.php");
-        ?>
+		<?php include_once ("infografia.php"); ?>
         
 		<footer>
-			<?php
-                include_once ("footer.php");
-            ?>          
+			<?php include_once ("footer.php"); ?>          
 		</footer>
 </body>
 </html>

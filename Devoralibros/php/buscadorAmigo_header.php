@@ -2,6 +2,11 @@
 
 require_once '../clases/Connection.php';
 include_once ('../clases/Usuario.php');
+include_once ('../clases/Log.php');
+
+$log = new Log();
+$desdeDonde = "buscadorAmigo_header.php";
+
 $bd= Connection::dameInstancia();
 $c = $bd->dameConexion();
 $usuario = new Usuario();
@@ -27,6 +32,9 @@ if (isset($id1) AND isset($id2)) {
         
         if($sentencia->execute()){
             
+            $log->write_log($desdeDonde, "Se ha enviado una solicitud del usuario: " . $id1 . " al usuario: " . $id2,
+                null, "INFO", "*");
+            
             if($tipo_usuario == 2){
                 $destino = "index_administrador.php?pagina=2#mi-ancla";
             }elseif($tipo_usuario == 1){
@@ -37,6 +45,10 @@ if (isset($id1) AND isset($id2)) {
         }else{
             
             $error = 'No se ha podido enviar la solicitud';
+            
+            $log->write_log($desdeDonde, "No se ha podido enviar la solicitud del usuario: " . $id1 . " al usuario: " . $id2,
+                - 669, "ERROR", "*");
+            
             if($tipo_usuario == 2){
                 $destino = "index_administrador.php?pagina=2#mi-ancla?error=$error";
             }elseif($tipo_usuario == 1){
