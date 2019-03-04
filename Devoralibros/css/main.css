@@ -524,6 +524,20 @@ a.conseguirPuntos:hover {
 	color: blue;
 }
 
+table.tabla_top {
+	text-align: left;
+	font-size: 25px;
+	margin: 25px auto;
+}
+
+table.tabla_top th {
+	width: 70px;
+}
+
+table.tabla_top th.img_tabla {
+	text-align: center;
+}
+
 /* LIBRO DEL DIA
    ========================================================================= */
 .libroDelDia {
@@ -1009,19 +1023,22 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 		line-height: 20px;
 		font-size: 15px;
 	}
-	
 	.error404 {
 		padding-top: 100px;
 		text-align: center;
 	}
-	
 	.error404 p {
 		font-size: 30px;
 		margin-top: 15px;
 	}
-	
 	.juego {
 		margin: 50px;
+	}
+	table.tabla_top th {
+		width: 90px;
+	}
+	.topAnual h1, .topMensual h1 {
+		font-size: 40px;
 	}
 }
 
@@ -1119,6 +1136,16 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 		line-height: 23px;
 		font-size: 18px;
 	}
+	table.tabla_top {
+		font-size: 35px;
+		margin-bottom: 75px;
+	}
+	table.tabla_top th {
+		width: 120px;
+	}
+	.topAnual h1, .topMensual h1 {
+		font-size: 60px;
+	}
 }
 
 /* Para resoluciones a partir de 1300px */
@@ -1155,5 +1182,11 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 	#infobox3 p {
 		line-height: 25px;
 		font-size: 20px;
+	}
+	table.tabla_top {
+		font-size: 40px;
+	}
+	table.tabla_top th {
+		width: 150px;
 	}
 }

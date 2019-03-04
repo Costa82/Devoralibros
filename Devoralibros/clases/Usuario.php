@@ -88,9 +88,17 @@ class Usuario
             if ($resul = $c->store_result()) {
                 if ($resul->num_rows > 0) {
                     
+                    echo '<table class="tabla_top">';
+                    
                     while ($mostrar = $resul->fetch_assoc()) {
-                        echo '<h2>' . $mostrar["nick"] . ' ' . $mostrar["puntosmes"] . ' pts <img src="../fotos/' . $mostrar["foto"] . '" alt="Foto de perfil" height="55"></h2>';
+                        echo '<tr>
+                                <th>' . $mostrar["nick"] . '</th>
+                                <th>' . $mostrar["puntosmes"] . ' pts </th> 
+                                <th class="img_tabla"><img src="../fotos/' . $mostrar["foto"] . '" alt="Foto de perfil" height="55"></th>
+                              </tr>';
                     }
+                    
+                    echo '</table>';
                     $resul->free_result();
                 }
             }
@@ -113,9 +121,17 @@ class Usuario
             if ($resul = $c->store_result()) {
                 if ($resul->num_rows > 0) {
                     
+                    echo '<table class="tabla_top">';
+                    
                     while ($mostrar = $resul->fetch_assoc()) {
-                        echo '<h2>' . $mostrar["nick"] . ' ' . $mostrar["puntos"] . ' pts <img src="../fotos/' . $mostrar["foto"] . '" alt="Foto de perfil" height="55"></h2>';
+                        echo '<tr>
+                                <th>' . $mostrar["nick"] . '</th>
+                                <th>' . $mostrar["puntos"] . ' pts </th>
+                                <th class="img_tabla"><img src="../fotos/' . $mostrar["foto"] . '" alt="Foto de perfil" height="55"></th>
+                              </tr>';
                     }
+                    
+                    echo '</table>';
                     $resul->free_result();
                 }
             }
