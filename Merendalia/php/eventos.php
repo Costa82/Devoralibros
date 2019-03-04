@@ -81,6 +81,41 @@
 	</div>
 
 	<!-- EVENTOS PRINCIPALES -->
+	
+	<div class="contenedor_eventos">
+
+		<div class="evento_principal">
+		
+		<h3>"¡MERENDALIA CARNAVALERA!"</h3>
+
+			<div class="explicacion_evento">
+			
+			<p>Os traemos el evento <strong>MERENDALIA CARNAVALERA</strong> donde los pequeños de la casa podrán disfrutar de actividades, talleres, 
+				almuerzos saludables y, como no,¡¡nuestro tan querido parque de bolas!!</p>
+					<br>
+					<p>El evento se celebrará <strong>los días 4 y 5 de marzo</strong>, mientras vosotros, padres, estáis trabajando o descansando.
+					Tendremos dos horarios, uno más extendido que otro según os venga mejor para vuestra organización:<br><br>
+					Horario 1: de 8:30 a 14:30 horas<br>
+					Horario 2: de 10:00 a 13:00 horas<br><br>
+					(si te vienera mejor otro horario, no dudes en consultárnoslo, llámanos o mándanos un email)</p>
+					<br>
+					<p>El segundo hermano tendrá un descuento del 50% en el precio original.
+					No os quedéis sin plazas para vuestros peques, para reservar llamad a nuestro teléfono <strong> 680.21.97.94</strong>
+					o enviadnos un email a
+					<strong>info@merendalia.es</strong></p>
+					<br>
+					<p>¡Os esperamos!</p>
+			</div>
+
+			<img src='../img/Merendalia_Carnavalera_2019_alargado.jpg'
+				title='Merendalia Carnavalera, Carnaval' class="img_movil" /> <img
+				src='../img/Merendalia_Carnavalera_2019_apaisado.jpg'
+				title='Merendalia Carnavalera, Carnaval' class="img_ordenador" />
+				</br>
+				</br>
+				</br>
+
+		</div>
 
 	<div class="contenedor_eventos">
 
