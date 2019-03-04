@@ -3,10 +3,10 @@
 <?php
 
 	echo '<div class="pestana">
-              <p>Devorador de Enero</p>
+              <p>Devorador de Febrero</p>
           </div>
     	  <div class="ganador">
-              <p>¡Aquijano!</p>
+              <p>¡Juco55!</p>
               <p>¡ENHORABUENA!</p>
 		  </div>';
 ?>
