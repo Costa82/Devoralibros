@@ -85,7 +85,7 @@
 			para crear un espacio de reunión y encuentro, de celebración y
 			banquete, de risas y diversión. </br> </br> <strong>¿Qué te ofrece
 				Merendalia?</strong> </br>
-			</br>Una sala-comedor para hasta 30 personas (dependiendo de la
+			</br>Una sala-comedor para hasta 24 personas sentadas y hasta 35 - 40 de pie (dependiendo de la
 			disposición que le demos o que queráis); una zona infantil para hasta
 			6 niños, en la cual los pequeños de la casa podrán disfrutar a la vez
 			que tú lo haces también; una cocina industrial con todos los
