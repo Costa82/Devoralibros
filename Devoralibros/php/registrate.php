@@ -9,6 +9,7 @@ require_once '../inc/validaciones.inc.php';
 require_once '../clases/Usuario.php';
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

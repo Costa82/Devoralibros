@@ -4,6 +4,11 @@ spl_autoload_register(function ($nombre_clase) {
 });
 require_once '../inc/funciones.php';
 require_once '../inc/validaciones.inc.php';
+include_once ('../clases/Log.php');
+
+$log = new Log();
+$desdeDonde = "grabar_registro_header.php";
+
 $usuario = new Usuario();
 $strMensaje = "";
 session_start();
@@ -17,9 +22,12 @@ if (isset($_REQUEST['enviar'])) {
     $_SESSION['libro_odiadoF'] = $_POST['libro_odiado'];
     $_SESSION['autor_favoritoF'] = $_POST['autor_favorito'];
     $_SESSION['generoF'] = $_POST['genero'];
+    
     $errores = array();
     $num = - 301; // "El usuario se ha registrado correctamente."-> '../inc/defines.inc.php'
+    
     if (isset($_REQUEST['nick']) and isset($_REQUEST['nombre']) and isset($_REQUEST['mail'])) {
+        
         /**
          * Nick es Campo obligatorio
          * Si cumple los criterios de validación (esNick())
@@ -125,6 +133,7 @@ if (isset($_REQUEST['enviar'])) {
         }
         
         if (! empty($_REQUEST['codigo'])) {
+            
             if (esCodigoCorrecto($_REQUEST['codigo'])) {
                 $codigo = $_REQUEST['codigo'];
             } elseif ($usuario->existeCodigoPatrocinio($_REQUEST['codigo'])) {
@@ -160,20 +169,28 @@ if (isset($_REQUEST['enviar'])) {
         $num = - 303;
         $errores[] = $num;
     }
+    
     if ($num != - 306) {
+        
+        $log->write_log($desdeDonde, "El usuario no pudo registrarse correctamente.", $num, "ERROR", "*");
+        
         $strError = serialize($errores);
         $error = urlencode($strError);
         $destino = "../FormularioRegistro/?error=$error";
+        
     } else {
         /**
          * El usuario se ha registrado correctamente.
          * Le mostramos el mensaje de confimarción de registro
          */
+        $log->write_log($desdeDonde, "El usuario " . $nick . " se ha registrado correctamente.", null, "INFO", "*");
+        
         $strError = serialize($errores);
         $error = urlencode($strError);
         $destino = "../FormularioRegistro/?error=$error";
     }
 }
+
 if (! headers_sent()) {
     header('Location:' . $destino);
     exit();

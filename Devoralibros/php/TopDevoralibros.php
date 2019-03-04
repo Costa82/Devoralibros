@@ -7,11 +7,8 @@
 require_once '../inc/funciones.php';
 require_once '../inc/validaciones.inc.php';
 include_once ('../clases/Usuario.php');
-include_once ('../clases/Log.php');
 sesion();
 
-$log = new Log();
-$desdeDonde = "TopDevoralibros.php";
 $usuario = new Usuario();
 
 if (isset($_SESSION['datos'])) {
@@ -67,77 +64,23 @@ if (isset($_SESSION['datos'])) {
 	<header>
 		<nav>
 		
-			<?php
-try {
-    include_once ("menuNavVisores.php");
-    
-    $cadena = "Se cargo correctamente menNavVisores.php";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se pudo cargar menNavVisores.php." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>
+			<?php include_once ("menuNavVisores.php"); ?>
 			
 		</nav>
+
 		<div class="busqueda_avanzada">
 			<div class="pestana">
 				<p>Búsqueda avanzada</p>
 			</div>
-				
-				<?php
-    try {
-        include_once ("formulario_avanzado.php");
-        
-        $cadena = "Se cargo correctamente formulario_avanzado.php";
-        $error = null;
-        $tipo = "INFO";
-        $separacion = "*";
-        $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-    } catch (Exception $e) {
-        
-        $cadena = "No se pudo cargar formulario_avanzado.php." . $e;
-        $error = - 1000;
-        $tipo = "ERROR";
-        $separacion = "*";
-        $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-    }
-    ?>
-				
-			</div>
+				<?php include_once ("formulario_avanzado.php"); ?>				
+		</div>
+
 		<div class="devoralibros_mensual">  
-			
-				<?php
-    try {
-        include_once ("ganador_mes_index.php");
-        
-        $cadena = "Se cargo correctamente ganador_mes_index.php";
-        $error = null;
-        $tipo = "INFO";
-        $separacion = "*";
-        $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-    } catch (Exception $e) {
-        
-        $cadena = "No se pudo cargar ganador_mes_index.php." . $e;
-        $error = - 1000;
-        $tipo = "ERROR";
-        $separacion = "*";
-        $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-    }
-    ?>
-				
-			</div>
+			<?php include_once ("ganador_mes_index.php"); ?>
+		</div>
+
 	</header>
-		<?php
-$top = new Usuario();
-?>
+		<?php $top = new Usuario(); ?>
 		<!--section class="puntos">
 			<img src="../img/promoDevoralibros.jpg" width="100%" height="100%" alt="Promo Top Devoralibros">
 		</section>-->
@@ -146,48 +89,14 @@ $top = new Usuario();
 		<section class="topMensual">
 			<h1>Top Mensual</h1>
 			
-			<?php
-try {
-    $top->mostrarTopMensual();
-    
-    $cadena = "Se cargo correctamente el Top Mensual. mostrarTopMensual()";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se cargo correctamente el Top Mensual. mostrarTopMensual()." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>
+			<?php $top->mostrarTopMensual(); ?>
 			
 		</section>
+
 		<section class="topAnual">
 			<h1>Top General</h1>
 			
-			<?php
-try {
-    $top->mostrarTopAnual();
-    
-    $cadena = "Se cargo correctamente el Top Anual. mostrarTopAnual()";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se cargo correctamente el Top Anual. mostrarTopAnual()." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>
-			
+			<?php $top->mostrarTopAnual(); ?>			
 		</section>
 	</div>
 	<section class="puntos">
@@ -207,44 +116,10 @@ try {
 		</p>
 	</section>
 		
-		<?php
-try {
-    include_once ("infografia.php");
-    
-    $cadena = "Se cargo correctamente infografia.php";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se pudo cargar infografia.php." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>
+		<?php include_once ("infografia.php"); ?>
+        
 		<footer>
-			<?php
-
-try {
-    include_once ("footer.php");
-    
-    $cadena = "Se cargo correctamente footer.php";
-    $error = null;
-    $tipo = "INFO";
-    $separacion = "*";
-    $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
-} catch (Exception $e) {
-    
-    $cadena = "No se pudo cargar footer.php." . $e;
-    $error = - 1000;
-    $tipo = "ERROR";
-    $separacion = "*";
-    $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
-}
-?>          
+			<?php include_once ("footer.php"); ?>          
 		</footer>
 </body>
 </html>

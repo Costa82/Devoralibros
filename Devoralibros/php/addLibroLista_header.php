@@ -33,34 +33,27 @@ if (isset($idlista) and isset($idlibro)) {
         
         if ($sentencia->execute()) {
             
-            $cadena = "El libro con el título: " . $titulo . ", se añadió correctamente a la lista: " . $tituloLista;
-            $error = null;
-            $tipo = "INFO";
-            $separacion = "*";
-            $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
+            $log->write_log($desdeDonde, "El libro con el título: " . $titulo . ", se añadió correctamente a la lista: " . $tituloLista, 
+                null, "INFO", "*");
             
             $noerror = 'Libro añadido a la lista';
             $destino = "../Libro/" . $myvar . "&noerror=" . $noerror . "#mi-ancla";
             header('Location:' . $destino);
+            
         } else {
             
-            $cadena = "El libro con el título: " . $titulo . ", ya existe en la lista: " . $tituloLista;
-            $error = - 669;
-            $tipo = "ERROR";
-            $separacion = "*";
-            $log->write_log($desdeDonde, $cadena, $error, $tipo, $separacion);
+            $log->write_log($desdeDonde, "El libro con el título: " . $titulo . ", ya existe en la lista: " . $tituloLista, 
+                - 669, "ERROR", "*");
             
             $error = 'Este libro ya está en esa lista';
             $destino = "../Libro/" . $myvar . "&noerror=" . $error . "#mi-ancla";
             header('Location:' . $destino);
         }
+        
     } catch (Exception $e) {
         
-        $cadena = "Error al intentar añadir el libro con título: " . $titulo . ", a la lista: " . $tituloLista . ". " . $e;
-        $error = - 1000;
-        $tipo = "ERROR";
-        $separacion = "*";
-        $log->write_log_error_general($desdeDonde, $cadena, $error, $tipo, $separacion);
+        $log->write_log_error_general($desdeDonde, "Error al intentar añadir el libro con título: " . $titulo . ", a la lista: " . $tituloLista . ". " . $e,
+            - 1000, "ERROR", "*");
     }
 }
 
