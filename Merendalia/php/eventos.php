@@ -86,6 +86,37 @@
 
 		<div class="evento_principal">
 		
+		<h3>MERIENDAS-TALLER INFANTILES DE MARZO</h3>
+
+			<div class="explicacion_evento">
+			
+			<p>¡¡Hola a tod@s merendali@s!!
+			<br>
+			Aquí os dejamos el programa de las <strong>meriendas-taller</strong> del mes de marzo ¡para que vayáis planificando vuestras agendas!</p>
+					<br>
+				
+					<p>El segundo hermano tendrá un descuento del 50% en el precio original.
+					No os quedéis sin plazas para vuestros peques, para reservar llamad a nuestro teléfono <strong> 680.21.97.94</strong>
+					o enviadnos un email a
+					<strong>info@merendalia.es</strong></p>
+					<br>
+					<p>¡Os esperamos!</p>
+			</div>
+
+			<img src='../img/Talleres_infantiles_Marzo_alargado.jpg'
+				title='merienda taller infantil marzo' class="img_movil" /> <img
+				src='../img/Talleres_infantiles_Marzo_apaisado.jpg'
+				title='merienda taller infantil marzo' class="img_ordenador" />
+				</br>
+				</br>
+				</br>
+
+		</div>
+	
+	<div class="contenedor_eventos">
+
+		<div class="evento_principal">
+		
 		<h3>"¡MERENDALIA CARNAVALERA!"</h3>
 
 			<div class="explicacion_evento">
@@ -154,7 +185,7 @@
 		<div class="contenedor_eventos">
 
 		<div class="evento_principal">
-			<h3>TALLERES INFANTILES EN MERENDALIA</h3>
+			<h3>MERIENDAS-TALLER INFANTILES DE FEBRERO</h3>
 
 			<div class="explicacion_evento">
 			
