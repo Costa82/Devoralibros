@@ -86,13 +86,15 @@
 			banquete, de risas y diversión. </br> </br> <strong>¿Qué te ofrece
 				Merendalia?</strong> </br>
 			</br>Una sala-comedor para hasta 24 personas sentadas y hasta 35 - 40 de pie (dependiendo de la
-			disposición que le demos o que queráis); una zona infantil para hasta
+			disposición que le demos o que queráis, quitamos o ponemos mesas, dispuestas de una manera o de otra...); 
+			una zona infantil para hasta
 			6 niños, en la cual los pequeños de la casa podrán disfrutar a la vez
 			que tú lo haces también; una cocina industrial con todos los
 			utensilios necesarios, para que puedas cocinar para tu gente (horno
 			grande, inducción, campana extractora, microondas, neveras,
 			lavavajillas cafetera, menaje, etc.); baño adaptado para personas de
-			movilidad reducida y con cambiador de bebés. Te dejamos el link de
+			movilidad reducida y con cambiador de bebés. Te dejamos el  <a
+				href='' class='mostrar_blog'><strong><i>link</i></strong></a> de
 			nuestra entrada de blog donde explicamos un poco mejor cómo puedes 
 			disfrutar en merendalia</br>Ahora solo queda
 			que veas nuestras fotos, cuadres un día con los tuyos, y ¡vengas a
