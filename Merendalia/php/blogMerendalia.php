@@ -121,7 +121,6 @@
 
 			<span class="leerMas"><strong>leer más...</strong></span>
 
-
 			<!-- Esta parte del texto estará oculta hasta hacer click en 'leer más...' -->
 
 			<div class="texto_leerMas">
@@ -373,15 +372,11 @@
 						<strong>Merendalia, el ocio a tu manera.</strong>
 					</p>
 
-
-					<!-- enlace de 'leer menos...' para ocultar el texto y las imágenes -->
-
-					<span class="leerMenos"><strong>leer menos...</strong></span>
-
 				</div>
 
 			</div>
-
+			
+			<!-- enlace de 'leer menos...' para ocultar el texto y las imágenes -->
 			<span class="leerMenos"><strong>leer menos...</strong></span>
 
 		</div>
@@ -552,12 +547,11 @@
 						<i>Fotos realizadas por Rocío Lozares.</i>
 					</p>
 
-					<!-- enlace de 'leer menos...' para ocultar el texto y las imágenes -->
-
 				</div>
 
 			</div>
 
+			<!-- enlace de 'leer menos...' para ocultar el texto y las imágenes -->
 			<span class="leerMenos"><strong>leer menos...</strong></span>
 
 		</div>

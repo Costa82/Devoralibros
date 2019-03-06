@@ -121,7 +121,7 @@
 
 			<div class="explicacion_evento">
 			
-			<p>Os traemos el evento <strong>MERENDALIA CARNAVALERA</strong> donde los pequeños de la casa podrán disfrutar de actividades, talleres, 
+			<p><a href='../blog-merendalia/#articulo2' class="mostrar_blog" title='Blog Merendalia'>Blog</a>Os traemos el evento <strong>MERENDALIA CARNAVALERA</strong> donde los pequeños de la casa podrán disfrutar de actividades, talleres, 
 				almuerzos saludables y, como no,¡¡nuestro tan querido parque de bolas!!</p>
 					<br>
 					<p>El evento se celebrará <strong>los días 4 y 5 de marzo</strong>, mientras vosotros, padres, estáis trabajando o descansando.
@@ -147,6 +147,8 @@
 				</br>
 
 		</div>
+		
+	</div>
 
 	<div class="contenedor_eventos">
 
@@ -181,8 +183,10 @@
 				</br>
 
 		</div>
+		
+	</div>
 
-		<div class="contenedor_eventos">
+	<div class="contenedor_eventos">
 
 		<div class="evento_principal">
 			<h3>MERIENDAS-TALLER INFANTILES DE FEBRERO</h3>
