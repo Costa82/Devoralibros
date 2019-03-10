@@ -196,7 +196,7 @@
 <!--     					tipos de vino para que podáis maridar como os apetezca, uno de cada -->
 <!--     					una de las denominaciones. Hacemos así una fiesta de la vendimia a -->
 <!--     					nuestro estilo y homenajeamos en nuestra tierra a uno de los -->
-<!--     					productos más importantes y consumidos de la misma.</p> --> -->
+<!--     					productos más importantes y consumidos de la misma.</p> -->
 <!-- 				</br> -->
 <!-- 				<p>De verdad, ¡¡esperamos que os guste!!</p> -->
 <!-- 			</div> -->
