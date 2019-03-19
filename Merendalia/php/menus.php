@@ -62,39 +62,37 @@
 			En esta sección podréis ir viendo los menús que hemos diseñado para
 			vosotros. Cualquiera de ellos se pueden solicitar para tener un
 			encuentro privado en <strong>merendalia.</strong> Se establece un
-			mínimo de 12 personas (menús) para poder organizar un menú privado.</br>
+			mínimo de 12 personas (menús) para poder organizarlo.</br>
 			</br>Os aseguráis con esto las ventajas de disponer de un local
 			privado y las de un restaurante, ser atendidos en exclusiva y no
-			preocuparos de nada más. Los niños* podrán disfrutar del parque de
-			bolas mientras los mayores comen o disfrutan de la sobremesa.</br> </br>La
-			duración del evento con uno de estos menús es de 3 horas.</br> </br>*
-			Existe la posibilidad de pedir menú infantil. Puedes verlos <a
-				href='' class='mostrar_menus'><strong><i>aquí</i></strong></a>.
+			preocuparos de nada más. Los niños podrán disfrutar del parque de
+			bolas mientras los mayores comen o disfrutan de la sobremesa.
+			</br></br>Si habéis preparado un vídeo emotivo para ese familiar o amigo especial, podréis proyectarlo.
+			</br>¿Juega vuestro equipo de futbol? Se pone.
+			</br>¿Tenéis el antojo de acudir disfrazados? Sed originales. </br></br>
+			<strong><em>En merendalia queremos que disfrutes del ocio a tu manera.</em></strong></br> </br>
+			Y para todo esto, hemos diseñado dos opciones de menú privado. <em>"A mesa puesta"</em> y <em>"Bocaditos"</em>.
 		</p>
 	</div>
 	
 	<!-- FIN EXPLICACIÓN -->
 	
-	<!-- CONTENEDOR PARA MENÚSN -->
+	<!-- CONTENEDOR PARA MENÚS -->
 	
 	<div class="contenedor_menus lista_menus">
 
-		<h3>NUESTROS MENÚS</h3>
-
+		<h3>MENÚS "A MESA PUESTA"</h3>
+		
 		<div class="menu">
 
 			<div class="texto_menu">
-
-				<p>Ven a disfrutar en Merendalia de tus cenas y comidas privadas en cualquier momento del año y cuando mejor os venga,
-				 Estos son los menús que os hemos preparado para que
-					disfrutéis como nunca de vuestros encuentros con vuestros amigos, familiares... ¡esperamos
-					que os gusten! y estad atentos, ya que iremos subiendo menús nuevos ¡para que sigáis disfrutando!.</p>
-					<p>En merendalia, ¡no nos gusta la rutina!.</p>
-					<p>No os podéis perder los dos NUEVOS MENÚS que os traemos. Con el <strong>Menú Japonés</strong> disfrutaréis de la sana y rica gastronomía JAPONESA, y con
-					el <strong>Menú Cocido</strong> podréis calentar estos fríos días de invierno que tanto nos gustan en Valladolid.
-					</br>
-					 ¡Aquí os los dejamos!</p>
-
+			  
+				<p>Los comensales os sentáis a la mesa. Se os sirve el menú que hayáis elegido. Es la opción restaurante.</br>
+				Estos son los menús que hemos preparado. Vamos añadiendo y retirando, según preferencias o producto de temporada.
+				</p>
+				</br>* Existe la posibilidad de pedir menú infantil. Puedes verlos <a
+				href='' class='mostrar_menus'><strong><i>aquí</i></strong></a>.
+					
 			</div>
 			
 			<div class="img_menu img_lista_menus">
@@ -126,6 +124,45 @@
 				<img src="../img/Menú_Sidrería.jpg" alt="Menú Sidrería"
 					title="Menú Sidrería" />
 			</div>
+			
+		</div>
+		<div class="contenedor_menus lista_menus">
+
+		<h3>"MENÚS BOCADITOS"</h3>
+		
+		<div class="menu">
+
+			<div class="texto_menu">
+			
+		      
+				<p>¿Queréis juntaros amigos, familia, compañeros...de una manera distendida, divertida, pero sin
+				perder el hecho de que os sirvan? Ésta es vuestra opción.  
+				Los comensales permanecen de pie. No significa que no haya sillas, solo que las mesas no están montadas como en la opción
+				<em>"a mesa puesta"</em>. Estarán pegadas a la pared de la sala y servirán de apoyo para copas y pinchos. Para que nos
+				entendamos es un ágape, un cóctel, vino español, etc... Se busca comer de una manera diferente y que haya más interacción entre vosotros.</br>
+				Se sirve un menú completo, a base de pinchos fríos, calientes y dulces. Tartaletas, canapés, conos, brochetas, croquetas, 
+				cucharitas, vasitos y mucho más conforman este tipo de menú.</br>
+				</p>
+					</br> </br>				
+		
+
+			</div>
+			
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Bocaditos_1_Catering.jpg" alt="Menú Bocaditos"
+					title="Menú Bocaditos 1 riquísimo" />
+			</div>
+			
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Bocaditos_2_catering.jpg" alt="Menú Bocaditos 2"
+					title="Menú Bocaditos 2 para chuparse los dedos" />
+			</div>
+			
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Bocaditos_3_catering.jpg" alt="Menú Bocaditos 3"
+					title="Menú Bocaditos 3 ¡digno de una boda!" />
+			</div>
+
 
 		</div>
 
