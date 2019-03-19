@@ -348,8 +348,11 @@
 				<option value="merienda">Merienda infantil</option>
 				<option value="bebidas">Bebidas</option>
 				<option value="refrescos">&nbsp;&nbsp;&nbsp;Refrescos</option>
+				<option value="hielos">&nbsp;&nbsp;&nbsp;Hielos</option>
+				<option value="aguas">&nbsp;&nbsp;&nbsp;Aguas</option>
 				<option value="cervezas">&nbsp;&nbsp;&nbsp;Cervezas</option>
 				<option value="vinos">&nbsp;&nbsp;&nbsp;Vinos</option>
+				<option value="licores">&nbsp;&nbsp;&nbsp;Licores</option>
 				
 			</select>
 
@@ -467,17 +470,6 @@
 					<div class="precio_producto_comida">
 						<p>
 							<strong>17 €</strong>
-						</p>
-					</div>
-				</li>
-
-				<li>
-					<div class="texto_producto_comida">
-						<p>Salpicón de marisco (por persona)</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>5 €</strong>
 						</p>
 					</div>
 				</li>
@@ -900,37 +892,58 @@
 		<h3 class="titulo_bebida">BEBIDA</h3>
 
 		<ul class="lista_productos_comida">
-
+			
 			<li class="cervezas">
-
 				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Cinco Estrellas (Pack de 6)</p>
+					<p><u><strong>Cervezas</strong></u></p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>6,5 €</strong>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			<li class="cervezas">
+
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Cinco Estrellas</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
 
 			<li class="cervezas">
 				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Clásica (Pack de 6)</p>
+					<p>Cerveza Mahou Clásica</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>5,9 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
 
 			<li class="refrescos">
 				<div class="texto_producto_comida">
+					<p><u><strong>Refrescos</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="refrescos">
+				<div class="texto_producto_comida">
 					<p>Coca-cola normal</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,2 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
@@ -941,7 +954,7 @@
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,2 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
@@ -952,7 +965,7 @@
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,2 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
@@ -963,7 +976,7 @@
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,2 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
@@ -974,44 +987,98 @@
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,2 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
 
+			<li class="refrescos">
+				<div class="texto_producto_comida">
+					<p>Tónica Schweppes</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1 €</strong>
+					</p>
+				</div>
+			</li>
+			
 			<li class="refrescos">
 				<div class="texto_producto_comida">
 					<p>Seven'Up</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,4 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
 
-			<li class="refrescos">
+			<li class="hielos">
+				<div class="texto_producto_comida">
+					<p><u><strong>Hielos</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			<li class="hielos">
+				<div class="texto_producto_comida">
+					<p>Bolsa de hielo</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,5 €</strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="aguas">
+				<div class="texto_producto_comida">
+					<p><u><strong>Aguas</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="aguas">
 				<div class="texto_producto_comida">
 					<p>Agua Solán de Cabras pequeña</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,2 €</strong>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
 
-			<li class="refrescos">
+			<li class="aguas">
 				<div class="texto_producto_comida">
 					<p>Agua Solán de Cabras grande</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>1,8 €</strong>
+						<strong>1,5 €</strong>
 					</p>
 				</div>
 			</li>
 
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p><u><strong>Vinos</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			
 			<li class="vinos">
 				<div class="texto_producto_comida">
 					<p>Vino tinto D.O. Ribera Carramimbre</p>
@@ -1067,6 +1134,61 @@
 				</div>
 			</li>
 
+			<li class="licores">
+				<div class="texto_producto_comida">
+					<p><u><strong>Licores</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="licores">
+				<div class="texto_producto_comida">
+					<p>Ginebra Seagram´s 70 cl</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>19 €</strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="licores">
+				<div class="texto_producto_comida">
+					<p>Whisky Ballantines 70cl</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>16,5 €</strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="licores">
+				<div class="texto_producto_comida">
+					<p>Ron Brugal 70cl</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>16,5 €</strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="licores">
+				<div class="texto_producto_comida">
+					<p>Vodka Absolut 70cl</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>16,5 €</strong>
+					</p>
+				</div>
+			</li>
+			
 		</ul>
 
 	</div>
