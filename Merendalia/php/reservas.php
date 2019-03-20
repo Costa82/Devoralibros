@@ -341,6 +341,8 @@
 			
 				<option value="todo" select>Ver todo</option>
 				<option value="entrantes">Entrantes</option>
+				<option value="raciones">&nbsp;&nbsp;&nbsp;Raciones</option>
+				<option value="canapes">&nbsp;&nbsp;&nbsp;Canapés</option>
 				<option value="ensaladas">Ensaladas</option>
 				<option value="guisos">Guisos</option>
 				<option value="postres">Postres</option>
@@ -348,45 +350,32 @@
 				<option value="merienda">Merienda infantil</option>
 				<option value="bebidas">Bebidas</option>
 				<option value="refrescos">&nbsp;&nbsp;&nbsp;Refrescos</option>
-				<option value="hielos">&nbsp;&nbsp;&nbsp;Hielos</option>
 				<option value="aguas">&nbsp;&nbsp;&nbsp;Aguas</option>
 				<option value="cervezas">&nbsp;&nbsp;&nbsp;Cervezas</option>
 				<option value="vinos">&nbsp;&nbsp;&nbsp;Vinos</option>
 				<option value="licores">&nbsp;&nbsp;&nbsp;Licores</option>
-				
+				<option value="hielos">&nbsp;&nbsp;&nbsp;Hielos</option>
+	
 			</select>
 
 		</div>
-		
-		<div class="entrantes">
-
-			<h3>ENTRANTES</h3>
+			
+		<h3 class="titulo_entrante">ENTRANTES</h3>
 
 			<ul class="lista_productos_comida">
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
-						<p>Gildas (12uds.)</p>
+						<p><u><strong>Raciones</strong></u></p>
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>12 €</strong>
+							<strong></strong>
 						</p>
 					</div>
 				</li>
 
-				<li>
-					<div class="texto_producto_comida">
-						<p>Bombones de Foie (ud.)</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>2 €</strong>
-						</p>
-					</div>
-				</li>
-
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Nachos con guacamole casero</p>
 					</div>
@@ -397,7 +386,7 @@
 					</div>
 				</li>
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Patatas ali oli</p>
 					</div>
@@ -408,7 +397,7 @@
 					</div>
 				</li>
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Tortilla de patatas</p>
 					</div>
@@ -419,7 +408,7 @@
 					</div>
 				</li>
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Ración de queso curado de oveja</p>
 					</div>
@@ -430,7 +419,7 @@
 					</div>
 				</li>
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Ración de cecina</p>
 					</div>
@@ -441,7 +430,7 @@
 					</div>
 				</li>
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Ración de jamón ibérico</p>
 					</div>
@@ -452,7 +441,7 @@
 					</div>
 				</li>
 				
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Ración grande de ibericos (jamón, lomo, chorizo y salchichón) y cecina. </p>
 					</div>
@@ -463,7 +452,7 @@
 					</div>
 				</li>
 
-				<li>
+				<li class="raciones">
 					<div class="texto_producto_comida">
 						<p>Empanada de carne/atún (2 kg)</p>
 					</div>
@@ -473,8 +462,52 @@
 						</p>
 					</div>
 				</li>
-
-				<li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p><u><strong>Canapes</strong></u></p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p><i>&nbsp;&nbsp;<u>Por tipos:</u></i></p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>Gildas (12uds.)</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>12 €</strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>Bombones de Foie (ud.)</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>2 €</strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
 					<div class="texto_producto_comida">
 						<p>Tartaletas de cabrales con nueces (12 uds.)</p>
 					</div>
@@ -484,10 +517,183 @@
 						</p>
 					</div>
 				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p><i>&nbsp;&nbsp;<u>Por bandejas variadas:</u></i></p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>Bandeja de 40 ud. variadas. Base de miga de pan y volován</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>20 €</strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Canapé de salmón ahumado</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Canapé de jamón serrano con aceitunas negras</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Canapé de esparragos gratinados</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Volován de sobrasada con azucar de caña</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Volován de aguacate con langostino y huevas</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
 
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>Bandeja de 40 ud. variadas. Tostas, tartaletas y brochetas</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>35 €</strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Gildas</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Bombones de foie</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Bolitas de queso con pistacho</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Ventresca de atún y reducción de vinagreta</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Sobrasada con miel y queso fresco</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Tartaletas de cabrales con nueces</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Tartaletas de brandada de bacalao</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
+				
+				<li class="canapes">
+					<div class="texto_producto_comida">
+						<p>* Tartalatas de aguacate con salmón</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong></strong>
+						</p>
+					</div>
+				</li>
 			</ul>
-
-		</div>
 
 		<div class="ensaladas">
 
@@ -893,39 +1099,6 @@
 
 		<ul class="lista_productos_comida">
 			
-			<li class="cervezas">
-				<div class="texto_producto_comida">
-					<p><u><strong>Cervezas</strong></u></p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong></strong>
-					</p>
-				</div>
-			</li>
-			<li class="cervezas">
-
-				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Cinco Estrellas</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1 €</strong>
-					</p>
-				</div>
-			</li>
-
-			<li class="cervezas">
-				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Clásica</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1 €</strong>
-					</p>
-				</div>
-			</li>
-
 			<li class="refrescos">
 				<div class="texto_producto_comida">
 					<p><u><strong>Refrescos</strong></u></p>
@@ -1013,27 +1186,6 @@
 					</p>
 				</div>
 			</li>
-
-			<li class="hielos">
-				<div class="texto_producto_comida">
-					<p><u><strong>Hielos</strong></u></p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong></strong>
-					</p>
-				</div>
-			</li>
-			<li class="hielos">
-				<div class="texto_producto_comida">
-					<p>Bolsa de hielo</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1,5 €</strong>
-					</p>
-				</div>
-			</li>
 			
 			<li class="aguas">
 				<div class="texto_producto_comida">
@@ -1064,6 +1216,39 @@
 				<div class="precio_producto_comida">
 					<p>
 						<strong>1,5 €</strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="cervezas">
+				<div class="texto_producto_comida">
+					<p><u><strong>Cervezas</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			<li class="cervezas">
+
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Cinco Estrellas</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1 €</strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="cervezas">
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou Clásica</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1 €</strong>
 					</p>
 				</div>
 			</li>
@@ -1185,6 +1370,27 @@
 				<div class="precio_producto_comida">
 					<p>
 						<strong>16,5 €</strong>
+					</p>
+				</div>
+			</li>
+			
+			<li class="hielos">
+				<div class="texto_producto_comida">
+					<p><u><strong>Hielos</strong></u></p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+			<li class="hielos">
+				<div class="texto_producto_comida">
+					<p>Bolsa de hielo</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1,5 €</strong>
 					</p>
 				</div>
 			</li>
