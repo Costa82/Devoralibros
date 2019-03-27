@@ -458,7 +458,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>17 €</strong>
+							<strong>7,5 €/Kg</strong>
 						</p>
 					</div>
 				</li>
