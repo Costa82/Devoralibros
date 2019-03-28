@@ -876,7 +876,7 @@
 
 		<div class="postres">
 
-			<h3>POSTRES (mínimo 6 personas, precio por persona)</h3>
+			<h3>POSTRES (12 raciones de cada tarta)</h3>
 
 			<ul class="lista_productos_comida">
 
@@ -886,7 +886,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>2.5 €</strong>
+							<strong>15 €</strong>
 						</p>
 					</div>
 				</li>
@@ -897,7 +897,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>2,5 €</strong>
+							<strong>13,5 €</strong>
 						</p>
 					</div>
 				</li>
@@ -908,7 +908,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>3 €</strong>
+							<strong>15 €</strong>
 						</p>
 					</div>
 				</li>
@@ -919,7 +919,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>2,5 €</strong>
+							<strong>15 €</strong>
 						</p>
 					</div>
 				</li>
@@ -930,7 +930,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>3 €</strong>
+							<strong>15 €</strong>
 						</p>
 					</div>
 				</li>
@@ -941,7 +941,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>3,5 €</strong>
+							<strong>15 €</strong>
 						</p>
 					</div>
 				</li>
@@ -968,7 +968,7 @@
 				</p>
 				<p>Gildas</p>
 				<p>Rollitos de cecina con paté de hígado de pato</p>
-				<p>Calabacín rellen</p>
+				<p>Calabacín relleno</p>
 				</br>
 				<p>
 					<i>Primero</i>
@@ -978,12 +978,12 @@
 				<p>
 					<i>Segundo</i>
 				</p>
-				<p>A elegir un guiso de los de la lista, común para todo el grupo</p>
+				<p>A elegir un guiso de la sección "guisos", común para todo el grupo</p>
 				</br>
 				<p>
 					<i>Postre</i>
 				</p>
-				<p>Tarta de queso</p>
+				<p>A elegir un postre de los de la sección "postres"</p>
 				</br>
 				<p>
 					<i>Bebidas</i>
