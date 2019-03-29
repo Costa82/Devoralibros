@@ -527,7 +527,7 @@
 			<li class="canapes">
 				<div class="texto_producto_comida">
 					<p>
-						<i>&nbsp;&nbsp;<u>Por bandejas variadas:</u></i>
+						<i>&nbsp;&nbsp;<u>Por bandejas:</u></i>
 					</p>
 				</div>
 				<div class="precio_producto_comida">
