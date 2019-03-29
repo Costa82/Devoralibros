@@ -545,11 +545,10 @@
 						<strong>Bandeja de 40 ud. variadas.</strong>
 					</p>
 					<p>
-						<strong>20 €</strong>
+						<strong>Base de miga de pan y volován</strong>
 					</p>
-					</br>
 					<p>
-						<i>Base de miga de pan y volován</i>
+						<strong>20 €</strong>
 					</p>
 					</br>
 					<p>
@@ -581,11 +580,10 @@
 						<strong>Bandeja de 40 ud. variadas.</strong>
 					</p>
 					<p>
-						<strong>35 €</strong>
+						<strong>Tostas, tartaletas y brochetas</strong>
 					</p>
-					</br>
 					<p>
-						<i>Tostas, tartaletas y brochetas</i>
+						<strong>35 €</strong>
 					</p>
 					</br>
 					<p>
