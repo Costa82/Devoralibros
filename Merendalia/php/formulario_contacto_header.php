@@ -1,8 +1,10 @@
 <?php
 
 require_once '../clases/Correo.php';
+require_once '../clases/Validaciones.php';
+
 $correo = new Correo();
-$strMensaje="";
+$validaciones = new Validaciones();
 
 if(isset($_REQUEST['enviar'])){
     
@@ -15,9 +17,10 @@ if(isset($_REQUEST['enviar'])){
         
         // Campos opcionales
         if ( isset($_REQUEST['telefono']) ) {
+            
             $telefono = $_REQUEST['telefono'];
             
-            if ( substr($telefono,0,1) === '8' ) {
+            if (!$validaciones->validarTelefono($telefono)) {
                 $telefonoValido = false;
             }
             
