@@ -7,8 +7,9 @@
                     
                     // index.php found
                     echo '<li><img class="logo_hamburguesa" src="img/sandwich con bolas blancas.png" alt="Merendalia"/></li>';
-                } else if ( strpos($_SERVER['REQUEST_URI'], "galeria") !== false || strpos($_SERVER['REQUEST_URI'], "eventos") !== false || strpos($_SERVER['REQUEST_URI'], "reservas") !== false ||
-                    strpos($_SERVER['REQUEST_URI'], "menus") !== false || strpos($_SERVER['REQUEST_URI'], "contacto") != false || strpos($_SERVER['REQUEST_URI'], "legal") !== false || strpos($_SERVER['REQUEST_URI'], "blog") !== false  ) {
+                } else if (strpos($_SERVER['REQUEST_URI'], "galeria") !== false || strpos($_SERVER['REQUEST_URI'], "eventos") !== false || strpos($_SERVER['REQUEST_URI'], "reservas") !== false ||
+                           strpos($_SERVER['REQUEST_URI'], "menus") !== false || strpos($_SERVER['REQUEST_URI'], "contacto") != false || strpos($_SERVER['REQUEST_URI'], "legal") !== false || strpos($_SERVER['REQUEST_URI'], "blog") !== false || 
+                           strpos($_SERVER['REQUEST_URI'], "envio") !== false) {
                     
                     // Está en alguna página que no es la principal
                     echo '<li><img class="logo_hamburguesa" src="../img/sandwich con bolas blancas.png" alt="Merendalia"/></li>';
