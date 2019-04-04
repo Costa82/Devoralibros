@@ -208,10 +208,8 @@
 
 				</br>
 				<p>
-					<sup>(3)</sup> A los festivos en sábado se les aplicará la tarifa
-					de sábado.<br>
-					A los festivos que caigan delante de sábado o festivo se les aplicará la tarifa
-					de sábado.
+					<sup>(3)</sup> A los festivos en viernes, sábado o víspera de otro festivo, 
+					se les aplicará la tarifa de sábado.
 				</p>
 
 				</br>
