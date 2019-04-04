@@ -96,28 +96,33 @@
 			</div>
 			
 			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_Cocido.jpg" alt="Menú Cocido"
+				<img src="../img/Menú_Cocido_nuevo.jpg" alt="Menú Cocido"
 					title="Menú Cocido" />
 			</div>
 			
-			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_Japonés.jpg" alt="Menú Japonés"
-					title="Menú Japonés" />
-			</div>
-
-			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_senderista.jpg" alt="Menú del senderista"
-					title="Menú del senderista" />
-			</div>
-
 			<div class="img_menu img_lista_menus">
 				<img src="../img/Menú_Fabada_asturiana_alubias.jpg" alt="Menú Fabada"
 					title="Menú Fabada" />
 			</div>
 
 			<div class="img_menu img_lista_menus">
-				<img src="../img/Menú_Oktoberfest_salchichas.jpg" alt="Menú Oktoberfest"
-					title="Menú Oktoberfest" />
+				<img src="../img/Menú_Mediterráneo_nuevo.jpg" alt="Menú Mediterráneo"
+					title="Menú del Mediterráneo" />
+			</div>
+
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_del_senderista_nuevo.jpg" alt="Menú Senderista"
+					title="Menú Senderista" />
+			</div>
+
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Andares_nuevo.jpg" alt="Menú "Andares""
+					title="Menú "Andares"" />
+			</div>
+			
+			<div class="img_menu img_lista_menus">
+				<img src="../img/Menú_Japonés_nuevo.jpg" alt="Menú Japonés"
+					title="Menú Japonés" />
 			</div>
 			
 			<div class="img_menu img_lista_menus">
