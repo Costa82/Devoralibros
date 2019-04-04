@@ -196,6 +196,8 @@
 				<ul>
 					<li>Navidades: del 21 de diciembre al 6 de enero.</li>
 					<li>Ferias de Valladolid</li>
+					<li>Semana Santa</li>
+					<li>Puente de la constitución</li>
 				</ul>
 
 				</br>
@@ -207,6 +209,8 @@
 				</br>
 				<p>
 					<sup>(3)</sup> A los festivos en sábado se les aplicará la tarifa
+					de sábado.<br>
+					A los festivos que caigan delante de sábado o festivo se les aplicará la tarifa
 					de sábado.
 				</p>
 
