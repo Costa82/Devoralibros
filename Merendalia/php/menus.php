@@ -130,6 +130,32 @@
 					title="Menú Sidrería" />
 			</div>
 			
+			<p>Nota: en todos los menús entran bebidas, se podrá cambiar el vino que entra en el menú por otro de la siguiente lista, por un 
+			suplemento por botella. Las botellas a parte, tendrán los siguientes precios:</br>
+			<br><strong>Vinos para sustituir a los de los menús:</strong></br>
+			 <br>&nbsp&nbsp- <u>D.O.Ribera del Duero:</u></br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Viña Mayor Roble + 5€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Carramimbre Roble + 6€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Pinna Fidelis Roble + 7€</br>
+			 <br>&nbsp&nbsp- <u>D.O.Rueda:</u></br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Monasterio de Palazuelos Verdejo + 6€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Finca Valdemoya Verdejo Frizzante + 6€</br></br></br>
+			   
+			<br><strong>Botellas de vino a parte:</strong></br> 
+			  <br>&nbsp&nbsp- <u>D.O.Ribera del Duero:</u></br>
+               <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Viña Mayor Roble 11€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Carramimbre Roble 12€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Pinna Fidelis Roble 13€</br>
+			 <br>&nbsp&nbsp- <u>D.O.Rueda:</u></br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Campos de Delibes Verdejo 11€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Monasterio de Palazuelos Verdejo 13€</br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Finca Valdemoya Verdejo Frizzante 13€</br></br></br>
+             <br>&nbsp&nbsp- <u>D.O.Cigales:</u></br>
+			   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Sinfo 8,5€</br>			   
+				</p>
+				
+				
+			
 		</div>
 		<div class="contenedor_menus lista_menus">
 
