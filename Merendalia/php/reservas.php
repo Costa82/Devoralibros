@@ -209,7 +209,7 @@
 				</br>
 				<p>
 					<sup>(3)</sup> A los festivos en viernes, sábado o víspera de otro festivo, 
-					se les aplicará la tarifa de sábado.
+					se les aplicará la configuración de sábado.
 				</p>
 
 				</br>
