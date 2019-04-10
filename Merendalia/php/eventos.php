@@ -79,43 +79,53 @@
 			que te hemos preparado!</p>
 		</br>
 	</div>
-
-	<!-- EVENTOS PRINCIPALES -->
 	
 	<div class="contenedor_eventos">
 
 		<div class="evento_principal">
-		
-		<h3>MERIENDAS-TALLER INFANTILES DE MARZO</h3>
 
-			<div class="explicacion_evento">
-			
-			<p>¡¡Hola a tod@s merendali@s!!
-			<br>
-			Aquí os dejamos el programa de las <strong>meriendas-taller</strong> del mes de marzo ¡para que vayáis planificando vuestras agendas!</p>
-					<br>
-				
-					<p>El segundo hermano tendrá un descuento del 50% en el precio original.
-					No os quedéis sin plazas para vuestros peques, para reservar llamad a nuestro teléfono <strong> 680.21.97.94</strong>
-					o enviadnos un email a
-					<strong>info@merendalia.es</strong></p>
-					<br>
-					<p>¡Os esperamos!</p>
-			</div>
-
-			<img src='../img/Talleres_infantiles_Marzo_alargado.jpg'
-				title='merienda taller infantil marzo' class="img_movil" /> <img
-				src='../img/Talleres_infantiles_Marzo_apaisado.jpg'
-				title='merienda taller infantil marzo' class="img_ordenador" />
-				</br>
-				</br>
-				</br>
-
+	<h3>En breve publicaremos los nuevos eventos...</h3>
+	
 		</div>
+		
+	</div>
+	
+	<!-- EVENTOS PRINCIPALES -->
+	
+<!--	<div class="contenedor_eventos">  -->
+
+<!--		<div class="evento_principal">  -->
+		
+<!--		<h3>MERIENDAS-TALLER INFANTILES DE MARZO</h3>  -->
+
+<!--			<div class="explicacion_evento">  -->
+			
+<!--			<p>¡¡Hola a tod@s merendali@s!!  -->
+<!--			<br> -->
+<!--			Aquí os dejamos el programa de las <strong>meriendas-taller</strong> del mes de marzo ¡para que vayáis planificando vuestras agendas!</p>  -->
+<!--					<br>  -->
+				
+<!--					<p>El segundo hermano tendrá un descuento del 50% en el precio original.  -->
+<!--					No os quedéis sin plazas para vuestros peques, para reservar llamad a nuestro teléfono <strong> 680.21.97.94</strong>  -->
+<!--					o enviadnos un email a  -->
+<!--					<strong>info@merendalia.es</strong></p>  -->
+<!--					<br>  -->
+<!--					<p>¡Os esperamos!</p>  -->
+<!--			</div>  -->
+
+<!--			<img src='../img/Talleres_infantiles_Marzo_alargado.jpg' -->
+<!--				title='merienda taller infantil marzo' class="img_movil" /> <img -->
+<!--				src='../img/Talleres_infantiles_Marzo_apaisado.jpg'  -->
+<!--				title='merienda taller infantil marzo' class="img_ordenador" />  -->
+<!--				</br>  -->
+<!--				</br>  -->
+<!--				</br>  -->
+
+<!--		</div>  -->
 	
 
 
-	</div>
+<!--	</div>  -->
 
 	<!-- EVENTOS SECUNDARIOS -->
 
@@ -196,7 +206,7 @@
 <!--     					tipos de vino para que podáis maridar como os apetezca, uno de cada -->
 <!--     					una de las denominaciones. Hacemos así una fiesta de la vendimia a -->
 <!--     					nuestro estilo y homenajeamos en nuestra tierra a uno de los -->
-<!--     					productos más importantes y consumidos de la misma.</p> --> -->
+<!--     					productos más importantes y consumidos de la misma.</p> -->
 <!-- 				</br> -->
 <!-- 				<p>De verdad, ¡¡esperamos que os guste!!</p> -->
 <!-- 			</div> -->
@@ -232,10 +242,10 @@
 <!-- 				<p>¡Esperamos que disfrutéis!</p> -->
 <!-- 			</div> -->
 
-			<!-- img para móviles -->
+<!--			 img para móviles -->
 <!-- 			<img src='../img/Alargado_Evento_Oktoberfest.png' title='Oktoberfest' -->
 <!-- 				class="img_movil" /> -->
-			<!-- img con zoom para el resto de dispositivos -->
+<!--			 img con zoom para el resto de dispositivos -->
 <!-- 			<a class="fancybox" rel="group" -->
 <!-- 				href="../img/Apaisado_Evento_Oktoberfest.png"><img -->
 <!-- 				src="../img/Apaisado_Evento_Oktoberfest.png" class="img_ordenador" -->
@@ -258,10 +268,10 @@
 <!-- 					preocúpate solo de disfrutar!</p> -->
 <!-- 			</div> -->
 
-			<!-- img para móviles -->
+<!--			 img para móviles -->
 <!-- 			<img src='../img/Alargado_Evento_Sidrería_Ferias.png' -->
 <!-- 				title='Menú Sidrería' class="img_movil" /> -->
-			<!-- img con zoom para el resto de dispositivos -->
+<!--			 img con zoom para el resto de dispositivos -->
 <!-- 			<a class="fancybox" rel="group" -->
 <!-- 				href="../img/Apaisado_Evento_Sidrería_Ferias.png"><img -->
 <!-- 				src="../img/Apaisado_Evento_Sidrería_Ferias.png" -->
@@ -274,7 +284,7 @@
 	
     <!-- FIN EVENTOS SECUNDARIOS -->
     
-	<footer>
+	<footer class="footer_fijo">
         <?php include_once("footer.php");?>        
     </footer>
 
