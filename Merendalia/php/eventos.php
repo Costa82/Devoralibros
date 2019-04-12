@@ -92,7 +92,7 @@
 			<div class="explicacion_evento">  
 			
 			<p><p><strong>Merendalia</strong> se une con <strong><a href="http://www.cervezasla.es/" >Cervezas La</a></strong> para
-			crear un espacio en el que disfrutar de una buena cata de cervezas artesanas acompañadas de un maridaje perfecto para cada una de ellas.</p></br>
+			crear un espacio en el que disfrutar de una buena cata de cervezas artesanas acompañadas de un estupendo maridaje para cada una de ellas.</p></br>
 			<p>Es el plan perfecto para un día tonto con tus amigos, familia, compañeros de trabajo; una actividad diferente que además os adentrará en 
 			el mundo de la cerveza artesana, ¡no sin olvidar las sabrosas viandas que acompañarán al rico zumo de cebada!</p></br></br>
 		
