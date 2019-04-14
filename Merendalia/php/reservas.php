@@ -60,7 +60,7 @@
 		<nav>		
           <?php include_once("menuNav.php");?>	          	
       	</nav>
-      	
+
 	</header>
 
 	<div class="contenedor_reservas">
@@ -68,7 +68,7 @@
 		<!-- TARIFAS -->
 
 		<div class="tarifas">
-		
+
 			<h3>Tarifas</h3>
 
 			<table border="1">
@@ -79,27 +79,27 @@
 							<strong>Día </strong> <sup>(1)</sup>
 						</p>
 					</td>
-					
+
 					<td class="titulo_verde">
 						<p>
 							<strong>Horario </strong> <sup>(2)</sup>
 						</p>
 					</td>
-					
+
 					<td class="titulo_verde">
 						<p>
 							<strong>Precio por hora</strong>
 						</p>
 						<p class="subtitulo">(3 primeras horas)</p>
 					</td>
-					
+
 					<td class="titulo_verde">
 						<p>
 							<strong>Precio por hora</strong>
 						</p>
 						<p class="subtitulo">(Cuarta hora y sucesivas)</p>
 					</td>
-					
+
 				</tr>
 
 				<tr>
@@ -208,8 +208,8 @@
 
 				</br>
 				<p>
-					<sup>(3)</sup> A los festivos en viernes, sábado o víspera de otro festivo, 
-					se les aplicará la configuración de sábado.
+					<sup>(3)</sup> A los festivos en viernes, sábado o víspera de otro
+					festivo, se les aplicará la configuración de sábado.
 				</p>
 
 				</br>
@@ -337,10 +337,9 @@
 
 		<div class="select_productos">
 
-			<strong>Selecciona el tipo de producto </strong> 
-			
-			<select id="select" name="select">
-			
+			<strong>Selecciona el tipo de producto </strong> <select id="select"
+				name="select">
+
 				<option value="todo" select>Ver todo</option>
 				<option value="entrantes">Entrantes</option>
 				<option value="raciones">&nbsp;&nbsp;&nbsp;Raciones</option>
@@ -357,345 +356,316 @@
 				<option value="vinos">&nbsp;&nbsp;&nbsp;Vinos</option>
 				<option value="licores">&nbsp;&nbsp;&nbsp;Licores</option>
 				<option value="hielos">&nbsp;&nbsp;&nbsp;Hielos</option>
-	
+
 			</select>
 
 		</div>
-			
+
 		<h3 class="titulo_entrante">ENTRANTES</h3>
 
-			<ul class="lista_productos_comida">
+		<ul class="lista_productos_comida">
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p><u><strong>Raciones</strong></u></p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>
+						<u><strong>Raciones</strong></u>
+					</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Nachos con guacamole casero</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>9 €</strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Nachos con guacamole casero</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Patatas ali oli</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>5,5 €</strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Patatas ali oli</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>5,5 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Tortilla de patatas</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>9 €</strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Tortilla de patatas</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Ración de queso curado de oveja</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>9 €</strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Ración de queso curado de oveja</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Ración de cecina</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>9 €</strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Ración de cecina</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Ración de jamón ibérico</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>12 €</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Ración grande de ibericos (jamón, lomo, chorizo y salchichón) y cecina. </p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>25 €</strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Ración de jamón ibérico</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>12 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="raciones">
-					<div class="texto_producto_comida">
-						<p>Empanada de carne/atún (2 kg)</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>7,5 €/Kg</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p><u><strong>Canapes</strong></u></p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p><i>&nbsp;&nbsp;<u>Por tipos:</u></i></p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>Gildas (12uds.)</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>12 €</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>Bombones de Foie (ud.)</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>2 €</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>Tartaletas de cabrales con nueces (12 uds.)</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>9,5 €</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p><i>&nbsp;&nbsp;<u>Por bandejas variadas:</u></i></p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>Bandeja de 40 ud. variadas. Base de miga de pan y volován</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>20 €</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Canapé de salmón ahumado</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Canapé de jamón serrano con aceitunas negras</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Canapé de esparragos gratinados</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Volován de sobrasada con azucar de caña</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Volován de aguacate con langostino y huevas</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Ración grande de ibericos (jamón, lomo, chorizo y salchichón) y
+						cecina.</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>25 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
 
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>Bandeja de 40 ud. variadas. Tostas, tartaletas y brochetas</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong>35 €</strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Gildas</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Bombones de foie</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Bolitas de queso con pistacho</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Ventresca de atún y reducción de vinagreta</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Sobrasada con miel y queso fresco</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Tartaletas de cabrales con nueces</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Tartaletas de brandada de bacalao</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-				
-				<li class="canapes">
-					<div class="texto_producto_comida">
-						<p>* Tartalatas de aguacate con salmón</p>
-					</div>
-					<div class="precio_producto_comida">
-						<p>
-							<strong></strong>
-						</p>
-					</div>
-				</li>
-			</ul>
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Empanada de carne/atún (2 kg)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>7,5 €/Kg</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>
+						<u><strong>Canapés</strong></u>
+					</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>
+						<i>&nbsp;&nbsp;<u>Por tipos:</u></i>
+					</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Gildas (12uds.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>12 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Bombones de Foie (ud.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>2 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Tartaletas de cabrales con nueces (12 uds.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9,5 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/recogida_local.png"
+							title="recogida en local">
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>
+						<i>&nbsp;&nbsp;<u>Por bandejas:</u></i>
+					</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong></strong>
+					</p>
+				</div>
+			</li>
+
+		</ul>
+
+		<div class="canapes">
+
+			<div class="menus_opciones">
+
+				<p>
+					<strong>Bandeja de 40 ud. variadas.</strong>
+				</p>
+				<p>
+					<strong>Base de miga de pan y volován</strong>
+				</p>
+				<p>
+					<strong>20 €</strong>
+				</p>
+				</br>
+				<p>Canapé de salmón ahumado</p>
+				</br>
+				<p>Canapé de jamón serrano con aceitunas negras</p>
+				</br>
+				<p>Canapé de esparragos gratinados</p>
+				</br>
+				<p>Volován de sobrasada con azucar de caña</p>
+				</br>
+				<p>Volován de aguacate con langostino y huevas</p>
+				</br>
+
+			</div>
+
+			<div class="menus_opciones">
+
+				<p>
+					<strong>Bandeja de 40 ud. variadas.</strong>
+				</p>
+				<p>
+					<strong>Tostas, tartaletas y brochetas</strong>
+				</p>
+				<p>
+					<strong>35 €</strong>
+				</p>
+				</br>
+				<p>Gildas</p>
+				</br>
+				<p>Bombones de foie</p>
+				</br>
+				<p>Bolitas de queso con pistacho</p>
+				</br>
+				<p>Ventresca de atún y reducción de vinagreta</p>
+				</br>
+				<p>Sobrasada con miel y queso fresco</p>
+				</br>
+				<p>Tartaletas de cabrales con nueces</p>
+				</br>
+				<p>Tartaletas de brandada de bacalao</p>
+				</br>
+				<p>Tartalatas de aguacate con salmón</p>
+
+			</div>
+
+		</div>
+
 
 		<div class="ensaladas">
 
@@ -712,6 +682,12 @@
 							<strong>6 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -723,6 +699,12 @@
 							<strong>12 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -735,6 +717,12 @@
 							<strong>14 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 			</ul>
@@ -758,6 +746,12 @@
 							<strong>5,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -769,6 +763,12 @@
 							<strong>5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -780,6 +780,12 @@
 							<strong>5,3 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -791,6 +797,12 @@
 							<strong>6 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -802,6 +814,12 @@
 							<strong>5,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -813,6 +831,12 @@
 							<strong>5,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li><i>De la mar</i></li>
@@ -826,6 +850,12 @@
 							<strong>5,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -837,6 +867,12 @@
 							<strong>6,3 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -848,6 +884,12 @@
 							<strong>5,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -859,6 +901,12 @@
 							<strong>6,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -870,6 +918,12 @@
 							<strong>6,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 			</ul>
@@ -891,6 +945,12 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -902,6 +962,12 @@
 							<strong>13,5 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -913,6 +979,12 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -924,6 +996,12 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -935,6 +1013,12 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -946,6 +1030,12 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
+					<div class="recogida_producto_comida">
+    					<p>
+    						<img alt="recogida en local" src="../img/recogida_local.png"
+    							title="recogida en local">
+    					</p>
+    				</div>
 				</li>
 
 			</ul>
@@ -980,7 +1070,8 @@
 				<p>
 					<i>Segundo</i>
 				</p>
-				<p>A elegir un guiso de la sección "guisos", común para todo el grupo</p>
+				<p>A elegir un guiso de la sección "guisos", común para todo el
+					grupo</p>
 				</br>
 				<p>
 					<i>Postre</i>
@@ -1073,7 +1164,7 @@
 					<i>Postre: Brocheta de frutas con chocolate.</i>
 				</p>
 			</div>
-			
+
 			<div class="menus_opciones">
 				<p>
 					<strong>MERIENDA CUMPLEAÑOS INFANTIL</strong>
@@ -1100,10 +1191,12 @@
 		<h3 class="titulo_bebida">BEBIDA</h3>
 
 		<ul class="lista_productos_comida">
-			
+
 			<li class="refrescos">
 				<div class="texto_producto_comida">
-					<p><u><strong>Refrescos</strong></u></p>
+					<p>
+						<u><strong>Refrescos</strong></u>
+					</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1111,7 +1204,7 @@
 					</p>
 				</div>
 			</li>
-			
+
 			<li class="refrescos">
 				<div class="texto_producto_comida">
 					<p>Coca-cola normal</p>
@@ -1121,6 +1214,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -1132,6 +1231,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -1143,6 +1248,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -1154,6 +1265,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -1165,6 +1282,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -1176,8 +1299,14 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="refrescos">
 				<div class="texto_producto_comida">
 					<p>Seven'Up</p>
@@ -1187,11 +1316,19 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="aguas">
 				<div class="texto_producto_comida">
-					<p><u><strong>Aguas</strong></u></p>
+					<p>
+						<u><strong>Aguas</strong></u>
+					</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1199,7 +1336,7 @@
 					</p>
 				</div>
 			</li>
-			
+
 			<li class="aguas">
 				<div class="texto_producto_comida">
 					<p>Agua Solán de Cabras pequeña</p>
@@ -1209,6 +1346,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="aguas">
@@ -1220,11 +1363,19 @@
 						<strong>1,5 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="cervezas">
 				<div class="texto_producto_comida">
-					<p><u><strong>Cervezas</strong></u></p>
+					<p>
+						<u><strong>Cervezas</strong></u>
+					</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1242,6 +1393,12 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="cervezas">
@@ -1253,11 +1410,19 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
 				<div class="texto_producto_comida">
-					<p><u><strong>Vinos</strong></u></p>
+					<p>
+						<u><strong>Vinos</strong></u>
+					</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1265,7 +1430,7 @@
 					</p>
 				</div>
 			</li>
-			
+
 			<li class="vinos">
 				<div class="texto_producto_comida">
 					<p>Vino tinto D.O. Ribera Carramimbre</p>
@@ -1275,6 +1440,12 @@
 						<strong>9,5 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
@@ -1286,6 +1457,12 @@
 						<strong>10 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
@@ -1297,6 +1474,12 @@
 						<strong>8 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
@@ -1308,6 +1491,12 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
@@ -1319,11 +1508,19 @@
 						<strong>8 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
 
 			<li class="licores">
 				<div class="texto_producto_comida">
-					<p><u><strong>Licores</strong></u></p>
+					<p>
+						<u><strong>Licores</strong></u>
+					</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1331,7 +1528,7 @@
 					</p>
 				</div>
 			</li>
-			
+
 			<li class="licores">
 				<div class="texto_producto_comida">
 					<p>Ginebra Seagram´s 70 cl</p>
@@ -1341,8 +1538,14 @@
 						<strong>19 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="licores">
 				<div class="texto_producto_comida">
 					<p>Whisky Ballantines 70cl</p>
@@ -1352,8 +1555,14 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="licores">
 				<div class="texto_producto_comida">
 					<p>Ron Brugal 70cl</p>
@@ -1363,8 +1572,14 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="recogida en local" src="../img/recogida_local.png"
+    						title="recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="licores">
 				<div class="texto_producto_comida">
 					<p>Vodka Absolut 70cl</p>
@@ -1374,11 +1589,19 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="no recogida en local" src="../img/no_recogida_local.png"
+    						title="no recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 			<li class="hielos">
 				<div class="texto_producto_comida">
-					<p><u><strong>Hielos</strong></u></p>
+					<p>
+						<u><strong>Hielos</strong></u>
+					</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1395,8 +1618,14 @@
 						<strong>1,5 €</strong>
 					</p>
 				</div>
+				<div class="recogida_producto_comida">
+    				<p>
+    					<img alt="no recogida en local" src="../img/no_recogida_local.png"
+    						title="no recogida en local">
+    				</p>
+    			</div>
 			</li>
-			
+
 		</ul>
 
 	</div>

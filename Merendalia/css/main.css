@@ -656,7 +656,7 @@ ul.lista_productos_comida li {
 }
 
 .img_producto, .texto_producto, .precio_producto, .texto_producto_comida,
-	.precio_producto_comida {
+	.precio_producto_comida, .recogida_producto_comida {
 	margin-top: 15px;
 	display: inline-block;
 }
@@ -678,13 +678,22 @@ ul.lista_productos_comida li {
 }
 
 .texto_producto_comida {
-	width: 58%;
+	width: 55%;
 	padding-left: 10px;
 }
 
 .precio_producto_comida {
-	width: 35%;
+	width: 18%;
 	text-align: right;
+}
+
+.recogida_producto_comida {
+	width: 18%;
+	text-align: right;
+}
+
+.recogida_producto_comida img {
+	width: 35px;
 }
 
 .img_producto img {
@@ -1012,6 +1021,9 @@ footer h3 {
 		width: 15%;
 		text-align: right;
 	}
+	.recogida_producto_comida img {
+		width: 40px;
+	}
 	.img_producto img {
 		height: 200px;
 	}
@@ -1145,6 +1157,9 @@ footer h3 {
 /* Para resoluciones a partir de 700px */
 @media only screen and (min-width: 700px) {
 	
+	.recogida_producto_comida img {
+		width: 45px;
+	}
 	img.img_ordenador {
 		display: inline-block;
 	}
@@ -1236,14 +1251,6 @@ footer h3 {
 	}
 	img.queso {
 		height: 150px;
-	}
-	.texto_producto_comida {
-		width: 60%;
-		padding-left: 10px;
-	}
-	.precio_producto_comida {
-		width: 35%;
-		text-align: right;
 	}
 	.condiciones, .whatsapp {
 		margin-left: 120px;
@@ -1448,6 +1455,9 @@ footer h3 {
 		height: 800px;	
 		max-width: 500px;
 		padding: 20px;
+	}
+	.recogida_producto_comida img {
+		width: 50px;
 	}
 	.contenedor_formulario {
 		margin: 80px 25px;
