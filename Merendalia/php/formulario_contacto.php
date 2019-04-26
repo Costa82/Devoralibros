@@ -18,7 +18,7 @@
 		</div>
 		<div>
 			<label>Consulta</label>
-			<textarea rows="4" cols="50" name="consulta" class="consulta"></textarea>
+			<textarea rows="4" cols="50" name="consulta" class="consulta" required="required"></textarea>
 		</div>
 		<div class="form condiciones">
 			<input type="checkbox" name="condiciones" id="condiciones"><label>Acepta
