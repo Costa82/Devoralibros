@@ -1501,7 +1501,7 @@
 
 			<li class="vinos">
 				<div class="texto_producto_comida">
-					<p>Viña Picota rosado D.O. Cigales</p>
+					<p>Sinfo</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
