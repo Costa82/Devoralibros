@@ -24,8 +24,13 @@ if(isset($_REQUEST['enviar'])){
             
             $telefono = $_REQUEST['telefono'];
             
-            if (!$validaciones->validarTelefono($telefono)) {
-                $telefonoValido = false;
+            if ($telefono != "" && $telefono != null) {
+                
+                if (!$validaciones->validarTelefono($telefono)) {
+                    $telefonoValido = false;
+                }
+            } else {
+                $telefono = null;
             }
             
         } else {
