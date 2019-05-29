@@ -121,7 +121,12 @@ class Libro
      */
     public function existeTitulo($titulo, $autor)
     {
-        $sql = "SELECT * FROM " . $this->tabla . " WHERE titulo='" . $titulo . "' AND autor='" . $autor . "'";
+		// Igualamos a mayúsculas la búsqueda para evitar los problemas con mayúsculas y minúsculas
+		$tituloMinuscula = strtoupper($titulo);
+		$autorMinuscula = strtoupper($autor);
+		
+        // $sql = "SELECT * FROM " . $this->tabla . " WHERE UPPER(titulo) ='" . $titulo . "' AND UPPER(autor) ='" . $autor . "'";
+		$sql = "SELECT * FROM " . $this->tabla . " WHERE UPPER(titulo) ='" . $titulo ."'";
         if ($this->c->real_query($sql)) {
             if ($resul = $this->c->store_result()) {
                 if ($resul->num_rows == 0) {
