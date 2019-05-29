@@ -13,4 +13,8 @@ $(document).ready(function() {
 	$('html').click(function() {
 		$("#lista_movil").slideUp("slow");
 	});
+	
+	$('.rechazar').on('click',function() {
+	    $('#overbox3').hide();
+	});
 });

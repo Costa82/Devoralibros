@@ -88,6 +88,15 @@ a.mostrar_menus:hover {
   position: fixed;
   bottom: 0;
 }
+
+.avisoLegal_movil {
+	text-align: center;
+	padding: 10px;
+}
+
+a.enlace_legal:hover {
+	color:#d8c12d;
+}
 /* HEADER
    ========================================================================= */
 
@@ -130,11 +139,11 @@ nav>#lista_principal_index {
 	font-size: 11px;
 }
 
-#galeria, #eventos, #reservas, #menus, #bocaditos, #productos, #contacto, #blogMerendalia {
+#galeria, #eventos, #reservas, #menus, #bocaditos, #productos, #contacto, #legal, #blogMerendalia {
 	display: none;
 }
 
-#galeria2 a:hover, #eventos2 a:hover, #reservas2 a:hover, #menus2 a:hover, #bocaditos2 a:hover, #productos2 a:hover, #contacto2 a:hover, #blogMerendalia2 a:hover {
+#galeria2 a:hover, #eventos2 a:hover, #reservas2 a:hover, #menus2 a:hover, #bocaditos2 a:hover, #productos2 a:hover, #contacto2 a:hover, #avisoLegal2 a:hover, #blogMerendalia2 a:hover {
 	color: #9bd155;
 }
 
@@ -656,7 +665,7 @@ ul.lista_productos_comida li {
 }
 
 .img_producto, .texto_producto, .precio_producto, .texto_producto_comida,
-	.precio_producto_comida, .recogida_producto_comida {
+	.precio_producto_comida {
 	margin-top: 15px;
 	display: inline-block;
 }
@@ -678,22 +687,13 @@ ul.lista_productos_comida li {
 }
 
 .texto_producto_comida {
-	width: 55%;
+	width: 58%;
 	padding-left: 10px;
 }
 
 .precio_producto_comida {
-	width: 18%;
+	width: 35%;
 	text-align: right;
-}
-
-.recogida_producto_comida {
-	width: 18%;
-	text-align: right;
-}
-
-.recogida_producto_comida img {
-	width: 35px;
 }
 
 .img_producto img {
@@ -896,6 +896,7 @@ p.pieFoto {
 	width: 100%;
 	z-index: 99;
 	display: block;
+	opacity: 0.9;
 }
 
 #infobox3 {
@@ -926,6 +927,10 @@ p.pieFoto {
 
 #infobox3 p a.aceptar {
 	color: #9bd155;
+}
+
+#infobox3 p a.rechazar {
+	color: #ff3123;
 }
 
 #infobox3 p a:hover, #infobox3 p a:focus {
@@ -1020,9 +1025,6 @@ footer h3 {
 	.precio_producto {
 		width: 15%;
 		text-align: right;
-	}
-	.recogida_producto_comida img {
-		width: 40px;
 	}
 	.img_producto img {
 		height: 200px;
@@ -1157,9 +1159,6 @@ footer h3 {
 /* Para resoluciones a partir de 700px */
 @media only screen and (min-width: 700px) {
 	
-	.recogida_producto_comida img {
-		width: 45px;
-	}
 	img.img_ordenador {
 		display: inline-block;
 	}
@@ -1252,6 +1251,14 @@ footer h3 {
 	img.queso {
 		height: 150px;
 	}
+	.texto_producto_comida {
+		width: 60%;
+		padding-left: 10px;
+	}
+	.precio_producto_comida {
+		width: 35%;
+		text-align: right;
+	}
 	.condiciones, .whatsapp {
 		margin-left: 120px;
 	}
@@ -1280,9 +1287,6 @@ footer h3 {
 /* Para resoluciones a partir de 1000px */
 @media only screen and (min-width: 1000px) {
 	
-	.informacion ul, .informacion h3 {
-		display: block;
-	}
 	nav>#lista_principal_index {
 		margin-top: -25px;
 		font-size: 19px;
@@ -1456,9 +1460,6 @@ footer h3 {
 		max-width: 500px;
 		padding: 20px;
 	}
-	.recogida_producto_comida img {
-		width: 50px;
-	}
 	.contenedor_formulario {
 		margin: 80px 25px;
 	}
@@ -1476,7 +1477,10 @@ footer h3 {
 /* Para resoluciones a partir de 1100px */
 @media only screen and (min-width: 1100px) {
 	
-	#galeria, #eventos, #reservas, #menus, #bocaditos, #productos, #contacto, #blogMerendalia {
+	.informacion ul, .informacion h3 {
+		display: block;
+	}
+	#galeria, #eventos, #reservas, #menus, #bocaditos, #productos, #contacto, #legal, #blogMerendalia {
 		display: block;
 	}
 	nav>ul>li#menu_moviles {
@@ -1494,7 +1498,9 @@ footer h3 {
 		margin: 60px;
 		font-size: 25px;
 	}
-	
+	.avisoLegal_movil {
+		display: none;
+	}
 }
 
 /* Para resoluciones a partir de 1250px */

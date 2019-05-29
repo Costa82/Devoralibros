@@ -91,7 +91,6 @@
 
 			<div class="explicacion_evento">  
 			
-
 				<p><p><strong>Merendalia</strong> se une con <strong><a class="mostrar_menus" href="http://www.cervezasla.es/" >Cervezas La</a></strong> para
 				crear un espacio en el que disfrutar de una buena cata de cervezas artesanas acompañadas de un estupendo maridaje para cada una de ellas.</p></br>
 				<p>Es el plan perfecto para un día tonto con tus amigos, familia, compañeros de trabajo; una actividad diferente que además os adentrará en 
@@ -99,7 +98,6 @@
 			
 				<p>Para hacer tus reservas, ponte en contacto con nosotros a través de llamada o WhatsApp en el <strong>680.21.97.94</strong>, 
 				o por email en <strong>info@merendalia.es</strong></br>
-
 			
 			</div>	
 			
@@ -111,6 +109,7 @@
 		</div>
 
 	</div>  
+	
 		
 	
 	<!-- EVENTOS PRINCIPALES -->

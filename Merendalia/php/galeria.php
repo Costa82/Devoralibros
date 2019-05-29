@@ -94,9 +94,10 @@
 			grande, inducción, campana extractora, microondas, neveras,
 			lavavajillas cafetera, menaje, etc.); baño adaptado para personas de
 			movilidad reducida y con cambiador de bebés. Te dejamos el  <a
-				href='' class='mostrar_blog'><strong><i>link</i></strong></a> de
+				href='../blog-merendalia/#que_es_merendalia' class='mostrar_blog'><strong><i>link</i></strong></a> de
 			nuestra entrada de blog donde explicamos un poco mejor cómo puedes 
-			disfrutar en merendalia</br>Ahora solo queda
+			disfrutar en merendalia.</br></br>
+			Ahora solo queda
 			que veas nuestras fotos, cuadres un día con los tuyos, y ¡vengas a
 			conocernos!
 		
