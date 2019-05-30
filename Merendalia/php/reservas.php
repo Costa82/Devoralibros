@@ -387,12 +387,12 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/icono_para_llevar.png"
+							title="recogida en local">
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -404,12 +404,12 @@
 						<strong>5,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/icono_para_llevar.png"
+							title="recogida en local">
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -421,12 +421,12 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<img alt="recogida en local" src="../img/icono_para_llevar.png"
+							title="recogida en local">
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -440,7 +440,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -457,7 +457,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -474,7 +474,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -492,7 +492,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -509,7 +509,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -552,7 +552,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -569,7 +569,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -586,7 +586,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!-- 							title="recogida en local"> -->
 <!-- 					</p> -->
 <!-- 				</div> -->
@@ -684,7 +684,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -701,7 +701,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -719,7 +719,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -748,7 +748,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -765,7 +765,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -782,7 +782,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -799,7 +799,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -816,7 +816,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -833,7 +833,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -852,7 +852,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -869,7 +869,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -886,7 +886,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -903,7 +903,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -920,7 +920,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -947,7 +947,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -964,7 +964,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -981,7 +981,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -998,7 +998,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -1015,7 +1015,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -1032,7 +1032,7 @@
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
 <!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     							title="recogida en local"> -->
 <!--     					</p> -->
 <!--     				</div> -->
@@ -1216,7 +1216,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1233,7 +1233,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1250,7 +1250,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1267,7 +1267,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1284,7 +1284,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1301,7 +1301,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1318,7 +1318,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1348,7 +1348,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1365,7 +1365,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1395,7 +1395,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1412,7 +1412,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1442,7 +1442,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1459,7 +1459,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1476,7 +1476,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1493,7 +1493,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1510,7 +1510,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1540,7 +1540,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1557,7 +1557,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1574,7 +1574,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/recogida_local.png" -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
 <!--     						title="recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1591,7 +1591,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="no recogida en local" src="../img/no_recogida_local.png" -->
+<!--     					<img alt="no recogida en local" src="../img/no_icono_para_llevar.png" -->
 <!--     						title="no recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
@@ -1620,7 +1620,7 @@
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
 <!--     				<p> -->
-<!--     					<img alt="no recogida en local" src="../img/no_recogida_local.png" -->
+<!--     					<img alt="no recogida en local" src="../img/no_icono_para_llevar.png" -->
 <!--     						title="no recogida en local"> -->
 <!--     				</p> -->
 <!--     			</div> -->
