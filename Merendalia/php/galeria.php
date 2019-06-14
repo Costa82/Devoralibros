@@ -106,98 +106,155 @@
 
 	<div class="contenedor_fotos">
 
-		<a class="fancybox img_ordenador" rel="group"
-				href="../img/_MG_5985_opt.jpg"><img
-				src="../img/_MG_5985.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+						
+		<a class="fancybox" rel="group"
+				href="../img/fiesta_party.jpg"><img
+				src="../img/fiesta_party.jpg" class="foto img_ordenador"
+				title='Fiesta amigos (Reserva de espacio)' alt="Fiesta amigos (Reserva de espacio)" /></a>
 				<img
-				src="../img/_MG_5985.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
-				
-		<a class="fancybox img_ordenador" rel="group"
-				href="../img/_MG_5989_opt.jpg"><img
-				src="../img/_MG_5989.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
-				<img
-				src="../img/_MG_5989.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				src="../img/fiesta_party.jpg" class="foto img_movil"
+				title='Fiesta amigos (Reserva de espacio)' alt="Fiesta amigos (Reserva de espacio)" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_5990_opt.jpg"><img
-				src="../img/_MG_5990.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				href="../img/celebrar.jpg"><img
+				src="../img/celebrar.jpg" class="foto img_ordenador"
+				title='Cumpleaños amigos (Reserva de espacio)' alt="Cumpleaños amigos (Reserva de espacio)" /></a>
 				<img
-				src="../img/_MG_5990.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				src="../img/celebrar.jpg" class="foto img_movil"
+				title='Cumpleaños amigos (Reserva de espacio)' alt="Cumpleaños amigos (Reserva de espacio)" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_5994_opt.jpg"><img
-				src="../img/_MG_5994.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				href="../img/felicidades_cumpleaños.jpg"><img
+				src="../img/felicidades_cumpleaños.jpg" class="foto img_ordenador"
+				title='Decoración para cumpleaños' alt="Decoración para cumpleaños" /></a>
 				<img
-				src="../img/_MG_5994.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				src="../img/felicidades_cumpleaños.jpg" class="foto img_movil"
+				title='Decoración para cumpleaños' alt="Decoración para cumpleaños" />
 				
 		<a class="fancybox" rel="group"
 				href="../img/merendalia-reuniones-amigos-celebración.jpg"><img
 				src="../img/merendalia-reuniones-amigos-celebración.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Presentación de productos' alt="Presentación de productos" /></a>
 				<img
 				src="../img/merendalia-reuniones-amigos-celebración.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				title='Presentación de productos' alt="Presentación de productos" />
+				
+		<a class="fancybox" rel="group"
+				href="../img/merendalia-reuniones-amigos-celebración-ropa.jpg"><img
+				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_ordenador"
+				title='Presentación de productos (ropa)' alt="Presentación de productos (ropa)" /></a>
+				<img
+				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_movil"
+				title='Presentación de productos (ropa)' alt="Presentación de productos (ropa)" />
 				
 		<a class="fancybox" rel="group"
 				href="../img/merendalia-reuniones-amigos-celebración-presentación.jpg"><img
 				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Reunión mujeres emprendedoras' alt="Reunión mujeres emprendedoras" /></a>
 				<img
 				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				title='Reunión mujeres emprendedoras' alt="Reunión mujeres emprendedoras" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_6018_opt.jpg"><img
-				src="../img/_MG_6018.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				href="../img/Canapés.jpg"><img
+				src="../img/Canapés.jpg" class="foto img_ordenador"
+				title='Catering Merendalia' alt="Catering Merendalia" /></a>
 				<img
-				src="../img/_MG_6018.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				src="../img/Canapés.jpg" class="foto img_movil"
+				title='Catering Merendalia' alt="Catering Merendalia" />
 				
+		<a class="fancybox" rel="group"
+				href="../img/tartaletas.jpg"><img
+				src="../img/tartaletas.jpg" class="foto img_ordenador"
+				title='Catering Merendalia' alt="Catering Merendalia" /></a>
+				<img
+				src="../img/tartaletas.jpg" class="foto img_movil"
+				title='Catering Merendalia' alt="Catering Merendalia" />
+				
+		<a class="fancybox" rel="group"
+				href="../img/Catering.jpg"><img
+				src="../img/Catering.jpg" class="foto img_ordenador"
+				title='Catering Merendalia' alt="Catering Merendalia" /></a>
+				<img
+				src="../img/Catering.jpg" class="foto img_movil"
+				title='Catering Merendalia' alt="Catering Merendalia" />
+							
 		<a class="fancybox" rel="group"
 				href="../img/_MG_6019_opt.jpg"><img
 				src="../img/_MG_6019.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Parque de bolas' alt="Parque de bolas" /></a>
 				<img
 				src="../img/_MG_6019.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				title='Parque de bolas' alt="Parque de bolas" />
 				
 		<a class="fancybox" rel="group"
 				href="../img/_MG_6020_opt.jpg"><img
 				src="../img/_MG_6020.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Certificación y normas del parque de bolas' alt="Certificación y normas del parque de bolas" /></a>
 				<img
 				src="../img/_MG_6020.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				title='Certificación y normas del parque de bolas' alt="Certificación y normas del parque de bolas" />
+				
+				<a class="fancybox img_ordenador" rel="group"
+				href="../img/_MG_5985_opt.jpg"><img
+				src="../img/_MG_5985.jpg" class="foto img_ordenador"
+				title='Sala a modo restaurante' alt="Sala a modo restaurante" /></a>
+				<img
+				src="../img/_MG_5985.jpg" class="foto img_movil"
+				title='Sala a modo restaurante' alt="Sala a modo restaurante" />
+				
+		<a class="fancybox img_ordenador" rel="group"
+				href="../img/_MG_5989_opt.jpg"><img
+				src="../img/_MG_5989.jpg" class="foto img_ordenador"
+				title='Sala a modo restaurante 2' alt="Sala a modo restaurante 2" /></a>
+				<img
+				src="../img/_MG_5989.jpg" class="foto img_movil"
+				title='Sala a modo restaurante 2' alt="Sala a modo restaurante 2" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_6022_opt.jpg"><img
-				src="../img/_MG_6022.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				href="../img/_MG_5990_opt.jpg"><img
+				src="../img/_MG_5990.jpg" class="foto img_ordenador"
+				title='Sala a modo restaurante 3' alt="Sala a modo restaurante 3" /></a>
 				<img
-				src="../img/_MG_6022.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
-				
+				src="../img/_MG_5990.jpg" class="foto img_movil"
+				title='Sala a modo restaurante 3' alt="Sala a modo restaurante 3" />
+							
 		<a class="fancybox" rel="group"
 				href="../img/_MG_6029_opt.jpg"><img
 				src="../img/_MG_6029.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Entrada al universo Merendalia' alt="Entrada al universo Merendalia" /></a>
 				<img
 				src="../img/_MG_6029.jpg" class="foto img_movil"
 				title='foto galeria' alt="foto galeria" />
+					
+		<a class="fancybox" rel="group"
+				href="../img/_MG_6042_opt.jpg"><img
+				src="../img/_MG_6042.jpg" class="foto img_ordenador"
+				title='Detalle mesa' alt="Detalle mesa" /></a>
+				<img
+				src="../img/_MG_6042.jpg" class="foto img_movil"
+				title='Detalle mesa' alt="Detalle mesa" />
 				
+		<a class="fancybox" rel="group"
+				href="../img/_MG_6056_opt.jpg"><img
+				src="../img/_MG_6056.jpg" class="foto img_ordenador"
+				title='Detalle mesa' alt="Detalle mesa" /></a>
+				<img
+				src="../img/_MG_6056.jpg" class="foto img_movil"
+				title='Detalle mesa' alt="Detalle mesa" />
+				
+		<a class="fancybox" rel="group"
+				href="../img/_MG_6066_opt.jpg"><img
+				src="../img/_MG_6066.jpg" class="foto img_ordenador"
+				title='Detalle estantería' alt="Detalle estantería" /></a>
+				<img
+				src="../img/_MG_6066.jpg" class="foto img_movil"
+				title='Detalle estantería' alt="Detalle estantería" />
+					
 		<a class="fancybox" rel="group"
 				href="../img/_MG_6030_opt.jpg"><img
 				src="../img/_MG_6030.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Cocina a disposición del cliente' alt="Cocina a disposición del cliente" /></a>
 				<img
 				src="../img/_MG_6030.jpg" class="foto img_movil"
 				title='foto galeria' alt="foto galeria" />
@@ -205,58 +262,26 @@
 		<a class="fancybox" rel="group"
 				href="../img/_MG_6036_opt.jpg"><img
 				src="../img/_MG_6036.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Cocina a disposición del cliente' alt="Cocina a disposición del cliente" /></a>
 				<img
 				src="../img/_MG_6036.jpg" class="foto img_movil"
 				title='foto galeria' alt="foto galeria" />
 				
 		<a class="fancybox" rel="group"
-				href="../img/_MG_6042_opt.jpg"><img
-				src="../img/_MG_6042.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
-				<img
-				src="../img/_MG_6042.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
-				
-		<a class="fancybox" rel="group"
-				href="../img/merendalia-reuniones-amigos-celebración-ropa.jpg"><img
-				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
-				<img
-				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
-				
-		<a class="fancybox" rel="group"
-				href="../img/_MG_6056_opt.jpg"><img
-				src="../img/_MG_6056.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
-				<img
-				src="../img/_MG_6056.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
-				
-		<a class="fancybox" rel="group"
-				href="../img/_MG_6066_opt.jpg"><img
-				src="../img/_MG_6066.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
-				<img
-				src="../img/_MG_6066.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
-				
-		<a class="fancybox" rel="group"
 				href="../img/8_opt.jpg"><img
 				src="../img/8.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Baño adaptado PMR' alt="Baño adaptado PMR" /></a>
 				<img
 				src="../img/8.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				title='Baño adaptado PMR' alt="Baño adaptado PMR" />
 				
 		<a class="fancybox" rel="group"
 				href="../img/9_opt.jpg"><img
 				src="../img/9.jpg" class="foto img_ordenador"
-				title='foto galeria' alt="foto galeria" /></a>
+				title='Baño adaptado PMR y cambiador de bebés' alt="Baño adaptado PMR" /></a>
 				<img
 				src="../img/9.jpg" class="foto img_movil"
-				title='foto galeria' alt="foto galeria" />
+				title='Baño adaptado PMR' alt="Baño adaptado PMR" />
 
 	</div>
 
