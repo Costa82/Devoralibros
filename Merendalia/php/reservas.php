@@ -543,7 +543,7 @@
 
 			<li class="canapes">
 				<div class="texto_producto_comida">
-					<p>Gildas (12uds.)</p>
+					<p>Gildas (12 uds.)</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -582,6 +582,23 @@
 				<div class="precio_producto_comida">
 					<p>
 						<strong>9,5 €</strong>
+					</p>
+				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!-- 					<p> -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!-- 							title="recogida en local"> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
+			</li>
+			
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Mini Conos de tomate con brandada de bacalao (12 uds.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>10,5 €</strong>
 					</p>
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
@@ -640,27 +657,20 @@
 					<strong>Bandeja de 40 ud. variadas.</strong>
 				</p>
 				<p>
-					<strong>Tostas, tartaletas y brochetas</strong>
+					<strong>Tosta, tartaleta, crujiente, bolita y corneto</strong>
 				</p>
 				<p>
 					<strong>35 €</strong>
 				</p>
-				</br>
-				<p>Gildas</p>
-				</br>
-				<p>Bombones de foie</p>
-				</br>
 				<p>Bolitas de queso con pistacho</p>
 				</br>
-				<p>Ventresca de atún y reducción de vinagreta</p>
-				</br>
-				<p>Sobrasada con miel y queso fresco</p>
+				<p>Tosta de ventresca de atún y reducción de vinagreta</p>
 				</br>
 				<p>Tartaletas de cabrales con nueces</p>
 				</br>
-				<p>Tartaletas de brandada de bacalao</p>
+				<p>Corneto de foie con mango y polvo de pistacho</p>
 				</br>
-				<p>Tartalatas de aguacate con salmón</p>
+				<p>Pergamino crujiente de morcilla con manzana</p>
 
 			</div>
 
