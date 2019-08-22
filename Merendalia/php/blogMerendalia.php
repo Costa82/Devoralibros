@@ -90,7 +90,7 @@
 
 		<!-- PARTE PRINCIPAL DEL ARTÍCULO CON IMAGEN GRANDE Y TEXTO -->
 
-		<h3 class="titulo_articulo">RESERVA EL ESPACIO EN FERIAS</h3>
+		<h3 class="titulo_articulo">¡RESERVA EL ESPACIO EN FERIAS DE VALLADOLID 2019!</h3>
 
 		<div class="fechaArticulo">
 			<p>21 de agosto de 2019</p>
@@ -107,7 +107,7 @@
 			<p>¡Hola merendalios!</br></br>
 			
 			Hace mucho que no os contábamos nada por aquí y es que han sido meses de mucho trabajo y cambios. Nos ha dado tiempo, entre otras cosas a
-			tener un pequeñín. ¡Hemos sido padres!  Y como estamos muy contentos, se lo decimos a todo el mundo. También tenemos mucho sueño…
+			tener un pequeñín. ¡Hemos sido padres!  Y como estamos muy contentos, se lo decimos a todo el mundo. También tenemos mucho sueño…</br></br>
 			El verano va dando sus últimos coletazos, y aunque supone la tristeza de muchos, los pucelanos tenemos un AS en la manga, ¡nuestras Ferias!
 			Este año del 6 al 15 de septiembre. Para nosotros además son unas fechas muy importantes porque hará un añito que abrimos nuestras puertas.
 			A lo largo de este año, muchas celebraciones y eventos y también, por qué no decirlo, muchos quebraderos de cabeza. En la balanza más alegrías
