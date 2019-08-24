@@ -18,18 +18,18 @@
         echo "<li id='eventos'><a href='../eventos/' title='Eventos'>Eventos</a></li>";
     }
     
-    if (strpos($_SERVER['REQUEST_URI'], "reservas") !== false) {
+    if (strpos($_SERVER['REQUEST_URI'], "espacio") !== false) {
         // reservas.php found
-        echo "<li id='reservas'><a href='../reservas-tarifas/' title='Reservas' class='seleccionado'>Reservas/Tarifas</a></li>";
+        echo "<li id='espacio'><a href='../espacio/' title='Espacio' class='seleccionado'>Espacio</a></li>";
     } else {
-        echo "<li id='reservas'><a href='../reservas-tarifas/' title='Reservas'>Reservas/Tarifas</a></li>";
+        echo "<li id='espacio'><a href='../espacio/' title='Espacio'>Espacio</a></li>";
     }
     
-    if (strpos($_SERVER['REQUEST_URI'], "menus") !== false) {
+    if (strpos($_SERVER['REQUEST_URI'], "catering") !== false) {
         // menus.php found
-        echo "<li id='menus'><a href='../menus-privados/' title='Menús' class='seleccionado'>Menús privados</a></li>";
+        echo "<li id='menus'><a href='../catering/' title='Catering' class='seleccionado'>Catering</a></li>";
     } else {
-        echo "<li id='menus'><a href='../menus-privados/' title='Menús'>Menús privados</a></li>";
+        echo "<li id='menus'><a href='../catering/' title='Catering'>Catering</a></li>";
     }
     
     if (strpos($_SERVER['REQUEST_URI'], "blog") !== false) {
@@ -50,8 +50,8 @@
                     <ul id='lista_movil'>
                         <li id='galeria2'><a href='../galeria/' title='Galería'>Galería</a></li>
                         <li id='eventos2'><a href='../eventos/' title='Eventos'>Eventos</a></li>
-                        <li id='reservas2'><a href='../reservas-tarifas/' title='Reservas'>Reservas/Tarifas</a></li>
-                        <li id='menus2'><a href='../menus-privados/' title='Menús'>Menús privados</a></li>
+                        <li id='espacio2'><a href='../espacio/' title='Espacio'>Espacio</a></li>
+                        <li id='menus2'><a href='../catering/' title='Menús'>Catering</a></li>
                         <li id='blogMerendalia2'><a href='../blog-merendalia/' title='Blog Merendalia'>Blog</a></li>
                         <li id='contacto2'><a href='../contacto/' title='Contacto'>Contacto</a></li>
                     </ul>

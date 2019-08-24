@@ -89,9 +89,9 @@
 			  
 				<p>Los comensales os sentáis a la mesa. Se os sirve el menú que hayáis elegido. Es la opción restaurante.</br>
 				Estos son los menús que hemos preparado. Vamos añadiendo y retirando, según preferencias o producto de temporada.
-				</p>
-				</br>* Existe la posibilidad de pedir menú infantil. Puedes verlos <a
-				href='' class='mostrar_menus'><strong><i>aquí</i></strong></a>.
+				
+				</br></br>* Existe la posibilidad de pedir menú infantil. Puedes verlos <a
+				href='' class='mostrar_menus'><strong><i>aquí</i></strong></a>.</p>
 					
 			</div>
 			

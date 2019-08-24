@@ -70,14 +70,12 @@
 	</div>
 
 	<div class="contenedor_circulos">
-		<a class="circulo amarillo" href="eventos/" title="Nuestros Eventos">
-			<h2>Nuestros Eventos</h2>
-		</a> <a class="circulo rojo" href="reservas-tarifas/"
-			title="Reserva de espacio">
-			<h2>Reserva de espacio</h2>
-		</a> <a class="circulo verde" href="menus-privados/"
-			title="Menús privados">
-			<h2>Menús privados</h2>
+		<a class="circulo amarillo" href="eventos/" title="Eventos">
+			<h2>Eventos</h2>
+		</a> <a class="circulo rojo" href="espacio/" title="Espacio">
+			<h2>Espacio</h2>
+		</a> <a class="circulo verde" href="catering/" title="Catering">
+			<h2>Catering</h2>
 		</a>
 	</div>
 

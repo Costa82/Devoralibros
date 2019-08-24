@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reservas</title>
+<title>Catering</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
@@ -29,296 +29,32 @@
 
     var rutacss1 = "../css/main.css?" + Math.random();
     var rutacss2 = "../jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
-    var rutacss3 = "../jquery/ocultar_productos.js?" + Math.random();
-    var rutacss4 = "../jquery/jquery_anclas.js?" + Math.random();
+    var rutacss3 = "../jquery/mostrar_menus_infantiles.js?" + Math.random();
     var script = "script";
     
     document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />');
     document.write('<script src="' + rutacss2 + '"></' + script + '>');
     document.write('<script src="' + rutacss3 + '"></' + script + '>');
-    document.write('<script src="' + rutacss4 + '"></' + script + '>');
 	
-</script>
-
-<script>
-    function validar(){
-        if (document.getElementById('condiciones').checked){
-        	return true;
-        }
-        else
-        {
-            alert("El formulario no puede ser enviado si no acepta el Aviso Legal y la Política de Privacidad");
-            return false;
-        }
-    }
 </script>
 
 </head>
 <body>
 	<header>
 
-		<nav>		
-          <?php include_once("menuNav.php");?>	          	
-      	</nav>
+		<div class="titulo_movil">
+			<a href='../index.php' title='Inicio'><img
+				src='../img/merendalia_logotipo_RGB-01.png' alt='Merendalia' /></a>
+		</div>
 
+		<nav>
+          <?php include_once("menuNav.php");?>		
+      	</nav>
 	</header>
 
-	<div class="contenedor_reservas">
+<div class="explicacion productos">
 
-		<!-- TARIFAS -->
-
-		<div class="tarifas">
-
-			<h3>Tarifas</h3>
-
-			<table border="1">
-
-				<tr>
-					<td class="titulo_verde">
-						<p>
-							<strong>Día </strong> <sup>(1)</sup>
-						</p>
-					</td>
-
-					<td class="titulo_verde">
-						<p>
-							<strong>Horario </strong> <sup>(2)</sup>
-						</p>
-					</td>
-
-					<td class="titulo_verde">
-						<p>
-							<strong>Precio por hora</strong>
-						</p>
-						<p class="subtitulo">(3 primeras horas)</p>
-					</td>
-
-					<td class="titulo_verde">
-						<p>
-							<strong>Precio por hora</strong>
-						</p>
-						<p class="subtitulo">(Cuarta hora y sucesivas)</p>
-					</td>
-
-				</tr>
-
-				<tr>
-					<td rowspan="2" class="titulo_amarillo">
-						<p>
-							<strong>LUNES a JUEVES</strong>
-						</p>
-					</td>
-					<td><p>09:00 a 18:00</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:00 a 00:30</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-
-				<tr>
-					<td rowspan="2" class="titulo_amarillo">
-						<p>
-							<strong>VIERNES</strong>
-						</p>
-					</td>
-					<td><p>09:00 a 18:00</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:00 a 01:30</p></td>
-					<td><p>42€</p></td>
-					<td><p>38€</p></td>
-				</tr>
-
-				<tr>
-					<td rowspan="2" class="titulo_amarillo">
-						<p>
-							<strong>SÁBADO</strong>
-						</p>
-					</td>
-					<td><p>09:00 a 18:30</p></td>
-					<td><p>49€</p></td>
-					<td><p>44€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:30 a 02:00</p></td>
-					<td><p>49€</p></td>
-					<td><p>44€</p></td>
-				</tr>
-
-				<tr>
-					<td rowspan="2" class="titulo_amarillo">
-						<p>
-							<strong>DOMINGOS Y FESTIVOS</strong> <sup>(3)</sup>
-						</p>
-					</td>
-					<td><p>09:00 a 18:30</p></td>
-					<td><p>45€</p></td>
-					<td><p>40€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:30 a 00:30</p></td>
-					<td><p>45€</p></td>
-					<td><p>40€</p></td>
-				</tr>
-
-				<tr>
-					<td rowspan="2" class="titulo_amarillo">
-						<p>
-							<strong>VÍSPERA FESTIVO</strong> <sup>(4)</sup>
-						</p>
-					</td>
-					<td><p>09:00 a 18:00</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:00 a 01:30</p></td>
-					<td><p>42€</p></td>
-					<td><p>38€</p></td>
-				</tr>
-
-			</table>
-
-			<div class="explicacion_tarifas">
-
-				<p>
-					<sup>(1)</sup> Para las reservas comprendidas en los siguientes
-					períodos consultar tarifas pues se consideran fechas especiales y
-					pueden sufrir algún cambio:
-				</p>
-
-				</br>
-				<ul>
-					<li>Navidades: del 21 de diciembre al 6 de enero.</li>
-					<li>Ferias de Valladolid</li>
-					<li>Semana Santa</li>
-					<li>Puente de la constitución</li>
-				</ul>
-
-				</br>
-				<p>
-					<sup>(2)</sup> La reserva del espacio deberá realizarse por un
-					mínimo de 3 horas. Los sábados el mínimo será de 4 horas.
-				</p>
-
-				</br>
-				<p>
-					<sup>(3)</sup> A los festivos en viernes, sábado o víspera de otro
-					festivo, se les aplicará la configuración de sábado.
-				</p>
-
-				</br>
-				<p>
-					<sup>(4)</sup> Se considerará víspera de festivo un día laborable
-					(de lunes a viernes) que vaya anterior a un festivo.
-				</p>
-
-			</div>
-
-			<a href="#formularioReserva" class="mostrar_reserva"><strong>Reservar</strong></a>
-
-		</div>
-
-		<!-- CALENDARIO GOOGLE -->
-
-		<!-- <div class="calendario ordenador">
-
-		 		<h3>Calendario</h3>
-
-		 		<iframe
-		 				src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=merenderosurbanos%40gmail.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid"
-		 		style="border-width: 0" frameborder="0" scrolling="no">
-		 		</iframe>
-
-		 		</div>
-
-		 		<div class="calendario movil">
-
-		 			<h3>Calendario</h3>
-
-		 			<iframe
-		 				src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=merenderosurbanos%40gmail.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid"
-		 		style="border-width: 0" frameborder="0" scrolling="no">
-				</iframe>
-
-		 </div> -->
-
-		<div class="texto_descriptivo">
-
-			<p>En merendalia queremos que todas tus reservas giren en torno a la
-				mesa. ¿Qué sería de nuestras reuniones, quedadas o reencuentros sin
-				la comida y la bebida como protagonistas? Hemos querido ser lo más
-				flexibles en lo que a esto se refiere. Existen tantas posibilidades
-				casi como opciones se te ocurran. De la comida podemos encargarnos
-				nosotros, o si lo prefieres puedes hacerlo tú:</p>
-			</br>
-			<p>
-				<strong>Te encargas TÚ:</strong>
-			</p>
-			</br>
-			<p>
-			
-			
-			<ul>
-				<li>- Puedes traerlo todo hecho de casa.</li>
-				<li>- Puedes usar nuestra cocina completamente equipada para cocinar
-					o preparar lo que os apetezca y hacer en Merendalia, ¡una jornada
-					gastronómica completa!</li>
-			</ul>
-			</p>
-			</br>
-			<p>
-				<strong>Nos encargamos NOSOTROS:</strong>
-			</p>
-			</br>
-			<p>Si lo que te pasa es que no tienes tiempo ni ganas de andar
-				preparando tú nada, esta es la mejor opción:</p>
-			</br>
-			<p>
-			
-			
-			<ul>
-				<li>- <u>Picoteo:</u> Te preparamos el típico picoteo para comer de
-					pie. Empanadas, tortillas, ensaladas, embutidos, quesos, postres…
-				</li>
-				<li>- <u>Menús ¡Calentar y Listo!</u>: Te preparamos un menú
-					completo. Te lo dejamos todo dispuesto para que solo tengas que,
-					como mucho servir el segundo plato. Entrantes, ensaladas, postres,
-					cafés, chupitos… No te preocupes por nada, ¡todo listo!
-				</li>
-			</ul>
-			</p>
-			</br>
-			<p>
-				<strong>Te encargas TÚ de unas cosas y NOSOTROS de otras:</strong>
-			</p>
-			</br>
-			<p>
-			
-			
-			<ul>
-				<li>- Traes unas cosas de casa o te las preparas aquí y te
-					preparamos el resto. Bebidas, los aperitivos, un segundo plato que
-					es más engorroso de preparar...</li>
-			</ul>
-			</p>
-			</br>
-			<p>Aquí te dejamos una serie de productos que puedes pedir, pero si
-				se te ocurre algún plato o guiso que no esté, ¡no dudes en
-				decírnoslo!, iremos actualizando este apartado mensualmente.</p>
-
-		</div>
-
-	</div>
-
-	<div class="explicacion productos">
-
-		<h3>PRODUCTOS</h3>
+		<h3>Catering</h3>
 
 		<p>
 			En esta sección podrás ver todos los productos que tenemos preparados
@@ -387,31 +123,48 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="recogida_producto_comida">
-					<p>
-						<img alt="recogida en local" src="../img/icono_para_llevar.png"
-							title="recogida en local">
-					</p>
-				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!-- 					<p> -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!-- 							title="recogida en local"> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
 			</li>
 
 			<li class="raciones">
 				<div class="texto_producto_comida">
-					<p>Patatas ali oli</p>
+					<p>Croquetas de jamón (6 ud.)</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>5,5 €</strong>
+						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="recogida_producto_comida">
-					<p>
-						<img alt="recogida en local" src="../img/icono_para_llevar.png"
-							title="recogida en local">
-					</p>
-				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!-- 					<p> -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!-- 							title="recogida en local"> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
 			</li>
 
+			<li class="raciones">
+				<div class="texto_producto_comida">
+					<p>Croquetas de bacalao (6 ud.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>9 €</strong>
+					</p>
+				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!-- 					<p> -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!-- 							title="recogida en local"> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
+			</li>
+			
 			<li class="raciones">
 				<div class="texto_producto_comida">
 					<p>Tortilla de patatas</p>
@@ -421,12 +174,12 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="recogida_producto_comida">
-					<p>
-						<img alt="recogida en local" src="../img/icono_para_llevar.png"
-							title="recogida en local">
-					</p>
-				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!-- 					<p> -->
+<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!-- 							title="recogida en local"> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
 			</li>
 
 			<li class="raciones">
@@ -469,7 +222,7 @@
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>12 €</strong>
+						<strong>15 €</strong>
 					</p>
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
@@ -642,7 +395,7 @@
 				</br>
 				<p>Canapé de jamón serrano con aceitunas negras</p>
 				</br>
-				<p>Canapé de esparragos gratinados</p>
+				<p>Canapé de esparragos trigueros a la plancha</p>
 				</br>
 				<p>Volován de sobrasada con azucar de caña</p>
 				</br>
@@ -662,6 +415,7 @@
 				<p>
 					<strong>35 €</strong>
 				</p>
+				</br>
 				<p>Bolitas de queso con pistacho</p>
 				</br>
 				<p>Tosta de ventresca de atún y reducción de vinagreta</p>
@@ -702,7 +456,7 @@
 
 				<li>
 					<div class="texto_producto_comida">
-						<p>Ensalada de ventresca a la vinagreta</p>
+						<p>Ensalada de ventresca aliñada con cocción de vinagreta</p>
 					</div>
 					<div class="precio_producto_comida">
 						<p>
@@ -717,6 +471,22 @@
 <!--     				</div> -->
 				</li>
 
+				<li>
+					<div class="texto_producto_comida">
+						<p>Ensalada de tomate, aguacate, albahaca y sardina ahumada</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>12 €</strong>
+						</p>
+					</div>
+<!-- 					<div class="recogida_producto_comida"> -->
+<!--     					<p> -->
+<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!--     							title="recogida en local"> -->
+<!--     					</p> -->
+<!--     				</div> -->
+				</li>
 				<li>
 					<div class="texto_producto_comida">
 						<p>Ensalada suprema (cecina, cebolla caramelizada, paté, piñones,
@@ -1234,40 +1004,6 @@
 
 			<li class="refrescos">
 				<div class="texto_producto_comida">
-					<p>Coca-cola Zero</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1 €</strong>
-					</p>
-				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Coca-cola Light</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1 €</strong>
-					</p>
-				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
 					<p>Fanta naranja</p>
 				</div>
 				<div class="precio_producto_comida">
@@ -1303,23 +1039,6 @@
 			<li class="refrescos">
 				<div class="texto_producto_comida">
 					<p>Tónica Schweppes</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>1 €</strong>
-					</p>
-				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
-			</li>
-
-			<li class="refrescos">
-				<div class="texto_producto_comida">
-					<p>Seven'Up</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1396,7 +1115,7 @@
 			<li class="cervezas">
 
 				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Cinco Estrellas</p>
+					<p>Cerveza Mahou</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1413,7 +1132,7 @@
 
 			<li class="cervezas">
 				<div class="texto_producto_comida">
-					<p>Cerveza Mahou Clásica</p>
+					<p>Cerveza Mahou Sin</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1428,6 +1147,23 @@
 <!--     			</div> -->
 			</li>
 
+			<li class="cervezas">
+				<div class="texto_producto_comida">
+					<p>Cerveza Mahou 0,0 Tostada</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>1 €</strong>
+					</p>
+				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!--     				<p> -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!--     						title="recogida en local"> -->
+<!--     				</p> -->
+<!--     			</div> -->
+			</li>
+			
 			<li class="vinos">
 				<div class="texto_producto_comida">
 					<p>
@@ -1441,6 +1177,23 @@
 				</div>
 			</li>
 
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Vino tinto D.O. Ribera Pinna Fidelis</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>10 €</strong>
+					</p>
+				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!--     				<p> -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!--     						title="recogida en local"> -->
+<!--     				</p> -->
+<!--     			</div> -->
+			</li>
+			
 			<li class="vinos">
 				<div class="texto_producto_comida">
 					<p>Vino tinto D.O. Ribera Carramimbre</p>
@@ -1460,11 +1213,11 @@
 
 			<li class="vinos">
 				<div class="texto_producto_comida">
-					<p>Vino tinto D.O. Ribera Pinna Fidelis</p>
+					<p>Vino tinto D.O. Ribera Viña Mayor</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>10 €</strong>
+						<strong>9,5 €</strong>
 					</p>
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
@@ -1474,14 +1227,31 @@
 <!--     				</p> -->
 <!--     			</div> -->
 			</li>
-
+			
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Vino tinto D.O. Cigales Félix Salas</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>7 €</strong>
+					</p>
+				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!--     				<p> -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!--     						title="recogida en local"> -->
+<!--     				</p> -->
+<!--     			</div> -->
+			</li>
+			
 			<li class="vinos">
 				<div class="texto_producto_comida">
 					<p>Vino blanco D.O. Ruedo Monasterio de Palazuelos</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>8 €</strong>
+						<strong>9 €</strong>
 					</p>
 				</div>
 <!-- 				<div class="recogida_producto_comida"> -->
@@ -1508,10 +1278,27 @@
 <!--     				</p> -->
 <!--     			</div> -->
 			</li>
+			
+			<li class="vinos">
+				<div class="texto_producto_comida">
+					<p>Vino Blanco Verdejo "Campos de Delibes"</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>7 €</strong>
+					</p>
+				</div>
+<!-- 				<div class="recogida_producto_comida"> -->
+<!--     				<p> -->
+<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
+<!--     						title="recogida en local"> -->
+<!--     				</p> -->
+<!--     			</div> -->
+			</li>
 
 			<li class="vinos">
 				<div class="texto_producto_comida">
-					<p>Sinfo</p>
+					<p>Vino Rosado D.O. Cigales Sinfo</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
@@ -1638,10 +1425,6 @@
 
 		</ul>
 
-	</div>
-
-	<div id="formularioReserva" class="contenedor_formulario">
-    	<?php include_once("formulario.php");?>	
 	</div>
 
 	<footer>
