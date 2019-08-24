@@ -104,9 +104,10 @@
 		</p>
 	</div>
 
+	<h3 class="seccion_fotos">Espacio</h3>
+
 	<div class="contenedor_fotos">
 
-						
 		<a class="fancybox" rel="group"
 				href="../img/fiesta_party.jpg" title='Fiesta amigos (Reserva de espacio)'><img
 				src="../img/fiesta_party.jpg" class="foto img_ordenador"
@@ -146,6 +147,12 @@
 				<img
 				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_movil"
 				title='Presentación de productos (ropa)' alt="Presentación de productos (ropa)" />
+		
+		</div>
+				
+		<h3 class="seccion_fotos">Catering</h3>
+		
+		<div class="contenedor_fotos">
 				
 		<a class="fancybox" rel="group"
 				href="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" title='Reunión mujeres emprendedoras'><img
@@ -202,6 +209,12 @@
 				<img
 				src="../img/_MG_5985.jpg" class="foto img_movil"
 				title='Sala a modo restaurante' alt="Sala a modo restaurante" />
+				
+		</div>
+				
+		<h3 class="seccion_fotos">Celebraciones</h3>
+		
+		<div class="contenedor_fotos">
 				
 		<a class="fancybox img_ordenador" rel="group"
 				href="../img/_MG_5989_opt.jpg" title='Sala a modo restaurante 2'><img

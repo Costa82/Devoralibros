@@ -633,6 +633,15 @@ h3.eventos_pasados {
 	width: 300px;
 }
 
+.mostrar_blog {
+	color: #ff3123;
+}
+
+.seccion_fotos {
+	text-align: center;
+	margin: 40px 0 20px;
+}
+
 /* PRODUCTOS
    ========================================================================= */
 .select_productos {
@@ -1328,7 +1337,6 @@ footer h3 {
 		margin-top: -20px;
 	}
 	.circulo {
-		border-radius: 250px;
 		text-align: center;
 		height: 250px;
 		width: 250px;
@@ -1519,12 +1527,12 @@ footer h3 {
 		max-width: 1000px;
 	}
 	.circulo {
-		border-radius: 300px;
+		border-radius: 250px;
 		text-align: center;
 		height: 300px;
 		width: 300px;
 		display: inline-block;
-		margin: 60px;
+		margin: 20px 60px;
 		font-size: 25px;
 	}
 	.avisoLegal_movil {
@@ -1551,7 +1559,7 @@ footer h3 {
 		padding: 20px;
 	}
 	.circulo {
-		margin: 70px;
+		margin: 20px 60px;
 	}
 	.evento_principal img {
 		height: 650px;
@@ -1607,7 +1615,7 @@ footer h3 {
 		max-width: 1600px;
 	}
 	.circulo {
-		margin: 20px;
+		margin: 60px;
 	}
 }
 
@@ -1620,8 +1628,8 @@ footer h3 {
 		width: 85px;
 	}
 	.circulo {
-		margin: 30px;
-		border-radius: 330px;
+		margin: 80px;
+		border-radius: 300px;
 		height: 330px;
 		width: 330px;
 	}

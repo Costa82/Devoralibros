@@ -7,7 +7,7 @@
                 
                 // index.php found
                 echo '<li><img class="logo_hamburguesa" src="img/sandwich con bolas blancas.png" alt="Merendalia"/></li>';
-            } else if (strpos($_SERVER['REQUEST_URI'], "galeria") !== false || strpos($_SERVER['REQUEST_URI'], "eventos") !== false || strpos($_SERVER['REQUEST_URI'], "reservas") !== false || strpos($_SERVER['REQUEST_URI'], "menus") !== false || strpos($_SERVER['REQUEST_URI'], "contacto") != false || strpos($_SERVER['REQUEST_URI'], "legal") !== false || strpos($_SERVER['REQUEST_URI'], "blog") !== false || strpos($_SERVER['REQUEST_URI'], "envio") !== false || strpos($_SERVER['REQUEST_URI'], "cookies") !== false) {
+            } else if (strpos($_SERVER['REQUEST_URI'], "galeria") !== false || strpos($_SERVER['REQUEST_URI'], "eventos") !== false || strpos($_SERVER['REQUEST_URI'], "espacio") !== false || strpos($_SERVER['REQUEST_URI'], "catering") !== false || strpos($_SERVER['REQUEST_URI'], "contacto") != false || strpos($_SERVER['REQUEST_URI'], "legal") !== false || strpos($_SERVER['REQUEST_URI'], "blog") !== false || strpos($_SERVER['REQUEST_URI'], "envio") !== false || strpos($_SERVER['REQUEST_URI'], "cookies") !== false) {
                 
                 // Está en alguna página que no es la principal
                 echo '<li><img class="logo_hamburguesa" src="../img/sandwich con bolas blancas.png" alt="Merendalia"/></li>';
@@ -36,8 +36,8 @@
                 // Estamos en alguna pagina que no sea la principal (Galeria, eventos, reservas, etc...)
                 echo '<li id="galeria"><a href="../galeria/" title="Galería">Galería</a></li>
                     <li id="eventos"><a href="../eventos/" title="Eventos">Eventos</a></li>
-                    <li id="reservas"><a href="../reservas-tarifas/" title="Reservas">Reservas/Tarifas</a></li>
-                    <li id="menus"><a href="../menus-privados/" title="Menús">Menús</a></li>
+                    <li id="espacio"><a href="../espacio/" title="Espacio">Espacio</a></li>
+                    <li id="menus"><a href="../catering/" title="Catering">Catering</a></li>
                     <li id="blogMerendalia"><a href="../blog-merendalia/" title="Blog Merendalia">Blog</a></li>
                     <li id="contacto"><a href="../contacto/" title="Contacto">Contacto</a></li>
                     <li id="legal"><a href="../aviso-legal-y-politica-de-privacidad/" title="Aviso Legal y política de privacidad">Aviso Legal y política de privacidad</a></li>';
@@ -46,8 +46,8 @@
                 // Estamos en la pagina principal (index)
                 echo '<li id="galeria"><a href="galeria/" title="Galería">Galería</a></li>
                     <li id="eventos"><a href="eventos/" title="Eventos">Eventos</a></li>
-                    <li id="reservas"><a href="reservas-tarifas/" title="Reservas">Reservas/Tarifas</a></li>
-                    <li id="menus"><a href="menus-privados/" title="Menús">Menús</a></li>
+                    <li id="espacio"><a href="espacio/" title="Espacio">Espacio</a></li>
+                    <li id="menus"><a href="catering/" title="Catering">Catering</a></li>
                     <li id="blogMerendalia"><a href="blog-merendalia/" title="Blog Merendalia">Blog</a></li>
                     <li id="contacto"><a href="contacto/" title="Contacto">Contacto</a></li>
                     <li id="legal"><a href="aviso-legal-y-politica-de-privacidad/" title="Aviso Legal y política de privacidad">Aviso Legal y política de privacidad</a></li>';

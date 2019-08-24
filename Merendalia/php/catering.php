@@ -54,8 +54,6 @@
 
 <div class="explicacion productos">
 
-		<h3>Catering</h3>
-
 		<p>
 			En esta sección podrás ver todos los productos que tenemos preparados
 			para aderezar tus reuniones y fiestas en Merendalia. Si no tienes
