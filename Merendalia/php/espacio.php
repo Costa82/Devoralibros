@@ -219,17 +219,80 @@
 				</p>
 
 			</div>
-
+		</div>
 <!-- 			<a href="#formularioReserva" class="mostrar_reserva"><strong>Reservar</strong></a> -->
 
-		</div>
+		<div class="texto_descriptivo">
 
-    	<div id="formularioReserva" class="contenedor_formulario">
-        	<?php include_once("formulario.php");?>	
-    	</div>
+			<p>En merendalia queremos que todas tus reservas giren en torno a la
+				mesa. ¿Qué sería de nuestras reuniones, quedadas o reencuentros sin
+				la comida y la bebida como protagonistas? Hemos querido ser lo más
+				flexibles en lo que a esto se refiere. Existen tantas posibilidades
+				casi como opciones se te ocurran. De la comida podemos encargarnos
+				nosotros, o si lo prefieres puedes hacerlo tú:</p>
+			</br>
+			<p>
+				<strong>Te encargas TÚ:</strong>
+			</p>
+			</br>
+			<p>
+			
+			
+			<ul>
+				<li>- Puedes traerlo todo hecho de casa.</li>
+				<li>- Puedes usar nuestra cocina completamente equipada para cocinar
+					o preparar lo que os apetezca y hacer en Merendalia, ¡una jornada
+					gastronómica completa!</li>
+			</ul>
+			</p>
+			</br>
+			<p>
+				<strong>Nos encargamos NOSOTROS:</strong>
+			</p>
+			</br>
+			<p>Si lo que pasa es que no tienes tiempo ni ganas de andar
+				preparando nada, esta es la mejor opción:</p>
+			</br>
+			<p>
+			
+			
+			<ul>
+				<li>- <u>Picoteo:</u> Te preparamos una mer para comer de
+					pie. Empanadas, tortillas, ensaladas, embutidos, quesos, postres…
+					Esta opción es
+				</li>
+				<li>- <u>Menús ¡Calentar y Listo!</u>: Te preparamos un menú
+					completo. Te lo dejamos todo dispuesto para que solo tengas que,
+					como mucho servir el segundo plato. Entrantes, ensaladas, postres,
+					cafés, chupitos… No te preocupes por nada, ¡todo listo!
+					Para mas información llamad y preguntad por los calentar y listo.
+				</li>
+			</ul>
+			</p>
+			</br>
+			<p>
+				<strong>Te encargas TÚ de unas cosas y NOSOTROS de otras:</strong>
+			</p>
+			</br>
+			<p>
+			
+			
+			<ul>
+				<li>- Traes unas cosas de casa o te las preparas aquí y te
+					preparamos el resto. Bebidas, los aperitivos, el postre...</li>
+			</ul>
+			</p>
+			
+
+		</div>
+		
 
 	</div>
 
+	<div id="formularioReserva" class="contenedor_formulario">
+        	<?php include_once("formulario.php");?>	
+    </div>
+	
 	<footer>
         <?php include_once("footer.php");?>        
     </footer>
