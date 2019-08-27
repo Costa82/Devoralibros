@@ -439,6 +439,7 @@ h3.titulo_reservas {
 
 .formulario {
 	width: 100%;
+	max-width: 700px;
 	margin: 0 auto;
 	font-size: 15px;
 }
@@ -1435,6 +1436,7 @@ footer h3 {
 		font-size: 35px;
 	}
 	.formulario {
+		width: 70%;
 		margin: 0 auto;
 		font-size: 20px;
 	}
