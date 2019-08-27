@@ -82,20 +82,22 @@
 
 	<div class="explicacion">
 		<p>
-			En esta sección queremos presentarte nuestro local Merendalia. </br>Situado
-			en un lugar céntrico, al lado de la Iglesia de la Antigua, nacemos
-			para crear un espacio de reunión y encuentro, de celebración y
-			banquete, de risas y diversión. </br> </br> <strong>¿Qué te ofrece
-				Merendalia?</strong> </br>
-			</br>Una sala-comedor para hasta 24 personas sentadas y hasta 35 - 40 de pie (dependiendo de la
-			disposición que le demos o que queráis, quitamos o ponemos mesas, dispuestas de una manera o de otra...); 
-			una zona infantil para hasta
-			6 niños, en la cual los pequeños de la casa podrán disfrutar a la vez
-			que tú lo haces también; una cocina industrial con todos los
-			utensilios necesarios, para que puedas cocinar para tu gente (horno
-			grande, inducción, campana extractora, microondas, neveras,
-			lavavajillas cafetera, menaje, etc.); baño adaptado para personas de
-			movilidad reducida y con cambiador de bebés. Te dejamos el  <a
+			En esta sección os presentamos Merendalia, situado en un lugar céntrico, al lado de la Iglesia de la Antigua.
+			Un espacio de celebración y banquete, de reunión, encuentro, de risas y diversión. </br> </br> 
+			
+			<strong> ¿Qué te ofrece Merendalia?</strong> </br>
+			
+			</br>Sala-comedor para hasta 24 personas sentadas y hasta 35 - 40 de pie. Dependiendo de la
+			disposición que demos o queráis. Quitamos o añadimos mesas, dispuestas de una manera u otra. </br>
+			Zona infantil de bolas, para hasta 6 niños, en la que los pequeños de la casa podrán disfrutar a la vez
+			que tú lo haces también.</br> 
+			Cocina industrial con todo lo necesario, para que puedas cocinar a tu gente (horno
+			grande, inducción, campana, microondas, neveras,
+			lavavajillas, cafetera, menaje, etc.)</br>
+			Cátering propio para que no tengas que hacer nada y lo encuentres todo dispuesto a la llegada. La mejor manera de redondear
+			tu celebración o fiesta.
+			Baño adaptado PMR, con cambiador de bebés. </br>
+			Te dejamos el  <a
 				href='../blog-merendalia/#que_es_merendalia' class='mostrar_blog'><strong><i>link</i></strong></a> de
 			nuestra entrada de blog donde explicamos un poco mejor cómo puedes 
 			disfrutar en merendalia.</br></br>
@@ -106,7 +108,7 @@
 		</p>
 	</div>
 
-	<h3 class="seccion_fotos">Espacio</h3>
+	<h3 class="seccion_fotos">Celebraciones</h3>
 
 	<div class="contenedor_fotos">
 	
@@ -141,6 +143,14 @@
 		<div class="texto_leerMas">
 				
     		<a class="fancybox" rel="group"
+    				href="../img/celebraciones/chico_globo.jpg" title='Celebracion con decoracion'><img
+    				src="../img/celebraciones/chico_globo.jpg" class="foto img_ordenador"
+    				title='Celebracion con decoracion' alt="Celebracion con decoracion" /></a>
+    				<img
+    				src="../img/celebraciones/chico_globo.jpg" class="foto img_movil"
+    				title='Celebracion con decoracion' alt="Celebracion con decoracion" />
+			
+			<a class="fancybox" rel="group"
     				href="../img/felicidades_cumpleaños.jpg" title='Decoración para cumpleaños'><img
     				src="../img/felicidades_cumpleaños.jpg" class="foto img_ordenador"
     				title='Decoración para cumpleaños' alt="Decoración para cumpleaños" /></a>
@@ -163,7 +173,56 @@
     				<img
     				src="../img/merendalia-reuniones-amigos-celebración-ropa.jpg" class="foto img_movil"
     				title='Presentación de productos (ropa)' alt="Presentación de productos (ropa)" />
+					
+			<a class="fancybox" rel="group"
+    				href="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" title='Reunión mujeres emprendedoras'><img
+    				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_ordenador"
+    				title='Reunión mujeres emprendedoras' alt="Reunión mujeres emprendedoras" /></a>
+    				<img
+    				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_movil"
+    				title='Reunión mujeres emprendedoras' alt="Reunión mujeres emprendedoras" />
 				
+			<a class="fancybox" rel="group"
+    				href="../img/celebraciones/copas.jpg" title='Unos Gintonic'><img
+    				src="../img/celebraciones/copas.jpg" class="foto img_ordenador"
+    				title='Unos Gintonic' alt="Unos Gintonic" /></a>
+    				<img
+    				src="../img/celebraciones/copas.jpg" class="foto img_movil"
+    				title='Unos Gintonic' alt="Unos Gintonic" />
+				
+			<a class="fancybox" rel="group"
+    				href="../img/celebraciones/gente.jpg" title='Gente hablando'><img
+    				src="../img/celebraciones/gente.jpg" class="foto img_ordenador"
+    				title='Gente hablando' alt="Gente hablando" /></a>
+    				<img
+    				src="../celebraciones/gente.jpg" class="foto img_movil"
+    				title='Gente hablando' alt="Gente hablando" />
+			
+			<a class="fancybox" rel="group"
+    				href="../img/celebraciones/gente_cervezas.jpg" title='Compartiendo historias'><img
+    				src="../img/celebraciones/gente_cervezas.jpg" class="foto img_ordenador"
+    				title='Compartiendo historias' alt="Compartiendo historias" /></a>
+    				<img
+    				src="../img/celebraciones/gente_cervezas.jpg" class="foto img_movil"
+    				title='Compartiendo historias' alt="Compartiendo historias" />
+			
+			<a class="fancybox" rel="group"
+    				href="../img/celebraciones/photocall_friends.jpg" title='Photocall Friends'><img
+    				src="../img/celebraciones/photocall_friends.jpg" class="foto img_ordenador"
+    				title='Photocall Friends' alt="Photocall Friends" /></a>
+    				<img
+    				src="../img/celebraciones/photocall_friends.jpg" class="foto img_movil"
+    				title='Photocall Friends' alt="Photocall Friends" />
+					
+			<a class="fancybox" rel="group"
+    				href="../img/celebraciones/vaquero.jpg" title='J.J. Vaquero & amigos'><img
+    				src="../img/celebraciones/vaquero.jpg" class="foto img_ordenador"
+    				title='J.J. Vaquero & amigos' alt="Vaquero" /></a>
+    				<img
+    				src="../img/celebraciones/vaquero.jpg" class="foto img_movil"
+    				title='J.J. Vaquero & amigos' alt="J.J. Vaquero & amigos" />
+			
+					
 		</div>
 		
 	    <!-- enlace de 'ver menos...' para ocultar las imágenes -->
@@ -176,14 +235,13 @@
 	<div class="contenedor_fotos">
 	
 		<div class="seccion_visible">
-				
-    		<a class="fancybox" rel="group"
-    				href="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" title='Reunión mujeres emprendedoras'><img
-    				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_ordenador"
-    				title='Reunión mujeres emprendedoras' alt="Reunión mujeres emprendedoras" /></a>
+			<a class="fancybox" rel="group"
+    				href="../img/canapes_especiales.jpg" title='Bandeja de canapés especiales'><img
+    				src="../img/canapes_especiales.jpg" class="foto img_ordenador"
+    				title='Bandeja de canapés especiales' alt="Bandeja de canapés especiales" /></a>
     				<img
-    				src="../img/merendalia-reuniones-amigos-celebración-presentación.jpg" class="foto img_movil"
-    				title='Reunión mujeres emprendedoras' alt="Reunión mujeres emprendedoras" />
+    				src="../img/canapes_especiales.jpg" class="foto img_movil"
+    				title='Bandeja de canapés especiales' alt="Bandeja de canapés especiales" />	
     				
     		<a class="fancybox" rel="group"
     				href="../img/Canapés.jpg" title='Catering Merendalia'><img
@@ -211,47 +269,70 @@
     				<img
     				src="../img/tartaletas.jpg" class="foto img_movil"
     				title='Catering Merendalia' alt="Catering Merendalia" />
-    				
+    		
+			<a class="fancybox" rel="group"
+    				href="../img/racion de queso.jpg" title='Racion de queso curado'><img
+    				src="../img/racion de queso.jpg" class="foto img_ordenador"
+    				title='Racion de queso curado' alt="Racion de queso curado" /></a>
+    				<img
+    				src="../img/racion de queso.jpg" class="foto img_movil"
+    				title='Racion de queso curado' alt="Racion de queso curado" />
+			
+			<a class="fancybox" rel="group"
+    				href="../img/Empanada.jpg" title='Empanada'><img
+    				src="../img/Empanada.jpg" class="foto img_ordenador"
+    				title='Empanada' alt="Empanada" /></a>
+    				<img
+    				src="../img/Empanada.jpg" class="foto img_movil"
+    				title='Empanada' alt="Empanada" />
+
+			<a class="fancybox" rel="group"
+    				href="../img/Croquetas.jpg" title='Croquetas'><img
+    				src="../img/Croquetas.jpg" class="foto img_ordenador"
+    				title='Croquetas' alt="Croquetas" /></a>
+    				<img
+    				src="../img/Croquetas.jpg" class="foto img_movil"
+    				title='Croquetas' alt="Croquetas" />
+					
     		<a class="fancybox" rel="group"
-    				href="../img/Catering.jpg" title='Catering Merendalia'><img
-    				src="../img/Catering.jpg" class="foto img_ordenador"
-    				title='Catering Merendalia' alt="Catering Merendalia" /></a>
+    				href="../img/mini burguer horizontal.jpg" title='Mini hamburguesa'><img
+    				src="../img/mini burguer horizontal.jpg" class="foto img_ordenador"
+    				title='Mini hamburguesa' alt="Mini hamburguesa" /></a>
     				<img
-    				src="../img/Catering.jpg" class="foto img_movil"
-    				title='Catering Merendalia' alt="Catering Merendalia" />
-    							
-    		<a class="fancybox" rel="group"
-    				href="../img/_MG_6019_opt.jpg" title='Parque de bolas'><img
-    				src="../img/_MG_6019.jpg" class="foto img_ordenador"
-    				title='Parque de bolas' alt="Parque de bolas" /></a>
+    				src="../img/mini burguer horizontal.jpg" class="foto img_movil"
+    				title='Mini hamburguesa' alt="Mini hamburguesa" />
+			
+			<a class="fancybox" rel="group"
+    				href="../img/guacamole.jpg" title='Ración de guacamole casero'><img
+    				src="../img/guacamole.jpg" class="foto img_ordenador"
+    				title='Ración de guacamole casero' alt="Ración de guacamole casero" /></a>
     				<img
-    				src="../img/_MG_6019.jpg" class="foto img_movil"
-    				title='Parque de bolas' alt="Parque de bolas" />
-    				
-    		<a class="fancybox" rel="group"
-    				href="../img/_MG_6020_opt.jpg" title='Certificación y normas del parque de bolas'><img
-    				src="../img/_MG_6020.jpg" class="foto img_ordenador"
-    				title='Certificación y normas del parque de bolas' alt="Certificación y normas del parque de bolas" /></a>
+    				src="../img/guacamole.jpg" class="foto img_movil"
+    				title='Ración de guacamole casero' alt="Ración de guacamole casero" />	
+					
+			<a class="fancybox" rel="group"
+    				href="../img/mousse_catering.jpg" title='Mousse de limón con frutos rojos'><img
+    				src="../img/mousse_catering.jpg" class="foto img_ordenador"
+    				title='Mousse de limón con frutos rojos' alt="Mousse de limón con frutos rojos" /></a>
     				<img
-    				src="../img/_MG_6020.jpg" class="foto img_movil"
-    				title='Certificación y normas del parque de bolas' alt="Certificación y normas del parque de bolas" />
-    				
-    		<a class="fancybox img_ordenador" rel="group"
-    				href="../img/_MG_5985_opt.jpg" title='Sala a modo restaurante'><img
-    				src="../img/_MG_5985.jpg" class="foto img_ordenador"
-    				title='Sala a modo restaurante' alt="Sala a modo restaurante" /></a>
+    				src="../img/mousse_catering.jpg" class="foto img_movil"
+    				title='Mousse de limón con frutos rojos' alt="Mousse de limón con frutos rojos" />
+					
+			<a class="fancybox" rel="group"
+    				href="../img/tarta de zanahoria.jpg" title='Tarta de zanahoria con crema de queso y nueces'><img
+    				src="../img/tarta de zanahoria.jpg" class="foto img_ordenador"
+    				title='Tarta de zanahoria con crema de queso y nueces' alt="Tarta de zanahoria con crema de queso y nueces" /></a>
     				<img
-    				src="../img/_MG_5985.jpg" class="foto img_movil"
-    				title='Sala a modo restaurante' alt="Sala a modo restaurante" />
-    				
-    		</div>
+    				src="../img/tarta de zanahoria.jpg" class="foto img_movil"
+    				title='Tarta de zanahoria con crema de queso y nueces' alt="Tarta de zanahoria con crema de queso y nueces" />
+    	</div>
 		
 	    <!-- enlace de 'ver menos...' para ocultar las imágenes -->
 		<span class="leerMenos"><strong>Ver menos...</strong></span>
 				
 		</div>
 				
-		<h3 class="seccion_fotos">Celebraciones</h3>
+		<h3 class="seccion_fotos">Espacio</h3>
 		
 		<div class="contenedor_fotos">
 		
@@ -348,6 +429,30 @@
     				src="../img/9.jpg" class="foto img_movil"
     				title='Baño adaptado PMR' alt="Baño adaptado PMR" />
 				
+			<a class="fancybox" rel="group"
+    				href="../img/_MG_6019_opt.jpg" title='Parque de bolas'><img
+    				src="../img/_MG_6019.jpg" class="foto img_ordenador"
+    				title='Parque de bolas' alt="Parque de bolas" /></a>
+    				<img
+    				src="../img/_MG_6019.jpg" class="foto img_movil"
+    				title='Parque de bolas' alt="Parque de bolas" />
+    				
+    		<a class="fancybox" rel="group"
+    				href="../img/_MG_6020_opt.jpg" title='Certificación y normas del parque de bolas'><img
+    				src="../img/_MG_6020.jpg" class="foto img_ordenador"
+    				title='Certificación y normas del parque de bolas' alt="Certificación y normas del parque de bolas" /></a>
+    				<img
+    				src="../img/_MG_6020.jpg" class="foto img_movil"
+    				title='Certificación y normas del parque de bolas' alt="Certificación y normas del parque de bolas" />
+    				
+    		<a class="fancybox img_ordenador" rel="group"
+    				href="../img/_MG_5985_opt.jpg" title='Sala a modo restaurante'><img
+    				src="../img/_MG_5985.jpg" class="foto img_ordenador"
+    				title='Sala a modo restaurante' alt="Sala a modo restaurante" /></a>
+    				<img
+    				src="../img/_MG_5985.jpg" class="foto img_movil"
+    				title='Sala a modo restaurante' alt="Sala a modo restaurante" />
+					
 		</div>
 		
 	    <!-- enlace de 'ver menos...' para ocultar las imágenes -->
