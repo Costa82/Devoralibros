@@ -240,9 +240,9 @@
 			
 			<ul>
 				<li>- Puedes traerlo todo hecho de casa.</li>
-				<li>- Puedes usar nuestra cocina completamente equipada para cocinar
-					o preparar lo que os apetezca y hacer en Merendalia, ¡una jornada
-					gastronómica completa!</li>
+				<li>- Puedes usar la cocina equipada para
+					  preparar lo que os apetezca y hacer en Merendalia, ¡una jornada
+					  gastronómica completa!</li>
 			</ul>
 			</p>
 			</br>
@@ -250,22 +250,21 @@
 				<strong>Nos encargamos NOSOTROS:</strong>
 			</p>
 			</br>
-			<p>Si lo que pasa es que no tienes tiempo ni ganas de andar
+			<p>Si no tienes tiempo ni ganas de andar
 				preparando nada, esta es la mejor opción:</p>
 			</br>
 			<p>
 			
 			
 			<ul>
-				<li>- <u>Picoteo:</u> Te preparamos una mer para comer de
-					pie. Empanadas, tortillas, ensaladas, embutidos, quesos, postres…
-					Esta opción es
+				<li>- <u>Picoteo:</u> Te preparamos un picoteo, almuerzo, merienda... 
+   				Empanadas, tortillas, ensaladas, embutidos, quesos, postres...
 				</li>
 				<li>- <u>Menús ¡Calentar y Listo!</u>: Te preparamos un menú
 					completo. Te lo dejamos todo dispuesto para que solo tengas que,
 					como mucho servir el segundo plato. Entrantes, ensaladas, postres,
 					cafés, chupitos… No te preocupes por nada, ¡todo listo!
-					Para mas información llamad y preguntad por los calentar y listo.
+					Llamanos y te informaremos de todo.
 				</li>
 			</ul>
 			</p>
