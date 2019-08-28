@@ -13,9 +13,7 @@ $(document).ready(function() {
 			$('.canapes')[ ($(this).val() == 'canapes' || $(this).val() == 'entrantes' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
 			$('.raciones')[ ($(this).val() == 'raciones' || $(this).val() == 'entrantes' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
 			$('.ensaladas')[ ($(this).val() == 'ensaladas' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
-	        $('.guisos')[ ($(this).val() == 'guisos' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
 	        $('.merienda')[ ($(this).val() == 'merienda' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
 	        $('.postres')[ ($(this).val() == 'postres' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
-	        $('.menusCalentarListo')[ ($(this).val() == 'menusCalentarListo' || $(this).val() == 'todo') ? 'show' : 'hide' ]()
         });
 });
