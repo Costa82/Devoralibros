@@ -251,14 +251,14 @@
 			</p>
 			</br>
 			<p>Si no tienes tiempo ni ganas de andar
-				preparando nada, esta es la mejor opción:</p>
+				preparando, esta es la mejor opción:</p>
 			</br>
 			<p>
 			
 			
 			<ul>
 				<li>- <u>Picoteo:</u> Te preparamos un picoteo, almuerzo, merienda... 
-   				Empanadas, tortillas, ensaladas, embutidos, quesos, postres...
+   				Empanadas, canapés, tortillas, ensaladas, embutidos, quesos, postres...
 				</li>
 				<li>- <u>Menús ¡Calentar y Listo!</u>: Te preparamos un menú
 					completo. Te lo dejamos todo dispuesto para que solo tengas que,
