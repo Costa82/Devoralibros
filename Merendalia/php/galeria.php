@@ -111,7 +111,6 @@
 	<h3 class="seccion_fotos">Celebraciones</h3>
 
 	<div class="contenedor_fotos">
-	
 		<div class="seccion_visible">
 
     		<a class="fancybox" rel="group"
@@ -319,11 +318,11 @@
     				title='Mousse de limón con frutos rojos' alt="Mousse de limón con frutos rojos" />
 					
 			<a class="fancybox" rel="group"
-    				href="../img/tarta de zanahoria.jpg" title='Tarta de zanahoria con crema de queso y nueces'><img
-    				src="../img/tarta de zanahoria.jpg" class="foto img_ordenador"
+    				href="../img/Tarta de zanahoria.jpg" title='Tarta de zanahoria con crema de queso y nueces'><img
+    				src="../img/Tarta de zanahoria.jpg" class="foto img_ordenador"
     				title='Tarta de zanahoria con crema de queso y nueces' alt="Tarta de zanahoria con crema de queso y nueces" /></a>
     				<img
-    				src="../img/tarta de zanahoria.jpg" class="foto img_movil"
+    				src="../img/Tarta de zanahoria.jpg" class="foto img_movil"
     				title='Tarta de zanahoria con crema de queso y nueces' alt="Tarta de zanahoria con crema de queso y nueces" />
     	</div>
 		
