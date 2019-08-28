@@ -55,12 +55,8 @@
 <div class="explicacion productos">
 
 		<p>
-			Si no tienes tiempo para preparar nada, cuando reserves el espacio, podrás
-			contratarnos productos de esta sección y ¡ser el anfitrión que
-			querías ser sin necesidad de mover un dedo! </br> </br> De todas
-			formas, como seguro que tienes alguna idea que no está en esta
-			sección, ¡no dudes en llamarnos para ver si podemos incluirla!
-			Queremos que disfrutes y estés a gusto.
+			Si no tienes tiempo para preparar las cosas, puedes solicitar productos
+            de nuestro cátering y ¡ser el anfitrión que quieres ser sin necesidad de mover un dedo!
 		</p>
 
 	</div>
