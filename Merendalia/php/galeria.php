@@ -194,7 +194,7 @@
     				src="../img/celebraciones/gente.jpg" class="foto img_ordenador"
     				title='Gente hablando' alt="Gente hablando" /></a>
     				<img
-    				src="..img/celebraciones/gente.jpg" class="foto img_movil"
+    				src="../img/celebraciones/gente.jpg" class="foto img_movil"
     				title='Gente hablando' alt="Gente hablando" />
 			
 			<a class="fancybox" rel="group"
