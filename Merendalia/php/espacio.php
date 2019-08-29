@@ -225,24 +225,23 @@
 		<div class="texto_descriptivo">
 
 			<p>En merendalia queremos que todas tus reservas giren en torno a la
-				mesa. ¿Qué sería de nuestras reuniones, quedadas o reencuentros sin
-				la comida y la bebida como protagonistas? Hemos querido ser lo más
-				flexibles en lo que a esto se refiere. Existen tantas posibilidades
-				casi como opciones se te ocurran. De la comida podemos encargarnos
-				nosotros, o si lo prefieres puedes hacerlo tú:</p>
+				mesa. ¿Qué sería de nuestras reuniones sin
+				la comida y la bebida como protagonistas? Podeis traeros las cosas de casa, encargarnoslo a nosotros
+				o una combinación de ambas.
+				</p>
 			</br>
 			<p>
-				<strong>Te encargas TÚ:</strong>
+				<strong>Os encargáis VOSOTROS:</strong>
 			</p>
 			</br>
 			<p>
 			
 			
 			<ul>
-				<li>- Puedes traerlo todo hecho de casa.</li>
-				<li>- Puedes usar la cocina equipada para
+				<li>- Puedes traerlo todo hecho de casa o usar la cocina equipada para
 					  preparar lo que os apetezca y hacer en Merendalia, ¡una jornada
-					  gastronómica completa!</li>
+					  gastronómica completa!
+				</li>
 			</ul>
 			</p>
 			</br>
@@ -258,30 +257,53 @@
 			
 			<ul>
 				<li>- <u>Picoteo:</u> Te preparamos un picoteo, almuerzo, merienda... 
-   				Empanadas, canapés, tortillas, ensaladas, embutidos, quesos, postres...
+   				Empanadas, canapés, tortillas, ensaladas, embutidos, quesos, postres...</br>
+				Visita la sección <a href='../catering/'>cátering</a>
+				y ve algunos de nuestros productos en la 
+				<a href='../galeria/'>galería</a> de imágenes.
+				
 				</li>
-				<li>- <u>Menús ¡Calentar y Listo!</u>: Te preparamos un menú
-					completo. Te lo dejamos todo dispuesto para que solo tengas que,
-					como mucho servir el segundo plato. Entrantes, ensaladas, postres,
-					cafés, chupitos… No te preocupes por nada, ¡todo listo!
-					Llamanos y te informaremos de todo.
+				<li>- <u>Menús ¡Calentar y Listo!</u>: Se prepara un menú
+					completo. Lo dejamos todo dispuesto para que a lo sumo tengais que
+					servir un segundo plato. Entrantes, ensaladas, postres,
+					cafés, chupitos… No os preocupeis por nada, ¡todo listo!
+					Llamádnos y os informaremos de todo. Es la opción mas completa y original.
 				</li>
 			</ul>
 			</p>
 			</br>
 			<p>
-				<strong>Te encargas TÚ de unas cosas y NOSOTROS de otras:</strong>
+				<strong>VOSOTROS de unas cosas y NOSOTROS de otras:</strong>
 			</p>
 			</br>
 			<p>
-			
-			
 			<ul>
-				<li>- Traes unas cosas de casa o te las preparas aquí y te
-					preparamos el resto. Bebidas, los aperitivos, el postre...</li>
+				<li>- Traéis unas cosas de casa o las preparais aquí y del resto nos encargamos nosotros. Bebidas, los aperitivos, el postre...</li>
 			</ul>
 			</p>
-			
+<!--			</br>
+			</br>
+			<p>
+				<strong>Servicios adicionales</strong>
+			</p>
+			</br>
+
+			<p>
+			<ul>
+				<li> Pedid información al hacer la reserva sobre alguno de nuestros servicios y os informaremos ampliamente. Podéis disponer de:</li>
+				</br>
+				<li>- Karaoke</li>
+				<li>- Escanciadores (ISIDRINES) y sidra</li>
+				<li>- BAR </li>
+				<li>- Decoración </li>
+				<li>- Fotografa </li>
+				<li>- Photocall </li>
+				<li>- Animador/es infantiles </li>
+			    <li>- Mago/Monologuista </li>
+
+			</ul>
+			</p>
+-->
 
 		</div>
 		
