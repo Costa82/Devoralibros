@@ -520,7 +520,7 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>13,5 €</strong>
+							<strong>15 €</strong>
 						</p>
 					</div>
 <!-- 					<div class="recogida_producto_comida"> -->
