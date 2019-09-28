@@ -113,12 +113,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -130,12 +129,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -147,12 +145,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 			
 			<li class="raciones">
@@ -164,12 +161,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -181,12 +177,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 
 			<li class="raciones">
@@ -198,12 +193,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 
 
@@ -218,12 +212,11 @@
 						<strong>25 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 			
 			<li class="raciones">
@@ -235,29 +228,11 @@
 						<strong>15 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
-			</li>
-			
-			<li class="raciones">
-				<div class="texto_producto_comida">
-					<p></p>
-				</div>
-				<div class="precio_producto_comida">
+				<div class="recogida_producto_comida">
 					<p>
-						<strong></strong>
+						<i class="fa fa-image"></i>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
 			</li>
 			
 			<li class="raciones">
@@ -269,66 +244,13 @@
 						<strong>12 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
 			</li>
 			
-			<li class="canapes">
-				<div class="texto_producto_comida">
-					<p>Bombón de Foie (12 ud.)</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>24 €</strong>
-					</p>
-				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
-			</li>
-
-			<li class="canapes">
-				<div class="texto_producto_comida">
-					<p>Mini Conos de tomate con brandada de bacalao (12 uds.)</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>10,5 €</strong>
-					</p>
-				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
-			</li>
-
-			<li class="canapes">
-				<div class="texto_producto_comida">
-					<p>Mini hamburguesa con queso cabra, tomate seco, cebolla caramelizada... (12 uds.)</p>
-				</div>
-				<div class="precio_producto_comida">
-					<p>
-						<strong>22 €</strong>
-					</p>
-				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!-- 					<p> -->
-<!-- 						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!-- 							title="recogida en local"> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
-			</li>
-			
-
 			<li class="canapes">
 				<div class="texto_producto_comida">
 					<p>
@@ -341,6 +263,55 @@
 					</p>
 				</div>
 			</li>
+			
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Bombón de Foie (12 ud.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>24 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Mini Conos de tomate con brandada de bacalao (12 uds.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>10,5 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
+			</li>
+
+			<li class="canapes">
+				<div class="texto_producto_comida">
+					<p>Mini hamburguesa con queso cabra, tomate seco, cebolla caramelizada... (12 uds.)</p>
+				</div>
+				<div class="precio_producto_comida">
+					<p>
+						<strong>22 €</strong>
+					</p>
+				</div>
+				<div class="recogida_producto_comida">
+					<p>
+						<i class="fa fa-image"></i>
+					</p>
+				</div>
+			</li>
+			
 
 			<li class="canapes">
 				<div class="texto_producto_comida">
@@ -426,12 +397,11 @@
 							<strong>6 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -443,12 +413,11 @@
 							<strong>12 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -460,12 +429,11 @@
 							<strong>12 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 				<li>
 					<div class="texto_producto_comida">
@@ -477,12 +445,11 @@
 							<strong>14 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 			</ul>
@@ -506,12 +473,11 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -523,12 +489,11 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -540,12 +505,11 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -557,12 +521,11 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -574,12 +537,11 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 				<li>
@@ -591,12 +553,11 @@
 							<strong>15 €</strong>
 						</p>
 					</div>
-<!-- 					<div class="recogida_producto_comida"> -->
-<!--     					<p> -->
-<!--     						<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     							title="recogida en local"> -->
-<!--     					</p> -->
-<!--     				</div> -->
+					<div class="recogida_producto_comida">
+    					<p>
+    						<i class="fa fa-image"></i>
+    					</p>
+    				</div>
 				</li>
 
 			</ul>
@@ -688,12 +649,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -705,12 +665,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -722,12 +681,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="refrescos">
@@ -739,12 +697,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="aguas">
@@ -769,12 +726,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="aguas">
@@ -786,12 +742,11 @@
 						<strong>1,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="cervezas">
@@ -816,12 +771,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="cervezas">
@@ -833,12 +787,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="cervezas">
@@ -850,12 +803,11 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 			
 			<li class="vinos">
@@ -880,12 +832,11 @@
 						<strong>10 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 			
 			<li class="vinos">
@@ -897,12 +848,11 @@
 						<strong>9,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
@@ -914,12 +864,11 @@
 						<strong>9,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 			
 			<li class="vinos">
@@ -931,12 +880,11 @@
 						<strong>7 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 			
 			<li class="vinos">
@@ -948,12 +896,11 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 			
 			<li class="vinos">
@@ -965,12 +912,11 @@
 						<strong>7 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="vinos">
@@ -982,12 +928,11 @@
 						<strong>8 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="licores">
@@ -1012,12 +957,11 @@
 						<strong>19 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="licores">
@@ -1029,12 +973,11 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="licores">
@@ -1046,12 +989,11 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="recogida en local" src="../img/icono_para_llevar.png" -->
-<!--     						title="recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="licores">
@@ -1063,12 +1005,11 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="no recogida en local" src="../img/no_icono_para_llevar.png" -->
-<!--     						title="no recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 			<li class="hielos">
@@ -1092,12 +1033,11 @@
 						<strong>1,5 €</strong>
 					</p>
 				</div>
-<!-- 				<div class="recogida_producto_comida"> -->
-<!--     				<p> -->
-<!--     					<img alt="no recogida en local" src="../img/no_icono_para_llevar.png" -->
-<!--     						title="no recogida en local"> -->
-<!--     				</p> -->
-<!--     			</div> -->
+				<div class="recogida_producto_comida">
+    				<p>
+    					<i class="fa fa-image"></i>
+    				</p>
+    			</div>
 			</li>
 
 		</ul>
