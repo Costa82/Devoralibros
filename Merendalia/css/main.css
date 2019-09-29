@@ -642,7 +642,7 @@ h3.eventos_pasados {
 	margin: 40px 0 20px;
 }
 
-/* PRODUCTOS
+/* CATERING
    ========================================================================= */
 .select_productos {
 	margin: 30px auto;
@@ -698,15 +698,10 @@ ul.lista_productos_comida li {
 	font-size: 22px;
 }
 
-.img_producto, .texto_producto, .precio_producto, .texto_producto_comida, 
-.precio_producto_comida, .recogida_producto_comida {
+.texto_producto, .precio_producto, .texto_producto_comida, 
+.precio_producto_comida, .icono_imagen {
 	margin-top: 15px;
 	display: inline-block;
-}
-
-.img_producto {
-	width: 30%;
-	text-align: center;
 }
 
 .texto_producto {
@@ -731,32 +726,29 @@ ul.lista_productos_comida li {
 	padding-right: 5px;
 }
 
-.recogida_producto_comida {
+.imagen_producto_oculto {
+	position: absolute;
+	display: none;
+	z-index: 9999999999999;
+	width: 60%;
+}
+
+.imagen_producto_oculto img {
+	border-radius: 5px;
+	border: black 2px solid;
+	-webkit-box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.75);
+	color: black;
+	width: 100%;
+}
+
+.icono_imagen {
     width: 10%;
 	text-align: right;
 }
 
-.recogida_producto_comida i {
+.icono_imagen i {
 	font-size: 25px;
-}
-
-.img_producto img {
-	height: 150px;
-	width: auto;
-}
-
-.img_producto_comida {
-	width: 100%;
-	text-align: center;
-}
-
-.img_producto_comida img {
-	height: 220px;
-	width: auto;
-}
-
-img.queso {
-	height: 150px;
 }
 
 .menus_opciones {
@@ -1070,9 +1062,6 @@ footer h3 {
 /* Para resoluciones a partir de 500px */
 @media only screen and (min-width: 500px) {
 	
-	.recogida_producto_comida img {
-        width: 55px;
-    }
 	.select_productos {
 		font-size: 20px;
 	}
@@ -1082,15 +1071,6 @@ footer h3 {
 	.precio_producto {
 		width: 15%;
 		text-align: right;
-	}
-	.img_producto img {
-		height: 200px;
-	}
-	.img_producto_comida img {
-		height: 250px;
-	}
-	img.queso {
-		height: 200px;
 	}
 	.condiciones, .whatsapp {
 		margin-left: 20px;
@@ -1173,9 +1153,6 @@ footer h3 {
 		padding: 13px;
 		text-align: right;
 	}
-	.img_producto img {
-		height: 250px;
-	}
 	footer {
 		font-size: 20px;
 	}
@@ -1212,9 +1189,6 @@ footer h3 {
 /* Para resoluciones a partir de 700px */
 @media only screen and (min-width: 700px) {
 	
-	.recogida_producto_comida img {
-        width: 65px;
-    }
 	img.img_ordenador {
 		display: inline-block;
 	}
@@ -1304,11 +1278,11 @@ footer h3 {
 		width: 13%;
 		text-align: right;
 	}
-	.recogida_producto_comida {
+	.icono_imagen {
 	    width: 20%;
 	    text-align: right;
 	}
-	.recogida_producto_comida i {
+	.icono_imagen i {
 		font-size: 30px;
 	}
 	.condiciones, .whatsapp {
@@ -1338,10 +1312,7 @@ footer h3 {
 
 /* Para resoluciones a partir de 1000px */
 @media only screen and (min-width: 1000px) {
-	
-	.recogida_producto_comida img {
-        width: 70px;
-    }
+
 	nav>#lista_principal_index {
 		margin-top: -25px;
 		font-size: 19px;
@@ -1640,9 +1611,6 @@ footer h3 {
 @media only screen and (min-width: 1600px) {
 	.contenedor_circulos {
 		max-width: 2000px;
-	}
-	.recogida_producto_comida img {
-		width: 85px;
 	}
 	.circulo {
 		margin: 80px;
