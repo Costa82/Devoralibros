@@ -23,18 +23,41 @@
 <link href="../icon-normal.png" rel="icon" sizes="128x128" />
 
 <script src="../jquery/jquery-3.1.1.min.js"></script>
+<script src="../jquery/zoom_fancybox.js"></script>
+
+<!-- Add fancyBox -->
+<script>
+    var rutacss2 = "../fancybox/source/jquery.fancybox.css?v=2.1.7?" + Math.random();
+    document.write('<link rel="stylesheet" href="' + rutacss2 + '" type="text/css" media="screen" />'); 
+</script>
+<script type="text/javascript"
+	src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"
+	href="../fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5"
+	type="text/css" media="screen" />
+<script type="text/javascript"
+	src="../fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript"
+	src="../fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet"
+	href="../fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7"
+	type="text/css" media="screen" />
+<script type="text/javascript"
+	src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 
 <!-- Metemos un aleatorio para la recarga automática del css y el js -->
 <script>
 
     var rutacss1 = "../css/main.css?" + Math.random();
-    var rutajs1 = "../jquery/jquery_imagenes_productos.js?" + Math.random();
     var rutajs2 = "../jquery/jquery_menuMoviles_desplegable.js?" + Math.random();
 	var rutajs3 = "../jquery/ocultar_productos.js?" + Math.random();
     var script = "script";
     
     document.write('<link rel="stylesheet" href="' + rutacss1 + '" type="text/css" media="screen" />');
-    document.write('<script src="' + rutajs1 + '"></' + script + '>');
     document.write('<script src="' + rutajs2 + '"></' + script + '>');
     document.write('<script src="' + rutajs3 + '"></' + script + '>');
 	
@@ -90,7 +113,7 @@
 
 		</div>
 
-        <!-- ENTRANTES -->
+		<!-- ENTRANTES -->
 
 		<h3 class="titulo_entrante">ENTRANTES</h3>
 
@@ -119,13 +142,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto'
-						alt="ejemplo producto" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -139,13 +161,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -159,13 +180,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -179,13 +199,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -199,13 +218,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -219,13 +237,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -240,13 +257,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -260,13 +276,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -280,13 +295,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -315,13 +329,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -335,13 +348,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -356,13 +368,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -454,14 +465,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -474,14 +484,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -494,14 +503,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 				<li>
 					<div class="texto_producto_comida">
@@ -514,14 +522,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 			</ul>
@@ -546,14 +553,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -566,14 +572,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -586,14 +591,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -606,14 +610,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -626,14 +629,13 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 				<li>
@@ -646,20 +648,19 @@
 						</p>
 					</div>
 					<div class="icono_imagen">
-						<p>
-							<i class="fa fa-image" title="imagen del producto"></i>
-						</p>
-					</div>
-					<div class="imagen_producto_oculto">
-						<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-							alt="ejemplo producto 2" />
-					</div>
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
+				</div>
 				</li>
 
 			</ul>
 
 		</div>
-		
+
 		<!-- MERIENDAS INFANTILES -->
 
 		<div class="merienda">
@@ -748,13 +749,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -768,13 +768,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -788,13 +787,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -808,13 +806,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -841,13 +838,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -861,13 +857,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -894,13 +889,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -914,13 +908,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -934,13 +927,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -967,13 +959,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -987,13 +978,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1007,13 +997,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1027,13 +1016,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1047,13 +1035,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1067,13 +1054,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1087,13 +1073,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1120,13 +1105,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1140,13 +1124,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1160,13 +1143,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1180,13 +1162,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1214,13 +1195,12 @@
 					</p>
 				</div>
 				<div class="icono_imagen">
-					<p>
-						<i class="fa fa-image" title="imagen del producto"></i>
-					</p>
-				</div>
-				<div class="imagen_producto_oculto">
-					<img src="../img/fiesta_party.jpg" title='ejemplo producto 2'
-						alt="ejemplo producto 2" />
+					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
+						title='Cumpleaños amigos (Reserva de espacio)'>
+						<i class="fa fa-image" title="imagen del producto"></i></a> 
+					<img src="../img/celebrar.jpg" class="foto img_catering"
+						title='Cumpleaños amigos (Reserva de espacio)'
+						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 

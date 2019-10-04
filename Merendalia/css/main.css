@@ -644,6 +644,10 @@ h3.eventos_pasados {
 
 /* CATERING
    ========================================================================= */
+.img_catering {
+	display: none;
+}
+   
 .select_productos {
 	margin: 30px auto;
 	text-align: center;
