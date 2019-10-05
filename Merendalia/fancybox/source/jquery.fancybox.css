@@ -109,6 +109,7 @@
 	z-index: 8040;
 }
 
+/*
 .fancybox-nav {
 	position: absolute;
 	top: 0;
@@ -116,10 +117,11 @@
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url(blank.gif); /* helps IE */
+	background: transparent url(blank.gif);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
+*/
 
 .fancybox-prev {
 	left: 0;
