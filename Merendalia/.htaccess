@@ -15,8 +15,8 @@ RewriteRule ^envio-correcto php/envioCorrecto.php [L]
 RewriteRule ^envio-fallido php/envioFallido.php [L]
 RewriteRule ^aviso-legal-y-politica-de-privacidad php/avisoLegal.php [L]
 
-RewriteRule ^menus/ php/catering.php [L]
-RewriteRule ^reservas/ php/espacio.php [L]
+Redirect 301 /php/menus.php https://www.merendalia.es/catering/
+Redirect 301 /php/reservas.php https://www.merendalia.es/espacio/
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
