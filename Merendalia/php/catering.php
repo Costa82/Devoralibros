@@ -141,14 +141,6 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="raciones">
@@ -159,14 +151,6 @@
 					<p>
 						<strong>9 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -179,14 +163,6 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="raciones">
@@ -197,14 +173,6 @@
 					<p>
 						<strong>9 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -217,14 +185,6 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="raciones">
@@ -236,14 +196,7 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
+				
 			</li>
 
 			<li class="raciones">
@@ -256,14 +209,6 @@
 						<strong>25 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="raciones">
@@ -275,14 +220,6 @@
 						<strong>15 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="raciones">
@@ -293,14 +230,6 @@
 					<p>
 						<strong>12 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -321,20 +250,12 @@
 
 			<li class="canapes">
 				<div class="texto_producto_comida">
-					<p>Bombón de Foie (12 ud.)</p>
+					<p>Bombón de Foie (6 ud.)</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>24 €</strong>
+						<strong>14 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -347,33 +268,17 @@
 						<strong>10,5 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="canapes">
 				<div class="texto_producto_comida">
 					<p>Mini hamburguesa con queso cabra, tomate seco, cebolla
-						caramelizada... (12 uds.)</p>
+						caramelizada... (6 uds.)</p>
 				</div>
 				<div class="precio_producto_comida">
 					<p>
-						<strong>22 €</strong>
+						<strong>14 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -464,14 +369,6 @@
 							<strong>6 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -483,14 +380,6 @@
 							<strong>12 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -502,14 +391,6 @@
 							<strong>12 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 				<li>
 					<div class="texto_producto_comida">
@@ -521,14 +402,6 @@
 							<strong>14 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 			</ul>
@@ -549,17 +422,9 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>15 €</strong>
+							<strong>18 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -568,17 +433,9 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>15 €</strong>
+							<strong>18 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -587,17 +444,9 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>15 €</strong>
+							<strong>18 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -606,17 +455,9 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>15 €</strong>
+							<strong>18 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -625,17 +466,9 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>15 €</strong>
+							<strong>18 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 				<li>
@@ -644,17 +477,9 @@
 					</div>
 					<div class="precio_producto_comida">
 						<p>
-							<strong>15 €</strong>
+							<strong>18 €</strong>
 						</p>
 					</div>
-					<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 				</li>
 
 			</ul>
@@ -748,14 +573,6 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="refrescos">
@@ -766,14 +583,6 @@
 					<p>
 						<strong>1 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -786,14 +595,6 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="refrescos">
@@ -804,14 +605,6 @@
 					<p>
 						<strong>1 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -837,14 +630,6 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="aguas">
@@ -855,14 +640,6 @@
 					<p>
 						<strong>1,5 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -888,14 +665,6 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="cervezas">
@@ -907,14 +676,6 @@
 						<strong>1 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="cervezas">
@@ -925,14 +686,6 @@
 					<p>
 						<strong>1 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -958,14 +711,6 @@
 						<strong>10 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="vinos">
@@ -976,14 +721,6 @@
 					<p>
 						<strong>9,5 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -996,14 +733,6 @@
 						<strong>9,5 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="vinos">
@@ -1014,14 +743,6 @@
 					<p>
 						<strong>7 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1034,14 +755,6 @@
 						<strong>9 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="vinos">
@@ -1053,14 +766,6 @@
 						<strong>7 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="vinos">
@@ -1071,14 +776,6 @@
 					<p>
 						<strong>8 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1104,14 +801,6 @@
 						<strong>19 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="licores">
@@ -1122,14 +811,6 @@
 					<p>
 						<strong>16,5 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1142,14 +823,6 @@
 						<strong>16,5 €</strong>
 					</p>
 				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
-				</div>
 			</li>
 
 			<li class="licores">
@@ -1160,14 +833,6 @@
 					<p>
 						<strong>16,5 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
@@ -1193,14 +858,6 @@
 					<p>
 						<strong>1,5 €</strong>
 					</p>
-				</div>
-				<div class="icono_imagen">
-					<a class="fancybox" rel="group" href="../img/celebrar.jpg"
-						title='Cumpleaños amigos (Reserva de espacio)'>
-						<i class="fa fa-image" title="imagen del producto"></i></a> 
-					<img src="../img/celebrar.jpg" class="foto img_catering"
-						title='Cumpleaños amigos (Reserva de espacio)'
-						alt="Cumpleaños amigos (Reserva de espacio)" />
 				</div>
 			</li>
 
