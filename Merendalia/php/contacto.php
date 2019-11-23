@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Galería de fotos</title>
+<title>Contacto</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
@@ -82,6 +82,8 @@
 	<footer>
         <?php include_once("footer.php");?>        
     </footer>
+
+	<script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
 
 </body>
 </html>

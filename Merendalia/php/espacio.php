@@ -317,6 +317,8 @@
 	<footer>
         <?php include_once("footer.php");?>        
     </footer>
+    
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
 
 </body>
 </html>

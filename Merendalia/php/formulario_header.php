@@ -2,12 +2,26 @@
 
 require_once '../clases/Correo.php';
 require_once '../clases/Validaciones.php';
+require_once "../php/recaptchalib.php";
 
 $correo = new Correo();
 $validaciones = new Validaciones();
 $strMensaje="";
 
-if(isset($_REQUEST['enviar'])){
+$secret = "6LcmPMQUAAAAALeqSP40VP-Oawijs__NDXoi8r6n";
+$response = null;
+
+// comprueba la clave secreta
+$reCaptcha = new ReCaptcha($secret);
+
+if ($_POST["g-recaptcha-response"]) {
+	$response = $reCaptcha->verifyResponse(
+	$_SERVER["REMOTE_ADDR"],
+	$_POST["g-recaptcha-response"]
+	);
+}
+
+if ($response != null) {
     
     if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail']) AND isset($_REQUEST['dia']) AND isset($_REQUEST['hora_entrada']) AND isset($_REQUEST['hora_salida'])) {
         
@@ -71,9 +85,13 @@ if(isset($_REQUEST['enviar'])){
         $destino="../envio-fallido/";
     }
     
-    if (!headers_sent()) {
-        header('Location:'.$destino);
-        exit;
-    }
+    // El recaptcha ha ido mal
+} else {
+	$destino="../envio-fallido/";
+}
+
+if (!headers_sent()) {
+	header('Location:'.$destino);
+	exit;
 }
 ?>
