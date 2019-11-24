@@ -51,6 +51,17 @@
 	type="text/css" media="screen" />
 <script type="text/javascript"
 	src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	
+<script src='https://www.google.com/recaptcha/api.js?render=6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-'> 
+</script>
+<script>
+	grecaptcha.ready(function() {
+	grecaptcha.execute('6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-', {action: 'formulario'})
+	.then(function(token) {
+	var recaptchaResponse = document.getElementById('recaptchaResponse');
+	recaptchaResponse.value = token;
+	});});
+</script>
 
 <!-- Metemos un aleatorio para la recarga automática del css y el js -->
 <script>

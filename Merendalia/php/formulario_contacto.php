@@ -30,10 +30,8 @@
 			<input type="checkbox" name="whatsapp" id="whatsapp" value="1"><label>Quiero
 				darme de alta en la lista de difusión por whatsapp </label>
 		</div>
-
-		<div class="captcha">
-			<div class="g-recaptcha" data-sitekey="6LcmPMQUAAAAAA9QaIlWk0YnX6gPYSZuzBjwxQcW"></div>
-		</div>
+		
+		<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 		
 		<div class="boton">
 			<button type="submit" name='enviar' class="btn">¡Enviar!</button>
