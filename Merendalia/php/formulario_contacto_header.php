@@ -2,25 +2,17 @@
 
 require_once '../clases/Correo.php';
 require_once '../clases/Validaciones.php';
-require_once "../php/recaptchalib.php";
 
 $correo = new Correo();
 $validaciones = new Validaciones();
 
-$secret = "6LcmPMQUAAAAALeqSP40VP-Oawijs__NDXoi8r6n";
-$response = null;
+$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; 
+$recaptcha_secret = '6LcJW8QUAAAAAHZwrH69SW0bmGN2LotC37S2ZHaU'; 
+$recaptcha_response = $_POST['recaptcha_response']; 
+$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
+$recaptcha = json_decode($recaptcha); 
 
-// comprueba la clave secreta
-$reCaptcha = new ReCaptcha($secret);
-
-if ($_POST["g-recaptcha-response"]) {
-	$response = $reCaptcha->verifyResponse(
-	$_SERVER["REMOTE_ADDR"],
-	$_POST["g-recaptcha-response"]
-	);
-}
-
-if ($response != null) {
+if($recaptcha->score >= 0){
 
 	if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail'])){
 		 

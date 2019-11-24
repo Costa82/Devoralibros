@@ -24,6 +24,17 @@
 
 <script src="../jquery/jquery-3.1.1.min.js"></script>
 
+<script src='https://www.google.com/recaptcha/api.js?render=6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-'> 
+</script>
+<script>
+	grecaptcha.ready(function() {
+	grecaptcha.execute('6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-', {action: 'formulario'})
+	.then(function(token) {
+	var recaptchaResponse = document.getElementById('recaptchaResponse');
+	recaptchaResponse.value = token;
+	});});
+</script>
+
 <!-- Metemos un aleatorio para la recarga automática del css y el js -->
 <script>
 
@@ -1699,7 +1710,5 @@
         <?php include_once("footer.php");?>        
     </footer>
     
-    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
-
 </body>
 </html>
