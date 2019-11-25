@@ -12,7 +12,7 @@ $recaptcha_response = $_POST['recaptcha_response'];
 $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
 $recaptcha = json_decode($recaptcha); 
 
-if($recaptcha->score >= 0){
+if($recaptcha->score > 0.5){
 
 	if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail'])){
 		 
