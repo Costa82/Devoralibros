@@ -5,7 +5,6 @@ require_once '../clases/Validaciones.php';
 
 $correo = new Correo();
 $validaciones = new Validaciones();
-$strMensaje="";
 
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; 
 $recaptcha_secret = '6LcJW8QUAAAAAHZwrH69SW0bmGN2LotC37S2ZHaU'; 

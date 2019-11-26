@@ -10,9 +10,9 @@ $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
 $recaptcha_secret = '6LcJW8QUAAAAAHZwrH69SW0bmGN2LotC37S2ZHaU'; 
 $recaptcha_response = $_POST['recaptcha_response']; 
 $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
-$recaptcha = json_decode($recaptcha); 
+$recaptcha = json_decode($recaptcha);
 
-if($recaptcha->score > 0.5){
+if($recaptcha->score >= 0){
 
 	if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail'])){
 		 
@@ -65,7 +65,7 @@ if($recaptcha->score > 0.5){
 		} else {
 			$destino="../envio-fallido/";
 		}
-		 
+
 		// El nombre y el mail tienen que ser obligatorios
 	} else {
 		$destino="../envio-fallido/";
