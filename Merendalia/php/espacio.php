@@ -93,7 +93,7 @@
 
 					<td class="titulo_verde">
 						<p>
-							<strong>Horario </strong> <sup>(2)</sup>
+							<strong>Hora cierre </strong> <sup>(2)</sup>
 						</p>
 					</td>
 
@@ -114,81 +114,56 @@
 				</tr>
 
 				<tr>
-					<td rowspan="2" class="titulo_amarillo">
+					<td class="titulo_amarillo">
 						<p>
 							<strong>LUNES a JUEVES</strong>
 						</p>
 					</td>
-					<td><p>09:00 a 18:00</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:00 a 00:30</p></td>
+					<td><p>00:30</p></td>
 					<td><p>30€</p></td>
 					<td><p>26€</p></td>
 				</tr>
 
 				<tr>
-					<td rowspan="2" class="titulo_amarillo">
+					<td class="titulo_amarillo">
 						<p>
 							<strong>VIERNES</strong>
 						</p>
 					</td>
-					<td><p>09:00 a 18:00</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:00 a 01:30</p></td>
+					<td><p>01:30</p></td>
 					<td><p>42€</p></td>
 					<td><p>38€</p></td>
 				</tr>
 
 				<tr>
-					<td rowspan="2" class="titulo_amarillo">
+					<td class="titulo_amarillo">
 						<p>
 							<strong>SÁBADO</strong>
 						</p>
 					</td>
-					<td><p>09:00 a 18:30</p></td>
-					<td><p>49€</p></td>
-					<td><p>44€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:30 a 02:00</p></td>
+					<td><p>02:00</p></td>
 					<td><p>49€</p></td>
 					<td><p>44€</p></td>
 				</tr>
 
 				<tr>
-					<td rowspan="2" class="titulo_amarillo">
+					<td class="titulo_amarillo">
 						<p>
 							<strong>DOMINGOS Y FESTIVOS</strong> <sup>(3)</sup>
 						</p>
 					</td>
-					<td><p>09:00 a 18:30</p></td>
-					<td><p>45€</p></td>
-					<td><p>40€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:30 a 00:30</p></td>
+					<td><p>00:30</p></td>
 					<td><p>45€</p></td>
 					<td><p>40€</p></td>
 				</tr>
 
 				<tr>
-					<td rowspan="2" class="titulo_amarillo">
+					<td class="titulo_amarillo">
 						<p>
 							<strong>VÍSPERA FESTIVO</strong> <sup>(4)</sup>
 						</p>
 					</td>
-					<td><p>09:00 a 18:00</p></td>
-					<td><p>30€</p></td>
-					<td><p>26€</p></td>
-				</tr>
-				<tr>
-					<td><p>18:00 a 01:30</p></td>
+					<td><p>01:30</p></td>
 					<td><p>42€</p></td>
 					<td><p>38€</p></td>
 				</tr>
