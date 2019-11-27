@@ -6,13 +6,22 @@ require_once '../clases/Validaciones.php';
 $correo = new Correo();
 $validaciones = new Validaciones();
 
-$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; 
+//6Lf7WsQUAAAAALVQFOHGLzIecVOnOc7vSASkeFwQ local
+//6LcJW8QUAAAAAHZwrH69SW0bmGN2LotC37S2ZHaU producción
 $recaptcha_secret = '6LcJW8QUAAAAAHZwrH69SW0bmGN2LotC37S2ZHaU'; 
 $recaptcha_response = $_POST['recaptcha_response']; 
-$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
-$recaptcha = json_decode($recaptcha); 
 
-if($recaptcha->score >= 0){
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify?");
+curl_setopt($ch, CURLOPT_POST, 1);
+$campos=array('secret'=>$recaptcha_secret,'response'=>$recaptcha_response);
+curl_setopt($ch, CURLOPT_POSTFIELDS,$campos);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$ch_exec = curl_exec($ch);
+$respuesta_google = json_decode($ch_exec);
+curl_close ($ch);
+
+if($respuesta_google->score > 0.5){
     
     if(isset($_REQUEST['nombre']) AND isset($_REQUEST['mail']) AND isset($_REQUEST['dia']) AND isset($_REQUEST['hora_entrada']) AND isset($_REQUEST['hora_salida'])) {
         

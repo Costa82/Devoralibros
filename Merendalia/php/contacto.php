@@ -25,6 +25,8 @@
 <script src="../jquery/jquery-3.1.1.min.js"></script>
 
 <script src='https://www.google.com/recaptcha/api.js?render=6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-'> 
+	//6Lf7WsQUAAAAAKRTJAyXE2kWlzKGx9qzpohnlDki local
+	//6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA- producción
 </script>
 <script>
 	grecaptcha.ready(function() {
