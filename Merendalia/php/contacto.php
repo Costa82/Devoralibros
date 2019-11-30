@@ -30,7 +30,7 @@
 </script>
 <script>
 	grecaptcha.ready(function() {
-	grecaptcha.execute('6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-', {action: 'formulario'})
+	grecaptcha.execute('6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-', {action: 'formulario_contacto'})
 	.then(function(token) {
 	var recaptchaResponse = document.getElementById('recaptchaResponse');
 	recaptchaResponse.value = token;
