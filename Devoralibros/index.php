@@ -45,8 +45,7 @@ $_SESSION['pagina'] = "index";
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    
-    gtag('config', 'UA-103067390-1');
+    gtag('config', 'UA-103067390-1', { 'anonymize_ip': true });
 </script>
 
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
