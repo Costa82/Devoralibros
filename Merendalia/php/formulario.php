@@ -35,9 +35,9 @@
 		</div>
 		<div class="form condiciones">
 			<input type="checkbox" name="condiciones" id="condiciones"><label>Acepta
-				el <a href="../aviso-legal-y-politica-de-privacidad/"
-				title="Aviso Legal"><i>Aviso Legal y la Política de Privacidad</i>
-			</a> </label>
+				la <a href="../politica-privacidad-y-proteccion-datos/"
+				title="Política de privacidad y Protección de datos"><i>Política de
+						privacidad y Protección de datos</i> </a> </label>
 		</div>
 		<div class="form whatsapp">
 			<input type="checkbox" name="whatsapp" id="whatsapp" value="1"><label>Quiero
@@ -59,8 +59,7 @@
 				como se explica en nuestra <a
 					href="../politica-privacidad-y-proteccion-datos/"
 					title="Política de privacidad y Protección de datos"><i>Política de
-						privacidad</i>
-				</a>.
+						privacidad</i> </a>.
 			</p>
 		</div>
 
