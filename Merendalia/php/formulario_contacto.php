@@ -22,8 +22,7 @@
 		</div>
 		<div class="form condiciones">
 			<input type="checkbox" name="condiciones" id="condiciones"><label>Acepta
-				el <a href="../aviso-legal-y-politica-de-privacidad/" title="Aviso Legal"><i>Aviso Legal y la
-						Política de Privacidad</i></a>
+				la <a href="../politica-privacidad-y-proteccion-datos/" title="Política de privacidad y Protección de datos"><i>Política de privacidad y Protección de datos</i></a>
 			</label>
 		</div>
 		<div class="form whatsapp">
@@ -42,7 +41,10 @@
 				finalidad de la recogida de datos es la de poder atender sus
 				cuestiones, sin ceder sus datos a terceros. Tiene derecho a saber qué
 				información tenemos sobre usted, corregirla o eliminarla tal y como
-				se explica en nuestra Política de Privacidad.
+				se explica en nuestra
+				<a href="../politica-privacidad-y-proteccion-datos/"
+					title="Política de privacidad y Protección de datos"><i>Política de
+						privacidad</i> </a>.
 			</p>
 		</div>
 		
