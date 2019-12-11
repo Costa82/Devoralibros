@@ -140,7 +140,7 @@ nav>#lista_principal_index {
 }
 
 #galeria, #eventos, #espacio, #menus, #bocaditos, #productos, #contacto,
-	#legal, #blogMerendalia {
+	#legal, #proteccionDatos, #blogMerendalia {
 	display: none;
 }
 
@@ -435,6 +435,11 @@ h3.titulo_reservas {
 .contenedor_formulario {
 	margin: 50px 10px;
 	text-align: center;
+}
+
+.texto_legal_formulario p {
+	text-align: left;
+	font-size: 12px;
 }
 
 .formulario {
@@ -1448,6 +1453,9 @@ footer h3 {
 	.contenedor_contacto h3 {
 		font-size: 35px;
 	}
+	.texto_legal_formulario p {
+		font-size: 17px;
+	}
 	.formulario {
 		width: 70%;
 		margin: 0 auto;
@@ -1532,7 +1540,7 @@ footer h3 {
 		display: block;
 	}
 	#galeria, #eventos, #espacio, #menus, #bocaditos, #productos, #contacto,
-		#legal, #blogMerendalia {
+		#legal, #proteccionDatos, #blogMerendalia {
 		display: block;
 	}
 	nav>ul>li#menu_moviles {

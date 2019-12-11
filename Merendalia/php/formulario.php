@@ -44,6 +44,21 @@
 				darme de alta en la lista de difusión por whatsapp </label>
 		</div>
 		
+		</br>
+		</br>
+		
+		<div class="texto_legal_formulario">
+			<p><strong>Protección de datos</strong></p>
+			</br>
+			<p>
+				El responsable del tratamiento es <strong>MERENDALIA CB.</strong> La
+				finalidad de la recogida de datos es la de poder atender sus
+				cuestiones, sin ceder sus datos a terceros. Tiene derecho a saber qué
+				información tenemos sobre usted, corregirla o eliminarla tal y como
+				se explica en nuestra Política de Privacidad.
+			</p>
+		</div>
+		
 		<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 		
 		<div class="boton">

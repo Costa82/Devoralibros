@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Protección de datos</title>
+<title>Aviso legal</title>
 <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
 
 <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One'
@@ -47,233 +47,234 @@
 
 	<div class="contenedor_texto avisoLegal">
 
-		<h3>POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
+		<h3>AVISO LEGAL</h3>
 
-		<p>En el marco de la relación de prestación de servicios en el ámbito
-			de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de
-			Datos de Carácter Personal (en adelante, LOPD), del Real Decreto
-			1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de
-			desarrollo de la misma, así como en el Reglamento (UE) 2016/679 del
-			Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a
-			la protección de las personas físicas en lo que respecta al
-			tratamiento de datos personales, por el que se deroga la directiva
-			95/46/CE (en adelante, RGPD) y de la Ley 34/2002, de 11 de julio, de
-			servicios de la sociedad de la información y de comercio electrónico
-			(en adelante, LSSI-CE), MERENDALIA C.B garantiza la protección y
-			confidencialidad de los datos personales, de cualquier tipo que nos
-			proporcionen nuestros clientes, de acuerdo con lo dispuesto en el
-			Reglamento General de Protección de Datos de Carácter Personal.</p>
+		<p>En el presente Aviso Legal, el Usuario, podrá encontrar toda la información 
+		relativa a las condiciones legales que definen las relaciones entre los usuarios 
+		y el responsable de la página web accesible en la dirección URL <strong>www.merendalia.es</strong> 
+		(en adelante, el Sitio Web), que MERENDALIA CB pone a disposición de los usuarios de Internet.
+		La utilización del sitio web implica la aceptación plena y sin reservas de todas y cada una de las
+		disposiciones incluidas en este Aviso Legal. En consecuencia, el usuario del sitio web debe leer 
+		atentamente el presente Aviso Legal en cada una de las ocasiones en que se proponga utilizar la 
+		web, ya que el texto podría sufrir modificaciones a criterio del titular de la web, o a causa 
+		de un cambio legislativo, jurisprudencial o en la práctica empresarial.</p>
 
-		</br>
-		<p>La Política de Protección de Datos de MERENDALIA C.B descansa en el
-			principio de responsabilidad proactiva, según el cual el Responsable
-			del tratamiento es responsable del cumplimiento del marco normativo y
-			jurisprudencial, siendo capaz de demostrarlo ante las autoridades de
-			control correspondientes.</p>
+                </br> 
+                </br>
 
-		</br>
-		<p>Los datos facilitados serán tratados en los términos establecidos
-			en el RGPD, en este sentido MERENDALIA C.B ha adoptado los niveles de
-			protección que legalmente se exigen, y ha instalado todas las medidas
-			técnicas a su alcance para evitar la pérdida, mal uso, alteración,
-			acceso no autorizado por terceros, expuestos a continuación. No
-			obstante, el usuario debe ser consciente de que las medidas de
-			seguridad en Internet no son inexpugnables.</p>
-
-
-		</br> </br>
 		<p>
-			<strong>Responsable del tratamiento: ¿Quiénes somos?</strong>
+			<strong>1.- DATOS DEL RESPONSABLE TITULAR DEL SITIO WEB</strong>
 		</p>
 		</br>
-		<p>Denominación: MERENDALIA C.B</p>
-		<p>CIF: E47766266</p>
-		<p>Actividad: eventos</p>
-		<p>Dirección: Calle Paraíso 2, bajo, 47003, VALLADOLID</p>
-		<p>Teléfono: 983857369</p>
+		<p>Nombre del titular: MERENDALIA CB</p>
+		<p>Domicilio social: Calle Paraíso 2, Bajo, 47003, Valladolid</p>
+		<p>C.I.F.: E47766266</p>
+		<p>Teléfono de contacto: 680219794</p>
 		<p>Correo electrónico: info@merendalia.es</p>
+		
+		</br>
+		<p>MERENDALIA CB, es el responsable del Sitio Web y se compromete a cumplir con todos 
+		los requisitos nacionales y europeos que regulan el uso de los datos personales de los usuarios.</p>
+		
+		</br>
+		<p>Este Sitio Web garantiza la protección y confidencialidad de los datos personales que 
+		nos proporcionen de acuerdo con lo dispuesto en el Reglamento General de Protección de Datos 
+		de Carácter Personal (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 
+		2016, en la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos 
+		digitales, así como en la Ley de Servicios de la Sociedad de la Información y Comercio 
+		Electrónico 34/2002 de 11 de Julio (LSSI-CE)</p>
 
 
 		</br> </br>
 		<p>
-			<strong>Finalidad del tratamiento: ¿Para qué usaremos sus datos?</strong>
+			<strong>2.- OBJETO</strong>
 		</p>
 		</br>
-		<p>Todos los datos facilitados por nuestros clientes y/o visitantes en
-			la web de MERENDALIA C.B o a su personal, serán incluidos en registro
-			de actividades de tratamiento de datos de carácter personal, creado y
-			mantenido bajo la responsabilidad de MERENDALIA C.B, imprescindibles
-			para prestar los servicios solicitados por los usuarios, o para
-			resolver las dudas o cuestiones planteadas por nuestros visitantes.
-			Nuestra política es no elaborar perfiles sobre los usuarios de
-			nuestros servicios.</p>
-
+		<p>El Sitio Web facilita a los usuarios del mismo el acceso a información y servicios 
+		prestados por MERENDALIA CB a aquellas personas u organizaciones interesadas en los mismos.</p>
+		
+		</br>
+		<p>El acceso y la utilización del Sitio Web atribuye la condición de usuario del Sitio Web 
+		(en adelante, el “Usuario”) e implica la aceptación de todas las condiciones incluidas en 
+		este Aviso Legal así como de sus modificaciones. La prestación del servicio del Sitio Web 
+		tiene una duración limitada al momento en el que el Usuario se encuentre conectado al Sitio 
+		Web o a alguno de los servicios que a través del mismo se facilitan. Por tanto, el Usuario 
+		debe leer atentamente el presente Aviso Legal en cada una de las ocasiones en que se proponga 
+		utilizar el Sitio Web, ya que éste y sus condiciones de uso recogidas en el presente Aviso 
+		Legal pueden sufrir modificaciones.</p>
 
 
 		</br> </br>
 		<p>
-			<strong>Legitimidad del tratamiento: ¿Por qué necesitamos sus datos?</strong>
+			<strong>3.- ACCESO Y UTILIZACIÓN DE LA WEB</strong>
 		</p>
 		</br>
-		<p>a) Relación contractual: Es la que aplica cuando compra uno de
-			nuestros productos o contrata alguno de nuestros servicios.</p>
-		<p>b) Interés legítimo: Para atender a las consultas y reclamaciones
-			que nos plantee y para gestionar el cobro de las cantidades
-			adeudadas.</p>
-		<p>c) Su consentimiento: Si es usuario de nuestra web, mediante la
-			marcación de la casilla que figura en el formulario de contacto, nos
-			autoriza a que le remitamos las comunicaciones necesarias para dar
-			respuesta a la consulta o solicitud de información planteada.</p>
+		<p>3.1.- Carácter gratuito del acceso y utilización de la web. El acceso a la web tiene 
+		carácter gratuito para los usuarios de la misma, salvo en lo relativo al coste de la 
+		conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso 
+		contratado por los usuarios.</p>
+		<p>3.2.- Registro de usuarios. Con carácter general el acceso y utilización de la web 
+		no exige la previa suscripción o registro de los usuarios de la misma.</p>
+		<p>3.3.- Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia 
+		y autenticidad de los datos personales facilitados, y se comprometen a mantenerlos debidamente 
+		actualizados. El usuario acepta proporcionar información completa y correcta en el formulario 
+		de contacto o suscripción.</p>
+		
+		</br>
+		<p>En el caso de los menores de trece años se requiere el consentimiento de los padres o 
+		tutores para el tratamiento de sus datos personales.</p>
+		
+		</br>
+		<p>En ningún caso se recabarán del menor de edad datos relativos a la situación profesional, 
+		económica o a la intimidad de los otros miembros de la familia, sin el consentimiento de éstos. 
+		Si eres menor de trece años y has accedido a este sitio web sin avisar a tus padres no debes 
+		registrarte como usuario.</p>
+		
+		</br>
+		<p>En esta web se respetan y cuidan los datos personales de los usuarios. Como usuario debes 
+		saber que tus derechos están garantizados.</p>
 
 
 		</br> </br>
 		<p>
-			<strong>Destinatarios: ¿Con quién compartimos sus datos?</strong>
+			<strong>4.- CONTENIDOS DE LA WEB</strong>
 		</p>
 		</br>
-		<p>No cedemos sus datos personales a nadie, a excepción de aquellas
-			entidades públicas o privadas a las cuales estemos obligados a
-			facilitar sus datos personales con motivo del cumplimiento de alguna
-			ley. Por poner un ejemplo, la Ley Tributaria obliga a facilitar a la
-			Agencia Tributaria determinada información sobre operaciones
-			económicas que superen una determinada cantidad.</p>
+		<p>El idioma utilizado por el titular en la web será el castellano. MERENDALIA CB
+		no se responsabiliza de la no comprensión o entendimiento del idioma de la web por 
+		el usuario, ni de sus consecuencias.</p>
+		
 		</br>
-		<p>En el caso de que, al margen de los supuestos comentados,
-			necesitemos dar a conocer su información personal a otras entidades,
-			le solicitaremos previamente su permiso a través de opciones claras
-			que le permitirán decidir a este respecto.</p>
+		<p>MERENDALIA CB podrá modificar los contenidos sin previo aviso, así como suprimir 
+		y cambiar éstos dentro de la web, como la forma en que se accede a éstos, sin 
+		justificación alguna y libremente, no responsabilizándose de las consecuencias 
+		que los mismos puedan ocasionar a los usuarios.</p>
+		
+		</br>
+		<p>Se prohíbe el uso de los contenidos de la web para promocionar, contratar o 
+		divulgar publicidad o información propia o de terceras personas sin la 
+		autorización de MERENDALIA CB, ni remitir publicidad o información valiéndose 
+		para ello de los servicios o información que se ponen a disposición de los usuarios, 
+		independientemente de si la utilización es gratuita o no.</p>
+		
+		</br>
+		<p>Los enlaces o hiperenlaces que incorporen terceros en sus páginas web, 
+		dirigidos a esta web, serán para la apertura de la página web completa, 
+		no pudiendo manifestar, directa o indirectamente, indicaciones falsas, 
+		inexactas o confusas, ni incurrir en acciones desleales o ilícitas en contra 
+		de MERENDALIA CB.</p>
 
-
+		
 		</br> </br>
 		<p>
-			<strong>Comunicación: ¿Dónde podríamos enviar tus datos?</strong>
+			<strong>5.- MEDIDAS DE SEGURIDAD</strong>
 		</p>
 		</br>
-		<p>
-			No realizaremos transferencias internacionales de sus datos
-			personales para ninguna de las finalidades indicadas. </br> </br> </br>
+		<p>Los datos personales comunicados por el usuario podrán ser almacenados 
+		en bases de datos automatizadas o no, cuya titularidad corresponde en 
+		exclusiva a MERENDALIA CB, asumiendo todas las medidas de índole técnica, 
+		organizativa y de seguridad que garanticen la confidencialidad, integridad 
+		y calidad de la información contenida en las mismas de acuerdo con lo 
+		establecido en las normativas vigentes en materia de protección de datos 
+		de carácter personal.</p>
 		
-		
+		</br>
+		</br>
 		<p>
-			<strong>Conservación: ¿Cuánto tiempo mantendremos tus datos?</strong>
+			<strong>6.- LIMITACIÓN DE RESPONSABILIDAD</strong>
 		</p>
 		</br>
+		<p>Tanto el acceso a la web como el uso no consentido que pueda efectuarse 
+		de la información contenida en la misma es de la exclusiva responsabilidad 
+		de quien lo realiza. MERENDALIA CB no responderá de ninguna consecuencia, 
+		daño o perjuicio que pudieran derivarse de dicho acceso o uso. MERENDALIA CB 
+		no se hace responsable de los errores de seguridad, que se puedan producir 
+		ni de los daños que puedan causarse al sistema informático del usuario 
+		(hardware y software), o a los ficheros o documentos almacenados en el mismo, 
+		como consecuencia de:</p> 
+		<p>- la presencia de un virus en el ordenador del usuario que sea utilizado 
+		para la conexión a los servicios y contenidos de la web.</p>
+		<p>- un mal funcionamiento del navegador.</p>
+		<p>- y/o del uso de versiones no actualizadas del mismo.</p>
+		
+		</br>
+		<p>MERENDALIA CB no se hace responsable de la fiabilidad y rapidez de los 
+		hiperenlaces que se incorporen en la web para la apertura de otras. 
+		MERENDALIA CB no garantiza la utilidad de estos enlaces, ni se responsabiliza 
+		de los contenidos o servicios a los que pueda acceder el usuario por medio 
+		de estos enlaces, ni del buen funcionamiento de estas webs.</p>
+		
+		</br>
+		<p>MERENDALIA CB no será responsable de los virus o demás programas informáticos 
+		que deterioren o puedan deteriorar los sistemas o equipos informáticos de los 
+		usuarios al acceder a su web u otras webs a las que se haya accedido mediante 
+		enlaces de esta web.</p>
+		
+		
+		</br> 
+		</br>
+		
 		<p>
-			Solo conservaremos sus datos personales durante el tiempo que resulte
-			necesario para lograr los fines para los que fueron recabados. A la
-			hora de determinar el oportuno periodo de conservación, examinamos
-			los riesgos que conlleva el tratamiento, así como nuestras
-			obligaciones contractuales, legales y normativas, las políticas
-			internas de conservación de datos y nuestros intereses de negocio
-			legítimos descritos en el presente Aviso de Privacidad y Política de
-			Cookies. </br>
-		
-		
-		<p>
-			En este sentido, MERENDALIA C.B conservará los datos personales una
-			vez terminada su relación con Ud., debidamente bloqueados, durante el
-			plazo de prescripción de las acciones que pudieran derivarse de la
-			relación mantenida con el interesado. </br>
-		
-		
-		<p>
-			Una vez bloqueados, sus datos resultarán inaccesibles para MERENDALIA
-			C.B, y no serán tratados excepto para su puesta a disposición a las
-			Administraciones públicas, Jueces y Tribunales, para la atención de
-			las posibles responsabilidades nacidas de los tratamientos, así como
-			para el ejercicio y defensa de reclamaciones ante la Agencia Española
-			de Protección de Datos. </br> </br> </br>
-		
-		
-		<p>
-			<strong>Seguridad: ¿Cómo vamos a proteger sus datos?</strong>
+			<strong>7.- EMPLEO DE LA TECNOLOGÍA “COOKIE”</strong>
 		</p>
 		</br>
-		<p>
-			Empleamos todos los esfuerzos razonables para mantener la
-			confidencialidad de la información personal que se trate en nuestros
-			sistemas. Mantenemos estrictos niveles de seguridad para proteger los
-			datos de carácter personal que procesamos frente a pérdidas fortuitas
-			y a accesos, tratamientos o revelaciones no autorizados, habida
-			cuenta del estado de la tecnología, la naturaleza y los riesgos a que
-			están expuestos los datos. No obstante, no podemos responsabilizarnos
-			del uso que Ud. haga de los datos (incluido usuario y contraseña) que
-			utilice en nuestra web. Nuestro personal sigue estrictas normas de
-			privacidad y en el caso de que contratemos a terceros para prestar
-			servicios de soporte, les exigimos que acaten las mismas normas y nos
-			permitan auditarles para verificar su cumplimiento. </br> </br> </br>
-		
+		<p>El Sitio Web puede emplear cookies o tecnologías similares que se regirán 
+		por lo establecido en la Política de Cookies, accesible en todo momento y 
+		respetando la confidencialidad e intimidad del usuario, siendo parte integrante 
+		del presente Aviso Legal.</p>
+
+
+		</br> 
+		</br>
 		
 		<p>
-			<strong>Sus derechos: ¿Qué derechos puede ejercer como interesado?</strong>
+			<strong>8.- NAVEGACIÓN</strong>
 		</p>
 		</br>
-		<p>Le informamos que podrá ejercer los siguientes derechos:</p>
+		<p>Los servidores de Internet pueden recoger datos no identificables, que 
+		puedan incluir, direcciones IP, y otros datos que no pueden ser utilizados 
+		para identificar al usuario. Su dirección IP se almacenará en los logs de 
+		acceso de forma automática y con la única finalidad de permitir el tránsito 
+		por Internet, siendo necesario que su equipo facilite esta dirección IP 
+		cuando navega por Internet para que las comunicaciones puedan realizarse. 
+		Así mismo, la dirección IP podrá ser utilizada para realizar estadísticas, 
+		de manera anonimizada, sobre el número de visitantes de esta web y su procedencia, 
+		de forma totalmente transparente a su navegación.</p>
+		
+		</br> 
 		</br>
-		<p>a) Derecho de acceso a sus datos personales, para saber cuáles
-			están siendo objeto de tratamiento y las operaciones de tratamiento
-			llevadas a cabo con ellos;</p>
-		<p>b) Derecho de rectificación de cualquier dato personal inexacto;</p>
-		<p>c) Derecho de supresión de sus datos personales, cuando esto sea
-			posible (por ejemplo, por imperativo legal);</p>
-		<p>d) Derecho de limitación del tratamiento de sus datos personales
-			cuando la exactitud, la legalidad o la necesidad del tratamiento de
-			los datos resulte dudosa, en cuyo caso, podremos conservarlos para el
-			ejercicio o la defensa de reclamaciones.</p>
-		<p>e) Derecho de oposición al tratamiento de sus datos personales,
-			cuando la base legal que nos habilite para su tratamiento de las
-			indicadas sea nuestro interés legítimo. MERENDALIA C.B dejará de
-			tratar tus datos salvo que tenga un interés legítimo o sea necesario
-			para la defensa de reclamaciones.</p>
-		<p>f) Derecho a la portabilidad de sus datos, cuando la base legal que
-			nos habilite para su tratamiento sea la existencia de una relación
-			contractual o su consentimiento.</p>
-		<p>g) Derecho a revocar el consentimiento otorgado a MERENDALIA C.B</p>
-
-		</br>
-		<p>Para ejercitar sus derechos, puede hacerlo de manera gratuita y en
-			cualquier momento, contactando con nosotros en la dirección Calle
-			Paraíso 2, bajo, 47003, VALLADOLID, adjuntando copia de su DNI.</p>
-
-
-		</br> </br>
+		
 		<p>
-			<strong>Tutela de derechos: ¿Dónde puede formular una reclamación?</strong>
+			<strong>9.- PROPIEDAD INTELECTUAL E INDUSTRIAL</strong>
 		</p>
-
 		</br>
-		<p>En caso de que entienda que sus derechos han sido desatendidos por
-			nuestra entidad, puede formular una reclamación en la Agencia
-			Española de Protección de Datos, a través de alguno de los medios
-			siguientes:</p>
-
+		<p>El usuario conoce y acepta que todos los contenidos y/o cualesquiera 
+		otros elementos del sitio web son propiedad de MERENDALIA CB, y se compromete 
+		a respetar los derechos de propiedad intelectual e industrial titularidad de 
+		MERENDALIA CB y/o de terceros. Cualquier uso de la web o sus contenidos deberá 
+		tener un carácter exclusivamente particular.</p>
+		
 		</br>
-		<p>- Sede electrónica: https://www.aepd.es</p>
-		<p>- Correo postal: Agencia Española de Protección de Datos, C/ Jorge
-			Juan, 6, 28001, Madrid</p>
-		<p>- Teléfono: 901.100.099 y 912.663.517</p>
-
+		<p>Está reservado exclusivamente a MERENDALIA CB, cualquier otro uso que suponga 
+		la copia, reproducción, distribución, transformación, comunicación pública o 
+		cualquier otra acción similar, de todo o parte de los contenidos de la web, por 
+		lo que ningún usuario podrá llevar a cabo estas acciones sin la autorización previa 
+		y por escrito de MERENDALIA CB.</p>
+		
+		</br> 
 		</br>
-		<p>Formular una reclamación en la Agencia Española de Protección de
-			Datos no conlleva ningún coste y no es necesaria la asistencia de
-			abogado ni procurador.</p>
-
-
-		</br> </br>
+		
 		<p>
-			<strong>Actualizaciones: ¿Qué cambios puede haber en esta Política de
-				Privacidad?</strong>
+			<strong>10.- LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE </strong>
 		</p>
-
 		</br>
-		<p>MERENDALIA C.B se reserva el derecho a modificar la presente
-			política para adaptarla a novedades legislativas o jurisprudenciales
-			que puedan afectar el cumplimiento de la misma.</p>
-
-		</br>
-		<p>Con objeto de garantizar el cumplimiento de la normativa sobre
-			protección de datos de carácter personal, MERENDALIA C.B ha recibido
-			los servicios de consultoría y asesoramiento por parte de clickDatos.</p>
+		<p>El presente Aviso Legal se interpretará y regirá de conformidad con la legislación 
+		española. MERENDALIA CB y los usuarios, con renuncia expresa a cualquier otro fuero 
+		que pudiera corresponderles, se someten al de los juzgados y tribunales del domicilio 
+		del usuario para cualquier controversia que pudiera derivarse del acceso o uso de la web. 
+		En el caso de que el usuario tenga su domicilio fuera de España, MERENDALIA CB y el usuario, 
+		se someten, con renuncia expresa a cualquier otro fuero, a los juzgados y 
+		tribunales del domicilio de Valladolid.</p>
 
 	</div>
 

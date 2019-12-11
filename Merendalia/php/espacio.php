@@ -24,7 +24,8 @@
 
 <script src="../jquery/jquery-3.1.1.min.js"></script>
 
-<script src='https://www.google.com/recaptcha/api.js?render=6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-'> 
+<script
+	src='https://www.google.com/recaptcha/api.js?render=6LcJW8QUAAAAAOBS6vnwKWyFxynJTvXWaLmuxeA-'> 
 </script>
 <script>
 	grecaptcha.ready(function() {
@@ -68,9 +69,9 @@
 <body>
 	<header>
 
-		<nav>		
-          <?php include_once("menuNav.php");?>	          	
-      	</nav>
+		<nav>
+		<?php include_once("menuNav.php");?>
+		</nav>
 
 	</header>
 
@@ -206,15 +207,14 @@
 
 			</div>
 		</div>
-<!-- 			<a href="#formularioReserva" class="mostrar_reserva"><strong>Reservar</strong></a> -->
+		<!-- 			<a href="#formularioReserva" class="mostrar_reserva"><strong>Reservar</strong></a> -->
 
 		<div class="texto_descriptivo">
 
 			<p>En merendalia queremos que todas tus reservas giren en torno a la
-				mesa. ¿Qué sería de nuestras reuniones sin
-				la comida y la bebida como protagonistas? Podeis traeros las cosas de casa, encargarnoslo a nosotros
-				o una combinación de ambas.
-				</p>
+				mesa. ¿Qué sería de nuestras reuniones sin la comida y la bebida
+				como protagonistas? Podeis traeros las cosas de casa, encargarnoslo
+				a nosotros o una combinación de ambas.</p>
 			</br>
 			<p>
 				<strong>Os encargáis VOSOTROS:</strong>
@@ -224,10 +224,9 @@
 			
 			
 			<ul>
-				<li>- Puedes traerlo todo hecho de casa o usar la cocina equipada para
-					  preparar lo que os apetezca y hacer en Merendalia, ¡una jornada
-					  gastronómica completa!
-				</li>
+				<li>- Puedes traerlo todo hecho de casa o usar la cocina equipada
+					para preparar lo que os apetezca y hacer en Merendalia, ¡una
+					jornada gastronómica completa!</li>
 			</ul>
 			</p>
 			</br>
@@ -235,26 +234,23 @@
 				<strong>Nos encargamos NOSOTROS:</strong>
 			</p>
 			</br>
-			<p>Si no tienes tiempo ni ganas de andar
-				preparando, esta es la mejor opción:</p>
+			<p>Si no tienes tiempo ni ganas de andar preparando, esta es la mejor
+				opción:</p>
 			</br>
 			<p>
 			
 			
 			<ul>
-				<li>- <u>Picoteo:</u> Te preparamos un picoteo, almuerzo, merienda... 
-   				Empanadas, canapés, tortillas, ensaladas, embutidos, quesos, postres...</br>
-				Visita la sección <a href='../catering/'>cátering</a>
-				y ve algunos de nuestros productos en la 
-				<a href='../galeria/'>galería</a> de imágenes.
-				
-				</li>
-				<li>- <u>Menús ¡Calentar y Listo!</u>: Se prepara un menú
-					completo. Lo dejamos todo dispuesto para que a lo sumo tengais que
-					servir un segundo plato. Entrantes, ensaladas, postres,
-					cafés, chupitos… No os preocupeis por nada, ¡todo listo!
-					Llamádnos y os informaremos de todo. Es la opción mas completa y original.
-				</li>
+				<li>- <u>Picoteo:</u> Te preparamos un picoteo, almuerzo,
+					merienda... Empanadas, canapés, tortillas, ensaladas, embutidos,
+					quesos, postres...</br> Visita la sección <a href='../catering/'>cátering</a>
+					y ve algunos de nuestros productos en la <a href='../galeria/'>galería</a>
+					de imágenes.</li>
+				<li>- <u>Menús ¡Calentar y Listo!</u>: Se prepara un menú completo.
+					Lo dejamos todo dispuesto para que a lo sumo tengais que servir un
+					segundo plato. Entrantes, ensaladas, postres, cafés, chupitos… No
+					os preocupeis por nada, ¡todo listo! Llamádnos y os informaremos de
+					todo. Es la opción mas completa y original.</li>
 			</ul>
 			</p>
 			</br>
@@ -263,11 +259,14 @@
 			</p>
 			</br>
 			<p>
+			
+			
 			<ul>
-				<li>- Traéis unas cosas de casa o las preparais aquí y del resto nos encargamos nosotros. Bebidas, los aperitivos, el postre...</li>
+				<li>- Traéis unas cosas de casa o las preparais aquí y del resto nos
+					encargamos nosotros. Bebidas, los aperitivos, el postre...</li>
 			</ul>
 			</p>
-<!--			</br>
+			<!--			</br>
 			</br>
 			<p>
 				<strong>Servicios adicionales</strong>
@@ -292,17 +291,17 @@
 -->
 
 		</div>
-		
+
 
 	</div>
 
 	<div id="formularioReserva" class="contenedor_formulario">
-        	<?php include_once("formulario.php");?>	
-    </div>
-	
+	<?php include_once("formulario.php");?>
+	</div>
+
 	<footer>
-        <?php include_once("footer.php");?>        
-    </footer>
-    
+	<?php include_once("footer.php");?>
+	</footer>
+
 </body>
 </html>
