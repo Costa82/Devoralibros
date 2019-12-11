@@ -13,7 +13,8 @@ RewriteRule ^blog-merendalia/ php/blogMerendalia.php [L]
 
 RewriteRule ^envio-correcto php/envioCorrecto.php [L]
 RewriteRule ^envio-fallido php/envioFallido.php [L]
-RewriteRule ^aviso-legal-y-politica-de-privacidad php/avisoLegal.php [L]
+RewriteRule ^aviso-legal php/avisoLegal.php [L]
+RewriteRule ^politica-privacidad-y-proteccion-datos php/proteccionDatos.php [L]
 
 Redirect 301 /php/menus.php https://www.merendalia.es/catering/
 Redirect 301 /php/reservas.php https://www.merendalia.es/espacio/
