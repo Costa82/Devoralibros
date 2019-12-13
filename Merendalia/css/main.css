@@ -10,12 +10,12 @@
 	src: url(../fonts/Montserrat-UltraLight.otf);
 }
 
-h1, h2, h3, h4, p, ul, body {
+h1,h2,h3,h4,p,ul,body {
 	margin: 0;
 	padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1,h2,h3,h4 {
 	font-family: Montserrat-Bold;
 }
 
@@ -23,7 +23,7 @@ ul {
 	list-style: none;
 }
 
-a, a:hover, a:focus {
+a,a:hover,a:focus {
 	text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ h4 {
 	margin: 5px 0;
 }
 
-p, span {
+p,span {
 	font-size: 15px;
 }
 
@@ -139,14 +139,13 @@ nav>#lista_principal_index {
 	font-size: 11px;
 }
 
-#galeria, #eventos, #espacio, #menus, #bocaditos, #productos, #contacto,
-	#legal, #proteccionDatos, #blogMerendalia {
+#galeria,#eventos,#espacio,#menus,#bocaditos,#productos,#contacto,#legal,#proteccionDatos,#blogMerendalia
+	{
 	display: none;
 }
 
-#galeria2 a:hover, #eventos2 a:hover, #espacio2 a:hover, #menus2 a:hover,
-	#bocaditos2 a:hover, #productos2 a:hover, #contacto2 a:hover,
-	#avisoLegal2 a:hover, #blogMerendalia2 a:hover {
+#galeria2 a:hover,#eventos2 a:hover,#espacio2 a:hover,#menus2 a:hover,#bocaditos2 a:hover,#productos2 a:hover,#contacto2 a:hover,#avisoLegal2 a:hover,#blogMerendalia2 a:hover
+	{
 	color: #9bd155;
 }
 
@@ -159,7 +158,7 @@ nav>ul>li>a {
 	color: black;
 }
 
-nav>ul>li>a:hover, nav>ul>li>a:hover>.fa {
+nav>ul>li>a:hover,nav>ul>li>a:hover>.fa {
 	color: #9bd155;
 }
 
@@ -208,26 +207,27 @@ nav>ul>li>ul#lista_movil {
 	background: rgba(226, 226, 226, 1);
 	background: -moz-linear-gradient(bottom, rgba(226, 226, 226, 1) 0%,
 		rgba(209, 209, 209, 1) 0%, rgba(219, 219, 219, 1) 14%,
-		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76%);
+		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76% );
 	background: -webkit-gradient(bottom top, up top, color-stop(0%, rgba(226, 226, 226,
-		1)), color-stop(0%, rgba(209, 209, 209, 1)),
-		color-stop(14%, rgba(219, 219, 219, 1)),
-		color-stop(58%, rgba(244, 244, 244, 1)),
-		color-stop(76%, rgba(254, 254, 254, 1)));
+		1) ), color-stop(0%, rgba(209, 209, 209, 1) ),
+		color-stop(14%, rgba(219, 219, 219, 1) ),
+		color-stop(58%, rgba(244, 244, 244, 1) ),
+		color-stop(76%, rgba(254, 254, 254, 1) ) );
 	background: -webkit-linear-gradient(bottom, rgba(226, 226, 226, 1) 0%,
 		rgba(209, 209, 209, 1) 0%, rgba(219, 219, 219, 1) 14%,
-		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76%);
+		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76% );
 	background: -o-linear-gradient(bottom, rgba(226, 226, 226, 1) 0%,
 		rgba(209, 209, 209, 1) 0%, rgba(219, 219, 219, 1) 14%,
-		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76%);
+		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76% );
 	background: -ms-linear-gradient(bottom, rgba(226, 226, 226, 1) 0%,
 		rgba(209, 209, 209, 1) 0%, rgba(219, 219, 219, 1) 14%,
-		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76%);
+		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76% );
 	background: linear-gradient(to up, rgba(226, 226, 226, 1) 0%,
 		rgba(209, 209, 209, 1) 0%, rgba(219, 219, 219, 1) 14%,
-		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2',
-		endColorstr='#fefefe', GradientType=1);
+		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76% );
+	filter: progid :   DXImageTransform.Microsoft.gradient (    
+		startColorstr = 
+		 '#e2e2e2', endColorstr =   '#fefefe', GradientType =   1 );
 }
 
 nav>ul>li>ul#lista_movil a {
@@ -235,7 +235,7 @@ nav>ul>li>ul#lista_movil a {
 	font-size: 17px;
 }
 
-nav>ul>li>ul#lista_movil ul#listaAutores a, nav>ul>li>ul#lista_movil ul#listaTitulos a
+nav>ul>li>ul#lista_movil ul#listaAutores a,nav>ul>li>ul#lista_movil ul#listaTitulos a
 	{
 	font-size: 17px;
 }
@@ -348,7 +348,7 @@ h3.titulo_reservas {
 }
 
 /* TARIFAS */
-.tarifas h3, .calendario h3, .texto_descriptivo h3 {
+.tarifas h3,.calendario h3,.texto_descriptivo h3 {
 	margin-bottom: 20px;
 }
 
@@ -437,6 +437,12 @@ h3.titulo_reservas {
 	text-align: center;
 }
 
+.texto_legal_formulario {
+	max-width: 500px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
 .texto_legal_formulario p {
 	text-align: left;
 	font-size: 12px;
@@ -494,13 +500,13 @@ h3.titulo_reservas {
 	margin-left: 33px;
 }
 
-.formulario input#condiciones, .formulario input#whatsapp {
+.formulario input#condiciones,.formulario input#whatsapp {
 	margin-left: 0;
 	width: 20px;
 	margin-top: 25px;
 }
 
-.condiciones, .whatsapp {
+.condiciones,.whatsapp {
 	text-align: left;
 	margin-left: 10px;
 }
@@ -539,7 +545,7 @@ form a:hover { #9bd155
 	text-align: center;
 }
 
-.evento_principal h3, .explicacion_blog h3 {
+.evento_principal h3,.explicacion_blog h3 {
 	font-size: 20px;
 	margin: 0 10px;
 }
@@ -556,7 +562,7 @@ img.img_ordenador {
 	height: 450px;
 }
 
-.explicacion_evento, .explicacion_articulo {
+.explicacion_evento,.explicacion_articulo {
 	width: 80%;
 	margin: 20px auto;
 	text-align: left;
@@ -569,19 +575,19 @@ h3.eventos_pasados {
 	text-align: center;
 }
 
-.evento_secundario h3, .articulo_secundario h3 {
+.evento_secundario h3,.articulo_secundario h3 {
 	font-size: 18px;
 	margin: 15px;
 	text-align: center;
 }
 
-.evento_secundario>.explicacion_evento, .articulo_secundario>.explicacion_articulo
+.evento_secundario>.explicacion_evento,.articulo_secundario>.explicacion_articulo
 	{
 	width: 100%;
 	margin: 20px 0;
 }
 
-.contenedor_eventos_secundarios, .contenedor_articulo_secundario {
+.contenedor_eventos_secundarios,.contenedor_articulo_secundario {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -592,7 +598,7 @@ h3.eventos_pasados {
 	margin-top: 25px;
 }
 
-.evento_secundario, .articulo_secundario {
+.evento_secundario,.articulo_secundario {
 	margin: 20px;
 	min-width: 280px;
 	max-width: 350px;
@@ -601,7 +607,7 @@ h3.eventos_pasados {
 	text-align: center;
 }
 
-.evento_secundario img, .articulo_secundario img {
+.evento_secundario img,.articulo_secundario img {
 	width: 80%;
 }
 
@@ -682,7 +688,7 @@ select:focus {
 	margin: 0 auto;
 }
 
-ul.lista_productos, ul.lista_productos_comida {
+ul.lista_productos,ul.lista_productos_comida {
 	margin-top: 25px;
 }
 
@@ -704,8 +710,8 @@ ul.lista_productos_comida li {
 	font-size: 22px;
 }
 
-.img_producto, .texto_producto, .precio_producto, .texto_producto_comida,
-	.precio_producto_comida {
+.img_producto,.texto_producto,.precio_producto,.texto_producto_comida,.precio_producto_comida
+	{
 	margin-top: 15px;
 	display: inline-block;
 }
@@ -781,7 +787,7 @@ img.queso {
 	align-items: flex-start;
 }
 
-.texto_menu, .img_menu {
+.texto_menu,.img_menu {
 	margin: 20px auto;
 }
 
@@ -874,7 +880,7 @@ h3.titulo_articulo {
 	display: none;
 }
 
-.leerMas, .leerMenos {
+.leerMas,.leerMenos {
 	color: #ff3123;
 	cursor: pointer;
 }
@@ -983,7 +989,7 @@ p.pieFoto {
 	color: #ff3123;
 }
 
-#infobox3 p a:hover, #infobox3 p a:focus {
+#infobox3 p a:hover,#infobox3 p a:focus {
 	color: #4cb164;
 }
 
@@ -1012,12 +1018,12 @@ img.logo_hamburguesa {
 	text-align: left;
 }
 
-.logo_footer, .redes {
+.logo_footer,.redes {
 	width: 33%;
 	display: inline-block;
 }
 
-.informacion ul, .informacion h3 {
+.informacion ul,.informacion h3 {
 	text-align: center;
 	display: none;
 }
@@ -1036,7 +1042,7 @@ footer .fa {
 	color: white;
 }
 
-footer .fa:hover, a:hover {
+footer .fa:hover,a:hover {
 	color: #d8c12d;
 }
 
@@ -1062,7 +1068,6 @@ footer h3 {
 
 /*RECAPTCHA
 ========================================================================= */
-
 .captcha {
 	width: 100%;
 	margin-top: 20px;
@@ -1097,7 +1102,7 @@ footer h3 {
 	img.queso {
 		height: 200px;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 20px;
 	}
 	.menu_infantil {
@@ -1140,10 +1145,10 @@ footer h3 {
 	.contenedor_eventos {
 		margin-top: 25px;
 	}
-	.contenedor_eventos_secundarios p, .contenedor_articulo_secundario p {
+	.contenedor_eventos_secundarios p,.contenedor_articulo_secundario p {
 		font-size: 16px;
 	}
-	.evento_secundario, .articulo_secundario {
+	.evento_secundario,.articulo_secundario {
 		text-align: center;
 		max-width: 600px;
 	}
@@ -1156,7 +1161,7 @@ footer h3 {
 	.tarifas img {
 		height: 450px;
 	}
-	.calendario, .texto_descriptivo {
+	.calendario,.texto_descriptivo {
 		margin: 5px;
 		max-width: 600px;
 	}
@@ -1185,7 +1190,7 @@ footer h3 {
 	footer {
 		font-size: 20px;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 40px;
 	}
 	.menu_infantil>h2 {
@@ -1223,7 +1228,7 @@ footer h3 {
 	img.img_movil {
 		display: none;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 75px;
 	}
 }
@@ -1246,7 +1251,7 @@ footer h3 {
 	.circulo h2 {
 		font-size: 23px;
 	}
-	p, span {
+	p,span {
 		font-size: 20px;
 	}
 	.presentacion h3 {
@@ -1256,7 +1261,7 @@ footer h3 {
 		padding-top: 15px;
 		font-size: 15px;
 	}
-	.explicacion p, span {
+	.explicacion p,span {
 		padding-top: 25px;
 	}
 	.explicacion_articulo p {
@@ -1286,7 +1291,7 @@ footer h3 {
 	.titulo_amarillo {
 		height: 70px;
 	}
-	.tarifas h3, .calendario h3, .texto_descriptivo h3, .productos h3 {
+	.tarifas h3,.calendario h3,.texto_descriptivo h3,.productos h3 {
 		font-size: 25px;
 	}
 	.explicacion_tarifas p {
@@ -1316,7 +1321,7 @@ footer h3 {
 		width: 35%;
 		text-align: right;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 120px;
 	}
 	.oculto_movil_footer {
@@ -1332,10 +1337,10 @@ footer h3 {
 	h1 {
 		margin-top: 50px;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 150px;
 	}
-	.evento_secundario, .articulo_secundario {
+	.evento_secundario,.articulo_secundario {
 		min-width: 350px;
 	}
 }
@@ -1368,23 +1373,23 @@ footer h3 {
 		opacity: 1;
 		transition: opacity 1s;
 	}
-	.evento_principal h3, .explicacion_blog h3 {
+	.evento_principal h3,.explicacion_blog h3 {
 		font-size: 30px;
 	}
-	.contenedor_eventos_secundarios p, .contenedor_articulo_secundario p {
+	.contenedor_eventos_secundarios p,.contenedor_articulo_secundario p {
 		font-size: 19px;
 	}
 	h3.eventos_pasados {
 		margin-top: 55px;
 		font-size: 30px;
 	}
-	.evento_secundario h3, .articulo_secundario h3 {
+	.evento_secundario h3,.articulo_secundario h3 {
 		font-size: 26px;
 	}
 	h3.titulo_articulo {
 		font-size: 25px;
 	}
-	.explicacion p, span {
+	.explicacion p,span {
 		padding-top: 35px;
 	}
 	.explicacion_blog {
@@ -1405,7 +1410,7 @@ footer h3 {
 	.tarifas img {
 		height: 550px;
 	}
-	.calendario, .texto_descriptivo {
+	.calendario,.texto_descriptivo {
 		margin: 35px 60px 15px 0;
 		max-width: 700px;
 	}
@@ -1447,11 +1452,14 @@ footer h3 {
 	.contenedor_eventos {
 		margin-top: 40px;
 	}
-	.evento_secundario, .articulo_secundario {
+	.evento_secundario,.articulo_secundario {
 		max-width: 600px;
 	}
 	.contenedor_contacto h3 {
 		font-size: 35px;
+	}
+	.texto_legal_formulario {
+		max-width: 600px;
 	}
 	.texto_legal_formulario p {
 		font-size: 17px;
@@ -1503,7 +1511,7 @@ footer h3 {
 	.contenedor_productos {
 		width: 60%;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 0px;
 	}
 	.img_lista_menus img {
@@ -1536,11 +1544,11 @@ footer h3 {
 
 /* Para resoluciones a partir de 1100px */
 @media only screen and (min-width: 1100px) {
-	.informacion ul, .informacion h3 {
+	.informacion ul,.informacion h3 {
 		display: block;
 	}
-	#galeria, #eventos, #espacio, #menus, #bocaditos, #productos, #contacto,
-		#legal, #proteccionDatos, #blogMerendalia {
+	#galeria,#eventos,#espacio,#menus,#bocaditos,#productos,#contacto,#legal,#proteccionDatos,#blogMerendalia
+		{
 		display: block;
 	}
 	nav>ul>li#menu_moviles {
@@ -1596,13 +1604,13 @@ footer h3 {
 	.tarifas img {
 		height: 600px;
 	}
-	.calendario, .texto_descriptivo {
+	.calendario,.texto_descriptivo {
 		max-width: 750px;
 	}
 	.contenedor_texto {
 		width: 70%;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 50px;
 	}
 }
@@ -1622,7 +1630,7 @@ footer h3 {
 	.contenedor_productos {
 		width: 60%;
 	}
-	.condiciones, .whatsapp {
+	.condiciones,.whatsapp {
 		margin-left: 60px;
 	}
 	ul.lista_productos_comida {
