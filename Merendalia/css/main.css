@@ -225,9 +225,9 @@ nav>ul>li>ul#lista_movil {
 	background: linear-gradient(to up, rgba(226, 226, 226, 1) 0%,
 		rgba(209, 209, 209, 1) 0%, rgba(219, 219, 219, 1) 14%,
 		rgba(244, 244, 244, 1) 58%, rgba(254, 254, 254, 1) 76% );
-	filter: progid :   DXImageTransform.Microsoft.gradient (    
-		startColorstr = 
-		 '#e2e2e2', endColorstr =   '#fefefe', GradientType =   1 );
+	filter: progid :       DXImageTransform.Microsoft.gradient (      
+		  startColorstr =   
+		   '#e2e2e2', endColorstr =       '#fefefe', GradientType =       1 );
 }
 
 nav>ul>li>ul#lista_movil a {
@@ -1543,32 +1543,27 @@ footer h3 {
 }
 
 /* Para resoluciones a partir de 1100px */
-@media only screen and (min-width: 1100px) {
-	.informacion ul,.informacion h3 {
-		display: block;
-	}
-	#galeria,#eventos,#espacio,#menus,#bocaditos,#productos,#contacto,#legal,#proteccionDatos,#blogMerendalia
-		{
-		display: block;
-	}
-	nav>ul>li#menu_moviles {
-		display: none;
-	}
-	.contenedor_circulos {
-		max-width: 1000px;
-	}
-	.circulo {
-		border-radius: 250px;
-		text-align: center;
-		height: 300px;
-		width: 300px;
-		display: inline-block;
-		margin: 20px 60px;
-		font-size: 25px;
-	}
-	.avisoLegal_movil {
-		display: none;
-	}
+@media
+only
+screen
+and
+(min-width:
+1100px)
+{
+.contenedor_circulos {
+	max-width: 1000px;
+}
+
+.circulo {
+	border-radius: 250px;
+	text-align: center;
+	height: 300px;
+	width: 300px;
+	display: inline-block;
+	margin: 20px 60px;
+	font-size: 25px;
+}
+
 }
 
 /* Para resoluciones a partir de 1250px */
@@ -1617,6 +1612,19 @@ footer h3 {
 
 /* Para resoluciones a partir de 1400px */
 @media only screen and (min-width: 1400px) {
+	.avisoLegal_movil {
+		display: none;
+	}
+	.informacion ul,.informacion h3 {
+		display: block;
+	}
+	#galeria,#eventos,#espacio,#menus,#bocaditos,#productos,#contacto,#legal,#blogMerendalia,#proteccionDatos
+		{
+		display: block;
+	}
+	.avisoLegal_movil {
+		display: none;
+	}
 	nav>#lista_principal_index {
 		font-size: 22px;
 	}
