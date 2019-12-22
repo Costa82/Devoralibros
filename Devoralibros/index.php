@@ -105,9 +105,9 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
                   <?php include_once("php/formulario_avanzado_index.php");?>
               </div>
 
-			<div class="devoralibros_mensual">                
-                  <?php include_once("php/ganador_mes_index.php");?>
-              </div>
+			<!-- <div class="devoralibros_mensual">                
+                  <?//php include_once("php/ganador_mes_index.php");?>
+              </div> -->
 
 			<div class="contenedor_titulo">
 				<img class="titulo_devoralibros"
