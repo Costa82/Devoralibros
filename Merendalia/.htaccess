@@ -4,12 +4,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^inicio index.php [L]
 
 RewriteRule ^catering/ php/catering.php [L]
-RewriteRule ^menus-bocaditos/ php/menusBocaditos.php [L]
 RewriteRule ^galeria/ php/galeria.php [L]
 RewriteRule ^eventos/ php/eventos.php [L]
 RewriteRule ^espacio/ php/espacio.php [L]
 RewriteRule ^contacto/ php/contacto.php [L]
 RewriteRule ^blog-merendalia/ php/blogMerendalia.php [L]
+RewriteRule ^menus-bocaditos/ php/menusBocaditos.php [L]
 
 RewriteRule ^envio-correcto php/envioCorrecto.php [L]
 RewriteRule ^envio-fallido php/envioFallido.php [L]
@@ -18,7 +18,9 @@ RewriteRule ^politica-privacidad-y-proteccion-datos php/proteccionDatos.php [L]
 
 Redirect 301 /php/menus.php https://www.merendalia.es/catering/
 Redirect 301 /php/reservas.php https://www.merendalia.es/espacio/
+Redirect 301 /php/menusBocaditos.php https://www.merendalia.es/catering/
+Redirect 301 /menus-bocaditos https://www.merendalia.es/catering
 
-#RewriteEngine On
-#RewriteCond %{SERVER_PORT} 80
-#RewriteRule ^(.*)$ https://www.merendalia.es/$1 [R,L]
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.merendalia.es/$1 [R,L]
