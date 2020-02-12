@@ -1,5 +1,5 @@
 /**
-* Archivo CSS principal para diseñar nuestra aplicacion web 'DevoraLibros'
+* Archivo CSS principal para diseï¿½ar nuestra aplicacion web 'DevoraLibros'
 * @author Miguel Costa.
 *
 */
@@ -381,18 +381,18 @@ input[type="search"] {
 	cursor: pointer;
 	border-radius: 15em;
 	-webkit-transition: all .5s;
-	/* transición de .5seg a todos los elementos para chrome */
+	/* transiciï¿½n de .5seg a todos los elementos para chrome */
 	-moz-transition: all .5s;
-	/* transición de .5seg a todos los elementos para mozilla */
+	/* transiciï¿½n de .5seg a todos los elementos para mozilla */
 	-o-transition: all .5s;
-	/* transición de .5seg a todos los elementos para ophera */
+	/* transiciï¿½n de .5seg a todos los elementos para ophera */
 	transition: all .5s; /* transicion de .5seg a todos los elementos */
 	outline: none; /* ocultar el fucos automatico de los input */
 }
 
 input[type="search"]:focus {
 	cursor: text;
-	width: 95%; /* Tamaño del boton buscar al hacer click */
+	width: 95%; /* Tamaï¿½o del boton buscar al hacer click */
 	padding-left: 32px; /* Espacio entre el icono lupa y el placeholder */
 	color: #000;
 	background-color: #FFF;
@@ -640,7 +640,7 @@ ul.libros_pequenos>li {
 	flex-flow: row wrap;
 }
 
-/* Añadimos una medalla de mejor votado al primer libro de la lista */
+/* Aï¿½adimos una medalla de mejor votado al primer libro de la lista */
 .librosPopulares ul.temas_flex li:first-child:before {
 	content: url(../img/primero.png);
 	position: absolute;
@@ -1188,5 +1188,8 @@ footer .footer-final .copyright, footer .footer-final .contactar, footer .footer
 	}
 	table.tabla_top th {
 		width: 150px;
+	}
+	#lista_movil {
+		display: none;
 	}
 }

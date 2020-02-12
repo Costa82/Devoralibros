@@ -1656,6 +1656,10 @@ and
 	.circulo {
 		margin: 60px;
 	}
+	
+	nav>ul>li#menu_moviles {
+		display: none;
+	}
 }
 
 /* Para resoluciones a partir de 1600px */

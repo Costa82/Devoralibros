@@ -481,6 +481,17 @@
 						</p>
 					</div>
 				</li>
+				
+				<li>
+					<div class="texto_producto_comida">
+						<p>Mousse de limón (raciones individuales)</p>
+					</div>
+					<div class="precio_producto_comida">
+						<p>
+							<strong>2,5 €</strong>
+						</p>
+					</div>
+				</li>
 
 			</ul>
 
