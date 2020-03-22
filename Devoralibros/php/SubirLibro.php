@@ -90,7 +90,7 @@ if (isset($_SESSION['id_usuario']) and (isset($_SESSION['datos']['tipo_usuario']
                         $img = $_FILES['img'];
                         
                         // Titulo
-                        $titulo = trim($_REQUEST['titulo']);
+                        $titulo = trim($_REQUEST['titulo'], '.');
                         
                         // Isbn. Ya no guardamos el numero Isbn, guardamos por defecto el 123. Futura mejora??
                         $isbn = 123;
