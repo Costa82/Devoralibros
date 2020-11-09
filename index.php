@@ -38,6 +38,8 @@ $_SESSION['pagina'] = "index";
 <title>Devoralibros</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
 
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f223db39-bbaf-4c29-bfe1-8d6bb6ea19cc" data-blockingmode="auto" type="text/javascript"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async
 	src="https://www.googletagmanager.com/gtag/js?id=UA-103067390-1"></script>
@@ -128,7 +130,7 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
         </div>
 
 	</header>
-
+	
 	<center>
 		<iframe
 			src="https://rcm-eu.amazon-adsystem.com/e/cm?o=30&p=42&l=ur1&category=amazon_es&banner=0R3J1Y4B94F3QYQB7VR2&f=ifr&linkID=d173bf045260285c0ac34630d19a3e5d&t=devora-21&tracking_id=devora-21"
@@ -220,7 +222,7 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
 		</div>
 	</center>
 
-	<!--//BLOQUE COOKIES-->
+	<!--//BLOQUE COOKIES
 	<div id="overbox3">
 		<div id="infobox3">
 			<p>
@@ -232,8 +234,8 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
 			</p>
 		</div>
 	</div>
-
-	<!--//FIN BLOQUE COOKIES-->
+	//FIN BLOQUE COOKIES-->
+	
 	<footer>
         <?php include_once("php/footer.php");?>        
     </footer>

@@ -3,11 +3,10 @@ require_once '../clases/Connection.php';
 include_once ('../clases/Usuario.php');
 $bd= Connection::dameInstancia();
 $c=$bd->dameConexion();
-$usuario=new Usuario();    
 // Variable de búsqueda
 $consultaBusqueda = $_POST['valorBusqueda'];
 $id1= $_POST['id1'];
-$nickUsuario=$usuario::getNick($id1);
+$nickUsuario=Usuario::getNick($id1);
 // Filtro anti-XSS
 $caracteres_malos = array("<", ">", "\"", "'", "/", "<", ">", "'", "/");
 $caracteres_buenos = array("&lt;", "&gt;", "&quot;", "&#x27;", "&#x2F;", "&#060;", "&#062;", "&#039;", "&#047;");

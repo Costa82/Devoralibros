@@ -65,8 +65,27 @@ if (strpos($_SERVER['REQUEST_URI'], "Inicio") !== false) {
           </div>';
 }
 
+if (strpos($_SERVER['REQUEST_URI'], "Inicio") !== false) {
+    // index.php found
+    echo '<div class="copyright">
+    		<a href="DeclaracionCookies/1" title="Declaración Cookies">Declaración Cookies</a>
+          </div>';
+} else if (strpos($_SERVER['REQUEST_URI'], "Usuario") !== false) {
+    echo '<div class="copyright">
+    		<a href="../DeclaracionCookies/2" title="Declaración Cookies">Declaración Cookies</a>
+          </div>';
+} else if (strpos($_SERVER['REQUEST_URI'], "Administrador") !== false) {
+    echo '<div class="copyright">
+    		<a href="../DeclaracionCookies/3" title="Declaración Cookies">Declaración Cookies</a>
+          </div>';
+} else {
+    echo '<div class="copyright">
+    		<a href="../DeclaracionCookies/1" title="Declaración Cookies">Declaración Cookies</a>
+          </div>';
+}
+
 echo '<div class="copyright">
-                <p><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Miguel Costa Jiménez</p>
+          <p><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Miguel Costa Jiménez</p>
       </div>
     
       </div>';

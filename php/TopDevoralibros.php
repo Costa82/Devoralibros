@@ -75,9 +75,9 @@ if (isset($_SESSION['datos'])) {
 				<?php include_once ("formulario_avanzado.php"); ?>				
 		</div>
 
-		<div class="devoralibros_mensual">  
-			<?php include_once ("ganador_mes_index.php"); ?>
-		</div>
+		<!-- div class="devoralibros_mensual" -->  
+			<!-- ?php include_once ("ganador_mes_index.php"); ? -->
+		<!-- /div -->
 
 	</header>
 		<?php $top = new Usuario(); ?>
@@ -86,15 +86,15 @@ if (isset($_SESSION['datos'])) {
 		</section>-->
 
 	<div class="tops">
-		<section class="topMensual">
-			<h1>Top Mensual</h1>
+		<!-- section class="topMensual">
+			<h1>Top Mensual</h1 -->
 			
-			<?php $top->mostrarTopMensual(); ?>
+			<!-- ?php $top->mostrarTopMensual(); ? -->
 			
-		</section>
+		<!-- /section -->
 
 		<section class="topAnual">
-			<h1>Top General</h1>
+			<h1>Top Devoralibros</h1>
 			
 			<?php $top->mostrarTopAnual(); ?>			
 		</section>
