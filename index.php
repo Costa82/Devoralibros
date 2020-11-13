@@ -38,8 +38,6 @@ $_SESSION['pagina'] = "index";
 <title>Devoralibros</title>
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
 
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f223db39-bbaf-4c29-bfe1-8d6bb6ea19cc" data-blockingmode="auto" type="text/javascript"></script>
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async
 	src="https://www.googletagmanager.com/gtag/js?id=UA-103067390-1"></script>
@@ -93,6 +91,9 @@ var rutacss2 = "css/main_libros.css?" + Math.random();
 
 </head>
 <body>
+
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f223db39-bbaf-4c29-bfe1-8d6bb6ea19cc" data-blockingmode="auto" type="text/javascript"></script>
+
 	<header>
 		<nav>
           <?php include_once("php/menuNavIndex.php");?>		
